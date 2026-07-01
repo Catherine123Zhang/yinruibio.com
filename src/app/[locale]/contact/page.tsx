@@ -305,7 +305,7 @@ export default function ContactPage() {
                 {lang === "zh" ? "点击直接对话" : lang === "ja" ? "クリックしてチャット" : "Click to chat directly"}
               </p>
               <a
-                href="https://wa.me/8613800000000"
+                href="https://wa.me/8618268661068"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 inline-flex items-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-medium text-white hover:bg-[#20bd5a] transition-colors"

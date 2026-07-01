@@ -2,6 +2,7 @@ import { locales, isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -19,33 +20,52 @@ export default async function HomePage({
 
   return (
     <main>
-      {/* Hero Section */}
+      {/* Hero Section — Split layout: text left, product right */}
       <section className="relative bg-[var(--color-primary)] text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)] via-[var(--color-primary-light)] to-[var(--color-accent)] opacity-90" />
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:py-40">
-          <div className="max-w-3xl">
-            <span className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium backdrop-blur-sm border border-white/20 mb-6">
-              {dict.hero.badge}
-            </span>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl leading-tight">
-              {dict.hero.title}
-            </h1>
-            <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl">
-              {dict.hero.subtitle}
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a
-                href={`/${locale}/contact/`}
-                className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-[var(--color-accent-light)] transition-colors"
-              >
-                {dict.hero.cta}
-              </a>
-              <a
-                href={`/${locale}/technology/`}
-                className="inline-flex items-center justify-center rounded-lg bg-white/10 px-8 py-3.5 text-base font-semibold text-white backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-colors"
-              >
-                {dict.hero.ctaSecondary}
-              </a>
+        <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:py-36">
+          <div className="grid gap-12 lg:grid-cols-2 items-center">
+            {/* Left: Text */}
+            <div>
+              <span className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium backdrop-blur-sm border border-white/20 mb-6">
+                {dict.hero.badge}
+              </span>
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl leading-tight">
+                {dict.hero.title}
+              </h1>
+              <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl">
+                {dict.hero.subtitle}
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <a
+                  href={`/${locale}/contact/`}
+                  className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-[var(--color-accent-light)] transition-colors"
+                >
+                  {dict.hero.cta}
+                </a>
+                <a
+                  href={`/${locale}/technology/`}
+                  className="inline-flex items-center justify-center rounded-lg bg-white/10 px-8 py-3.5 text-base font-semibold text-white backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-colors"
+                >
+                  {dict.hero.ctaSecondary}
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Product Image */}
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative">
+                {/* Glow effect behind device */}
+                <div className="absolute inset-0 bg-white/10 blur-3xl rounded-full scale-75" />
+                <Image
+                  src="/images/products/carryon-device.png"
+                  alt="CarryOn Portable PCR Analyzer"
+                  width={500}
+                  height={500}
+                  className="relative object-contain drop-shadow-2xl max-h-[450px] w-auto"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

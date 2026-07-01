@@ -1,6 +1,6 @@
 "use client";
 
-const WHATSAPP_NUMBER = "8613800000000"; // TODO: Replace with Vivian's number
+const WHATSAPP_NUMBER = "8618268661068";
 const DEFAULT_MESSAGE = "Hi, I'm interested in the CarryOn portable PCR platform. Could you provide more information?";
 
 export default function WhatsAppButton() {

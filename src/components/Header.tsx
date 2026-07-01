@@ -30,7 +30,7 @@ export default function Header({
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--color-border)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           {/* Logo */}
           <Link href={`/${locale}/`} className="flex items-center gap-2">
             <Image
@@ -38,7 +38,7 @@ export default function Header({
               alt="Inarray — Yinrui Bio"
               width={360}
               height={120}
-              className="h-12 w-auto"
+              className="h-[72px] w-auto"
               priority
             />
           </Link>
