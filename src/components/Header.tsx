@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { locales, localeNames } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
@@ -32,9 +33,14 @@ export default function Header({
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href={`/${locale}/`} className="flex items-center gap-2">
-            <span className="text-xl font-bold text-[var(--color-primary)]">
-              Yinrui Bio
-            </span>
+            <Image
+              src="/images/products/logo-inarray.png"
+              alt="Inarray — Yinrui Bio"
+              width={120}
+              height={40}
+              className="h-8 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

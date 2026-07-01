@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Locale } from "@/lib/i18n";
 import type { Dictionary } from "@/dictionaries/en";
 
@@ -12,7 +13,7 @@ export default function Footer({
   return (
     <footer className="bg-[var(--color-primary)] text-white">
       <div className="mx-auto max-w-7xl px-6 py-12">
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-5">
           {/* Brand */}
           <div className="md:col-span-2">
             <h3 className="text-lg font-bold">Yinrui Bio</h3>
@@ -27,8 +28,13 @@ export default function Footer({
             </h4>
             <ul className="space-y-2 text-sm text-white/70">
               <li>
-                <Link href={`/${locale}/products/`} className="hover:text-white transition-colors">
+                <Link href={`/${locale}/products/carryon-device/`} className="hover:text-white transition-colors">
                   CarryOn Device
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/products/test-chips/`} className="hover:text-white transition-colors">
+                  {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : "Test Chips"}
                 </Link>
               </li>
               <li>
@@ -66,6 +72,25 @@ export default function Footer({
                 </Link>
               </li>
             </ul>
+          </div>
+
+          {/* WeChat QR */}
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-3">
+              WeChat
+            </h4>
+            <div className="rounded-lg bg-white p-2 inline-block">
+              <Image
+                src="/images/wechat-qr.png"
+                alt="WeChat QR Code"
+                width={120}
+                height={120}
+                className="rounded"
+              />
+            </div>
+            <p className="mt-2 text-xs text-white/50">
+              {locale === "zh" ? "扫码添加微信" : locale === "ja" ? "WeChatで追加" : "Scan to connect"}
+            </p>
           </div>
         </div>
 

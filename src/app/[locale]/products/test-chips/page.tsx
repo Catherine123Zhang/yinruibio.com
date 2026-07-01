@@ -51,17 +51,29 @@ export default async function TestChipsPage({
   const chips = getChipProducts();
   const canineChips = chips.filter((c) => c.category === "chip-canine");
   const felineChips = chips.filter((c) => c.category === "chip-feline");
+  const pathogenChips = chips.filter((c) => c.category === "chip-pathogen");
+  const meatChips = chips.filter((c) => c.category === "chip-meat");
 
   const chipGroups = [
     {
-      title: lang === "zh" ? "犬类检测芯片" : lang === "ja" ? "犬用検査チップ" : "Canine Test Chips",
+      title: lang === "zh" ? "伴侣动物检测 — 犬类" : lang === "ja" ? "コンパニオンアニマル — 犬用" : "Companion Animal — Canine",
       icon: "🐕",
       items: canineChips,
     },
     {
-      title: lang === "zh" ? "猫类检测芯片" : lang === "ja" ? "猫用検査チップ" : "Feline Test Chips",
+      title: lang === "zh" ? "伴侣动物检测 — 猫类" : lang === "ja" ? "コンパニオンアニマル — 猫用" : "Companion Animal — Feline",
       icon: "🐈",
       items: felineChips,
+    },
+    {
+      title: lang === "zh" ? "致病微生物类检测 — 人用临床·防疫·动物疫控" : lang === "ja" ? "病原微生物検出 — 臨床・防疫・動物疫病管理" : "Pathogen Detection — Clinical · Epidemic Prevention · Animal Disease Control",
+      icon: "🦠",
+      items: pathogenChips,
+    },
+    {
+      title: lang === "zh" ? "食材溯源类检测 — 食药环侦检测领域" : lang === "ja" ? "食品トレーサビリティ — 食品安全・法執行" : "Meat Species Identification — Food Safety & Regulatory Enforcement",
+      icon: "🥩",
+      items: meatChips,
     },
   ];
 
