@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #1E3A5F;
+  --color-primary-light: #2A4A72;
+  --color-accent: #00B4D8;
+  --color-accent-light: #48CAE4;
+  --color-green: #2ECC71;
+  --color-bg: #F8F9FA;
+  --color-text: #2D3748;
+  --color-text-light: #718096;
+  --color-border: #E2E8F0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-text);
+  background: white;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
