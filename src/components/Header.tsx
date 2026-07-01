@@ -36,9 +36,9 @@ export default function Header({
             <Image
               src="/images/products/logo-inarray.png"
               alt="Inarray — Yinrui Bio"
-              width={120}
-              height={40}
-              className="h-8 w-auto"
+              width={360}
+              height={120}
+              className="h-12 w-auto"
               priority
             />
           </Link>
