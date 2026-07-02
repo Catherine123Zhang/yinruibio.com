@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { notFound } from "next/navigation";
 import { locales, isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
@@ -7,6 +8,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { organizationSchema } from "@/lib/schema";
+
+const GA_ID = "G-D7TJNYWJQZ";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -72,6 +75,13 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }}
