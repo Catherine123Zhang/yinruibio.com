@@ -8,6 +8,8 @@ import { breadcrumbSchema } from "@/lib/schema";
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import InquiryFormCompact from "@/components/InquiryFormCompact";
+import ProductViewTracker from "@/components/ProductViewTracker";
 
 const chipProducts = getChipProducts();
 
@@ -215,13 +217,13 @@ export default async function ChipDetailPage({
               {/* CTAs */}
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
-                  href={`/${locale}/contact/`}
+                  href={`/${locale}/contact/?product=${encodeURIComponent(product.name.en)}`}
                   className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
                 >
                   {lang === "zh" ? "获取报价" : lang === "ja" ? "見積もりを取得" : "Get a Quote"}
                 </Link>
                 <Link
-                  href={`/${locale}/contact/`}
+                  href={`/${locale}/contact/?product=${encodeURIComponent(product.name.en)}`}
                   className="inline-flex items-center justify-center rounded-lg border border-[var(--color-border)] px-8 py-3.5 text-base font-semibold text-[var(--color-primary)] hover:bg-[var(--color-bg)] transition-colors"
                 >
                   {dict.nav.requestDemo}
@@ -291,6 +293,17 @@ export default async function ChipDetailPage({
         </section>
       )}
 
+      {/* Inline Inquiry Form */}
+      <section className="py-16 bg-[var(--color-bg)]">
+        <div className="mx-auto max-w-lg px-6">
+          <InquiryFormCompact
+            productName={product.name[lang]}
+            sourcePage={`test-chips/${slug}`}
+            locale={locale}
+          />
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section className="py-16 bg-[var(--color-accent)]">
         <div className="mx-auto max-w-4xl px-6 text-center text-white">
@@ -304,6 +317,8 @@ export default async function ChipDetailPage({
           </Link>
         </div>
       </section>
+
+      <ProductViewTracker productName={product.name.en} productCategory={product.category} />
     </main>
   );
 }

@@ -3,6 +3,8 @@ import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
+import CatalogButton from "@/components/CatalogButton";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -122,6 +124,37 @@ export default async function HomePage({
         </div>
       </section>
 
+      {/* Product Quick Links */}
+      <section className="py-12 border-b border-[var(--color-border)]">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
+            <span className="font-medium text-[var(--color-primary)]">
+              {locale === "zh" ? "探索产品：" : locale === "ja" ? "製品を見る：" : "Explore Products:"}
+            </span>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link
+                href={`/${locale}/products/carryon-device/`}
+                className="inline-flex items-center rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+              >
+                {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : "CarryOn Device"}
+              </Link>
+              <Link
+                href={`/${locale}/products/test-chips/`}
+                className="inline-flex items-center rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+              >
+                {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : "Test Chips"}
+              </Link>
+              <Link
+                href={`/${locale}/products/accessories/`}
+                className="inline-flex items-center rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+              >
+                {locale === "zh" ? "配件与耗材" : locale === "ja" ? "アクセサリー" : "Accessories"}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Application Scenarios */}
       <section className="py-20 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-7xl px-6">
@@ -129,22 +162,36 @@ export default async function HomePage({
             {dict.scenarios.title}
           </h2>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
-            {dict.scenarios.items.map((item, i) => (
-              <div
-                key={i}
-                className="rounded-xl bg-white p-8 shadow-sm border border-[var(--color-border)] hover:shadow-md transition-shadow"
-              >
-                <div className="w-14 h-14 rounded-lg bg-[var(--color-accent)]/10 flex items-center justify-center mb-4 text-2xl">
-                  {item.icon === "pet" ? "🐾" : item.icon === "pathogen" ? "🦠" : "🥩"}
-                </div>
-                <h3 className="text-xl font-semibold text-[var(--color-primary)] mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-[var(--color-text-light)]">
-                  {item.description}
-                </p>
-              </div>
-            ))}
+            {dict.scenarios.items.map((item, i) => {
+              const scenarioLink = item.icon === "pet"
+                ? `/${locale}/products/test-chips/`
+                : item.icon === "pathogen"
+                  ? `/${locale}/products/test-chips/`
+                  : `/${locale}/products/test-chips/`;
+              return (
+                <Link
+                  key={i}
+                  href={scenarioLink}
+                  className="block rounded-xl bg-white p-8 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
+                >
+                  <div className="w-14 h-14 rounded-lg bg-[var(--color-accent)]/10 flex items-center justify-center mb-4 text-2xl">
+                    {item.icon === "pet" ? "🐾" : item.icon === "pathogen" ? "🦠" : "🥩"}
+                  </div>
+                  <h3 className="text-xl font-semibold text-[var(--color-primary)] mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-[var(--color-text-light)]">
+                    {item.description}
+                  </p>
+                  <span className="mt-4 inline-flex items-center text-sm font-medium text-[var(--color-accent)]">
+                    {locale === "zh" ? "查看检测芯片" : locale === "ja" ? "検査チップを見る" : "View Test Chips"}
+                    <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -178,12 +225,10 @@ export default async function HomePage({
             >
               {dict.cta.button}
             </a>
-            <a
-              href="#"
+            <CatalogButton
+              label={dict.cta.downloadCatalog}
               className="inline-flex items-center justify-center rounded-lg border-2 border-[var(--color-primary)] px-8 py-3.5 text-base font-semibold text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white transition-colors"
-            >
-              {dict.cta.downloadCatalog}
-            </a>
+            />
           </div>
         </div>
       </section>

@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { breadcrumbSchema } from "@/lib/schema";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import InquiryFormCompact from "@/components/InquiryFormCompact";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -127,6 +128,50 @@ export default async function AccessoriesPage({
               </FadeIn>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Related Products */}
+      <section className="py-12 bg-[var(--color-bg)]">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-2xl font-bold text-[var(--color-primary)] mb-6">
+            {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : "See Also"}
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <Link
+              href={`/${locale}/products/carryon-device/`}
+              className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
+            >
+              <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+                {lang === "zh" ? "CarryOn 检测设备" : lang === "ja" ? "CarryOn 検出デバイス" : "CarryOn Detection Device"}
+              </h3>
+              <p className="mt-2 text-sm text-[var(--color-text-light)]">
+                {lang === "zh" ? "手持式PCR分析仪，配件的核心设备。" : lang === "ja" ? "ハンドヘルドPCRアナライザー、アクセサリーのコアデバイス。" : "Handheld PCR analyzer — the core device for these accessories."}
+              </p>
+            </Link>
+            <Link
+              href={`/${locale}/products/test-chips/`}
+              className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
+            >
+              <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+                {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : "Test Chips"}
+              </h3>
+              <p className="mt-2 text-sm text-[var(--color-text-light)]">
+                {lang === "zh" ? "微流控检测芯片，覆盖犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬猫、病原体、食品検査用マイクロ流体チップ。" : "Microfluidic test chips for canine, feline, pathogen, and meat ID testing."}
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Inline Inquiry Form */}
+      <section className="py-16">
+        <div className="mx-auto max-w-lg px-6">
+          <InquiryFormCompact
+            productName={lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : "Accessories & Consumables"}
+            sourcePage="accessories"
+            locale={locale}
+          />
         </div>
       </section>
 

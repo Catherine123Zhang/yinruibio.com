@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { useParams } from "next/navigation";
+import { Suspense, useState, useEffect } from "react";
+import { useParams, useSearchParams } from "next/navigation";
 import { isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
+import { trackEvent, getUtmParams } from "@/lib/analytics";
 
 import en from "@/dictionaries/en";
 import zh from "@/dictionaries/zh";
@@ -12,7 +13,16 @@ import ja from "@/dictionaries/ja";
 const dicts = { en, zh, ja } as const;
 
 export default function ContactPage() {
+  return (
+    <Suspense>
+      <ContactPageInner />
+    </Suspense>
+  );
+}
+
+function ContactPageInner() {
   const params = useParams();
+  const searchParams = useSearchParams();
   const locale = (params.locale as string) || "en";
   const lang = (isValidLocale(locale) ? locale : "en") as Locale;
   const dict = dicts[lang];
@@ -20,6 +30,16 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [contactError, setContactError] = useState("");
+
+  // Read product context from URL
+  const productParam = searchParams.get("product") || "";
+  const [productContext, setProductContext] = useState("");
+
+  useEffect(() => {
+    if (productParam) {
+      setProductContext(productParam);
+    }
+  }, [productParam]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -58,11 +78,20 @@ export default function ContactPage() {
 
     setLoading(true);
 
+    // Collect UTM data
+    const utm = getUtmParams();
+
     // TODO: Replace with Cloudflare Worker endpoint
     const data = Object.fromEntries(formData.entries());
     // Collect checkbox values
     const interests = formData.getAll("interests");
-    console.log("Form submission:", { ...data, interests });
+    console.log("Form submission:", { ...data, interests, ...(utm || {}) });
+
+    // GA4 event
+    trackEvent("generate_lead", {
+      method: "contact_form",
+      product_context: productContext || "none",
+    });
 
     await new Promise((r) => setTimeout(r, 1000));
     setSubmitted(true);
@@ -85,13 +114,29 @@ export default function ContactPage() {
         <div className="mx-auto max-w-2xl px-6">
           {submitted ? (
             <div className="text-center py-16">
-              <div className="text-5xl mb-4">✓</div>
+              <div className="text-5xl mb-4">&#10003;</div>
               <p className="text-xl font-semibold text-[var(--color-green)]">
                 {dict.contact.form.success}
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Product Context Banner */}
+              {productContext && (
+                <div className="rounded-xl border border-[var(--color-accent)]/30 bg-[var(--color-accent)]/5 p-4 flex items-center gap-3">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-accent)]/10 text-[var(--color-accent)] text-sm shrink-0">
+                    &#9733;
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-[var(--color-primary)]">
+                      {lang === "zh" ? "咨询产品：" : lang === "ja" ? "お問い合わせ製品：" : "Inquiring about:"}
+                    </p>
+                    <p className="text-sm text-[var(--color-accent)] font-semibold">{productContext}</p>
+                  </div>
+                  <input type="hidden" name="product_context" value={productContext} />
+                </div>
+              )}
+
               {/* Contact Methods - at least one required */}
               <div className="rounded-xl border border-[var(--color-accent)]/20 bg-[var(--color-accent)]/5 p-6 space-y-4">
                 <p className="text-sm font-medium text-[var(--color-primary)]">
@@ -233,6 +278,15 @@ export default function ContactPage() {
                 <textarea
                   name="message"
                   rows={4}
+                  defaultValue={
+                    productContext
+                      ? (lang === "zh"
+                          ? `我对 ${productContext} 感兴趣，请提供更多信息。`
+                          : lang === "ja"
+                            ? `${productContext} に興味があります。詳細を教えてください。`
+                            : `I'm interested in ${productContext}. Please provide more information.`)
+                      : ""
+                  }
                   placeholder={
                     lang === "zh"
                       ? "请描述您的需求、感兴趣的产品或合作意向..."

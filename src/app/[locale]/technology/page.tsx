@@ -3,6 +3,8 @@ import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -32,8 +34,17 @@ export default async function TechnologyPage({
   if (!isValidLocale(locale)) notFound();
   const dict = await getDictionary(locale as Locale);
 
+  const breadcrumbs = [
+    { name: dict.nav.home, url: `/${locale}/` },
+    { name: dict.nav.technology, url: `/${locale}/technology/` },
+  ];
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema(breadcrumbs)) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-light)] text-white py-20">
         <div className="mx-auto max-w-7xl px-6 text-center">
@@ -107,6 +118,93 @@ export default async function TechnologyPage({
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      {(() => {
+        const techFaqs = [
+          {
+            q: "What is microfluidic PCR technology?",
+            a: "Microfluidic PCR technology miniaturizes the entire PCR (Polymerase Chain Reaction) workflow onto a small chip with micro-scale channels. The chip integrates nucleic acid extraction, purification, and real-time fluorescence PCR amplification into a single sealed device. Fluid movement is precisely controlled through microchannels, enabling rapid thermal cycling and efficient reagent use in a fraction of the space required by traditional PCR systems.",
+          },
+          {
+            q: "How sensitive is the CarryOn microfluidic PCR system?",
+            a: "The CarryOn system achieves a detection sensitivity of 50 copies per test with a reproducibility of CV ≤ 3%. This means it can reliably detect as few as 50 copies of target DNA or RNA in a sample, making it comparable in sensitivity to laboratory-grade PCR instruments that typically detect 10-100 copies.",
+          },
+          {
+            q: "Has the CarryOn PCR technology been clinically validated?",
+            a: "Yes. The CarryOn platform and its test chips have undergone clinical validation studies demonstrating sensitivity and specificity comparable to laboratory-grade PCR systems. The technology was originally developed through National Key R&D Programs including the 'S&T Winter Olympics' handheld qPCR project, and the system holds CE certification for both the device and reagent kits.",
+          },
+          {
+            q: "How does microfluidic PCR compare to traditional lab PCR?",
+            a: "Microfluidic PCR offers comparable accuracy (PCR-level sensitivity and specificity) with significant advantages: results in under 60 minutes vs. 24-72 hours for lab PCR, room temperature reagent storage vs. cold chain requirements, fully automated operation vs. trained technician requirement, and handheld portability vs. benchtop laboratory equipment. The tradeoff is that microfluidic systems typically process one sample per chip, while lab systems can batch multiple samples.",
+          },
+          {
+            q: "Why does the CarryOn system use a closed chip design?",
+            a: "The closed-system microfluidic chip design serves three critical purposes: (1) It eliminates cross-contamination between samples since all reagents and reactions are sealed inside the chip; (2) It removes the need for manual sample preparation steps, reducing human error; (3) It makes the system safe to operate without a dedicated laboratory environment or biosafety cabinet, as potentially infectious materials remain sealed throughout the process.",
+          },
+          {
+            q: "What fluorescence detection channels does the CarryOn use?",
+            a: "The CarryOn features a 5-color fluorescence detection system, enabling multiplex PCR testing — the ability to detect multiple target pathogens simultaneously in a single test. This is how triple and quadruple test panels (e.g., CDV-CPV-CCoV or beef-pork-chicken-duck) can produce results from a single sample and chip.",
+          },
+        ];
+        return (
+          <section className="py-20 bg-[var(--color-bg)]">
+            <div className="mx-auto max-w-3xl px-6">
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(techFaqs)) }}
+              />
+              <h2 className="text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
+                {locale === "zh" ? "常见问题" : locale === "ja" ? "よくある質問" : "Frequently Asked Questions"}
+              </h2>
+              <div className="space-y-4">
+                {techFaqs.map((faq, i) => (
+                  <div
+                    key={i}
+                    className="rounded-xl border border-[var(--color-border)] bg-white p-6 shadow-sm"
+                  >
+                    <h3 className="text-base font-semibold text-[var(--color-primary)]">
+                      {faq.q}
+                    </h3>
+                    <p className="mt-3 text-sm text-[var(--color-text-light)] leading-relaxed">
+                      {faq.a}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* See Also */}
+      <section className="py-12">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-lg font-semibold text-[var(--color-primary)] mb-4">
+            {locale === "zh" ? "相关页面" : locale === "ja" ? "関連ページ" : "See Also"}
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-3">
+            <Link
+              href={`/${locale}/products/carryon-device/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : "CarryOn Device"}
+            </Link>
+            <Link
+              href={`/${locale}/products/test-chips/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : "Test Chips"}
+            </Link>
+            <Link
+              href={`/${locale}/applications/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {dict.nav.applications}
+            </Link>
           </div>
         </div>
       </section>

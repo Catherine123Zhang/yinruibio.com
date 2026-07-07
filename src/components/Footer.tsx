@@ -47,6 +47,11 @@ export default function Footer({
                   {dict.nav.applications}
                 </Link>
               </li>
+              <li>
+                <Link href={`/${locale}/blog/`} className="hover:text-white transition-colors">
+                  {dict.nav.blog}
+                </Link>
+              </li>
             </ul>
           </div>
 

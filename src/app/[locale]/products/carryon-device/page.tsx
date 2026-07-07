@@ -4,10 +4,12 @@ import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { products, getChipProducts } from "@/data/products";
-import { productSchema, breadcrumbSchema } from "@/lib/schema";
+import { productSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import InquiryFormCompact from "@/components/InquiryFormCompact";
+import ProductViewTracker from "@/components/ProductViewTracker";
 
 const device = products.find((p) => p.id === "carryon-device")!;
 
@@ -47,6 +49,41 @@ export default async function CarryOnDevicePage({
   ];
 
   const chipProducts = getChipProducts();
+
+  const deviceFaqs = [
+    {
+      q: "How does the CarryOn portable PCR analyzer work?",
+      a: "The CarryOn uses real-time fluorescence PCR with microfluidic chip technology. You simply load a sample (swab, blood, or saliva) into the pre-loaded microfluidic chip, insert it into the device, and the system automatically completes nucleic acid extraction, purification, and PCR amplification. Results appear on the built-in touchscreen in under 60 minutes.",
+    },
+    {
+      q: "What is the accuracy of the CarryOn PCR system?",
+      a: "The CarryOn delivers PCR-level accuracy with a sensitivity of 50 copies per test and a reproducibility of CV ≤ 3%. Real-time fluorescence PCR is the gold standard in molecular diagnostics, offering sensitivity above 99% and virtually zero false positives.",
+    },
+    {
+      q: "Does the CarryOn require regular maintenance?",
+      a: "The CarryOn requires minimal maintenance. The closed-system, single-use microfluidic chips eliminate contamination risk and the need for decontamination protocols. Simply charge the battery, keep the exterior clean, and store the device at room temperature. There are no consumable parts to replace on the device itself.",
+    },
+    {
+      q: "How long does the battery last on the CarryOn device?",
+      a: "The CarryOn's rechargeable lithium battery provides approximately 3.5 hours of continuous runtime, which is enough to run 3-4 complete tests on a single charge. The device can also operate while plugged in for unlimited testing sessions.",
+    },
+    {
+      q: "Do I need laboratory training to operate the CarryOn?",
+      a: "No laboratory training is required. The CarryOn is designed as a sample-in, result-out system. The entire PCR process — extraction, purification, amplification, and detection — happens automatically inside the sealed microfluidic chip. Any staff member can be trained to operate it in approximately 30 minutes.",
+    },
+    {
+      q: "What certifications does the CarryOn device hold?",
+      a: "The CarryOn Portable PCR Analyzer holds CE certification for medical devices, and the manufacturing facility is ISO 13485 certified. The company has also been recognized as a National High-Tech Enterprise and a Ningbo 'Specialized & Innovative' SME.",
+    },
+    {
+      q: "What is the warranty on the CarryOn PCR analyzer?",
+      a: "The CarryOn comes with a manufacturer warranty covering hardware defects. Contact our sales team for specific warranty terms for your region. Extended warranty and service agreements are also available for distribution partners.",
+    },
+    {
+      q: "Can the CarryOn device connect to my clinic's computer system?",
+      a: "Yes. The CarryOn supports WiFi connectivity for wireless result transfer. Test results can be exported from the built-in touchscreen system and integrated into your clinic's medical records. The proprietary software provides automatic result interpretation and report generation.",
+    },
+  ];
 
   const steps = [
     {
@@ -149,13 +186,13 @@ export default async function CarryOnDevicePage({
               {/* CTAs */}
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
-                  href={`/${locale}/contact/`}
+                  href={`/${locale}/contact/?product=${encodeURIComponent("CarryOn Portable PCR Analyzer")}`}
                   className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
                 >
                   {dict.nav.requestDemo}
                 </Link>
                 <Link
-                  href={`/${locale}/contact/`}
+                  href={`/${locale}/contact/?product=${encodeURIComponent("CarryOn Portable PCR Analyzer")}`}
                   className="inline-flex items-center justify-center rounded-lg border border-[var(--color-border)] px-8 py-3.5 text-base font-semibold text-[var(--color-primary)] hover:bg-[var(--color-bg)] transition-colors"
                 >
                   {lang === "zh" ? "获取报价" : lang === "ja" ? "見積もりを取得" : "Get a Quote"}
@@ -301,6 +338,89 @@ export default async function CarryOnDevicePage({
         </div>
       </section>
 
+      {/* Related Products */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-2xl font-bold text-[var(--color-primary)] mb-8">
+            {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : "Related Products"}
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-3">
+            <Link
+              href={`/${locale}/products/test-chips/`}
+              className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
+            >
+              <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+                {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : "Test Chips"}
+              </h3>
+              <p className="mt-2 text-sm text-[var(--color-text-light)]">
+                {lang === "zh" ? "微流控检测芯片，覆盖犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬猫、病原体、食品検査用マイクロ流体チップ。" : "Microfluidic test chips for canine, feline, pathogen, and meat ID testing."}
+              </p>
+            </Link>
+            <Link
+              href={`/${locale}/products/accessories/`}
+              className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
+            >
+              <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+                {lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : "Accessories & Consumables"}
+              </h3>
+              <p className="mt-2 text-sm text-[var(--color-text-light)]">
+                {lang === "zh" ? "采样拭子、运输管和充电底座等配套产品。" : lang === "ja" ? "採取スワブ、輸送チューブ、充電ドックなど。" : "Sampling swabs, transport tubes, charging dock, and more."}
+              </p>
+            </Link>
+            <Link
+              href={`/${locale}/technology/`}
+              className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
+            >
+              <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+                {dict.nav.technology}
+              </h3>
+              <p className="mt-2 text-sm text-[var(--color-text-light)]">
+                {lang === "zh" ? "了解微流控PCR技术和工作原理。" : lang === "ja" ? "マイクロ流体PCR技術と仕組みについて。" : "Learn about microfluidic PCR technology and how it works."}
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(deviceFaqs)) }}
+          />
+          <h2 className="text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
+            {lang === "zh" ? "常见问题" : lang === "ja" ? "よくある質問" : "Frequently Asked Questions"}
+          </h2>
+          <div className="space-y-4">
+            {deviceFaqs.map((faq, i) => (
+              <div
+                key={i}
+                className="rounded-xl border border-[var(--color-border)] bg-white p-6 shadow-sm"
+              >
+                <h3 className="text-base font-semibold text-[var(--color-primary)]">
+                  {faq.q}
+                </h3>
+                <p className="mt-3 text-sm text-[var(--color-text-light)] leading-relaxed">
+                  {faq.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Inline Inquiry Form */}
+      <section className="py-16 bg-[var(--color-bg)]">
+        <div className="mx-auto max-w-lg px-6">
+          <InquiryFormCompact
+            productName={device.name[lang]}
+            sourcePage="carryon-device"
+            locale={locale}
+          />
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section className="py-16 bg-[var(--color-accent)]">
         <div className="mx-auto max-w-4xl px-6 text-center text-white">
@@ -316,6 +436,8 @@ export default async function CarryOnDevicePage({
           </div>
         </div>
       </section>
+
+      <ProductViewTracker productName={device.name.en} productCategory="device" />
     </main>
   );
 }

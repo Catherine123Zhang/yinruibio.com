@@ -32,6 +32,23 @@ export function organizationSchema() {
       { "@type": "EducationalOccupationalCredential", credentialCategory: "CE Certification" },
     ],
     sameAs: [],
+    knowsAbout: [
+      'portable PCR analyzer',
+      'microfluidic chip technology',
+      'veterinary diagnostics',
+      'nucleic acid amplification',
+      'pathogen detection',
+      'meat species identification',
+      'point-of-care molecular diagnostics',
+      'real-time fluorescence PCR',
+    ],
+    makesOffer: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'CarryOn Portable PCR Analyzer', url: 'https://yinruibio.com/en/products/carryon-device/' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Canine Diagnostic Test Chips', url: 'https://yinruibio.com/en/products/test-chips/' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Feline Diagnostic Test Chips', url: 'https://yinruibio.com/en/products/test-chips/' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Pathogen Detection Test Chips', url: 'https://yinruibio.com/en/products/test-chips/' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Meat Species Identification Chips', url: 'https://yinruibio.com/en/products/test-chips/' } },
+    ],
   };
 }
 

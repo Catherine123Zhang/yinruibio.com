@@ -7,6 +7,8 @@ import { getDictionary } from "@/dictionaries";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import UtmCapture from "@/components/UtmCapture";
+import StickyQuoteBar from "@/components/StickyQuoteBar";
 import { organizationSchema } from "@/lib/schema";
 
 const GA_ID = "G-D7TJNYWJQZ";
@@ -48,6 +50,20 @@ export async function generateMetadata({
       siteName: dict.meta.siteName,
       locale: locale === "zh" ? "zh_CN" : locale === "ja" ? "ja_JP" : "en_US",
       type: "website",
+      images: [
+        {
+          url: "https://yinruibio.com/images/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "CarryOn Portable PCR Platform — Yinrui Bio",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: dict.meta.siteName,
+      description: dict.meta.siteDescription,
+      images: ["https://yinruibio.com/images/og-image.png"],
     },
     robots: {
       index: true,
@@ -93,6 +109,8 @@ export default async function LocaleLayout({
         {children}
         <Footer locale={locale as Locale} dict={dict} />
         <WhatsAppButton />
+        <UtmCapture />
+        <StickyQuoteBar />
       </body>
     </html>
   );

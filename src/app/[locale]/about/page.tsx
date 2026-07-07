@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { organizationSchema, breadcrumbSchema } from "@/lib/schema";
+import { organizationSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
@@ -495,6 +495,91 @@ export default async function AboutPage({
                 </div>
               </FadeIn>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      {(() => {
+        const aboutFaqs = [
+          {
+            q: "Who is Ningbo Yinrui Biomedical Instruments Co., Ltd?",
+            a: "Ningbo Yinrui Biomedical Instruments Co., Ltd (Yinrui Bio) is a high-precision instrument manufacturer founded in June 2018 in Cixi, Zhejiang, China. The company specializes in portable molecular diagnostics, producing the CarryOn Portable PCR Analyzer and microfluidic test chips. The core technical team comprises experts from the Chinese Academy of Sciences, led by founder Dr. Yu Jun, co-founder of BGI (Beijing Genomics Institute).",
+          },
+          {
+            q: "What certifications does Yinrui Bio hold?",
+            a: "Yinrui Bio holds CE certification for both the CarryOn PCR device and test reagent kits, and maintains ISO 13485 quality management system certification for the manufacturing facility. The company is also recognized as a National High-Tech Enterprise and a Ningbo 'Specialized & Innovative' SME, with a comprehensive IP portfolio of 62 patents, 12 design patents, and 6 software copyrights.",
+          },
+          {
+            q: "Does Yinrui Bio offer distribution partnerships?",
+            a: "Yes, Yinrui Bio is actively seeking distribution partners worldwide. The company provides support for distributors including marketing materials, technical training, and competitive pricing structures. Interested distributors can contact the company through the website inquiry form or WhatsApp to discuss partnership opportunities in their region.",
+          },
+          {
+            q: "Where is Yinrui Bio's manufacturing facility located?",
+            a: "Yinrui Bio's R&D and manufacturing facility is located at the Cixi Industrial Application Technology Research Institute in Cixi, Zhejiang Province, China. The facility features nearly 3,000 square meters of laboratory space, GMP-certified workshops, and comprehensive production equipment for manufacturing the CarryOn device and microfluidic test chips.",
+          },
+        ];
+        return (
+          <section className="py-20 bg-[var(--color-bg)]">
+            <div className="mx-auto max-w-3xl px-6">
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(aboutFaqs)) }}
+              />
+              <h2 className="text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
+                {lang === "zh" ? "常见问题" : lang === "ja" ? "よくある質問" : "Frequently Asked Questions"}
+              </h2>
+              <div className="space-y-4">
+                {aboutFaqs.map((faq, i) => (
+                  <div
+                    key={i}
+                    className="rounded-xl border border-[var(--color-border)] bg-white p-6 shadow-sm"
+                  >
+                    <h3 className="text-base font-semibold text-[var(--color-primary)]">
+                      {faq.q}
+                    </h3>
+                    <p className="mt-3 text-sm text-[var(--color-text-light)] leading-relaxed">
+                      {faq.a}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* See Also */}
+      <section className="py-12">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-lg font-semibold text-[var(--color-primary)] mb-4">
+            {lang === "zh" ? "了解更多" : lang === "ja" ? "詳しく見る" : "Explore More"}
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-4">
+            <Link
+              href={`/${locale}/products/carryon-device/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {lang === "zh" ? "CarryOn 检测设备" : lang === "ja" ? "CarryOn デバイス" : "CarryOn Device"}
+            </Link>
+            <Link
+              href={`/${locale}/products/test-chips/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : "Test Chips"}
+            </Link>
+            <Link
+              href={`/${locale}/technology/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {dict.nav.technology}
+            </Link>
+            <Link
+              href={`/${locale}/applications/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {dict.nav.applications}
+            </Link>
           </div>
         </div>
       </section>

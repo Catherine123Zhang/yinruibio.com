@@ -8,6 +8,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import CatalogButton from "@/components/CatalogButton";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -188,12 +189,10 @@ export default async function ProductsPage({
             >
               {dict.cta.button}
             </Link>
-            <Link
-              href={`/${locale}/contact/`}
+            <CatalogButton
+              label={dict.cta.downloadCatalog}
               className="inline-flex items-center justify-center rounded-lg border border-white/30 px-8 py-3.5 text-base font-semibold text-white hover:bg-white/10 transition-colors"
-            >
-              {dict.cta.downloadCatalog}
-            </Link>
+            />
           </div>
         </div>
       </section>

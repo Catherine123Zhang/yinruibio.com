@@ -4,10 +4,11 @@ import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getChipProducts } from "@/data/products";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import InquiryFormCompact from "@/components/InquiryFormCompact";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -187,6 +188,110 @@ export default async function TestChipsPage({
           </div>
         </section>
       ))}
+
+      {/* Related Products */}
+      <section className="py-12 bg-[var(--color-bg)]">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-2xl font-bold text-[var(--color-primary)] mb-6">
+            {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : "See Also"}
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <Link
+              href={`/${locale}/products/carryon-device/`}
+              className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
+            >
+              <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+                {lang === "zh" ? "CarryOn 检测设备" : lang === "ja" ? "CarryOn 検出デバイス" : "CarryOn Detection Device"}
+              </h3>
+              <p className="mt-2 text-sm text-[var(--color-text-light)]">
+                {lang === "zh" ? "手持式PCR分析仪，与检测芯片配套使用。" : lang === "ja" ? "ハンドヘルドPCRアナライザー、検査チップと併用。" : "Handheld PCR analyzer — pairs with all test chips above."}
+              </p>
+            </Link>
+            <Link
+              href={`/${locale}/products/accessories/`}
+              className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
+            >
+              <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+                {lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : "Accessories & Consumables"}
+              </h3>
+              <p className="mt-2 text-sm text-[var(--color-text-light)]">
+                {lang === "zh" ? "采样拭子、样本保存管等配套耗材。" : lang === "ja" ? "採取スワブ、サンプル保存チューブなど。" : "Sampling swabs, transport tubes, and more consumables."}
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          {(() => {
+            const chipFaqs = [
+              {
+                q: "What test chips are available for the CarryOn PCR platform?",
+                a: "CarryOn offers test chips across four categories: Canine panels (CDV-CPV-CCoV triple, respiratory CPIV-CAV-CIV triple, tick-borne Babesia-Ehrlichia-Leptospira triple), Feline panels (FHV-FCV-Mycoplasma respiratory triple, FeLV-FIV-FPV screening triple), Pathogen detection panels (Influenza A/B + SARS-CoV-2, respiratory pathogen triple, STI triple, African Swine Fever, PRRSV), and Meat species identification panels (beef-pork-chicken-duck, lamb-pork-chicken-duck, donkey-horse-pork-duck).",
+              },
+              {
+                q: "How should CarryOn test chips be stored?",
+                a: "All CarryOn test chips can be stored at room temperature (15-30 degrees C). No refrigeration or cold chain logistics are required. This is possible because the reagents are pre-loaded and stabilized within the sealed microfluidic chip during manufacturing.",
+              },
+              {
+                q: "What is the shelf life of CarryOn test chips?",
+                a: "CarryOn test chips have a shelf life of 12 months from the date of manufacture when stored at room temperature (15-30 degrees C). Each chip package is printed with the lot number and expiration date for easy tracking.",
+              },
+              {
+                q: "What sample types do the test chips accept?",
+                a: "Sample types vary by test panel: oral/nasal swabs (canine and feline respiratory panels), rectal swabs (canine CDV-CPV-CCoV panel), whole blood (tick-borne disease panel, FeLV-FIV-FPV panel), nasopharyngeal swabs (pathogen panels), and meat tissue (species identification panels). Each chip package specifies the required sample type.",
+              },
+              {
+                q: "Are CarryOn test chips single-use?",
+                a: "Yes, all CarryOn test chips are single-use, closed-system devices. Once the test is complete, the chip is disposed of as biohazard waste. The closed-system design prevents cross-contamination between samples and eliminates the need for decontamination between tests.",
+              },
+              {
+                q: "Can I order custom test panels for specific diseases?",
+                a: "Yes. Yinrui Bio has R&D capability to develop custom test chips for specific detection needs. If you require panels not currently in the catalog, contact our team to discuss custom development options for your target pathogens or applications.",
+              },
+            ];
+            return (
+              <>
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(chipFaqs)) }}
+                />
+                <h2 className="text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
+                  {lang === "zh" ? "常见问题" : lang === "ja" ? "よくある質問" : "Frequently Asked Questions"}
+                </h2>
+                <div className="space-y-4">
+                  {chipFaqs.map((faq, i) => (
+                    <div
+                      key={i}
+                      className="rounded-xl border border-[var(--color-border)] bg-white p-6 shadow-sm"
+                    >
+                      <h3 className="text-base font-semibold text-[var(--color-primary)]">
+                        {faq.q}
+                      </h3>
+                      <p className="mt-3 text-sm text-[var(--color-text-light)] leading-relaxed">
+                        {faq.a}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </>
+            );
+          })()}
+        </div>
+      </section>
+
+      {/* Inline Inquiry Form */}
+      <section className="py-16">
+        <div className="mx-auto max-w-lg px-6">
+          <InquiryFormCompact
+            productName={lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : "Test Chips"}
+            sourcePage="test-chips"
+            locale={locale}
+          />
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-16 bg-[var(--color-accent)]">

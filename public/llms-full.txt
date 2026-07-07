@@ -1,0 +1,234 @@
+# Ningbo Yinrui Biomedical Instruments Co., Ltd — Complete Product & Company Information
+
+> Manufacturer of the CarryOn portable PCR analyzer platform — palm-sized, battery-powered molecular diagnostics for veterinary clinics, pathogen detection, and food safety testing. Founded by BGI co-founder Dr. Yu Jun.
+
+---
+
+## Company Overview
+
+Ningbo Yinrui Biomedical Instruments Co., Ltd (Yinrui Bio) is a high-precision instrument manufacturer specializing in portable molecular diagnostics. The company's core technical team is composed of experts and scholars from the Chinese Academy of Sciences, dedicated to R&D and manufacturing of advanced molecular detection technologies and equipment in life sciences and precision medicine.
+
+- **Founded**: June 2018 in Cixi, Zhejiang, China
+- **Founder**: Dr. Yu Jun — NYU Biomedical PhD, co-founder of BGI (Beijing Genomics Institute)
+- **Employees**: 69 (including 6 PhDs, 12 Masters)
+- **Facility**: ~3,000m2 of laboratory space and GMP workshops
+- **IP Portfolio**: 62 patents, 12 design patents, 6 software copyrights
+- **Certifications**: CE (device + reagent kits), ISO13485, National High-Tech Enterprise, Ningbo "Specialized & Innovative" SME
+- **Strategic Partner**: Zhejiang Orient Gene Biotech (since 2023)
+
+### Founder Background
+
+Dr. Yu Jun, Chairman:
+- NYU School of Medicine, Biomedical PhD (1984-1990)
+- Co-founder of BGI (Beijing Genomics Institute) (1999-2008)
+- Distinguished Researcher & Founding Vice Director, Beijing Institute of Genomics, CAS (2003-2013)
+- Scientific American inaugural Global Science Leader of the Year (2002)
+- CAS Hundred Talents Program (2002)
+- Chief Scientist, National 973 Program (2006-2016)
+
+### Company Milestones
+
+- 2018.06: Founded in Cixi, Zhejiang
+- 2018.12: Digital PCR project selected for Ningbo "S&T Innovation 2025" biomedical program
+- 2019.07: Undertook National Key R&D Program "S&T Winter Olympics" — handheld qPCR project
+- 2020.01: COVID-19 border control emergency technology research; selected for MOST "S&T Boosting Economy 2020"
+- 2021.05: Co-founded Cixi Life Science Innovation Research Institute with Cixi government
+- 2022.04: ISO13485 certified; CarryOn device & reagents received EU CE certification
+- 2023.03: Strategic partnership with Zhejiang Orient Gene Biotech
+- 2024.12: Recognized as National High-Tech Enterprise
+- 2025.06: Recognized as Ningbo "Specialized & Innovative" SME
+
+---
+
+## CarryOn Portable PCR Analyzer
+
+### Device Overview
+
+The CarryOn is a fully automated, closed-system nucleic acid amplification analyzer. It automatically completes sample nucleic acid extraction, purification, and real-time fluorescence PCR amplification. Paired with dedicated microfluidic chips, it detects nucleic acid targets in specimens and provides instant test reports via its embedded touchscreen system.
+
+### Key Advantages
+
+1. **Truly Portable**: Handheld, battery-powered (3.5 hour runtime). Use anywhere — clinics, farms, shelters, border checkpoints, field stations.
+2. **PCR-Level Accuracy**: Real-time fluorescence PCR, the gold standard in molecular diagnostics. Sensitivity: 50 copies/test. Reproducibility: CV <= 3%.
+3. **Zero Learning Curve**: Fully automated closed system. Sample in, result out. No training, no lab environment required.
+4. **No Cold Chain**: All test chips store at room temperature (15-30C). No refrigeration needed.
+5. **Fast Results**: Complete results in under 60 minutes (typically 40 minutes).
+
+### Full Technical Specifications
+
+| Specification | Value |
+|---------------|-------|
+| Product Name | Fully Automated Closed Nucleic Acid Amplification System |
+| Dimensions | 297 x 159 x 126 mm |
+| Weight | 2.0 kg |
+| Detection Channels | 5-color fluorescence |
+| Time to Result | < 60 minutes |
+| Power Supply | Rechargeable lithium battery (~3.5 hours runtime) |
+| Sample Types | Swabs, swab preservative fluid, blood, saliva |
+| Consumables | Pre-loaded microfluidic chips |
+| Heating Rate | 6C/s |
+| Cooling Rate | 4.5C/s |
+| Software | Proprietary touchscreen OS & analysis software |
+| Sensitivity | 50 copies/test |
+| Environment | Room temperature (field-deployable) |
+| Connectivity | WiFi |
+| Reproducibility | CV <= 3% |
+| Certifications | CE, ISO13485 |
+
+### How It Works
+
+1. **Load Sample**: Add the sample (swab, blood, etc.) to the microfluidic chip
+2. **Insert Chip**: Place the chip into the CarryOn device
+3. **Auto Process**: Automated extraction, purification, and PCR amplification
+4. **Read Result**: Get PCR-accurate results in 40 minutes on the touchscreen
+
+---
+
+## Test Chip Catalog
+
+All test chips are single-use, closed-system microfluidic chips. Room temperature storage (15-30C), 12-month shelf life.
+
+### Canine Diagnostics
+
+#### Canine CDV-CPV-CCoV Triple Test Chip
+- **Targets**: Canine Distemper Virus (CDV), Canine Parvovirus (CPV), Canine Coronavirus (CCoV)
+- **Sample**: Oronasal swab, rectal swab
+- **Time**: < 60 minutes
+- **Use case**: Routine health check screening
+
+#### Canine CPIV-CAV-CIV Respiratory Triple Test Chip
+- **Targets**: Canine Parainfluenza Virus (CPIV), Canine Adenovirus (CAV), Canine Influenza Virus (CIV)
+- **Sample**: Nasal swab
+- **Time**: < 60 minutes
+- **Use case**: Dogs with coughing, sneezing, nasal discharge
+
+#### Canine Babesia-Ehrlichia-Leptospira Triple Test Chip
+- **Targets**: Babesia canis, Ehrlichia canis, Leptospira spp.
+- **Sample**: Whole blood
+- **Time**: < 60 minutes
+- **Use case**: Dogs with tick exposure history
+
+### Feline Diagnostics
+
+#### Feline FHV-FCV-Mycoplasma Respiratory Triple Test Chip
+- **Targets**: Feline Herpesvirus (FHV-1), Feline Calicivirus (FCV), Mycoplasma felis
+- **Sample**: Oronasal swab
+- **Time**: < 60 minutes
+- **Use case**: Cats with unexplained respiratory symptoms
+
+#### Feline FeLV-FIV-FPV Screening Triple Test Chip
+- **Targets**: Feline Leukemia Virus (FeLV), Feline Immunodeficiency Virus (FIV), Feline Panleukopenia Virus (FPV)
+- **Sample**: Whole blood
+- **Time**: < 60 minutes
+- **Use case**: Shelter intake screening, routine health checks
+
+### Human Pathogen Detection
+
+#### Influenza A/B + SARS-CoV-2 Triple Test Chip
+- **Targets**: Influenza A Virus, Influenza B Virus, SARS-CoV-2
+- **Sample**: Nasopharyngeal swab
+- **Time**: < 60 minutes
+- **Use case**: Clinical triage, border control, epidemic prevention
+
+#### Mycoplasma + RSV + Adenovirus Respiratory Triple Test Chip
+- **Targets**: Mycoplasma pneumoniae, Respiratory Syncytial Virus (RSV), Adenovirus
+- **Sample**: Nasopharyngeal swab
+- **Time**: < 60 minutes
+- **Use case**: Pediatric clinics, hospitals
+
+#### Chlamydia + Ureaplasma + Gonorrhea STI Triple Test Chip
+- **Targets**: Chlamydia trachomatis (CT), Ureaplasma urealyticum (UU), Neisseria gonorrhoeae (NG)
+- **Sample**: Urogenital swab
+- **Time**: < 60 minutes
+- **Use case**: Point-of-care STI screening
+
+### Livestock Diagnostics
+
+#### African Swine Fever (ASF) Test Chip
+- **Target**: African Swine Fever Virus (ASFV)
+- **Sample**: Whole blood, tissue homogenate
+- **Time**: < 60 minutes
+- **Use case**: Farm surveillance, border quarantine, slaughterhouse screening
+
+#### Porcine PRRSV (Blue Ear) Test Chip
+- **Target**: Porcine Reproductive and Respiratory Syndrome Virus (PRRSV)
+- **Sample**: Whole blood, serum
+- **Time**: < 60 minutes
+- **Use case**: Swine herd health monitoring
+
+### Meat Species Identification
+
+#### Beef-Pork-Chicken-Duck Quad Test Chip
+- **Targets**: Cattle (Bos taurus), Swine (Sus scrofa), Chicken (Gallus gallus), Duck (Anas)
+- **Sample**: Raw or processed meat tissue
+- **Time**: < 60 minutes
+- **Use case**: Food safety enforcement, Halal/Kosher compliance, anti-adulteration
+
+#### Lamb-Pork-Chicken-Duck Quad Test Chip
+- **Targets**: Sheep (Ovis aries), Swine, Chicken, Duck
+- **Sample**: Raw or processed meat tissue
+- **Time**: < 60 minutes
+- **Use case**: Lamb adulteration detection
+
+#### Donkey-Horse-Pork-Duck Quad Test Chip
+- **Targets**: Donkey (Equus asinus), Horse (Equus caballus), Swine, Duck
+- **Sample**: Raw or processed meat tissue
+- **Time**: < 60 minutes
+- **Use case**: Customs enforcement, cross-border meat fraud detection
+
+---
+
+## Technology: CarryOn vs Traditional Methods
+
+| Feature | CarryOn | Lab PCR | Rapid Antigen |
+|---------|---------|---------|---------------|
+| Time to Result | 40 min | 24-72 hrs | 10-15 min |
+| Accuracy | PCR-level (>99%) | PCR-level | Lower |
+| Equipment Cost | $$ | $$$$ | $ |
+| Training Required | None | Extensive | Minimal |
+| Lab Environment | Not needed | Required | Not needed |
+| Reagent Storage | Room temp | Cold chain | Room temp |
+| Portability | Handheld | Fixed lab | Handheld |
+
+---
+
+## Three Core Application Scenarios
+
+### 1. Companion Animal Diagnostics
+Rapid PCR testing for Parvo, FIP, Distemper, CDV, and more. Results in 40 minutes at the point of care. Ideal for veterinary clinics, animal shelters, and breeding facilities.
+
+### 2. Pathogen Detection
+Field-deployable detection for influenza, African swine fever, respiratory pathogens, and STIs. Suitable for clinical settings, border control, epidemic prevention, and farm surveillance.
+
+### 3. Meat Species Identification
+On-site DNA testing to identify beef, pork, lamb, horse, donkey, chicken, and duck meat species. Detect adulteration in 40 minutes. Essential for food safety enforcement, Halal/Kosher compliance, and customs inspection.
+
+---
+
+## Frequently Asked Questions
+
+### Q: How accurate is the CarryOn PCR system?
+A: CarryOn uses real-time fluorescence PCR, the gold standard in molecular diagnostics. Clinical validation shows sensitivity and specificity comparable to laboratory-grade PCR systems (>99%).
+
+### Q: Do I need special training to use it?
+A: No. CarryOn is designed for anyone -- just load the sample into the chip, insert it into the device, and wait 40 minutes for results. No laboratory training required.
+
+### Q: How should the test chips be stored?
+A: All CarryOn test chips can be stored at room temperature (15-30C). No refrigeration or cold chain logistics needed, making them ideal for field use and remote clinics. Shelf life: 12 months.
+
+### Q: What diseases can CarryOn detect?
+A: Current panels include canine (Parvovirus, Distemper, Coronavirus, tick-borne diseases), feline (FHV, FCV, FeLV/FIV/FPV), pathogen detection (influenza, COVID, respiratory pathogens, STIs, ASF, PRRSV), and meat species identification (beef, pork, lamb, chicken, duck, horse, donkey).
+
+### Q: Is CarryOn CE certified?
+A: Yes. Both the CarryOn device and test chips hold CE certification. The company also maintains ISO13485 quality management system certification.
+
+### Q: Can I become a distributor?
+A: Yes, we are actively seeking distribution partners worldwide. Please contact us through the inquiry form or WhatsApp to discuss partnership opportunities.
+
+---
+
+## Contact Information
+
+- **Website**: https://yinruibio.com
+- **WhatsApp**: +86 182-6866-1068
+- **Address**: Cixi, Zhejiang Province, China

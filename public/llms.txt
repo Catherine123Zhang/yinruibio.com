@@ -1,0 +1,53 @@
+# Ningbo Yinrui Biomedical Instruments Co., Ltd
+
+> Manufacturer of the CarryOn portable PCR analyzer — palm-sized, battery-powered molecular diagnostics for veterinary clinics, pathogen detection, and food safety testing.
+
+## Products
+
+### CarryOn Portable PCR Analyzer
+- [CarryOn Detection Device](/en/products/carryon-device/): Handheld, battery-powered real-time fluorescence PCR analyzer. 2.0kg, 5-color fluorescence, <60 min results, 3.5h battery life. CE and ISO13485 certified.
+
+### Test Chips — Canine Diagnostics
+- [Canine CDV-CPV-CCoV Triple Test](/en/products/test-chips/canine-triple-screening): Routine screening for distemper, parvovirus, and coronavirus
+- [Canine CPIV-CAV-CIV Respiratory Triple Test](/en/products/test-chips/canine-triple-respiratory): Respiratory symptom screening — parainfluenza, adenovirus, influenza
+- [Canine Babesia-Ehrlichia-Leptospira Triple Test](/en/products/test-chips/canine-tick-borne): Tick-borne disease screening
+
+### Test Chips — Feline Diagnostics
+- [Feline FHV-FCV-Mycoplasma Triple Test](/en/products/test-chips/feline-triple-respiratory): Upper respiratory infection screening
+- [Feline FeLV-FIV-FPV Screening Triple Test](/en/products/test-chips/feline-triple-screening): Leukemia, immunodeficiency, panleukopenia screening
+
+### Test Chips — Pathogen Detection
+- [Influenza A/B + SARS-CoV-2 Triple Test](/en/products/test-chips/influenza-covid-triple): Respiratory symptom triage
+- [Mycoplasma + RSV + Adenovirus Triple Test](/en/products/test-chips/respiratory-pathogen-triple): Respiratory pathogen panel
+- [Chlamydia + Ureaplasma + Gonorrhea STI Triple Test](/en/products/test-chips/sti-triple-test): Point-of-care STI screening
+- [African Swine Fever Test](/en/products/test-chips/african-swine-fever): Field-deployable ASF detection for livestock
+- [Porcine PRRSV (Blue Ear) Test](/en/products/test-chips/prrsv-test): Swine herd health monitoring
+
+### Test Chips — Meat Species Identification
+- [Beef-Pork-Chicken-Duck Quad Test](/en/products/test-chips/meat-beef-pork-chicken-duck): Food safety and Halal/Kosher compliance
+- [Lamb-Pork-Chicken-Duck Quad Test](/en/products/test-chips/meat-lamb-pork-chicken-duck): Lamb adulteration detection
+- [Donkey-Horse-Pork-Duck Quad Test](/en/products/test-chips/meat-donkey-horse-pork-duck): Cross-border meat fraud detection
+
+### Accessories
+- [Accessories & Consumables](/en/products/accessories/): Sampling swabs, transport tubes, consumables
+
+## Technology
+- [Microfluidic PCR Technology](/en/technology/): Closed-system nucleic acid amplification with microfluidic chip technology
+- How it works: Load sample -> Insert chip -> Auto extraction, purification & PCR -> Read result in 40 min
+- Sensitivity: 50 copies/test, CV <= 3% reproducibility
+
+## About
+- Company: Ningbo Yinrui Biomedical Instruments Co., Ltd (Yinrui Bio)
+- Founded: June 2018 in Cixi, Zhejiang, China
+- Founder: Dr. Yu Jun — NYU Biomedical PhD, BGI (Beijing Genomics Institute) co-founder
+- Employees: 69 (including 6 PhDs, 12 Masters)
+- Facility: ~3,000m2 laboratory + GMP workshops
+- IP: 62 patents, 12 design patents, 6 software copyrights
+- Certifications: CE (device + reagents), ISO13485, National High-Tech Enterprise
+- Contact: WhatsApp +86 182-6866-1068
+
+## Terminology
+- CarryOn = portable PCR = point-of-care PCR = handheld qPCR
+- Microfluidic chip = test chip = PCR cartridge = diagnostic chip
+- Veterinary PCR = vet diagnostics = animal disease testing
+- Meat species identification = meat adulteration testing = food DNA testing

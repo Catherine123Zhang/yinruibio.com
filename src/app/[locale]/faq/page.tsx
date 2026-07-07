@@ -3,7 +3,8 @@ import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { faqSchema } from "@/lib/schema";
+import { faqSchema, breadcrumbSchema } from "@/lib/schema";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -33,11 +34,20 @@ export default async function FAQPage({
   if (!isValidLocale(locale)) notFound();
   const dict = await getDictionary(locale as Locale);
 
+  const breadcrumbs = [
+    { name: dict.nav.home, url: `/${locale}/` },
+    { name: dict.nav.faq, url: `/${locale}/faq/` },
+  ];
+
   return (
     <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(dict.faq.items)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema(breadcrumbs)) }}
       />
 
       <section className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-light)] text-white py-20">
@@ -62,6 +72,35 @@ export default async function FAQPage({
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* See Also */}
+      <section className="py-12">
+        <div className="mx-auto max-w-3xl px-6">
+          <h2 className="text-lg font-semibold text-[var(--color-primary)] mb-4">
+            {locale === "zh" ? "了解更多" : locale === "ja" ? "詳しく見る" : "Learn More"}
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-3">
+            <Link
+              href={`/${locale}/products/carryon-device/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : "CarryOn Device"}
+            </Link>
+            <Link
+              href={`/${locale}/products/test-chips/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : "Test Chips"}
+            </Link>
+            <Link
+              href={`/${locale}/technology/`}
+              className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {dict.nav.technology}
+            </Link>
           </div>
         </div>
       </section>
