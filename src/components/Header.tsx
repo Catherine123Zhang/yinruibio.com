@@ -17,14 +17,16 @@ export default function Header({
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const marketsLabel = locale === "zh" ? "市场" : locale === "ja" ? "市場" : "Markets";
+
   const navItems = [
     { href: `/${locale}/`, label: dict.nav.home },
     { href: `/${locale}/products/`, label: dict.nav.products },
     { href: `/${locale}/technology/`, label: dict.nav.technology },
     { href: `/${locale}/applications/`, label: dict.nav.applications },
+    { href: `/${locale}/markets/`, label: marketsLabel },
     { href: `/${locale}/blog/`, label: dict.nav.blog },
     { href: `/${locale}/about/`, label: dict.nav.about },
-    { href: `/${locale}/faq/`, label: dict.nav.faq },
     { href: `/${locale}/contact/`, label: dict.nav.contact },
   ];
 

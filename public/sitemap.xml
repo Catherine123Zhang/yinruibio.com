@@ -690,4 +690,94 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/products/test-chips/meat-donkey-horse-pork-duck/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/products/test-chips/meat-donkey-horse-pork-duck/" />
   </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/united-states/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/united-states/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/united-states/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/united-states/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/united-states/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/brazil/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/brazil/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/brazil/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/brazil/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/brazil/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/india/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/india/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/india/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/india/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/india/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/germany/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/germany/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/germany/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/germany/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/germany/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/japan/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/japan/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/japan/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/japan/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/japan/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/australia/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/australia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/australia/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/australia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/australia/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/united-kingdom/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/united-kingdom/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/united-kingdom/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/thailand/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/thailand/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/thailand/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/thailand/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/thailand/" />
+  </url>
 </urlset>

@@ -52,6 +52,11 @@ export default function Footer({
                   {dict.nav.blog}
                 </Link>
               </li>
+              <li>
+                <Link href={`/${locale}/markets/`} className="hover:text-white transition-colors">
+                  {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : "Global Markets"}
+                </Link>
+              </li>
             </ul>
           </div>
 
