@@ -1,8 +1,8 @@
 const en = {
   meta: {
-    siteName: "Yinrui Bio — Portable PCR Platform",
+    siteName: "Yinrui Bio — Portable Veterinary PCR Analyzer",
     siteDescription:
-      "Palm-sized lab for PCR-accurate diagnostics. 40-minute results, anywhere, anyone, anytime. Veterinary diagnostics, pathogen detection, meat species identification.",
+      "Portable PCR analyzer for veterinary point-of-care diagnostics. 40-minute results, 99.2% accuracy. Detect Parvo, FIP, Distemper, influenza & more. 62 patents, 30+ countries. OEM/ODM available.",
   },
   nav: {
     home: "Home",
