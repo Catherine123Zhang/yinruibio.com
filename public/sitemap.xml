@@ -840,4 +840,66 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/point-of-care-animal-testing/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/point-of-care-animal-testing/" />
   </url>
+  <url>
+    <loc>https://yinruibio.com/en/blog/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/blog/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/zh/blog/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/blog/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/ja/blog/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/blog/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/blog/top-5-portable-pcr-analyzers-veterinary-clinics-2026/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/blog/top-5-portable-pcr-analyzers-veterinary-clinics-2026/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/blog/top-5-portable-pcr-analyzers-veterinary-clinics-2026/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/blog/pcr-vs-rapid-antigen-test-veterinary-diagnostics/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/blog/pcr-vs-rapid-antigen-test-veterinary-diagnostics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/blog/pcr-vs-rapid-antigen-test-veterinary-diagnostics/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/blog/how-to-set-up-point-of-care-pcr-testing-veterinary-clinic/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/blog/how-to-set-up-point-of-care-pcr-testing-veterinary-clinic/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/blog/how-to-set-up-point-of-care-pcr-testing-veterinary-clinic/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/blog/canine-parvovirus-rapid-testing-pcr-vs-antigen-guide/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/blog/canine-parvovirus-rapid-testing-pcr-vs-antigen-guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/blog/canine-parvovirus-rapid-testing-pcr-vs-antigen-guide/" />
+  </url>
 </urlset>
