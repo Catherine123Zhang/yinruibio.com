@@ -880,6 +880,92 @@ Bringing PCR testing to your veterinary clinic is more accessible than ever. The
       },
     ],
   },
+  // ─── Article 4: Canine Parvovirus Rapid Testing Guide ───
+  {
+    slug: "canine-parvovirus-rapid-testing-pcr-vs-antigen-guide",
+    title: "Canine Parvovirus Testing: PCR vs Antigen Rapid Test — When to Use Which",
+    excerpt: "A practical guide for veterinary clinics comparing PCR and antigen-based parvovirus testing. Covers sensitivity, cost per test, turnaround time, and clinical decision protocols.",
+    date: "2026-08-02",
+    readTime: "8 min read",
+    category: "Clinical Guide",
+    coverImage: "/images/products/carryon-device.png",
+    content: `## The Parvovirus Testing Challenge
+
+Canine parvovirus (CPV-2) remains one of the most common and deadly infectious diseases in young dogs worldwide. Early diagnosis is critical — the difference between a 10% and 90% survival rate often comes down to whether treatment begins within the first 12-24 hours of clinical signs.
+
+Yet the two most common testing methods — point-of-care antigen tests and PCR — have very different performance characteristics that affect clinical decisions.
+
+---
+
+## Antigen Rapid Tests: The First-Line Screen
+
+Lateral flow antigen tests (SNAP Parvo, Witness Parvo, VetScan Parvo) detect CPV-2 antigens in fecal samples. They are the most widely used first-line diagnostic tool.
+
+| Metric | Antigen Rapid Test |
+|---|---|
+| Sensitivity | 80-95% (varies by viral shedding stage) |
+| Specificity | 95-99% |
+| Time to result | 8-10 minutes |
+| Cost per test | $8-$15 |
+| Sample type | Fecal swab |
+| Equipment needed | None — standalone test kit |
+
+**When antigen tests fail:** False negatives occur most commonly in the first 1-3 days of infection (before peak viral shedding) and in vaccinated dogs tested within 5-12 days post-vaccination. A negative antigen test in a puppy with classic parvo symptoms (acute vomiting, bloody diarrhea, leukopenia) should trigger a PCR confirmation.
+
+## Point-of-Care PCR: The Confirmation Standard
+
+Portable PCR analyzers bring molecular-level sensitivity to the clinic floor. For parvovirus specifically, PCR detects viral DNA rather than viral protein — making it sensitive to much lower viral loads.
+
+| Metric | Point-of-Care PCR |
+|---|---|
+| Sensitivity | 98-99.5% |
+| Specificity | 99-100% |
+| Time to result | 30-60 minutes |
+| Cost per test | $25-$45 (reagent + amortized instrument) |
+| Sample type | Fecal swab or rectal swab |
+| Equipment needed | Portable PCR analyzer |
+
+PCR catches the cases that antigen tests miss: early-stage infections, low-shedding variants, and the ambiguous cases where clinical signs suggest parvo but the SNAP test is negative.
+
+## Clinical Decision Protocol
+
+A practical two-tier testing protocol for busy clinics:
+
+**Tier 1 — Antigen rapid test** for all puppies presenting with acute GI signs. If positive: begin treatment immediately. If negative but clinical suspicion remains high: proceed to Tier 2.
+
+**Tier 2 — PCR confirmation** for antigen-negative cases with: (a) classic parvo clinical signs, (b) known parvo exposure, (c) incomplete vaccination history, or (d) leukopenia on CBC. PCR result in 30-60 minutes allows same-visit treatment decisions.
+
+This protocol catches >99% of true parvo cases while avoiding unnecessary PCR costs on clear-cut antigen-positive cases.
+
+## Cost Analysis: Adding PCR to Your Practice
+
+The economics of point-of-care PCR have improved dramatically. A portable PCR analyzer costs $8,000-$25,000 depending on the platform, with per-test reagent costs of $15-$25. At 5 PCR tests per week, the instrument pays for itself within 6-12 months through reduced reference lab costs and faster clinical decisions.
+
+For clinics seeing 3+ suspected parvo cases per week (shelters, emergency practices, high-volume puppy clinics), the ROI is even faster — and the clinical value of same-hour results is immeasurable.
+
+## The Yinrui CarryOn Advantage
+
+The <a href="/point-of-care-animal-testing">Yinrui CarryOn portable PCR platform</a> delivers parvovirus results in under 45 minutes with 99.2% sensitivity. The compact form factor fits on any exam room counter, and the pre-loaded parvo test cartridge requires zero sample preparation — insert the swab, close the lid, press start.
+
+Combined with our multi-pathogen panels (CDV-CPV-CCoV triple, feline FeLV-FIV-FPV), a single CarryOn unit handles the most common molecular diagnostics in small animal practice.
+
+<a href="/contact">Contact our veterinary diagnostics team</a> for a demo unit and trial pricing. We offer a 30-day evaluation program for qualifying veterinary practices.
+`,
+    faqs: [
+      {
+        q: "Can a vaccinated puppy test positive for parvovirus on a SNAP test?",
+        a: "Yes. Modified live parvovirus vaccines can cause false-positive SNAP antigen results for 5-12 days post-vaccination. If a recently vaccinated puppy tests positive on an antigen test but has mild or no clinical signs, PCR testing can distinguish vaccine-strain shedding from true wild-type infection. This is one of the most common reasons clinics add PCR to their diagnostic toolkit.",
+      },
+      {
+        q: "How soon after infection can PCR detect parvovirus?",
+        a: "PCR can detect parvovirus DNA in fecal samples as early as 3-4 days post-exposure, which is 1-3 days before clinical signs appear and 2-4 days before antigen tests become reliably positive. This early detection window is particularly valuable in shelter environments where exposed-but-asymptomatic puppies need rapid triage.",
+      },
+      {
+        q: "Is point-of-care PCR as accurate as reference lab PCR?",
+        a: "Modern point-of-care PCR platforms achieve sensitivity and specificity within 1-2% of reference laboratory real-time PCR. The Yinrui CarryOn platform uses the same real-time fluorescence detection technology as reference labs. The main difference is throughput — a reference lab processes hundreds of samples per day, while a point-of-care unit handles 1-4 samples simultaneously. For clinical decision-making, the accuracy is equivalent.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
