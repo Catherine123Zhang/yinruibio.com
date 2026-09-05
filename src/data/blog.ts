@@ -1512,6 +1512,411 @@ Ready to evaluate portable PCR for your practice?
       },
     ],
   },
+  {
+    slug: "veterinary-sample-collection-handling-guide",
+    title: "Veterinary Sample Collection & Handling Guide: Best Practices for Accurate Diagnostic Results",
+    excerpt: "A comprehensive guide to veterinary sample collection, handling, and transport for PCR and immunoassay diagnostics — covering blood, swabs, storage protocols, and common errors that cause false negatives.",
+    date: "2026-09-06",
+    readTime: "11 min read",
+    category: "Clinical Guide",
+    coverImage: "/images/products/chip-in-hand.png",
+    content: `## Why Proper Sample Collection Determines Diagnostic Accuracy
+
+In veterinary diagnostics, the accuracy of any test result — whether PCR, ELISA, or lateral flow immunoassay — is only as good as the sample that feeds it. According to studies published in the *Journal of Veterinary Diagnostic Investigation*, pre-analytical errors (mistakes made before the sample reaches the analyzer) account for **60 to 70% of all diagnostic errors** in veterinary medicine.
+
+This means that choosing the right analyzer is only half the equation. The other half — and arguably the more critical half — is collecting the right sample, from the right site, into the right container, and getting it to the testing platform in optimal condition.
+
+This guide covers every step of the pre-analytical workflow for veterinary diagnostics: sample types, collection techniques, storage and transport requirements, common errors that cause false negatives, and how modern point-of-care PCR systems like the [CarryOn platform](/en/products/test-chips/) are engineered to minimize sample-related failures.
+
+---
+
+## PCR vs. Immunoassay: How Sample Quality Affects Each Differently
+
+Understanding *why* sample quality matters requires understanding how each diagnostic technology interacts with the sample.
+
+### PCR (Polymerase Chain Reaction)
+
+PCR amplifies pathogen **nucleic acids** (DNA or RNA). Because it detects genetic material rather than proteins, PCR is extraordinarily sensitive — capable of detecting as few as 50 copies of a target sequence per test. However, this sensitivity comes with a vulnerability: **PCR inhibitors** present in poorly collected or improperly handled samples can suppress the amplification reaction, causing false negatives even when pathogen nucleic acid is present.
+
+Common PCR inhibitors in veterinary samples include:
+- **Hemoglobin** from hemolyzed blood samples
+- **Heparin** (wrong anticoagulant choice)
+- **Bile salts** from contaminated fecal samples
+- **Melanin** from pigmented skin samples
+- **Humic acids** from environmental swabs (soil, bedding)
+
+### Immunoassay (ELISA, Lateral Flow)
+
+Immunoassays detect pathogen **antigens** (surface proteins) or host **antibodies**. They are less sensitive than PCR (typically 70–92% sensitivity vs. 95–99%), so they require a higher pathogen load to generate a detectable signal. For immunoassays, the primary sample quality concern is **antigen degradation** — if proteins denature due to heat exposure, repeated freeze-thaw cycles, or delayed processing, antigen levels drop below the detection threshold.
+
+**The bottom line:** PCR fails when inhibitors are present; immunoassay fails when antigen degrades. Proper sample collection and handling protects against both failure modes.
+
+---
+
+## Blood Sample Types: Whole Blood, Serum, and Plasma
+
+Blood is the most commonly collected veterinary diagnostic sample, but not all blood preparations are interchangeable. Choosing the wrong type for your test can produce unreliable results or outright test failure.
+
+### Whole Blood
+
+**What it is:** Blood collected directly into an anticoagulant tube (EDTA, citrate, or heparin), preventing clotting. Contains all cellular and liquid components.
+
+**When to use it:**
+- PCR testing for blood-borne pathogens (Ehrlichia, Anaplasma, Babesia, hemotropic Mycoplasma)
+- Hematology panels (CBC)
+- Blood parasite identification
+
+**Collection requirements:**
+- **Tube:** EDTA (purple top) is the standard for most veterinary PCR and hematology
+- **Volume:** 1–3 mL minimum (check analyzer requirements)
+- **Mixing:** Gently invert tube 8–10 times immediately after collection — do not shake
+- **Temperature:** Store at 2–8 degrees C; process within 24 hours for PCR, 6 hours for CBC
+
+**Critical note on anticoagulant selection:** EDTA is the preferred anticoagulant for PCR because it chelates divalent cations (Mg2+, Ca2+) without inhibiting the polymerase enzyme. **Heparin is a known PCR inhibitor** — even small amounts carried over into the PCR reaction can suppress amplification and produce false negatives. Never use heparin (green top) tubes for PCR testing.
+
+### Serum
+
+**What it is:** The liquid portion of blood after clotting and centrifugation. Contains no cells or clotting factors, but retains antibodies, proteins, and many analytes.
+
+**When to use it:**
+- Antibody ELISA (titer testing, seroprevalence surveys)
+- Serum chemistry panels
+- Hormonal assays (progesterone, cortisol, T4)
+
+**Collection requirements:**
+- **Tube:** Plain red top (no anticoagulant) or serum separator tube (SST / tiger top)
+- **Process:** Allow blood to clot for 30–60 minutes at room temperature, then centrifuge at 1,000–1,500 x g for 10 minutes
+- **Volume:** 2–5 mL whole blood yields approximately 1–2 mL serum
+- **Temperature:** Separate serum from clot within 2 hours; store at 2–8 degrees C for up to 48 hours, or freeze at -20 degrees C for long-term storage
+
+### Plasma
+
+**What it is:** The liquid portion of anticoagulated blood after centrifugation. Similar to serum but contains clotting factors (fibrinogen).
+
+**When to use it:**
+- Coagulation testing (PT, aPTT)
+- Certain biochemistry analytes that degrade in serum
+- Emergency testing when there is no time to wait for clotting
+
+**Collection requirements:**
+- **Tube:** Citrate (blue top) for coagulation; EDTA or lithium heparin for chemistry
+- **Process:** Centrifuge within 30 minutes of collection at 1,500 x g for 15 minutes
+- **Volume:** Fill tube to the marked line — underfilling citrate tubes changes the anticoagulant-to-blood ratio, invalidating coagulation results
+
+---
+
+## Swab Collection Techniques: Site-Specific Best Practices
+
+Swab samples are essential for respiratory, enteric, ocular, and reproductive pathogen detection. The technique matters enormously — a poorly collected swab may contain insufficient cellular material for PCR amplification or too few antigens for immunoassay detection.
+
+### Oral Swabs
+
+**Target pathogens:** Feline calicivirus (FCV), feline herpesvirus (FHV-1), canine distemper virus (CDV), Mycoplasma spp.
+
+**Technique:**
+1. Use a sterile flocked nylon swab (polyester or rayon — never cotton, which contains PCR inhibitors)
+2. Restrain the patient and open the mouth gently
+3. Firmly swab the **caudal pharynx** (back of the throat) and **tonsillar crypts** — this is where viral replication is highest
+4. Rotate the swab while applying moderate pressure for **5–10 seconds** to collect adequate epithelial cells
+5. Place immediately into viral transport medium (VTM) or dry tube per analyzer instructions
+
+**Common error:** Swabbing only the buccal mucosa (inside of the cheek) — this collects saliva but insufficient infected epithelial cells, leading to false negatives.
+
+### Nasal Swabs
+
+**Target pathogens:** Bordetella bronchiseptica, canine respiratory coronavirus (CRCoV), equine influenza, avian influenza, canine parainfluenza
+
+**Technique:**
+1. Use a thin, flexible flocked swab (mini-tip for cats and small dogs)
+2. Insert the swab gently into the **ventral meatus** of the nasal passage — aim horizontally, not upward
+3. Advance approximately **2–3 cm** in dogs (1–2 cm in cats) until mild resistance is felt
+4. Rotate the swab against the nasal mucosa for **5–10 seconds**
+5. Withdraw gently and place into transport medium
+
+**Common error:** Not inserting deep enough — superficial nasal swabs collect dried mucus but miss the infected mucosal epithelium where pathogens replicate.
+
+### Conjunctival Swabs
+
+**Target pathogens:** Chlamydia felis, feline herpesvirus (FHV-1), Mycoplasma spp., canine herpesvirus
+
+**Technique:**
+1. Use a sterile mini-tip flocked swab
+2. Gently evert the lower eyelid to expose the **conjunctival fornix** (the fold between the eyelid and the eyeball)
+3. Roll the swab firmly along the conjunctival surface for **3–5 seconds**
+4. Avoid touching the cornea (risk of corneal abrasion)
+5. Place into dry tube or VTM
+
+**Common error:** Collecting tear fluid rather than epithelial cells. Chlamydia and herpesvirus are intracellular pathogens — you need cells, not just fluid. Apply firm pressure to exfoliate epithelial cells.
+
+### Rectal Swabs
+
+**Target pathogens:** Canine parvovirus (CPV-2), canine coronavirus (CCoV), Salmonella, Clostridium perfringens, Giardia, Cryptosporidium
+
+**Technique:**
+1. Use a standard flocked swab
+2. Insert 2–3 cm past the anal sphincter
+3. Rotate against the **rectal mucosa** for 10–15 seconds — the goal is mucosal cells plus fecal material
+4. The swab tip should be visibly coated with fecal material upon withdrawal
+5. Place immediately into transport medium or process directly
+
+**Common error:** Collecting only surface feces without mucosal contact. For parvovirus PCR, mucosal cells are critical because the virus replicates in intestinal crypt epithelium.
+
+---
+
+## Sample Storage and Transport: Temperature and Time Limits
+
+Even a perfectly collected sample can become useless if stored or transported incorrectly. The following table summarizes storage and transport requirements for common veterinary diagnostic sample types.
+
+<table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
+<thead>
+<tr style="background:#f1f5f9;">
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Sample Type</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Short-term (< 24 hrs)</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Medium-term (1-7 days)</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Long-term (> 7 days)</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Critical Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Whole blood (EDTA)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2-8 C</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Not recommended</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">-20 C (freeze aliquot)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Process PCR within 24 hrs; hemolysis increases after 48 hrs</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Serum</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2-8 C</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2-8 C (up to 5 days)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">-20 C or -80 C</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Separate from clot within 2 hrs; avoid repeated freeze-thaw</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Plasma</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2-8 C</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2-8 C (up to 3 days)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">-20 C</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Citrate plasma for coagulation must be tested within 4 hrs</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Swabs (in VTM)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2-8 C</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2-8 C (up to 72 hrs)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">-20 C or -80 C</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">RNA viruses degrade fastest; test within 24 hrs if possible</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Dry swabs (no VTM)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Room temp (< 4 hrs)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Not recommended</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Not recommended</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Process immediately; nucleic acid degrades rapidly without VTM</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Fecal samples</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2-8 C</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2-8 C (up to 48 hrs)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">-20 C</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Bacterial culture samples must not be frozen</td>
+</tr>
+</tbody>
+</table>
+
+### General Transport Rules
+
+1. **Use cold packs, not ice** — direct ice contact causes hemolysis and cell lysis
+2. **Insulated containers** — maintain 2–8 degrees C during transit; avoid temperature spikes above 25 degrees C
+3. **Ship overnight** when sending to reference labs — every additional day degrades nucleic acid and antigen integrity
+4. **Label everything** — patient ID, sample type, collection time, anticoagulant used, and any clinical notes
+5. **Separate samples** — never transport serum tubes and whole blood tubes in the same bag without padding; breakage cross-contaminates
+
+---
+
+## Common Pre-Analytical Errors That Cause False Negatives
+
+False negatives are the most dangerous diagnostic outcome — they give false reassurance and delay treatment. Here are the five most common sample-related causes of false negatives in veterinary diagnostics.
+
+### 1. Hemolysis
+
+**What happens:** Red blood cells rupture, releasing hemoglobin into the sample. Hemoglobin is a potent PCR inhibitor and can interfere with colorimetric immunoassay readings.
+
+**Common causes:** Forceful aspiration through a small-gauge needle, vigorous shaking of the collection tube, delayed separation of serum/plasma, freezing whole blood without proper preparation.
+
+**Prevention:** Use the largest gauge needle practical for the species and vein. Gently invert EDTA tubes — never shake. Separate serum within 2 hours of collection. If the sample is visibly pink or red (hemolyzed), recollect before testing.
+
+### 2. Insufficient Sample Volume
+
+**What happens:** Too little sample means insufficient pathogen nucleic acid or antigen for detection, even if the pathogen is present.
+
+**Common causes:** Difficult venipuncture in dehydrated or pediatric patients, superficial swab collection, not checking minimum volume requirements for the specific test.
+
+**Prevention:** Know the minimum input volume for your analyzer. The [CarryOn PCR system](/en/products/test-chips/) requires only a small sample input into its microfluidic chip, but the sample must still contain adequate cellular material. For swabs, ensure visible coating of the swab tip with mucosal material.
+
+### 3. Wrong Anticoagulant
+
+**What happens:** Heparin inhibits Taq polymerase (the enzyme that drives PCR amplification). Even small amounts of heparin carryover cause partial or complete PCR failure. Citrate dilutes the sample, reducing pathogen concentration.
+
+**Prevention:** Always use EDTA (purple top) for PCR testing. Reserve heparin (green top) for chemistry panels and citrate (blue top) for coagulation studies. Label tubes clearly and train all staff on color-coded tube selection.
+
+### 4. Timing of Collection Relative to Disease Stage
+
+**What happens:** Collecting a sample too early (before pathogen replication reaches detectable levels) or too late (after immune clearance) results in false negatives regardless of sample quality.
+
+**Key timing windows:**
+- **Canine parvovirus:** Fecal shedding peaks days 3–7 post-infection; PCR can detect earlier (day 1–2) than antigen tests (day 3+)
+- **Feline leukemia virus:** Transient viremia at weeks 2–4 may be missed if sampled during latency; use PCR for early detection, antibody ELISA for established infection
+- **Tick-borne diseases:** Ehrlichia/Anaplasma PCR is most sensitive during acute febrile phase (first 1–2 weeks); antibody tests require 2–4 weeks for seroconversion
+
+### 5. Sample Degradation During Storage/Transport
+
+**What happens:** RNA viruses (parvovirus, distemper, influenza) have highly labile genetic material that degrades rapidly at room temperature. Antigen proteins denature with heat exposure.
+
+**Prevention:** Follow the storage temperature and time limits in the table above. For RNA virus targets, test at the point of care whenever possible — this eliminates transport degradation entirely.
+
+---
+
+## Point-of-Care vs. Reference Lab: Sample Requirement Comparison
+
+One of the major advantages of point-of-care testing is simplified sample handling. The following table compares sample requirements between point-of-care platforms and reference laboratory PCR.
+
+<table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
+<thead>
+<tr style="background:#f1f5f9;">
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Parameter</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Point-of-Care PCR (e.g., CarryOn)</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Reference Laboratory PCR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Sample volume required</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Minimal (microliters)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">1-3 mL blood or swab in VTM</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Transport required</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">None — test on-site</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Cold chain shipment (2-8 C)</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Time from collection to result</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">< 60 minutes</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">24-72 hours</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Manual extraction needed</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">No (automated in chip)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Yes (manual or robotic extraction)</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Risk of transport degradation</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Eliminated</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Moderate (RNA degrades in transit)</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Cross-contamination risk</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Eliminated (sealed chip)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Possible (open-tube workflow)</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Special storage needed</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Room temperature chips</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Refrigerated/frozen reagents</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Operator skill level</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Minimal (sample in, result out)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Trained laboratory technician</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Sample types accepted</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Whole blood, swabs, fecal</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">All sample types including tissue</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Cost per test</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">$$</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">$$-$$$</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+## How CarryOn PCR Simplifies Sample Preparation
+
+Traditional PCR workflows require manual nucleic acid extraction — a multi-step process involving lysis buffer, binding columns, wash steps, and elution that takes 30–45 minutes and introduces multiple opportunities for error and contamination.
+
+The [CarryOn portable PCR system](/en/products/test-chips/) from [Yinrui Bio](/en/about/) eliminates this entire workflow through its proprietary sealed [microfluidic chip technology](/en/technology/):
+
+### The CarryOn Sample-to-Result Workflow
+
+1. **Collect the sample** using the appropriate technique described above (blood in EDTA tube, or swab)
+2. **Load the sample** into the chip's input well — a simple pipette transfer or direct swab insertion
+3. **Insert the chip** into the CarryOn analyzer
+4. **Press start** — the analyzer automatically performs nucleic acid extraction, purification, and real-time PCR amplification inside the sealed chip
+5. **Read the result** on the analyzer screen or receive it via WiFi
+
+### Why the Sealed Chip Design Matters for Sample Integrity
+
+The CarryOn's closed microfluidic chip addresses several critical pre-analytical challenges:
+
+- **No open-tube handling** — eliminates cross-contamination between samples, which is the leading cause of false positives in traditional PCR labs
+- **Pre-loaded reagents at room temperature** — no cold chain logistics, no reagent preparation errors, no expired reagent risk
+- **Integrated extraction** — the chip performs nucleic acid extraction automatically, removing the most error-prone step in the PCR workflow
+- **Minimal sample volume** — the microfluidic system requires very small input volumes, making it feasible to test pediatric patients, exotic species, and difficult-to-sample animals
+- **Single-use disposable chips** — no cleaning, no decontamination, no carryover between runs
+
+This design philosophy means that the sample collection step — which you control — becomes the single most important variable in diagnostic accuracy. Collect a good sample, load it into the chip, and the technology handles the rest.
+
+---
+
+## Quick Reference: Sample Collection Checklist
+
+Use this checklist before every diagnostic sample collection:
+
+- [ ] **Correct tube/container selected** — EDTA for PCR blood, red top for serum, appropriate swab type
+- [ ] **Adequate volume/material** — check analyzer minimum requirements
+- [ ] **Proper technique** — swab the correct anatomical site with sufficient pressure and duration
+- [ ] **Immediate handling** — invert EDTA tubes gently, place swabs in VTM or process immediately
+- [ ] **Labeling** — patient ID, sample type, collection time, anticoagulant, clinical notes
+- [ ] **Storage** — refrigerate at 2–8 degrees C if not testing immediately; never leave samples at room temperature for more than 4 hours
+- [ ] **Processing timeline** — test within the recommended window for your sample type and target pathogen
+
+---
+
+## Take the Next Step
+
+Accurate veterinary diagnostics begin with proper sample collection — and end with a reliable testing platform. The CarryOn portable PCR system is designed to minimize the impact of sample handling variables while delivering molecular-level accuracy at the point of care.
+
+- [Browse available test chips and panels](/en/products/test-chips/)
+- [Learn how microfluidic chip technology works](/en/technology/)
+- [About Yinrui Bio and our manufacturing capabilities](/en/about/)
+- [Request a free demo or distributor inquiry](/en/contact/)`,
+    faqs: [
+      {
+        q: "What is the best sample type for veterinary PCR testing?",
+        a: "The best sample type depends on the target pathogen. For blood-borne pathogens (Ehrlichia, Anaplasma, Babesia), use whole blood in an EDTA (purple top) tube. For respiratory pathogens, use nasal or oropharyngeal swabs. For enteric pathogens like parvovirus, use rectal swabs or fresh fecal samples. Always use flocked nylon swabs — never cotton — and EDTA anticoagulant for blood PCR, as heparin inhibits the PCR reaction.",
+      },
+      {
+        q: "How long can veterinary diagnostic samples be stored before testing?",
+        a: "Whole blood in EDTA should be tested within 24 hours when stored at 2-8 degrees C. Swabs in viral transport medium (VTM) are stable for up to 72 hours at 2-8 degrees C, but RNA virus targets degrade faster — test within 24 hours when possible. Serum can be stored at 2-8 degrees C for up to 5 days or frozen at -20 degrees C for long-term storage. For the most reliable results, test samples as soon as possible after collection, which is a key advantage of point-of-care PCR systems like the CarryOn.",
+      },
+      {
+        q: "Why does heparin cause false negatives in PCR testing?",
+        a: "Heparin is a potent inhibitor of Taq polymerase, the enzyme that drives PCR amplification. Even trace amounts of heparin carried over from a green-top collection tube can partially or completely suppress the amplification reaction, producing false-negative results even when pathogen DNA or RNA is present in the sample. Always use EDTA (purple top) tubes for any sample destined for PCR testing. If a heparin tube was used by mistake, recollect the sample in EDTA rather than attempting to process the heparinized blood.",
+      },
+      {
+        q: "What are the advantages of point-of-care PCR over sending samples to a reference lab?",
+        a: "Point-of-care PCR eliminates three major sources of pre-analytical error: transport degradation (RNA viruses degrade during shipping), time delays (24-72 hours vs. under 60 minutes), and handling chain complexity (fewer people touching the sample means fewer opportunities for error). The CarryOn system additionally eliminates cross-contamination risk through its sealed microfluidic chip design and removes the need for manual nucleic acid extraction — the most error-prone step in traditional PCR workflows. Results are available in under 60 minutes while the patient is still in your clinic.",
+      },
+      {
+        q: "How do I prevent hemolysis when collecting blood samples from small animals?",
+        a: "Use the largest gauge needle practical for the vein and species — 22-gauge for cats and small dogs, 20-gauge for medium to large dogs. Apply gentle, steady aspiration pressure rather than forceful pulling on the syringe plunger. Transfer blood to the collection tube by removing the needle first and allowing blood to flow gently down the tube wall. Invert EDTA tubes 8-10 times gently — never shake. Avoid collecting from peripheral veins in dehydrated patients, as collapsed veins increase hemolysis risk. If the sample appears pink or red (hemolyzed), recollect before running PCR to avoid false negatives from hemoglobin inhibition.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
