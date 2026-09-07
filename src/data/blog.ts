@@ -2254,6 +2254,300 @@ Canine respiratory disease complex is too heterogeneous — and the pathogen-spe
       },
     ],
   },
+  {
+    slug: "feline-infectious-disease-testing-fiv-felv-fpv-diagnostic-guide",
+    title: "Feline Infectious Disease Testing: FIV, FeLV, and FPV Diagnostic Guide for Veterinary Clinics",
+    excerpt: "A comprehensive guide for veterinary professionals on diagnosing FIV, FeLV, and feline panleukopenia (FPV) using rapid antigen tests, PCR, and ELISA — covering test methodology comparison, sensitivity/specificity data, sample requirements, testing protocols, and result interpretation for cat disease screening.",
+    date: "2026-09-08",
+    readTime: "12 min read",
+    category: "Clinical Diagnostics",
+    coverImage: "/images/products/carryon-device.png",
+    content: `## Why Feline Infectious Disease Screening Is a Clinical Priority
+
+Feline immunodeficiency virus (FIV), feline leukemia virus (FeLV), and feline panleukopenia virus (FPV) represent three of the most consequential infectious diseases in domestic cat populations worldwide. Together they account for substantial morbidity, mortality, and — in multi-cat environments such as shelters, catteries, and breeding facilities — outbreak events that can destabilize entire colonies.
+
+Despite the availability of accurate, rapid diagnostic tools, these three diseases remain chronically underdiagnosed. The reasons are practical: testing adds appointment time, costs money, and results can be difficult to interpret. This guide cuts through the complexity, providing veterinary clinicians with a clear framework for when to test, which method to choose, how to collect samples correctly, and how to act on results.
+
+The stakes are high. FIV and FeLV are both retroviral infections with lifelong consequences for infected cats. FPV — despite being vaccine-preventable — retains epidemic potential in unvaccinated or immunocompromised populations and carries a mortality rate exceeding 90% in untreated kittens. Getting the diagnosis right the first time is not a luxury; it is a clinical necessity.
+
+---
+
+## Understanding the Three Pathogens
+
+### Feline Immunodeficiency Virus (FIV)
+
+FIV is a lentivirus in the Retroviridae family, related to — but distinct from — HIV. It is transmitted primarily through deep bite wounds, making intact male cats who fight outdoors the highest-risk population. Casual contact, shared food bowls, and grooming do not efficiently transmit the virus. Vertical transmission from queen to kitten is possible but relatively uncommon.
+
+**Pathogenesis:** FIV targets CD4+ T lymphocytes and CD8+ cells, progressively impairing cellular immunity. After initial infection, cats enter a long asymptomatic carrier phase lasting months to years. Eventually, immunosuppression renders cats susceptible to opportunistic infections, chronic stomatitis, lymphoma, and progressive wasting.
+
+**Key diagnostic considerations:**
+- Maternal antibodies from FIV-positive queens can persist in kittens for up to **6 months**, causing false-positive antibody results in uninfected kittens
+- The FIV vaccine (discontinued in many markets) also induced antibody responses indistinguishable from natural infection by standard antibody tests — vaccination history is essential context
+- PCR-based testing detects proviral DNA directly and is the only method that correctly identifies infected kittens born to positive queens (post-maternal antibody clearance confirmation) and distinguishes vaccine-antibody-positive from truly infected cats
+
+### Feline Leukemia Virus (FeLV)
+
+FeLV is an oncornavirus (gammaretrovirus) that integrates into the host genome and is transmitted via prolonged close contact — mutual grooming, shared food and water bowls, bite wounds, and in utero transmission from queen to kittens. Unlike FIV, casual transmission is efficient, making FeLV far more contagious in multi-cat households and shelter settings.
+
+**Pathogenesis:** FeLV suppresses immune function and drives neoplastic transformation, particularly lymphoma and leukemia. Infection outcomes range from progressive infection (persistent viremia, eventual death) to regressive infection (immune control with latent proviral integration) to abortive infection (complete viral clearance). These outcome distinctions have profound implications for prognosis, management, and household contact risk.
+
+**Key diagnostic considerations:**
+- The p27 antigen (viral core protein) is the primary target for rapid antigen and ELISA tests; it detects **progressive infection** with high sensitivity
+- Regressive infections may be p27-antigen negative but PCR-positive for proviral DNA
+- A single positive p27 antigen result in a clinically healthy cat should be **confirmed with a second test 4–8 weeks later** — some cats with early infection seroconvert to negative upon immune control
+- IFA (indirect fluorescent antibody) testing of blood smears can confirm progressive infection by detecting p27 antigen within leukocytes and platelets
+
+### Feline Panleukopenia Virus (FPV)
+
+FPV (feline parvovirus) is one of the most environmentally stable pathogens in veterinary medicine. It is a single-stranded DNA virus (Parvoviridae) closely related to canine parvovirus type 2 (CPV-2), which can infect cats under some conditions. FPV is transmitted via direct fecal-oral contact or contact with contaminated fomites; the virus survives in the environment for **up to one year** at room temperature and resists many common disinfectants.
+
+**Pathogenesis:** FPV targets rapidly dividing cells — intestinal crypt epithelium, bone marrow progenitor cells, lymphoid tissue, and, critically, the developing cerebellum in utero and neonatal kittens. The resulting panleukopenia (profound drop in all white blood cell lines) leaves cats acutely vulnerable to sepsis. Mortality in untreated kittens exceeds 90%; mortality in unvaccinated adults ranges from 25–90%.
+
+**Key diagnostic considerations:**
+- Fecal antigen tests designed for CPV-2 (canine parvovirus) show **high cross-reactivity with FPV** and are widely used clinically
+- Modified live FPV vaccine administered within 5–12 days prior to testing can cause a transient false-positive fecal antigen result — always check vaccination records
+- PCR offers the highest sensitivity and can quantify viral load; useful when antigen test is negative but clinical index of suspicion is high
+- In peracute cases, cats may die before fecal antigen shedding reaches detectable levels — serology (IgM) or PCR on intestinal tissue post-mortem may be more informative
+
+---
+
+## Diagnostic Method Comparison: Rapid Antigen vs PCR vs ELISA
+
+Selecting the right test method requires matching the clinical question to the technology's strengths and limitations.
+
+| Parameter | Rapid Antigen Test | ELISA (Laboratory) | PCR (Molecular) |
+|-----------|-------------------|-------------------|-----------------|
+| **Detection target** | Antigen (viral protein) or antibody (IgG) | Antigen or antibody | Nucleic acid (RNA/DNA) |
+| **Sensitivity** | 85–98% (varies by disease and manufacturer) | 96–99% | 98–100% |
+| **Specificity** | 92–99% | 97–99% | 99–100% |
+| **Time to result** | 10–15 minutes | 4–24 hours (reference lab) | 45–90 min (in-clinic PCR); 24–48 hrs (reference lab) |
+| **Equipment needed** | None (visual read) or lateral flow reader | ELISA plate reader (lab) | PCR thermocycler or portable PCR unit |
+| **Detects early infection** | After antigen accumulates (may miss very early) | Same as rapid antigen | Earliest detection — detects low viral loads before antigenemia |
+| **Maternal antibody interference (FIV)** | Yes — false positive in kittens <6 months | Yes | No — detects proviral DNA directly |
+| **Vaccine antibody interference (FIV)** | Yes | Yes | No |
+| **Distinguishes regressive FeLV** | No — p27 negative in regressive cases | No | Yes — proviral DNA positive in regressive cases |
+| **Cost per test** | Low ($) | Moderate ($$) | Moderate-High ($$–$$$) |
+| **Setting** | Point of care | Reference laboratory | In-clinic (if portable PCR available) or reference lab |
+| **Best for** | Initial screening, resource-limited settings, urgent decisions | Confirmation of equivocal rapid tests, batch testing | Kitten testing (FIV), equivocal results, regressive FeLV, outbreak investigation |
+
+---
+
+## Disease-Specific Testing Protocols
+
+### FIV Testing Protocol
+
+**Recommended test approach:**
+
+For adult cats with no FIV vaccination history, the AAFP (American Association of Feline Practitioners) recommends starting with a rapid antigen/antibody combination test. A negative result in a clinically healthy adult cat with low-risk lifestyle is reliable for ruling out infection. A positive result requires confirmation.
+
+For kittens under 6 months of age or cats with known or unknown FIV vaccination history, PCR is the test of choice. Antibody tests (rapid or ELISA) cannot distinguish maternal antibodies or vaccine-induced antibodies from antibodies generated by true infection.
+
+**Confirmation algorithm:**
+1. Rapid combo test positive → repeat with a second rapid test from a different manufacturer, or send blood for laboratory ELISA
+2. Both positive → confirm with PCR (proviral DNA detection) — this definitively identifies infected vs. antibody-positive-only animals
+3. Discordant results (one positive, one negative) → PCR is the tiebreaker
+
+**Sample requirements:**
+- Whole blood (EDTA or serum/plasma) for rapid and ELISA antibody/antigen tests
+- Whole blood (EDTA) for PCR — buffy coat enrichment increases sensitivity
+- Minimum volume: 0.5 mL whole blood for rapid tests; 1–2 mL for reference lab PCR
+
+### FeLV Testing Protocol
+
+**Recommended test approach:**
+
+The AAFP recommends testing all cats at adoption/intake, after any known exposure to a FeLV-positive cat, and annually for high-risk cats (outdoor access, multi-cat households with unknown-status cats). Kittens should be tested before entering a multi-cat household regardless of vaccination status.
+
+A single positive p27 antigen result in a clinically healthy cat without symptoms should not be the sole basis for euthanasia. The current AAFP guideline strongly recommends confirmatory testing 8–12 weeks after the initial positive to allow for the possibility of regressive (self-limiting) infection.
+
+**Confirmation algorithm:**
+1. Rapid p27 antigen test positive → confirm with laboratory ELISA (higher throughput, same antigen target)
+2. ELISA positive → confirm with IFA (indirect fluorescent antibody) on blood smear, which detects antigen within circulating leukocytes (confirms progressive infection) or PCR for proviral DNA
+3. IFA negative + PCR positive → regressive infection (latent provirus; cat is not currently shedding, lower transmission risk)
+4. All three positive → progressive infection (highest transmission risk, guarded long-term prognosis)
+
+**Sample requirements:**
+- Serum or plasma for p27 antigen ELISA
+- Whole blood (EDTA) for IFA and PCR
+- Bone marrow aspirate for PCR in suspected regressive cases where peripheral blood PCR is negative
+
+### FPV Testing Protocol
+
+**Recommended test approach:**
+
+For cats presenting with acute vomiting, diarrhea, and profound lethargy — particularly unvaccinated cats, kittens, or cats in shelter/cattery environments — FPV should be high on the differential list. The fecal antigen test (CPV/FPV cross-reactive ELISA strip) is the first-line point-of-care test.
+
+**False-positive risk:** Cats vaccinated with modified live parvovirus vaccine within the preceding 5–12 days may shed vaccine virus detectable by fecal antigen test. Always confirm vaccination date before interpreting a positive fecal test.
+
+**When fecal antigen is negative but suspicion remains high:**
+1. Repeat antigen test 24–48 hours later — fecal shedding can be intermittent
+2. Send fecal sample for quantitative PCR — detects lower viral concentrations than antigen test
+3. In peracute/fatal cases, PCR on intestinal tissue (duodenum/ileum), lymph node, or spleen at necropsy
+
+**Hematology correlation:** A complete blood count (CBC) showing severe leukopenia (total WBC < 2,000/µL) with profound lymphopenia and neutropenia is highly supportive of FPV in the appropriate clinical context. This is not pathognomonic but adds diagnostic weight when antigen testing is equivocal.
+
+**Sample requirements:**
+- Fecal swab or fresh feces (0.5–1 g) for antigen test and PCR
+- Whole blood (EDTA) for CBC
+- Rectal swab as alternative when defecation cannot be obtained
+
+---
+
+## When to Test: Clinical Decision Framework
+
+### New Cat Intake (Shelter / Cattery / Adoption)
+
+Every cat entering a multi-cat facility should be tested for FIV and FeLV at intake — before mixing with resident cats. FPV testing is indicated if clinical signs are present or if the source environment had known FPV exposure.
+
+**Minimum intake testing panel:**
+- FIV antibody + FeLV p27 antigen (combined rapid test)
+- Fecal exam (including FPV antigen if diarrhea is present or source is unknown)
+
+**Additional testing for kittens <6 months:**
+- PCR for FIV (to avoid maternal antibody false positives)
+- Repeat FeLV antigen test at 8–12 weeks if initial test is positive
+
+### Pre-Vaccination Screening
+
+Vaccinating a cat that is already FeLV-positive provides no therapeutic benefit and may create false security. AAFP guidelines recommend testing FeLV status before initiating the FeLV vaccine series in cats of unknown status. Similarly, knowing a cat's FIV status before vaccination guides risk-based lifestyle counseling.
+
+**Pre-vaccination testing indicated when:**
+- Cat's FIV/FeLV status is unknown
+- Cat has not been previously tested
+- Cat has had potential exposure (outdoor access, bite wounds, new housemate of unknown status)
+
+### Clinical Signs Suggestive of FIV/FeLV
+
+Test promptly when a cat presents with:
+- Recurrent or refractory infections (upper respiratory, urinary, skin)
+- Unexplained weight loss or chronic anorexia
+- Persistent fever of unknown origin
+- Oral ulcers, chronic stomatitis, or periodontal disease refractory to treatment
+- Lymphadenopathy (especially generalized)
+- Neurological signs (FIV can cause neuropathy; FeLV is associated with CNS lymphoma)
+- Anemia (especially non-regenerative anemia in FeLV)
+- Leukemia or lymphoma confirmed on cytology/histopathology
+
+### Clinical Signs Suggestive of FPV
+
+Test immediately when a cat presents with:
+- Acute onset vomiting + profuse diarrhea (often hemorrhagic)
+- Rapid dehydration
+- Severe lethargy or collapse
+- Fever followed by hypothermia in advanced cases
+- Profound leukopenia on CBC
+- History of exposure to sick cats or shelter environment
+- Unvaccinated or incompletely vaccinated status
+
+The combination of clinical signs, CBC findings, and fecal antigen testing in context allows a confident clinical diagnosis in the vast majority of cases.
+
+---
+
+## Point-of-Care PCR with the CarryOn Platform
+
+The [CarryOn portable PCR analyzer](/en/products/carryon-device/) by Yinrui Bio addresses a longstanding gap in feline infectious disease diagnostics: the need for PCR-level accuracy without reference laboratory turnaround time.
+
+The **[Feline FeLV-FIV-FPV Screening Triple Test Chip](/en/products/test-chips/feline-triple-screening/)** simultaneously detects all three pathogens from a single sample in under 60 minutes. This matters clinically because:
+
+- **FIV PCR** on the same sample resolves the maternal antibody problem — kittens born to FIV-positive queens can be definitively cleared or confirmed without waiting months for antibody testing
+- **FeLV PCR** identifies regressive infections that are p27-antigen negative, enabling more nuanced prognosis and household management guidance
+- **FPV PCR** achieves the highest sensitivity available, catching early or low-shedding infections that rapid antigen tests miss
+
+The closed microfluidic chip design eliminates cross-contamination risk — critical when running fecal samples from potentially FPV-infected cats alongside blood samples in the same clinic session. The room-temperature-stable reagents require no cold chain, and the fully automated extraction-to-result workflow demands no specialized laboratory training.
+
+For cats presenting with upper respiratory signs that may suggest FIV/FeLV-associated immunosuppression plus primary respiratory infection, the [Feline FHV-FCV-Mycoplasma Respiratory Triple Test Chip](/en/products/test-chips/feline-triple-respiratory/) can be run concurrently on a second CarryOn chip to characterize the full infectious picture in a single clinic visit.
+
+---
+
+## Result Interpretation and Clinical Decision Points
+
+### FIV Results
+
+| Result | Interpretation | Next Step |
+|--------|---------------|-----------|
+| Antibody negative (adult, no vaccine history) | FIV negative — rule out | No further testing needed; retest if new exposure occurs |
+| Antibody positive (adult, no vaccine history) | Presumed FIV infected | Confirm with PCR; counsel owner on long-term management |
+| Antibody positive (kitten <6 months) | Likely maternal antibody — indeterminate | Retest at 6 months with antibody test OR test now with PCR |
+| Antibody positive (prior FIV vaccination) | Cannot distinguish vaccine from infection | PCR required for definitive answer |
+| PCR positive | True FIV infection confirmed | Long-term management, biannual wellness exams, indoor lifestyle recommendation |
+| PCR negative, antibody positive | Vaccine- or maternal-antibody positive; not infected | No restrictions; re-test antibody at 6 months if kitten |
+
+### FeLV Results
+
+| Result | Interpretation | Next Step |
+|--------|---------------|-----------|
+| p27 antigen negative | No detectable FeLV antigenemia | Low risk; if exposure suspected, retest in 30 days |
+| p27 antigen positive (first test) | Presumptive FeLV positive | Do NOT make irreversible decisions; confirm with ELISA + IFA or PCR in 8–12 weeks |
+| ELISA positive + IFA positive | Progressive infection (viremic) | Guarded prognosis; household isolation from FeLV-negative cats; FeLV-specific wellness protocol |
+| ELISA positive + IFA negative | Possible regressive infection | PCR for proviral DNA; if PCR positive = regressive; if negative = reconsider sampling/timing |
+| PCR positive + IFA negative | Regressive infection confirmed | Low transmission risk; annual monitoring; no FeLV vaccine needed |
+
+### FPV Results
+
+| Result | Interpretation | Next Step |
+|--------|---------------|-----------|
+| Fecal antigen negative, low clinical suspicion | FPV unlikely | Pursue other differentials (dietary indiscretion, parasites, IBD, foreign body) |
+| Fecal antigen negative, high clinical suspicion | Cannot rule out | Recheck CBC; repeat antigen in 24 hrs; send fecal PCR |
+| Fecal antigen positive, unvaccinated | FPV confirmed — treat as infectious | Immediate isolation, aggressive supportive care, barrier nursing |
+| Fecal antigen positive, MLV vaccine within 12 days | Probable false positive | Repeat in 48–72 hrs; correlate with CBC and clinical trajectory |
+| PCR positive | FPV confirmed — highest specificity | Treat; isolate; environmental decontamination with sodium hypochlorite |
+
+---
+
+## Sample Collection Best Practices
+
+Proper sample collection directly determines test accuracy. Common collection errors account for a significant proportion of false-negative results in feline infectious disease testing.
+
+**For FIV and FeLV (blood-based testing):**
+- Collect whole blood into an EDTA (purple-top) tube for PCR and CBC
+- Collect serum or plasma (red-top or gold-top, allow to clot and centrifuge) for antigen ELISA
+- Minimum volume: 0.5 mL whole blood for rapid tests; 1 mL for reference lab
+- Store at 2–8 °C if not testing within 4 hours; do not freeze whole blood for rapid tests
+- Severely hemolyzed or lipemic samples reduce rapid test accuracy — collect on a fasted cat when possible
+
+**For FPV (fecal testing):**
+- Rectal swab inserted 2–3 cm with gentle rotation is the most reliable sample when defecation cannot be obtained
+- Fresh feces (0.5–1 g) collected within 2 hours is optimal
+- Avoid samples contaminated with urine or litter substrate — interference with antigen detection
+- Use viral transport medium (VTM) if sending to reference laboratory for PCR; refrigerate at 2–8 °C
+- For the CarryOn FPV test chip: follow the swab input protocol in the chip insert — the microfluidic system handles extraction automatically
+
+For a detailed walkthrough of collection techniques across sample types, see our [veterinary sample collection and handling guide](/en/blog/veterinary-sample-collection-handling-guide/).
+
+---
+
+## Take the Next Step
+
+Accurate feline infectious disease testing is not merely a diagnostic exercise — it has direct consequences for patient welfare, household transmission risk, and responsible colony management. The combination of rapid antigen tests for initial screening and PCR for confirmation or complex cases provides the diagnostic resolution needed for confident clinical decision-making.
+
+- [View the Feline FeLV-FIV-FPV Screening Triple Test Chip](/en/products/test-chips/feline-triple-screening/)
+- [View the Feline FHV-FCV-Mycoplasma Respiratory Triple Test Chip](/en/products/test-chips/feline-triple-respiratory/)
+- [Learn how CarryOn's microfluidic PCR technology works](/en/technology/)
+- [Read our rapid test vs laboratory testing comparison](/en/blog/rapid-test-kit-vs-lab-testing-veterinary-diagnostics-guide/)
+- [Request a demo or distributor pricing inquiry](/en/contact/)`,
+    faqs: [
+      {
+        q: "Can I use a canine parvovirus rapid test to diagnose feline panleukopenia (FPV)?",
+        a: "Yes — canine parvovirus (CPV-2) rapid antigen tests show high cross-reactivity with feline panleukopenia virus (FPV) because the two viruses are closely related parvoviruses sharing the same p27 capsid protein target. Most commercially available parvovirus fecal antigen strips are validated for both species. Sensitivity for FPV using CPV-2 test kits ranges from 85–95% in clinical studies. The main caveat is that modified live FPV vaccines given within 5–12 days prior to testing can produce transient false-positive results due to vaccine virus shedding in feces. Always check vaccination records before interpreting a positive fecal antigen test.",
+      },
+      {
+        q: "My kitten tested FIV-antibody positive but has no clinical signs. What should I do?",
+        a: "A positive FIV antibody result in a kitten under 6 months of age is most likely a false positive caused by maternal antibodies transferred from the queen. Kittens born to FIV-positive queens — or queens of unknown status — can carry maternal antibodies for up to 6 months without being infected themselves. Do not make permanent management or euthanasia decisions based solely on an antibody test in a young kitten. The recommended approach is either: (1) retest with an antibody test at 6–8 months of age after maternal antibodies have waned, or (2) test now using PCR for proviral DNA, which detects actual infection rather than antibodies and correctly identifies uninfected kittens regardless of maternal antibody status.",
+      },
+      {
+        q: "A cat in my multi-cat household tested FeLV-positive. Do all other cats need to be tested?",
+        a: "Yes — all cats in the household should be tested for FeLV immediately. FeLV is transmitted through prolonged close contact (mutual grooming, shared food bowls, bite wounds), so housemates of a confirmed FeLV-positive cat have meaningful exposure risk. The recommended protocol is to test all cats, separate confirmed FeLV-positive cats from FeLV-negative cats, and retest all negative-testing cats 8–12 weeks later to capture any cats that were in early infection at the time of initial testing. FeLV-negative cats in the household should be vaccinated if they are at ongoing risk. A single positive result does not necessarily mean the cat will remain viremic — some cats mount an effective immune response and control the infection — which is why confirmatory testing with IFA or PCR before permanent decisions is essential.",
+      },
+      {
+        q: "How long does FPV survive in the environment and what disinfectants are effective?",
+        a: "Feline panleukopenia virus is exceptionally environmentally stable. It survives at room temperature for up to 1 year on contaminated surfaces, resists freezing and thawing, and is stable at pH 3–9. Most standard hospital-grade disinfectants — including quaternary ammonium compounds, alcohols, and accelerated hydrogen peroxide at standard concentrations — are ineffective against FPV. The disinfectant of choice is sodium hypochlorite (household bleach) at a 1:32 dilution (approximately 1 part bleach to 32 parts water), applied to pre-cleaned surfaces with a contact time of at least 10 minutes. Potassium peroxymonosulfate (Virkon S, Trifectant) at labeled concentrations is also effective. Any area exposed to a confirmed FPV-infected cat — including runs, examination rooms, and equipment — should be treated accordingly, and new cats should not be admitted to the area for at least 1 week post-disinfection.",
+      },
+      {
+        q: "What is the difference between progressive and regressive FeLV infection, and why does it matter?",
+        a: "FeLV infection outcomes exist on a spectrum. Progressive infection occurs when the cat's immune system cannot control viral replication — the virus spreads to bone marrow progenitor cells and establishes systemic viremia. These cats remain p27-antigen positive on all tests, shed virus continuously, and face a guarded long-term prognosis with median survival times of 2–3 years. Regressive infection occurs when the immune system mounts a sufficient response to eliminate productive viral replication, but proviral DNA remains integrated in host cells. These cats are p27-antigen negative (appear negative on rapid tests and ELISA) but PCR-positive for proviral DNA. They are not currently shedding virus and pose minimal transmission risk, though immune suppression or stress could theoretically reactivate the virus. The distinction matters enormously: a cat with regressive infection that tests negative on rapid antigen test should not be separated from FeLV-negative housemates based solely on PCR-positive status, but should be monitored annually for signs of reactivation.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
