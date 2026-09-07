@@ -1917,6 +1917,343 @@ Accurate veterinary diagnostics begin with proper sample collection — and end 
       },
     ],
   },
+  {
+    slug: "canine-respiratory-disease-panel-testing-guide",
+    title: "Canine Respiratory Disease Panel Testing: CDV, CIV, Bordetella & Mycoplasma Diagnostic Guide",
+    excerpt: "A comprehensive guide for veterinary professionals on diagnosing canine respiratory disease complex (CIRD) using panel PCR testing — covering CDV, CIV H3N2/H3N8, Bordetella bronchiseptica, Mycoplasma cynos, CPIV, and CRCoV, with comparison of PCR vs ELISA vs rapid antigen methods.",
+    date: "2026-09-07",
+    readTime: "11 min read",
+    category: "Clinical Diagnostics",
+    coverImage: "/images/products/carryon-device.png",
+    content: `## Canine Respiratory Disease Complex: Why Panel Testing Is the New Standard
+
+Canine infectious respiratory disease complex (CIRD) — commonly called "kennel cough" — is one of the most frequently misdiagnosed conditions in small animal practice. The clinical signs are deceptively similar across a wide range of causative pathogens: coughing, nasal discharge, sneezing, lethargy, and in severe cases, pneumonia. Yet the treatment protocols, isolation requirements, and prognostic implications differ dramatically depending on which pathogen — or combination of pathogens — is actually driving the disease.
+
+Historically, veterinary clinicians defaulted to empirical antibiotic therapy based on clinical presentation alone. This approach fails on two counts: it provides no benefit against viral pathogens (CDV, CIV, CPIV, CRCoV), and it contributes to antimicrobial resistance through unnecessary antibiotic use. Accurate, rapid pathogen identification is the foundation of responsible respiratory disease management.
+
+Panel PCR testing — simultaneous molecular detection of multiple pathogens from a single sample — has become the gold standard for canine respiratory disease diagnosis. This guide covers the key pathogens, how to choose the right test method, and how to interpret and act on results at the point of care.
+
+---
+
+## The Canine Respiratory Pathogen Landscape
+
+Understanding the biology and epidemiology of each pathogen in the CIRD complex helps clinicians select the most appropriate test panel and interpret results in clinical context.
+
+### Canine Distemper Virus (CDV)
+
+CDV is a paramyxovirus (Morbillivirus) and one of the most serious viral threats in unvaccinated dog populations. It is transmitted via respiratory secretions and can progress from mild respiratory signs to systemic disease affecting the gastrointestinal tract and central nervous system.
+
+- **Target nucleic acid:** RNA (requires RT-PCR)
+- **Sample of choice:** Nasal swab, oropharyngeal swab, or conjunctival swab; buffy coat in systemic cases
+- **Key clinical note:** Vaccinated dogs can shed attenuated vaccine virus for up to 2 weeks post-vaccination, which may produce a positive PCR result. Always correlate with vaccination history.
+- **Mortality risk:** High in unvaccinated animals, especially when neurological signs appear
+
+### Canine Influenza Virus (CIV) — H3N2 and H3N8
+
+Two distinct strains circulate in canine populations. CIV H3N8 emerged in the United States in 2004 from equine influenza. CIV H3N2 emerged in Asia around 2006–2007 and has since spread to North America. Both cause acute respiratory illness; H3N2 is generally associated with higher viral shedding and shelter outbreak risk.
+
+- **Target nucleic acid:** RNA (requires RT-PCR)
+- **Sample of choice:** Nasal or oropharyngeal swab collected within the first 4 days of illness (viral shedding peaks early)
+- **Key clinical note:** Dogs may shed virus before clinical signs appear, making index case identification in shelter settings critical for outbreak control
+- **Subtype distinction:** Strain-specific PCR is required to differentiate H3N2 from H3N8 — important for outbreak source tracing and appropriate vaccination selection
+
+### Bordetella bronchiseptica
+
+This gram-negative coccobacillus is the classic bacterial cause of kennel cough. It adheres to ciliated respiratory epithelium using fimbriae and produces a range of virulence factors including dermonecrotic toxin and adenylate cyclase toxin that impair local immune defenses. *Bordetella* frequently acts as a co-pathogen alongside viral agents, dramatically worsening disease severity.
+
+- **Target nucleic acid:** Bacterial DNA (standard PCR, no reverse transcription required)
+- **Sample of choice:** Deep nasal swab or tracheal wash
+- **Key clinical note:** Culture can miss *Bordetella* if the animal has received any antibiotics in the preceding 72 hours; PCR is significantly more sensitive in partially treated cases
+- **Treatment relevance:** Confirmed *Bordetella* infection directly indicates antibiotic therapy (doxycycline, azithromycin), making accurate diagnosis essential to avoid both under-treatment and unnecessary antibiotic use
+
+### Mycoplasma cynos
+
+*Mycoplasma cynos* is an underrecognized contributor to canine respiratory disease, particularly pneumonia in dogs with concurrent viral infection. It lacks a cell wall, rendering it intrinsically resistant to beta-lactam antibiotics — a critical point for treatment selection.
+
+- **Target nucleic acid:** Bacterial DNA (standard PCR)
+- **Sample of choice:** Bronchoalveolar lavage (BAL) fluid for lower respiratory tract disease; nasal swab for upper respiratory screening
+- **Key clinical note:** *Mycoplasma* is culture-fastidious and frequently missed on routine bacterial culture; PCR is the only reliable detection method in clinical practice
+- **Treatment relevance:** Confirmed *Mycoplasma* infection requires doxycycline, azithromycin, or a fluoroquinolone — all distinct from the standard empirical choices for other bacterial respiratory pathogens
+
+### Canine Parainfluenza Virus (CPIV)
+
+CPIV is a paramyxovirus that causes mild to moderate upper respiratory disease on its own but significantly amplifies the severity of co-infections. It is a core vaccine antigen in most canine vaccination protocols.
+
+- **Target nucleic acid:** RNA (requires RT-PCR)
+- **Sample of choice:** Nasal or oropharyngeal swab
+- **Key clinical note:** CPIV infection markedly increases susceptibility to secondary bacterial infections, including *Bordetella* and *Mycoplasma*; panel testing allows identification of these co-infections simultaneously
+
+### Canine Respiratory Coronavirus (CRCoV)
+
+CRCoV (distinct from SARS-CoV-2 and canine enteric coronavirus) is a betacoronavirus that contributes to mild upper respiratory disease. It is most clinically significant as a predisposing factor for secondary bacterial pneumonia in shelter populations.
+
+- **Target nucleic acid:** RNA (requires RT-PCR)
+- **Sample of choice:** Nasal swab
+- **Key clinical note:** CRCoV detection alone rarely changes clinical management, but its presence in a panel result signals elevated risk for bacterial co-infection and warrants closer monitoring
+
+---
+
+## Comparing Diagnostic Methods: PCR vs ELISA vs Rapid Antigen
+
+Choosing the right test method requires balancing sensitivity, specificity, speed, and the clinical question being asked.
+
+<table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
+<thead>
+<tr style="background:#f1f5f9;">
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Criterion</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Panel PCR (RT-PCR / DNA-PCR)</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">ELISA (Serology / Antigen)</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Rapid Antigen Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Detection target</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Pathogen nucleic acid (DNA or RNA)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Antibody (serology) or antigen (capture ELISA)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Pathogen antigen (protein)</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Sensitivity</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Very high — detects 50–100 copies/reaction</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Moderate — antibody ELISA requires seroconversion (7–14 days lag)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Moderate to low — requires high antigen load</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Specificity</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Very high — pathogen-specific primers</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Moderate — cross-reactivity between related strains possible</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Moderate — false positives with high mucus or degraded antigen</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Time to result</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Under 60 minutes (point-of-care PCR)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">2–4 hours (lab ELISA); 10–30 min (rapid ELISA)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">5–15 minutes</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Pathogen stage detected</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Active infection (nucleic acid present)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Past exposure (antibody) or active infection (antigen ELISA)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Active infection (high antigen load only)</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Multi-pathogen panel</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Yes — 6+ pathogens simultaneously from one sample</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Limited — typically one pathogen per assay</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Limited — typically one or two targets</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Bacterial detection</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Yes — Bordetella and Mycoplasma detected reliably</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Yes for some bacteria (antigen ELISA)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Limited — few bacterial rapid tests available</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Post-antibiotic sensitivity</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">High — nucleic acid persists after antibiotic treatment</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Moderate — antigen may be cleared by treatment</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Low — antigen depleted rapidly after antibiotics</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Cold chain required</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">No (room temperature microfluidic chip)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Yes — conjugates require refrigeration</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Some tests require 2–8 °C storage</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Best clinical use case</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Definitive pathogen ID, outbreak investigation, treatment guidance</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Seroprevalence surveys, post-exposure immunity assessment</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Initial rapid screening where speed outweighs accuracy</td>
+</tr>
+</tbody>
+</table>
+
+**Bottom line:** For canine respiratory disease complex, panel PCR is the only method that simultaneously identifies both viral and bacterial pathogens with high sensitivity, provides results during the clinical visit, and guides antibiotic stewardship decisions. ELISA serology is a useful adjunct for immunity assessment (e.g., post-vaccination CDV titer testing) but cannot replace molecular diagnostics for active infection management.
+
+---
+
+## Clinical Decision Framework: When to Test and How to Act
+
+The following framework helps veterinary clinicians decide when to run a respiratory panel and how to interpret the results.
+
+### Step 1 — Identify Cases That Require Panel Testing
+
+Run a canine respiratory PCR panel when any of the following apply:
+
+- **Kennel or shelter outbreak** — two or more animals with respiratory signs within 7 days; panel results guide isolation decisions and biosecurity protocols
+- **Vaccination failure** — respiratory disease in a dog with up-to-date CDV and CPIV vaccination suggests a non-vaccine-covered pathogen (CIV, Bordetella, Mycoplasma)
+- **Progressive or severe disease** — pneumonia, systemic signs, or failure to respond to initial supportive care within 48–72 hours
+- **High-risk population** — immunocompromised dogs, brachycephalic breeds, elderly patients, puppies under 16 weeks
+- **Treatment failure** — dog on empirical antibiotics that is not improving; distinguishes viral (antibiotic-refractory) from bacterial causes
+- **Pre-admission screening** — boarding facilities or breeding kennels to prevent introduction of CIV or Bordetella into naive populations
+
+### Step 2 — Collect the Right Sample
+
+Nasal and oropharyngeal swabs are the primary sample type for upper respiratory panel testing. Use flocked nylon swabs — not cotton — as cotton fibers inhibit PCR reactions by binding nucleic acid.
+
+For dogs with lower respiratory signs (cough producing purulent sputum, radiographic infiltrates), bronchoalveolar lavage (BAL) collected via endoscopy significantly improves sensitivity for *Bordetella* and *Mycoplasma*, which colonize deep airway epithelium rather than the nasal mucosa.
+
+Timing matters for RNA virus detection: CIV viral shedding peaks in the first 2–4 days of illness. If CIV is suspected, collect samples as early as possible in the disease course.
+
+### Step 3 — Interpret Results in Clinical Context
+
+<table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
+<thead>
+<tr style="background:#f1f5f9;">
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Panel Result</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Clinical Interpretation</th>
+<th style="border:1px solid #e2e8f0; padding:10px; text-align:left;">Recommended Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">CDV positive</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Active distemper infection; check vaccination history — rule out vaccine virus shedding if vaccinated within 14 days</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Strict isolation; supportive care; monitor for CNS signs; notify exposure contacts; report to local animal health authority if outbreak</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">CIV H3N2 or H3N8 positive</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Active influenza infection; high zoonotic-risk awareness (H3N2 has shown limited cat-to-cat transmission)</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Respiratory isolation for 14 days post-symptom resolution; antiviral consideration (oseltamivir in severe cases); trace exposure contacts in shared facilities</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Bordetella positive</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Confirmed bacterial kennel cough; antibiotic therapy indicated</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Doxycycline 5 mg/kg PO q12h for 10–14 days (first line); azithromycin as alternative; consider culture + sensitivity if treatment failure</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Mycoplasma cynos positive</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Cell-wall-absent bacterium; beta-lactams ineffective</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Doxycycline or azithromycin (covers both Bordetella and Mycoplasma when co-infected); enrofloxacin in severe cases; avoid amoxicillin</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">CPIV positive only</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Viral upper respiratory disease; secondary bacterial co-infection risk is elevated</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Supportive care; monitor closely for bacterial superinfection signs over next 5–7 days; no antibiotic therapy unless bacterial pathogen confirmed</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">CRCoV positive only</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Mild viral respiratory disease; increased susceptibility to secondary bacterial pneumonia</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Supportive care; close monitoring; no antibiotic therapy unless bacterial co-infection confirmed</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">Multiple pathogens detected</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Co-infection is common in CIRD — treat all confirmed pathogens; disease severity typically correlates with number of co-infecting agents</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Address viral pathogens with supportive/antiviral care; treat all bacterial pathogens with appropriate antibiotics; heightened isolation and monitoring</td>
+</tr>
+<tr>
+<td style="border:1px solid #e2e8f0; padding:10px;">All pathogens negative</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Three scenarios: (1) Non-CIRD cause (foreign body, allergic bronchitis, heart disease); (2) Late sampling — viral shedding has peaked; (3) Emerging or untargeted pathogen</td>
+<td style="border:1px solid #e2e8f0; padding:10px;">Pursue alternative diagnostics (thoracic radiography, bronchoscopy, cardiac evaluation); avoid empirical antibiotics; consider reference lab for broader panel</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+## The CarryOn Respiratory Panel: Point-of-Care Molecular Diagnostics
+
+The [CarryOn portable PCR analyzer](/en/products/test-chips/) from [Ningbo Yinrui Biomedical](/en/about/) runs a canine respiratory triple panel — covering CDV, CIV, and CPIV in a single sealed microfluidic chip — with results available in under 60 minutes.
+
+The [proprietary chip technology](/en/technology/) performs nucleic acid extraction, purification, and real-time fluorescence PCR entirely within the sealed chip, eliminating cross-contamination risk and removing the need for any laboratory infrastructure or trained technicians. The entire workflow from swab insertion to result readout is fully automated.
+
+### Why Point-of-Care Testing Changes Respiratory Disease Management
+
+The traditional model of sending respiratory swabs to a reference laboratory introduces a 24–72 hour diagnostic gap during which clinicians must choose between:
+
+- Empirical antibiotic therapy (risks contributing to antimicrobial resistance and fails viral cases)
+- Watchful waiting (risks disease progression and pathogen spread in multi-dog settings)
+
+Point-of-care PCR collapses this gap to under one hour. Clinicians can make evidence-based antibiotic prescribing decisions, implement appropriate isolation protocols, and provide clients with a definitive diagnosis — all during the same consultation in which the sample was collected.
+
+For shelters and boarding facilities where one confirmed CIV or CDV case can trigger a full facility lockdown, same-visit results are operationally transformative.
+
+### Available CarryOn Respiratory Test Chips
+
+- **Canine Respiratory Triple Panel:** CDV + CIV + CPIV — core viral respiratory pathogens
+- Additional panels for *Bordetella bronchiseptica* and *Mycoplasma cynos* detection — contact [Yinrui Bio](/en/contact/) for panel availability in your region
+
+---
+
+## Antimicrobial Stewardship in Canine Respiratory Disease
+
+Respiratory infections are one of the leading drivers of antibiotic overuse in small animal practice. Panel PCR creates a direct pathway to stewardship:
+
+**Antibiotics are indicated when:**
+- *Bordetella bronchiseptica* is confirmed by PCR
+- *Mycoplasma cynos* is confirmed by PCR
+- Bacterial superinfection signs emerge post-viral-infection (purulent discharge, fever, radiographic infiltrates)
+
+**Antibiotics are NOT indicated when:**
+- Panel shows viral pathogen(s) only (CDV, CIV, CPIV, CRCoV) with no bacterial co-infection
+- Panel is negative and clinical signs suggest non-infectious etiology
+
+This distinction — only possible with molecular diagnostics — prevents unnecessary antibiotic courses in pure viral cases, which represent a substantial proportion of CIRD presentations. See our earlier guide on [PCR vs rapid antigen test in veterinary diagnostics](/en/blog/pcr-vs-rapid-antigen-test-veterinary-diagnostics/) for a broader comparison of diagnostic method sensitivity.
+
+---
+
+## Biosecurity Implications of Panel Results
+
+Pathogen identification is essential for correct isolation and biosecurity decisions. Duration of isolation varies by pathogen:
+
+| Pathogen | Isolation Duration | Facility Cleaning Protocol |
+|----------|-------------------|---------------------------|
+| CDV | Until 30 days post-recovery (neurological risk persists) | Quaternary ammonium or bleach 1:32 dilution; CDV is enveloped (relatively susceptible) |
+| CIV H3N2 | 21 days from last clinical sign | Quaternary ammonium; CIV is enveloped |
+| CIV H3N8 | 21 days from last clinical sign | Quaternary ammonium; CIV is enveloped |
+| Bordetella | 14 days post-antibiotic course completion | Quaternary ammonium or accelerated hydrogen peroxide |
+| Mycoplasma | 10–14 days post-antibiotic course | Standard disinfection effective |
+| CPIV | 10–14 days from last clinical sign | Quaternary ammonium; enveloped virus |
+| CRCoV | 10 days from last clinical sign | Standard disinfection effective; enveloped virus |
+
+---
+
+## Quick Reference: Sample Collection for Canine Respiratory Panel PCR
+
+1. **Select the swab:** Flocked nylon swab — never cotton, which inhibits PCR
+2. **Nasal swab technique:** Insert swab 1–2 cm into the nasal passage and rotate firmly against the mucosal surface for 5 seconds; repeat in the contralateral nostril with the same swab
+3. **Oropharyngeal swab technique:** Depress tongue gently and swab the pharyngeal mucosa and tonsil fossae — more material is better
+4. **For lower respiratory disease:** BAL via endoscope under general anesthesia; submit 2–5 mL of lavage fluid
+5. **Timing:** Within first 4 days of illness for RNA virus detection (CIV shedding peaks early); *Bordetella* PCR remains sensitive throughout the illness course
+6. **Sample handling:** Place swab directly into the CarryOn chip input well or into viral transport medium (VTM) if sending to reference lab; refrigerate at 2–8 °C if not testing within 4 hours
+
+For more on collection technique and sample handling best practices, see our [veterinary sample collection and handling guide](/en/blog/veterinary-sample-collection-handling-guide/).
+
+---
+
+## Take the Next Step
+
+Canine respiratory disease complex is too heterogeneous — and the pathogen-specific treatment implications too significant — to manage without molecular diagnostics. Panel PCR testing transforms a clinical guess into a definitive, actionable diagnosis in under an hour.
+
+- [Browse CarryOn test chips and respiratory panels](/en/products/test-chips/)
+- [Learn how microfluidic chip PCR technology works](/en/technology/)
+- [About Ningbo Yinrui Biomedical and our diagnostic manufacturing capabilities](/en/about/)
+- [Request a demo, pricing, or distributor inquiry](/en/contact/)`,
+    faqs: [
+      {
+        q: "What is the best sample type for canine respiratory PCR panel testing?",
+        a: "Nasal and oropharyngeal (throat) swabs are the primary sample types for canine respiratory PCR panels. Use flocked nylon swabs — never cotton, as cotton fibers bind nucleic acid and inhibit the PCR reaction. For suspected lower respiratory involvement (pneumonia, productive cough, radiographic infiltrates), bronchoalveolar lavage (BAL) fluid collected via endoscopy provides significantly higher sensitivity for pathogens like Bordetella bronchiseptica and Mycoplasma cynos, which colonize deep airway epithelium rather than the nasal mucosa.",
+      },
+      {
+        q: "Can PCR detect Bordetella bronchiseptica in dogs that have already started antibiotics?",
+        a: "Yes — PCR retains significantly higher sensitivity than culture in antibiotic-treated animals. Bacterial culture requires viable organisms, which are rapidly eliminated by antibiotics. PCR detects bacterial DNA, which persists in the sample even after organisms are killed. For this reason, PCR is the preferred method for confirming Bordetella in dogs that have received even 24–48 hours of antibiotic therapy. The same advantage applies to Mycoplasma cynos detection. Always attempt sample collection before initiating antibiotics when panel testing is planned, but PCR remains diagnostically useful even in partially treated cases.",
+      },
+      {
+        q: "How do I differentiate CDV vaccine shedding from true canine distemper infection on PCR?",
+        a: "This is one of the most challenging interpretive scenarios in canine respiratory diagnostics. Modified live CDV vaccines shed attenuated virus detectable by standard RT-PCR for up to 10–14 days post-vaccination. To differentiate, first check the vaccination date — a positive PCR within 14 days of MLV CDV vaccination is suspicious for vaccine virus. Some specialized laboratories offer strain-differentiation assays that distinguish wild-type from vaccine strains, though this is not widely available at point of care. Clinically, systemic signs (GI involvement, neurological signs) are strongly suggestive of wild-type CDV rather than vaccine virus. When in doubt, treat as true distemper and implement full isolation precautions until strain differentiation can be obtained.",
+      },
+      {
+        q: "Why are beta-lactam antibiotics ineffective against Mycoplasma cynos respiratory infection in dogs?",
+        a: "Mycoplasma cynos lacks a cell wall — the molecular target of all beta-lactam antibiotics (amoxicillin, ampicillin, penicillin, cephalosporins). Since beta-lactams work by inhibiting cell wall synthesis, they have zero activity against organisms that have no cell wall to inhibit. This makes Mycoplasma intrinsically resistant to the most commonly prescribed antibiotics in small animal practice. PCR-confirmed Mycoplasma infections require cell-wall-independent antibiotics: doxycycline (5 mg/kg PO q12h) is the first-line choice, azithromycin is an effective alternative, and fluoroquinolones (enrofloxacin, pradofloxacin) are reserved for severe or refractory cases. Treating confirmed Mycoplasma pneumonia with amoxicillin-clavulanate alone is a common and consequential prescribing error.",
+      },
+      {
+        q: "How does canine influenza H3N2 differ from H3N8, and does it matter for diagnosis and treatment?",
+        a: "Both H3N2 and H3N8 cause clinically similar acute respiratory illness in dogs, but they differ in epidemiology, shedding dynamics, and vaccination coverage. CIV H3N2 (Asian lineage, emerged ~2006) is associated with higher viral shedding titers and is more commonly implicated in large shelter outbreaks; it has also shown limited transmission to cats. CIV H3N8 (equine lineage, emerged in US dogs ~2004) tends to cause comparable clinical severity but with generally lower shelter outbreak risk. Strain differentiation matters for: (1) selecting the appropriate bivalent vaccine for future prophylaxis, (2) outbreak source tracing in multi-facility events, and (3) reporting to animal health authorities. Both strains are detected by most canine respiratory PCR panels, but strain-specific subtyping requires additional PCR primers — confirm with your diagnostic laboratory or panel manufacturer that subtype differentiation is included.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
