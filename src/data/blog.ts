@@ -2548,6 +2548,263 @@ Accurate feline infectious disease testing is not merely a diagnostic exercise �
       },
     ],
   },
+  {
+    slug: "tick-borne-disease-panel-testing-veterinary-guide",
+    title: "Tick-Borne Disease Panel Testing for Dogs: PCR vs Serology Diagnostic Guide",
+    excerpt: "A comprehensive guide for veterinary professionals on diagnosing canine tick-borne diseases — covering Ehrlichia, Anaplasma, Borrelia (Lyme), and Babesia detection via PCR and serology, with sensitivity/specificity data, seroconversion windows, and a pathogen-by-pathogen comparison table.",
+    date: "2026-09-09",
+    readTime: "10 min read",
+    category: "Diagnostic Guide",
+    coverImage: "/images/products/carryon-device.png",
+    content: `## Tick-Borne Disease Testing in Dogs: Why a Panel Approach Is Essential
+
+Tick-borne disease in dogs is a multi-pathogen problem masquerading as a single diagnosis. A dog presenting with acute fever, thrombocytopenia, and lethargy could have Ehrlichia canis monocytic ehrlichiosis, Anaplasma phagocytophilum granulocytic anaplasmosis, Babesia canis hemolytic anemia — or a co-infection of two or more simultaneously. Ixodes, Amblyomma, Rhipicephalus, and Dermacentor ticks commonly carry multiple pathogens, and single-agent testing misses the co-infections that worsen outcomes and complicate treatment.
+
+Canine tick panel testing — a single test run that screens for Ehrlichia spp., Anaplasma spp., Borrelia burgdorferi (Lyme disease), and Babesia spp. in parallel — is now the clinical standard for any dog with fever, thrombocytopenia, anemia, polyarthritis, or recent tick exposure. This guide provides the diagnostic framework veterinary clinicians need to order the right tests, interpret results with confidence, and act on findings without delay.
+
+For an overview of our portable molecular diagnostic platform, see our [CarryOn test chip products](/en/products/test-chips/) and the [technology behind microfluidic PCR](/en/technology/).
+
+---
+
+## Pathogen Overview: What Ticks Carry and When
+
+Understanding the biology of each pathogen is the foundation of rational test selection and result interpretation.
+
+### Ehrlichia canis (Canine Monocytic Ehrlichiosis — CME)
+
+*E. canis* is transmitted by the brown dog tick (*Rhipicephalus sanguineus*) and is globally distributed wherever this tick is endemic. The organism is an obligate intracellular bacterium that infects mononuclear cells (monocytes and lymphocytes). Clinical stages are classically divided into:
+
+- **Acute phase (1–4 weeks post-infection):** Fever (39.5–41°C), lethargy, anorexia, lymphadenopathy, thrombocytopenia (platelet counts typically 50,000–100,000/µL)
+- **Subclinical phase (weeks to months):** Clinically inapparent but thrombocytopenia and antibody positivity persist
+- **Chronic phase:** Pancytopenia, hyperglobulinemia, epistaxis, retinal hemorrhage — associated with high morbidity
+
+**Incubation period:** 8–20 days post-tick bite. Antibodies appear 7–28 days post-exposure (seroconversion window). PCR becomes positive during the acute febrile phase, typically days 4–10 of illness.
+
+### Anaplasma phagocytophilum (Canine Granulocytic Anaplasmosis — CGA)
+
+Transmitted by *Ixodes scapularis* (black-legged tick) in the eastern US and *Ixodes pacificus* on the West Coast — the same tick vectors that transmit Lyme disease. This co-vector relationship makes Anaplasma-Borrelia co-infection common in endemic areas.
+
+*A. phagocytophilum* infects neutrophils. Morulae (intracytoplasmic inclusion bodies) visible on blood smear in 20–50% of acute cases are pathognomonic but require experienced interpretation. Clinical presentation mirrors CME: fever, lethargy, thrombocytopenia, anorexia, and occasionally polyarthritis.
+
+**Incubation period:** 1–2 weeks. PCR becomes positive 24–48 hours after infection, well before antibody seroconversion.
+
+### Borrelia burgdorferi (Canine Lyme Disease)
+
+Transmitted by *Ixodes* ticks (primarily *I. scapularis* in the northeast and upper midwest US). Tick attachment duration of at least 36–48 hours is required for transmission. Unlike in humans, the classic expanding skin lesion (erythema migrans) is rarely observed in dogs.
+
+Most infected dogs remain subclinical. A subset develop:
+- **Lyme arthritis:** Shifting-leg lameness, joint swelling, fever — typically appears 2–5 months post-infection
+- **Lyme nephropathy:** Protein-losing nephropathy; Labrador and Golden Retrievers appear overrepresented; associated with high mortality
+
+**Seroconversion window:** 3–5 weeks post-infection. Antibodies against the C6 peptide (the most diagnostically specific Lyme antigen) appear 3–6 weeks post-exposure. PCR sensitivity for *B. burgdorferi* in blood is notably lower than for Ehrlichia/Anaplasma (blood spirochetemia is transient); skin biopsy or synovial fluid PCR is more sensitive for confirmation of active disease.
+
+### Babesia spp. (Canine Babesiosis)
+
+Babesia are intraerythrocytic protozoan parasites transmitted by tick bite, blood transfusion, or vertical transmission. Two primary species in North American dogs:
+
+- **Babesia canis vogeli:** Transmitted by *R. sanguineus*; tends to produce milder hemolysis; common in southern US
+- **Babesia gibsoni:** Transmitted by *Haemaphysalis longicornis* and potentially dog bite wounds (high prevalence in American Pit Bull Terriers); small form, harder to detect on smear; associated with more severe, chronic hemolytic anemia
+
+**Incubation period:** 10–21 days. Parasitemia detectable by blood smear in 20–40% of cases during the acute phase; PCR is significantly more sensitive.
+
+---
+
+## PCR vs Serology: The Core Diagnostic Distinction
+
+The choice between PCR and serology is not a matter of preference — it is a matter of what clinical question you are asking.
+
+| Feature | PCR | SNAP/4Dx ELISA / Serology |
+|---------|-----|--------------------------|
+| What it detects | Pathogen DNA/RNA directly | Host antibodies (IgG/IgM) against pathogen |
+| Earliest positive | Hours to days post-infection | 7–28 days post-exposure (seroconversion) |
+| Acute infection | High sensitivity | May be negative in first 1–2 weeks |
+| Chronic/past exposure | Lower sensitivity (pathogen burden falls) | High sensitivity |
+| Vaccination interference | None | Not applicable for tick-borne diseases (no licensed vaccines except Lyme) |
+| Lyme vaccination interference | None | **Yes** — Lyme C6 ELISA is vaccine-independent, but whole-cell ELISA is not |
+| Species differentiation | Yes (species-level identification) | No — cross-reactive (Ehrlichia spp., Anaplasma spp.) |
+| Quantitative (Ct values) | Yes | No |
+| Treatment monitoring | Yes (Ct values change with bacterial burden) | Antibody titers persist long after clearance |
+
+**Key clinical rule:** For an acutely ill febrile dog in the first 1–2 weeks of illness, PCR is the appropriate first-line test. For a dog with vague chronic signs or suspected past exposure in an endemic area, serology (SNAP 4Dx Plus or equivalent) may be more sensitive due to persistent antibody titers.
+
+---
+
+## Pathogen-by-Pathogen Comparison: PCR vs SNAP/ELISA
+
+| Pathogen | PCR Sensitivity | PCR Specificity | SNAP/ELISA Sensitivity | SNAP/ELISA Specificity | Preferred First-Line |
+|----------|----------------|----------------|----------------------|----------------------|---------------------|
+| Ehrlichia canis (acute) | 96–100% | 98–100% | 60–75% (acute, within 14 days) | 95–99% | **PCR** |
+| Ehrlichia canis (chronic/subclinical) | 70–85% | 98–100% | 95–99% | 95–99% | **Serology** |
+| Anaplasma phagocytophilum (acute) | 96–99% | 99–100% | 50–65% (first 7–10 days) | 97–99% | **PCR** |
+| Anaplasma phagocytophilum (subacute/chronic) | 75–88% | 99–100% | 95–98% | 97–99% | **Serology** |
+| Borrelia burgdorferi (blood) | 40–65% (blood) | 99–100% | 85–95% (C6 ELISA, 3+ wks post) | 97–99% | **Serology (C6-based)** |
+| Borrelia burgdorferi (synovial/skin) | 70–90% | 99–100% | N/A (tissue) | N/A | **PCR on tissue** |
+| Babesia canis vogeli | 98–100% | 99–100% | 70–85% | 90–95% | **PCR** |
+| Babesia gibsoni | 98–100% | 99–100% | 60–75% | 88–93% | **PCR** |
+
+### Why Babesia Serology Underperforms
+
+Babesia serology cross-reactivity between species is significant, and commercially available in-clinic ELISA kits do not reliably distinguish *B. canis* from *B. gibsoni* — which matters because treatment protocols differ. Imidocarb dipropionate is effective for *B. canis vogeli* but has poor efficacy against *B. gibsoni* (which requires atovaquone plus azithromycin). PCR with species-level identification is essential for Babesia to guide correct treatment selection.
+
+---
+
+## Understanding Ct Values in Tick-Borne Disease PCR
+
+Quantitative PCR reports a **cycle threshold (Ct value)** — the number of amplification cycles required to produce a detectable fluorescent signal. Ct values carry critical clinical information that serology cannot provide:
+
+- **Ct ≤ 28:** High pathogen burden — acute active infection; immediate treatment indicated
+- **Ct 29–34:** Moderate burden — consistent with early or subacute infection; treat promptly
+- **Ct 35–38:** Low burden — early infection, post-treatment residual, or subclinical carrier state; clinical context essential
+- **Ct > 38 or undetermined:** Below detection threshold for that sample — consider serology if clinical suspicion remains
+
+**Using Ct to monitor treatment response:**
+
+For Ehrlichia and Anaplasma, doxycycline (10 mg/kg PO q24h for 28 days) produces a rapid reduction in bacterial load. Serial PCR at day 7 and day 28 of treatment should show rising Ct values (lower pathogen burden). Persistently low Ct values at day 14 suggest treatment failure, possible doxycycline resistance, re-exposure, or co-infection with an untreated pathogen.
+
+The CarryOn microfluidic PCR platform reports quantitative Ct values for each target in the tick panel, enabling serial monitoring without sending samples to a reference laboratory. Learn more about the [underlying PCR technology](/en/technology/).
+
+---
+
+## Co-Infection: The Rule, Not the Exception in Tick-Endemic Regions
+
+Regional tick surveillance studies demonstrate that 10–30% of *Ixodes scapularis* ticks in hyperendemic northeastern US counties carry more than one pathogen. Clinical implications of co-infection:
+
+- **Ehrlichia + Babesia:** Combined thrombocytopenia from CME and hemolytic anemia from Babesia causes severe anemia; higher transfusion requirement; higher mortality
+- **Anaplasma + Borrelia:** Common in Ixodes-endemic regions; Lyme arthritis may be masked by acute Anaplasma febrile illness
+- **Ehrlichia + Anaplasma:** Both require doxycycline; however, thrombocytopenia may be more severe in co-infected dogs
+- **Babesia gibsoni + any co-pathogen:** Treatment protocol for *B. gibsoni* differs significantly from Ehrlichia/Anaplasma; a missed Babesia diagnosis means delayed species-specific therapy
+
+Panel testing — running Ehrlichia, Anaplasma, Borrelia, and Babesia simultaneously — eliminates the diagnostic gap that single-agent testing creates. Every dog with suspected tick-borne disease should receive a full panel.
+
+---
+
+## Clinical Staging and When to Test
+
+### Acute Presentation (Days 1–14)
+
+A dog with acute fever (≥39.5°C), lethargy, anorexia, and thrombocytopenia within 2–4 weeks of known or suspected tick exposure is an ideal candidate for **PCR panel testing**. Pathogen DNA is present in circulation at detectable levels; serology may be negative because antibodies have not yet developed.
+
+**Minimum CBC findings suggesting tick-borne disease:**
+- Thrombocytopenia: platelet count < 150,000/µL (most sensitive single finding)
+- Leukopenia or neutropenia (Ehrlichia, Anaplasma)
+- Non-regenerative anemia (Ehrlichia chronic)
+- Hemolytic anemia with spherocytosis (Babesia)
+
+### Subacute Presentation (Days 14–60)
+
+Dogs presenting 2–8 weeks after exposure may have partially seroconverted. A **combined approach** — both serology (SNAP 4Dx Plus) and PCR — provides maximum sensitivity. The SNAP captures antibodies from pathogens where PCR sensitivity has declined as bacteremia resolves; PCR catches active infections where antibody titers are still rising.
+
+### Chronic or Screening Presentation
+
+For dogs with vague chronic signs (intermittent lethargy, weight loss, hyperglobulinemia, epistaxis) or in endemic-area wellness screening, **serology is the primary test**. Antibodies persist for months to years and remain elevated long after pathogen burden has dropped below PCR detection thresholds.
+
+---
+
+## Geographic Considerations: Where to Suspect Which Pathogens
+
+| Region | Primary Tick Vector | Most Common Tick-Borne Pathogens |
+|--------|--------------------|---------------------------------|
+| Northeast / Upper Midwest US | *Ixodes scapularis* | Borrelia, Anaplasma phagocytophilum |
+| Southeast / South-Central US | *Amblyomma americanum*, *Rhipicephalus sanguineus* | Ehrlichia canis, Ehrlichia ewingii |
+| Nationwide (dogs, kennels) | *Rhipicephalus sanguineus* | Ehrlichia canis, Babesia canis vogeli |
+| West Coast US | *Ixodes pacificus* | Anaplasma phagocytophilum, Borrelia (lower prevalence) |
+| Pit Bull Terrier breed-specific | *Haemaphysalis longicornis* / dog bite | Babesia gibsoni |
+| Travel history (international) | Multiple | Ehrlichia canis, Babesia rossi, Hepatozoon |
+
+Dogs with travel history or those recently imported require extended panel testing — *Ehrlichia canis* is hyperendemic in parts of Southeast Asia, Central America, and Southern Europe.
+
+---
+
+## Sample Collection Protocol for Tick-Borne Disease PCR
+
+Correct sample collection is the single most controllable variable in PCR diagnostic accuracy.
+
+**Blood collection:**
+- Use an EDTA (purple top) tube — heparin (green top) inhibits Taq polymerase and causes false negatives
+- Collect 1–3 mL whole blood; invert tube 8–10 times gently to mix with anticoagulant
+- Do not centrifuge — PCR for Ehrlichia and Anaplasma targets white blood cells (buffy coat), and Babesia targets red blood cells; separation removes the cellular target
+- Test within 24 hours of collection (stored at 2–8°C); do not freeze whole blood
+
+**Blood smear (complementary to PCR):**
+- Prepare within 30 minutes of collection for best cell morphology
+- Examine 200 fields at 100× oil immersion for morulae (*Ehrlichia*, *Anaplasma*) and piroplasms (*Babesia*)
+- Smear sensitivity: ~20–50% for morulae detection; ~20–40% for Babesia in low-parasitemia cases
+- PCR detects what smear misses — always run both in acute cases
+
+**For the CarryOn tick panel chip:** Load 100 µL of whole blood directly into the chip input well. The integrated microfluidic system performs lysis, nucleic acid extraction, and multiplex PCR amplification without manual pipetting steps. Results are reported in under 60 minutes with individual Ct values for each pathogen target.
+
+For detailed sample handling guidance, see our [veterinary sample collection and handling guide](/en/blog/veterinary-sample-collection-handling-guide/).
+
+---
+
+## Interpreting Tick Panel Results: A Decision Framework
+
+| PCR Result | Serology Result | Interpretation | Action |
+|------------|----------------|----------------|--------|
+| PCR positive (Ct ≤ 34) | Any | Active infection confirmed | Treat immediately; species-specific protocol |
+| PCR positive (Ct 35–38) | Negative | Early infection or low-level bacteremia | Treat if clinical signs present; retest in 7 days |
+| PCR negative | Serology positive | Past exposure or subacute/chronic infection | Treat if signs present; consider C6 quantitative titer |
+| PCR negative | Serology negative | Tick-borne disease unlikely | Consider other causes; retest in 14 days if high suspicion |
+| PCR positive for Babesia | Serology positive for Ehrlichia | Co-infection | **Must treat both** — different drug protocols |
+| Borrelia serology positive | — | Exposure confirmed | Check C6 QC2 ratio; treat if clinical; evaluate for nephropathy |
+
+---
+
+## Treatment Implications by Pathogen
+
+**Ehrlichia canis / Anaplasma phagocytophilum:**
+- Doxycycline 10 mg/kg PO q24h × 28 days
+- Clinical improvement typically within 24–72 hours of treatment initiation
+- Platelet count recovery expected by days 7–14
+
+**Borrelia burgdorferi (Lyme):**
+- Doxycycline 10 mg/kg PO q24h × 28–30 days (joints/systemic)
+- For Lyme nephropathy: aggressive supportive care; immunosuppression controversial; prognosis guarded
+
+**Babesia canis vogeli:**
+- Imidocarb dipropionate 6.6 mg/kg IM, two doses 14 days apart
+- Atropine pretreatment (0.05 mg/kg SC) to prevent cholinergic effects
+
+**Babesia gibsoni:**
+- Atovaquone 13.3 mg/kg PO q8h + azithromycin 10 mg/kg PO q24h × 10 days (most evidence)
+- Imidocarb alone has poor efficacy — PCR species confirmation before treatment is essential
+
+This is why species-level PCR identification matters: giving imidocarb to a *B. gibsoni*-infected dog is inadequate therapy. The diagnostics directly determine the treatment protocol.
+
+---
+
+## Take the Next Step
+
+Tick-borne disease diagnosis in dogs requires both the right tests and the right interpretation framework. Panel PCR testing — delivering simultaneous detection of Ehrlichia, Anaplasma, Borrelia, and Babesia with species-level resolution and quantitative Ct values — is the most clinically complete approach available for acute tick-borne disease presentations.
+
+- [Browse CarryOn tick panel and test chips](/en/products/test-chips/)
+- [Learn how microfluidic chip PCR delivers results in under 60 minutes](/en/technology/)
+- [About Ningbo Yinrui Biomedical — veterinary diagnostic equipment manufacturer](/en/about/)
+- [Read our PCR vs ELISA rapid test comparison guide](/en/blog/pcr-vs-elisa-veterinary-diagnostic-comparison/)
+- [Request a demo or distributor inquiry](/en/contact/)`,
+    faqs: [
+      {
+        q: "Can I use a SNAP 4Dx Plus test to diagnose tick-borne disease in the first week of illness?",
+        a: "Not reliably. The SNAP 4Dx Plus detects host antibodies against Ehrlichia, Anaplasma, Borrelia, and Heartworm antigen. Antibodies take 7–28 days to develop after infection (seroconversion window), so a dog presenting in the first 7–14 days of acute illness may test negative on serology despite active infection. PCR is the appropriate first-line test for acutely ill dogs because it detects pathogen DNA directly — it becomes positive within 24–48 hours of infection for Anaplasma and within 4–10 days for Ehrlichia, well before antibodies appear. A negative SNAP result in an acutely febrile dog with thrombocytopenia does not rule out tick-borne disease. Always run PCR alongside or instead of serology in the first two weeks of illness.",
+      },
+      {
+        q: "What Ct value on PCR indicates active Ehrlichia or Anaplasma infection requiring treatment?",
+        a: "A Ct value of 35 or below is generally considered consistent with active infection and should prompt treatment in a clinically symptomatic dog. Ct values of 28 or lower indicate high pathogen burden and are associated with acute phase disease — immediate treatment is warranted. Ct values between 35–38 represent low pathogen load and require clinical context: a febrile, thrombocytopenic dog with Ct 37 should still be treated; an asymptomatic dog with Ct 38 found incidentally during wellness screening may represent a carrier state or early subclinical infection and warrants a recheck in 7–14 days. Use Ct values serially during treatment — rising Ct (decreasing pathogen load) at day 7 and day 28 of doxycycline confirms treatment response. Persistently low Ct at day 14 raises concern for treatment failure or re-exposure.",
+      },
+      {
+        q: "Why does it matter whether Babesia is canis or gibsoni? Is the treatment not the same?",
+        a: "The treatment is not the same — this distinction is clinically critical. Babesia canis vogeli responds well to imidocarb dipropionate (6.6 mg/kg IM, two doses 14 days apart), which is the standard labeled treatment for canine babesiosis. Babesia gibsoni, by contrast, is poorly responsive to imidocarb alone; current evidence strongly supports atovaquone (13.3 mg/kg q8h) combined with azithromycin (10 mg/kg q24h) for 10 days as the most effective protocol. Administering imidocarb to a B. gibsoni-infected dog may produce temporary clinical improvement without clearing the infection, leading to relapse and progressive chronic hemolytic anemia. Because blood smear morphology alone cannot always distinguish the two species (B. gibsoni piroplasms are smaller but overlap in appearance), species-level PCR identification is the only reliable way to select the correct treatment.",
+      },
+      {
+        q: "My dog tested Lyme-positive on SNAP but has no joint pain or clinical signs. Should I treat?",
+        a: "This is one of the most common clinical dilemmas in Lyme disease management. Studies estimate that 90–95% of dogs exposed to Borrelia burgdorferi and seropositive never develop clinical Lyme disease — their immune system controls the infection without symptoms. The decision to treat an asymptomatic Lyme-seropositive dog depends on several factors: First, evaluate the C6 quantitative antibody titer (Lyme Quant C6 test). A C6 titer below 30 U/mL in an asymptomatic dog may not require treatment; titers above 30 U/mL in combination with urinalysis abnormalities (proteinuria on a urine protein:creatinine ratio above 0.5) raise concern for subclinical Lyme nephropathy, which warrants treatment regardless of clinical signs. Breed also matters — Labrador Retrievers and Golden Retrievers appear predisposed to Lyme nephropathy and may justify a lower treatment threshold. If you treat, the standard protocol is doxycycline 10 mg/kg PO q24h for 28–30 days; recheck C6 titer at 6 months to confirm response.",
+      },
+      {
+        q: "Can tick-borne diseases be transmitted directly between dogs without a tick vector?",
+        a: "Yes, for some pathogens. Babesia gibsoni is the most important example of non-tick transmission in dogs: it can be transmitted through dog bite wounds (documented in kennel and dogfighting situations) and potentially via blood transfusion. This is why B. gibsoni prevalence is disproportionately high in American Pit Bull Terriers and why blood donors in endemic areas should be screened by PCR. Ehrlichia canis and Anaplasma phagocytophilum can also be transmitted by blood transfusion; all canine blood donors should be screened for tick-borne diseases by both serology and PCR before donation. Borrelia burgdorferi is not known to be transmitted directly between dogs — tick bite remains the obligatory route. Vertical transmission (dam to offspring) has been documented experimentally for Babesia but is not considered a major epidemiological route for Ehrlichia or Anaplasma under field conditions.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
