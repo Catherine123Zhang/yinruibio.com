@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://yinruibio.com/en/products/carryon-device/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/products/carryon-device/" />
@@ -453,5 +453,35 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/blog/canine-parvovirus-pcr-test-kit-accuracy-speed-cost-vs-elisa/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/blog/canine-parvovirus-pcr-test-kit-accuracy-speed-cost-vs-elisa/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/en/markets/vietnam/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/vietnam/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/vietnam/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/vietnam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/vietnam/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/zh/markets/vietnam/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/vietnam/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/vietnam/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/vietnam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/vietnam/" />
+  </url>
+  <url>
+    <loc>https://yinruibio.com/ja/markets/vietnam/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yinruibio.com/en/markets/vietnam/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://yinruibio.com/zh/markets/vietnam/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yinruibio.com/ja/markets/vietnam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yinruibio.com/en/markets/vietnam/" />
   </url>
 </urlset>

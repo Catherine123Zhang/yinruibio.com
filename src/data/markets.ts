@@ -880,6 +880,199 @@ Contact us to discuss distribution opportunities across India.`,
       { q: { en: "What is the ASF testing situation in Southeast Asia?", zh: "东南亚的非洲猪瘟检测情况如何？", ja: "東南アジアにおけるASF検査の状況は？" }, a: { en: "African Swine Fever has caused unprecedented losses across Southeast Asia since 2018, with major outbreaks in Vietnam, Philippines, Indonesia, Myanmar, and confirmed cases in Thailand. The disease has killed hundreds of millions of pigs regionally. Rapid on-farm ASF detection is now a critical priority for all ASEAN countries. The CarryOn's ASF test chip enables PCR-level detection at farm sites without laboratory infrastructure, supporting containment and restocking decisions.", zh: "自2018年以来，非洲猪瘟在东南亚造成了前所未有的损失。在农场快速ASF检测现在是所有ASEAN国家的关键优先事项。CarryOn的ASF检测芯片支持现场PCR级检测。", ja: "アフリカ豚熱は2018年以降、東南アジア全域で前例のない被害をもたらしました。農場での迅速なASF検出は全ASEAN諸国の重要な優先事項です。CarryOnのASFテストチップは検査室インフラなしに農場でのPCRレベル検出を可能にします。" } },
     ],
   },
+  // 9. Vietnam
+  {
+    slug: "vietnam",
+    countryCode: "VN",
+    name: { en: "Vietnam", zh: "越南", ja: "ベトナム" },
+    heroTitle: { en: "Portable PCR for Swine Farms & Veterinary Distributors in Vietnam", zh: "面向越南猪场与兽药经销商的便携式PCR", ja: "ベトナムの養豚場・動物用医薬品代理店向けポータブルPCR" },
+    heroSubtitle: { en: "On-site African swine fever (ASF) and PRRS testing in under 60 minutes — 2 kg device, battery powered, room-temperature chips. Ships from Ningbo to Hai Phong in about a week.", zh: "现场检测非洲猪瘟（ASF）和蓝耳病（PRRS），60 分钟内出结果——2 公斤设备、电池供电、芯片常温保存。宁波到海防约一周到货。", ja: "アフリカ豚熱（ASF）と PRRS を現場で60分以内に検査。2kg・バッテリー駆動・室温保存チップ。寧波からハイフォンまで約1週間。" },
+    port: "Hai Phong / Cat Lai (Ho Chi Minh City)",
+    flagEmoji: "VN",
+    marketOverview: {
+      en: `### Vietnam: One of the World's Largest Pig Herds, and the Front Line of ASF
+
+Vietnam keeps roughly 25–26 million pigs and produces around 3.5 million tonnes of pork a year, placing it among the top six pork producers globally. Pork accounts for about two-thirds of meat consumption in the country, and the sector is shifting rapidly from backyard holdings to commercial farms of 1,000–10,000 head in Dong Nai, Binh Duong, Thai Nguyen, Bac Giang, Hung Yen, and the Red River and Mekong deltas.
+
+Since African swine fever was first confirmed in Hung Yen province in February 2019, Vietnam has lost well over six million pigs to culling, and the virus remains endemic in most provinces. Vietnam was also the first country to approve commercial ASF vaccines (2023), which makes disease surveillance — knowing which herds are infected before and after vaccination — even more important for farms, integrators, and the veterinary pharma companies that serve them.
+
+Molecular testing in Vietnam is still concentrated in regional animal health laboratories and a handful of private labs in Hanoi and Ho Chi Minh City. Samples travel for days; results arrive after movement or treatment decisions have already been taken. This gap between the farm and the laboratory is exactly where a 2 kg, battery-powered real-time PCR analyzer fits.`,
+      zh: `### 越南：全球最大生猪存栏国之一，非洲猪瘟前线
+
+越南生猪存栏约 2500–2600 万头，年产猪肉约 350 万吨，是全球前六的猪肉生产国；猪肉占越南肉类消费的三分之二左右。养殖结构正快速从散养转向同奈、平阳、太原、北江、兴安以及红河、湄公河三角洲地区 1000–10000 头规模的商品猪场。
+
+2019 年 2 月兴安省首次确认非洲猪瘟以来，越南扑杀生猪已超过 600 万头，病毒在多数省份呈地方性流行。越南也是全球第一个批准商业化非洲猪瘟疫苗（2023 年）的国家，这让疫情监测——免疫前后哪些猪群带毒——对猪场、一条龙企业和服务它们的兽药公司更加重要。
+
+越南的分子检测仍集中在区域动物卫生实验室和河内、胡志明市的少数私人实验室。样本要运送数天，结果出来时调运或治疗决定早已做出。猪场与实验室之间的这段空白，正是 2 公斤、电池供电的实时荧光 PCR 分析仪的位置。`,
+      ja: `### ベトナム：世界最大級の豚飼養頭数とASFの最前線
+
+ベトナムの豚飼養頭数は約2,500〜2,600万頭、豚肉生産量は年間約350万トンで、世界トップ6の豚肉生産国です。豚肉は国内食肉消費の約3分の2を占め、産業は裏庭飼育からドンナイ、ビンズオン、タイグエン、バクザン、フンイエン、紅河・メコンデルタ地域の1,000〜10,000頭規模の商業農場へ急速に移行しています。
+
+2019年2月にフンイエン省で初めてアフリカ豚熱が確認されて以来、ベトナムでは600万頭以上が殺処分され、ウイルスは多くの省で常在化しています。ベトナムは2023年に世界で初めて商用ASFワクチンを承認した国でもあり、ワクチン接種前後の感染状況を把握する疾病サーベイランスの重要性がさらに高まっています。
+
+分子検査はいまだ地域の動物衛生検査所とハノイ・ホーチミンの少数の民間ラボに集中しています。検体の輸送に数日かかり、結果が出る頃には移動や治療の判断はすでに下されています。この農場とラボの間の空白こそ、2kg・バッテリー駆動のリアルタイムPCR分析装置の居場所です。`,
+    },
+    regulatoryPathway: {
+      en: `### Regulatory Pathway in Vietnam
+
+**Competent authority:** Veterinary diagnostics are overseen by the Department of Animal Health (Cục Thú y) under the Ministry of Agriculture and Environment (formerly the Ministry of Agriculture and Rural Development, MARD), under the Law on Veterinary Medicine (2015) and its implementing decrees.
+
+**Diagnostic reagents:** Veterinary diagnostic kits and reagents intended for sale in Vietnam are generally required to be registered and granted a circulation permit before commercial distribution. The registration file typically includes manufacturer quality certificates (ISO 13485), product specifications, validation data (sensitivity, specificity, limit of detection), stability data, and Vietnamese labeling. Local testing or evaluation by a designated national laboratory may be requested.
+
+**Instruments:** The CarryOn analyzer is an in-vitro diagnostic instrument; import requirements are lighter than for reagents, but the device and its chips are normally registered together as a system by the Vietnamese importer of record.
+
+**How Yinrui Bio supports partners:** We provide the complete technical dossier in English (CE declaration, ISO 13485 certificate, IFUs, validation reports) and can supply samples for local evaluation. Registration is filed by the Vietnamese distribution partner, who becomes the license holder. Typical timelines run several months; we recommend starting with the ASF and PRRSV chips, which address the most urgent demand.`,
+      zh: `### 越南注册路径
+
+**主管部门：** 兽用诊断产品由农业与环境部（原农业与农村发展部 MARD）下属的动物卫生局（Cục Thú y）依据 2015 年《兽医法》及其实施细则监管。
+
+**诊断试剂：** 在越南销售的兽用诊断试剂盒一般需要先注册并取得流通许可。注册文件通常包括生产商质量体系证书（ISO 13485）、产品技术规格、验证数据（灵敏度、特异性、检出限）、稳定性数据及越南语标签；可能需要指定的国家实验室做本地评价。
+
+**仪器：** CarryOn 属于体外诊断仪器，进口要求比试剂宽松，但通常由越南进口方把仪器和芯片作为一个系统一起注册。
+
+**银瑞如何支持合作伙伴：** 我们提供完整英文技术文件（CE 符合性声明、ISO 13485 证书、说明书、验证报告），并可提供样品供本地评价。注册由越南分销伙伴以许可持有人身份提交，周期通常为数月；建议先从需求最急迫的 ASF 和 PRRSV 芯片开始。`,
+      ja: `### ベトナムの規制対応
+
+**所管官庁：** 動物用診断製品は、農業環境省（旧農業農村開発省 MARD）傘下の動物衛生局（Cục Thú y）が2015年獣医法および施行令に基づき監督します。
+
+**診断試薬：** ベトナムで販売する動物用診断キット・試薬は、一般に登録と流通許可の取得が必要です。申請書類には製造者の品質証明（ISO 13485）、製品仕様、バリデーションデータ（感度・特異度・検出限界）、安定性データ、ベトナム語ラベルが含まれ、指定国立検査機関での評価を求められる場合があります。
+
+**機器：** CarryOn は体外診断用機器で、試薬より輸入要件は軽いものの、通常はベトナムの輸入者が機器とチップをシステムとして一括登録します。
+
+**Yinrui Bio のサポート：** 英文の技術文書一式（CE 適合宣言、ISO 13485 証明書、取扱説明書、バリデーション報告書）を提供し、現地評価用サンプルも供給します。登録はベトナムの販売パートナーが許可保持者として申請し、通常は数か月を要します。需要の高い ASF と PRRSV チップから着手することを推奨します。`,
+    },
+    shippingLogistics: {
+      en: `### Shipping from Ningbo to Vietnam
+
+**Northern Vietnam (Hanoi, Thai Nguyen, Bac Giang, Hung Yen):** Port of Hai Phong. Ocean freight from Ningbo takes about 4–7 days with multiple weekly direct services. Road freight via the Guangxi–Lang Son border is also possible for urgent consolidated shipments.
+
+**Southern Vietnam (Ho Chi Minh City, Dong Nai, Binh Duong):** Cat Lai / Cai Mep ports. Ocean freight from Ningbo takes about 7–10 days.
+
+**Express courier (DHL / FedEx / SF):** 3–5 business days door-to-door for sample units and starter chip kits.
+
+**No cold chain required.** The CarryOn device and all test chips store and ship at 15–30 °C, which removes the single biggest logistics cost and failure point for molecular diagnostics in Vietnam's tropical climate. Chips arrive ready to use and can be stocked at provincial depots without refrigeration.
+
+**Trade terms:** FOB Ningbo standard; CIF Hai Phong or Ho Chi Minh City available on request. Payment by T/T; samples can be shipped on 100% prepayment with the cost credited against the first order.`,
+      zh: `### 宁波到越南的物流
+
+**越南北部（河内、太原、北江、兴安）：** 海防港。宁波海运约 4–7 天，每周多班直航；紧急拼箱也可走广西—谅山陆路口岸。
+
+**越南南部（胡志明市、同奈、平阳）：** 吉莱港 / 盖梅港。宁波海运约 7–10 天。
+
+**快递（DHL / FedEx / 顺丰）：** 样机和首批芯片 3–5 个工作日门到门。
+
+**无需冷链。** CarryOn 设备和全部芯片在 15–30 °C 下储存运输，这消除了越南热带气候下分子诊断最大的一项物流成本和风险点。芯片到货即用，可在省级仓库常温备货。
+
+**贸易条款：** 标准 FOB 宁波，可按需报 CIF 海防或胡志明市。T/T 付款；样品可 100% 预付发货，费用在首单中抵扣。`,
+      ja: `### 寧波からベトナムへの輸送
+
+**ベトナム北部（ハノイ、タイグエン、バクザン、フンイエン）：** ハイフォン港。寧波から海上輸送で約4〜7日、週複数便の直行サービスがあります。急ぎの混載貨物は広西〜ランソン国境経由の陸送も可能です。
+
+**ベトナム南部（ホーチミン、ドンナイ、ビンズオン）：** カットライ港／カイメップ港。寧波から約7〜10日。
+
+**国際宅配便（DHL / FedEx / SF）：** サンプル機や初回チップキットはドア・ツー・ドアで3〜5営業日。
+
+**コールドチェーン不要。** CarryOn 本体と全チップは15〜30 °Cで保管・輸送でき、ベトナムの熱帯気候における分子診断最大の物流コストとリスクを解消します。チップは到着後すぐ使用でき、省レベルの倉庫で常温備蓄が可能です。
+
+**取引条件：** 標準は FOB 寧波、要望により CIF ハイフォンまたはホーチミンも対応。支払いは T/T。サンプルは100%前払いで出荷し、初回注文で相殺できます。`,
+    },
+    keyApplications: {
+      en: `### Key Applications in Vietnam
+
+**African swine fever surveillance (primary demand):** Pre-movement screening of pigs, sentinel testing after vaccination, checking incoming breeding stock, and confirming suspected cases at the farm before the official laboratory result arrives. The CarryOn ASF chip runs on whole blood or tissue in under 60 minutes.
+
+**PRRS (blue ear) herd monitoring:** Serum or whole blood testing of sows and weaners to track circulation and time vaccination. The PRRSV chip uses the same device.
+
+**Expanding swine panels:** Classical swine fever (CSF), porcine circovirus 2 (PCV2), and porcine epidemic diarrhea virus (PEDV) are the next most requested targets from Vietnamese partners; custom panels are available for distribution agreements.
+
+**Poultry:** Avian influenza (H5N1/H5N6) surveillance on commercial layer and broiler farms in the Red River and Mekong deltas.
+
+**Aquaculture:** Vietnam is the world's third-largest shrimp exporter. White spot syndrome virus (WSSV) and EHP screening at hatcheries and grow-out ponds is a growing use case for portable PCR.
+
+**Companion animals:** The pet market in Hanoi and Ho Chi Minh City is growing more than 10% a year; canine parvovirus/distemper and feline panels serve urban veterinary clinics with the same device.`,
+      zh: `### 越南的主要应用
+
+**非洲猪瘟监测（首要需求）：** 生猪调运前筛查、免疫后哨兵监测、引种检疫、官方实验室结果出来前在猪场确认疑似病例。CarryOn ASF 芯片用全血或组织，60 分钟内出结果。
+
+**蓝耳病（PRRS）猪群监测：** 对母猪和保育猪做血清或全血检测，追踪病毒流行并安排免疫时机。PRRSV 芯片使用同一台设备。
+
+**猪病 panel 扩展：** 猪瘟（CSF）、猪圆环病毒 2 型（PCV2）、猪流行性腹泻（PEDV）是越南合作伙伴接下来最常提出的靶标，可为分销协议定制 panel。
+
+**家禽：** 红河、湄公河三角洲规模化蛋鸡、肉鸡场的禽流感（H5N1/H5N6）监测。
+
+**水产：** 越南是全球第三大虾类出口国，育苗场和养成池的白斑病毒（WSSV）与 EHP 筛查是便携 PCR 增长中的用途。
+
+**宠物：** 河内、胡志明市宠物市场年增超过 10%，犬细小/犬瘟和猫病 panel 可用同一台设备服务城市宠物医院。`,
+      ja: `### ベトナムにおける主な用途
+
+**アフリカ豚熱サーベイランス（主要需要）：** 豚の移動前スクリーニング、ワクチン接種後のセンチネル検査、導入種豚の検疫、公式ラボの結果を待たずに農場で疑い例を確認。CarryOn の ASF チップは全血または組織で60分以内に結果を出します。
+
+**PRRS（青耳病）群監視：** 母豚・離乳豚の血清または全血を検査し、ウイルスの流行を追跡してワクチン時期を決定。PRRSV チップは同じ装置で使用します。
+
+**豚用パネルの拡張：** 豚コレラ（CSF）、豚サーコウイルス2型（PCV2）、豚流行性下痢（PEDV）はベトナムのパートナーから次に多く要望される標的で、販売契約向けにカスタムパネルを用意できます。
+
+**家禽：** 紅河・メコンデルタの商業採卵鶏・ブロイラー農場での鳥インフルエンザ（H5N1/H5N6）監視。
+
+**水産養殖：** ベトナムは世界第3位のエビ輸出国。孵化場や養成池での白斑病ウイルス（WSSV）と EHP のスクリーニングは、ポータブルPCRの成長分野です。
+
+**伴侶動物：** ハノイ・ホーチミンのペット市場は年10%以上成長。犬パルボ／ジステンパーや猫用パネルで都市部の動物病院にも同じ装置で対応できます。`,
+    },
+    distributionModel: {
+      en: `### Distribution & Partnership in Vietnam
+
+Yinrui Bio is appointing distribution partners for Vietnam, with separate territories possible for the north (Hanoi / Hai Phong) and south (Ho Chi Minh City / Dong Nai).
+
+**Ideal partners:**
+- Veterinary pharmaceutical and vaccine companies that already serve commercial pig farms and want to add a diagnostics line
+- Animal health distributors and feed companies with provincial sales teams
+- Private veterinary laboratories expanding into on-site testing services
+- Integrators and large farm groups equipping their own field veterinary teams
+
+**What we provide:** technical training (device operation in about 30 minutes; sales training on PCR vs rapid antigen tests), full English documentation for registration, marketing materials, demonstration units, and a replacement-chip supply program with room-temperature stock held at the partner's depot.
+
+**Commercial model:** Device plus recurring chip sales. The CarryOn is typically placed with each field veterinary team or regional office; chips are the ongoing revenue. Exclusive territory agreements are available with an agreed annual minimum order quantity.
+
+**Typical starting order:** 2–5 CarryOn units with ASF and PRRSV starter chip kits for evaluation, followed by a registration-stage order of 10–20 units.`,
+      zh: `### 越南的分销与合作
+
+银瑞生物正在越南招募分销伙伴，北部（河内 / 海防）和南部（胡志明市 / 同奈）可分区域授权。
+
+**理想合作伙伴：**
+- 已服务规模化猪场、希望新增诊断产品线的兽药与疫苗公司
+- 拥有省级销售团队的动保经销商和饲料企业
+- 向现场检测服务扩展的私营兽医实验室
+- 为自有兽医团队配备设备的一条龙企业和大型养殖集团
+
+**我们提供：** 技术培训（设备操作约 30 分钟；PCR 与快速抗原检测的销售话术培训）、用于注册的完整英文资料、营销素材、演示样机，以及在合作伙伴仓库常温备货的芯片补货计划。
+
+**商业模式：** 设备 + 持续的芯片销售。CarryOn 通常配给每个现场兽医团队或区域办公室，芯片是持续收入。可签订带年度最低采购量的独家区域协议。
+
+**典型首单：** 2–5 台 CarryOn 配 ASF、PRRSV 首批芯片用于评估，随后注册阶段下单 10–20 台。`,
+      ja: `### ベトナムにおける販売・パートナーシップ
+
+Yinrui Bio はベトナムの販売パートナーを募集しており、北部（ハノイ／ハイフォン）と南部（ホーチミン／ドンナイ）で地域を分けた契約も可能です。
+
+**理想的なパートナー：**
+- 商業養豚場にすでに販売しており、診断製品ラインを追加したい動物用医薬品・ワクチン企業
+- 省単位の営業チームを持つ動物衛生製品代理店・飼料会社
+- 現場検査サービスへ拡大する民間獣医検査機関
+- 自社の現場獣医チームに機器を配備するインテグレーター・大規模農場グループ
+
+**提供内容：** 技術研修（装置操作は約30分、PCR と迅速抗原検査の違いを説明する営業研修）、登録用の英文書類一式、販促資料、デモ機、パートナー倉庫に常温在庫を置くチップ補充プログラム。
+
+**商業モデル：** 装置の販売に加え、チップの継続販売。CarryOn は現場獣医チームや地域事務所ごとに配備され、チップが継続収益になります。年間最低発注量を定めた独占地域契約も可能です。
+
+**典型的な初回注文：** 評価用に CarryOn 2〜5台と ASF・PRRSV スターターチップ、その後登録段階で10〜20台。`,
+    },
+    faqs: [
+      { q: { en: "Can the CarryOn detect African swine fever on a Vietnamese pig farm without a laboratory?", zh: "CarryOn 能在越南猪场无实验室条件下检测非洲猪瘟吗？", ja: "ラボのないベトナムの養豚場で CarryOn はアフリカ豚熱を検出できますか？" }, a: { en: "Yes. The ASF test chip runs real-time fluorescence PCR on whole blood or tissue homogenate inside a sealed microfluidic chip. Extraction, amplification, and detection are automatic, and the result appears on the touchscreen in under 60 minutes. The 2 kg device runs on battery for about 3.5 hours, so a technician can test at the farm gate or in a vehicle.", zh: "可以。ASF 芯片在密封微流控芯片内对全血或组织匀浆做实时荧光 PCR，提取、扩增、检测全自动，60 分钟内在触摸屏显示结果。2 公斤设备电池可用约 3.5 小时，技术员可在猪场门口或车上检测。", ja: "はい。ASF チップは密閉マイクロ流体チップ内で全血または組織ホモジネートのリアルタイム蛍光PCRを行います。抽出・増幅・検出は自動で、60分以内にタッチスクリーンに結果が表示されます。2kg の装置はバッテリーで約3.5時間稼働し、農場の入口や車内でも検査できます。" } },
+      { q: { en: "Is the CarryOn registered with Vietnam's Department of Animal Health?", zh: "CarryOn 在越南动物卫生局注册了吗？", ja: "CarryOn はベトナム動物衛生局に登録されていますか？" }, a: { en: "Registration in Vietnam is filed by the local distribution partner as license holder. Yinrui Bio supplies the complete dossier — CE declaration, ISO 13485 certificate, validation data, and IFUs — and samples for any required local evaluation. We recommend starting with the ASF and PRRSV chips.", zh: "越南注册由本地分销伙伴作为许可持有人提交。银瑞提供完整资料——CE 符合性声明、ISO 13485 证书、验证数据、说明书——以及本地评价所需样品。建议先从 ASF 和 PRRSV 芯片开始。", ja: "ベトナムでの登録は現地販売パートナーが許可保持者として申請します。Yinrui Bio は CE 適合宣言、ISO 13485 証明書、バリデーションデータ、取扱説明書など書類一式と、現地評価に必要なサンプルを提供します。ASF と PRRSV チップからの着手を推奨します。" } },
+      { q: { en: "How is the CarryOn different from a benchtop real-time PCR machine?", zh: "CarryOn 和台式荧光定量 PCR 仪有什么区别？", ja: "CarryOn はベンチトップ型リアルタイムPCR装置と何が違いますか？" }, a: { en: "A benchtop qPCR system (10–20 kg, 4–7 channels, mains power, 96-well plates) belongs in a laboratory and needs a separate extraction step, trained staff, and frozen reagents. The CarryOn is 2 kg, battery powered, 5-color, with extraction built into a room-temperature chip. It trades plate capacity for the ability to test at the farm. Many distributors sell both: benchtop units for the central lab, CarryOn units for field teams.", zh: "台式 qPCR（10–20 公斤、4–7 通道、市电、96 孔板）属于实验室，需要单独提取步骤、专业人员和冷冻试剂。CarryOn 2 公斤、电池供电、5 色通道，提取集成在常温芯片内，以通量换取在猪场检测的能力。很多经销商两种都卖：台式机放中心实验室，CarryOn 配给现场团队。", ja: "ベンチトップ型 qPCR（10〜20kg、4〜7チャンネル、商用電源、96ウェルプレート）はラボ向けで、別途抽出工程、専門スタッフ、冷凍試薬が必要です。CarryOn は2kg・バッテリー駆動・5色で、抽出は室温チップに内蔵。処理量と引き換えに農場で検査できる能力を得ます。多くの代理店は両方を扱い、ベンチトップは中央ラボ、CarryOn は現場チームに配備します。" } },
+      { q: { en: "Which other swine diseases can be tested?", zh: "还能检测哪些猪病？", ja: "他にどの豚の疾病を検査できますか？" }, a: { en: "ASF and PRRSV chips are available now. Classical swine fever (CSF), PCV2, PEDV, and pseudorabies panels are on the development roadmap and can be prioritized for distribution partners with committed volumes. One device runs all chips.", zh: "ASF 和 PRRSV 芯片现货供应。猪瘟（CSF）、PCV2、PEDV、伪狂犬 panel 在开发路线图中，可为有承诺采购量的分销伙伴优先开发。一台设备可运行全部芯片。", ja: "ASF と PRRSV チップは現在供給可能です。豚コレラ（CSF）、PCV2、PEDV、オーエスキー病のパネルは開発ロードマップにあり、数量をコミットした販売パートナー向けに優先開発できます。1台の装置ですべてのチップを実行できます。" } },
+      { q: { en: "How long does shipping from China to Vietnam take?", zh: "从中国到越南运输要多久？", ja: "中国からベトナムへの輸送期間は？" }, a: { en: "Ocean freight from Ningbo to Hai Phong takes about 4–7 days, to Ho Chi Minh City about 7–10 days. Express courier delivers sample units in 3–5 business days. Nothing needs refrigeration in transit.", zh: "宁波到海防海运约 4–7 天，到胡志明市约 7–10 天。快递 3–5 个工作日送达样机。全程无需冷藏。", ja: "寧波からハイフォンまで海上輸送で約4〜7日、ホーチミンまで約7〜10日。国際宅配便ならサンプル機は3〜5営業日で届きます。輸送中の冷蔵は不要です。" } },
+      { q: { en: "Is a Vietnamese-language interface available?", zh: "有越南语操作界面吗？", ja: "ベトナム語のインターフェースはありますか？" }, a: { en: "The device ships with English and Chinese interfaces. Localized language packs, Vietnamese labeling, and Vietnamese training materials are prepared for distribution partners as part of the registration process. Operation requires only four steps, and most staff are trained in about 30 minutes.", zh: "设备标配英文和中文界面。越南语语言包、越南语标签和培训材料可在注册阶段为分销伙伴准备。操作只有四步，多数员工约 30 分钟即可上手。", ja: "装置は英語と中国語のインターフェースを標準搭載しています。ベトナム語の言語パック、ラベル、研修資料は登録手続きの一環として販売パートナー向けに用意します。操作は4ステップのみで、ほとんどのスタッフは約30分で習得できます。" } },
+    ],
+  },
 ];
 
 // Helper functions
