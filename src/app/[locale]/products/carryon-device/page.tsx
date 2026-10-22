@@ -25,9 +25,19 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isValidLocale(locale)) return {};
   const lang = locale as Locale;
+  const titleMap: Record<string, string> = {
+    en: "CarryOn Portable PCR Analyzer — 2 kg Handheld Veterinary Diagnostic Device",
+    zh: "CarryOn 便携式PCR分析仪 — 2公斤手持兽医诊断设备",
+    ja: "CarryOn ポータブルPCRアナライザー — 2kgハンドヘルド獣医診断デバイス",
+  };
+  const descMap: Record<string, string> = {
+    en: "Handheld real-time fluorescence PCR analyzer. 2.0 kg, 5-color detection, results in 40 minutes. Battery-powered, no lab required. Detect canine, feline, livestock diseases & meat species. CE + ISO 13485 certified.",
+    zh: "手持式实时荧光PCR分析仪。2.0公斤，5色检测通道，40分钟出结果。电池供电，无需实验室。检测犬猫、畜禽疾病及肉类鉴定。CE + ISO 13485认证。",
+    ja: "ハンドヘルド型リアルタイム蛍光PCRアナライザー。2.0kg、5色検出、40分で結果。バッテリー駆動、ラボ不要。犬猫・家畜疾患・食肉種鑑定に対応。CE + ISO 13485認証。",
+  };
   return {
-    title: device.name[lang],
-    description: device.tagline[lang],
+    title: titleMap[lang] || titleMap.en,
+    description: descMap[lang] || descMap.en,
     alternates: { canonical: `/${locale}/products/carryon-device/` },
   };
 }
@@ -183,8 +193,41 @@ export default async function CarryOnDevicePage({
                 ))}
               </div>
 
+              {/* Business Terms */}
+              <div className="mt-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg)] p-5">
+                <h3 className="text-sm font-semibold text-[var(--color-primary)] uppercase tracking-wide mb-3">
+                  {lang === "zh" ? "商务条款" : lang === "ja" ? "取引条件" : "Business Terms"}
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-[var(--color-text-light)]">MOQ</span>
+                    <span className="font-medium text-[var(--color-primary)]">1 unit (device), 50 pcs (chips)</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "样品" : lang === "ja" ? "サンプル" : "Sample"}</span>
+                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "可提供演示机" : lang === "ja" ? "デモ機提供可" : "Demo unit available"}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "交期" : lang === "ja" ? "納期" : "Lead Time"}</span>
+                    <span className="font-medium text-[var(--color-primary)]">7-14d (stock) / 30d (bulk)</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "付款" : lang === "ja" ? "支払い" : "Payment"}</span>
+                    <span className="font-medium text-[var(--color-primary)]">T/T, L/C</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "发货" : lang === "ja" ? "出荷" : "Shipping"}</span>
+                    <span className="font-medium text-[var(--color-primary)]">FOB Ningbo, DDP available</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "定制" : lang === "ja" ? "カスタム" : "Customization"}</span>
+                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "贴牌/定制芯片" : lang === "ja" ? "OEM/カスタムパネル" : "Private label, custom panels"}</span>
+                  </div>
+                </div>
+              </div>
+
               {/* CTAs */}
-              <div className="mt-8 flex flex-col sm:flex-row gap-3">
+              <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <Link
                   href={`/${locale}/contact/?product=${encodeURIComponent("CarryOn Portable PCR Analyzer")}`}
                   className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"

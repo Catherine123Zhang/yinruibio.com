@@ -81,21 +81,46 @@ function ContactPageInner() {
     // Collect UTM data
     const utm = getUtmParams();
 
-    // TODO: Replace with Cloudflare Worker endpoint
-    const data = Object.fromEntries(formData.entries());
-    // Collect checkbox values
-    const interests = formData.getAll("interests");
-    console.log("Form submission:", { ...data, interests, ...(utm || {}) });
+    // Submit to form-handler Worker (tenant: yinrui) → email + Telegram + app.aicatalog.io CRM
+    const data = Object.fromEntries(formData.entries()) as Record<string, string>;
+    const interests = formData.getAll("interests").map(String);
+    const payload: Record<string, string> = {
+      ...data,
+      tenant: "yinrui",
+      interests: interests.join(", "),
+      source_page: typeof window !== "undefined" ? window.location.href : data.source_page || "contact",
+      ...(utm || {}),
+    };
 
-    // GA4 event
-    trackEvent("generate_lead", {
-      method: "contact_form",
-      product_context: productContext || "none",
-    });
+    try {
+      const res = await fetch("https://form-handler.autopartsalive-images.workers.dev/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = (await res.json().catch(() => ({}))) as { success?: boolean; error?: string };
+      if (!res.ok || !result.success) {
+        throw new Error(result.error || `HTTP ${res.status}`);
+      }
 
-    await new Promise((r) => setTimeout(r, 1000));
-    setSubmitted(true);
-    setLoading(false);
+      // GA4 event (only on confirmed delivery)
+      trackEvent("generate_lead", {
+        method: "contact_form",
+        product_context: productContext || "none",
+      });
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Form submission failed:", err);
+      setContactError(
+        lang === "zh"
+          ? "提交失败，请直接发邮件至 info@yinruibio.com 或添加 WhatsApp +86 18268661068。"
+          : lang === "ja"
+            ? "送信に失敗しました。info@yinruibio.com までメールするか、WhatsApp +86 18268661068 を追加してください。"
+            : "Submission failed. Please email info@yinruibio.com or message WhatsApp +86 18268661068 directly."
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   const inputClass =
@@ -300,6 +325,7 @@ function ContactPageInner() {
 
               {/* Hidden fields */}
               <input type="hidden" name="locale" value={locale} />
+              <input type="hidden" name="tenant" value="yinrui" />
               <input type="hidden" name="source_page" value="contact" />
 
               <button

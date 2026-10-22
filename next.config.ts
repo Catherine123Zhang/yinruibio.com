@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  turbopack: {
+    root: "/Users/vivian/AI项目/yinruibio.com",
+  },
 };
 
 export default nextConfig;

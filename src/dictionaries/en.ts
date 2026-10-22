@@ -1,8 +1,8 @@
 const en = {
   meta: {
-    siteName: "Yinrui Bio — Portable Veterinary PCR Analyzer",
+    siteName: "Portable Veterinary PCR Analyzer | Yinrui Bio — 40-Min Point-of-Care Diagnostics",
     siteDescription:
-      "Portable PCR analyzer for veterinary point-of-care diagnostics. 40-minute results, 99.2% accuracy. Detect Parvo, FIP, Distemper, influenza & more. 62 patents, 30+ countries. OEM/ODM available.",
+      "Handheld PCR analyzer for veterinary clinics — detect Parvo, Distemper, FIV/FeLV, tick-borne diseases in 40 minutes. 2 kg, battery-powered, no lab needed. CE certified, 62 patents. OEM/ODM & distributor partnerships.",
   },
   nav: {
     home: "Home",
@@ -13,13 +13,13 @@ const en = {
     blog: "Blog",
     faq: "FAQ",
     contact: "Contact",
-    requestDemo: "Request Demo",
+    requestDemo: "Request a Demo \u2014 Free for Qualified Buyers",
   },
   hero: {
     title: "PCR-Accurate Diagnostics in Your Hand",
     subtitle:
       "40-minute results. No lab. No training. Just answers.",
-    cta: "Request a Demo",
+    cta: "Request a Demo \u2014 Free for Qualified Buyers",
     ctaSecondary: "Watch How It Works",
     badge: "Palm-sized Lab",
   },
@@ -93,7 +93,7 @@ const en = {
     title: "Ready to Bring PCR Testing to Your Clinic?",
     subtitle:
       "Join veterinary clinics in 30+ countries using CarryOn for rapid, accurate diagnostics.",
-    button: "Request a Free Demo",
+    button: "Request a Free Demo \u2014 Reply in 24 Hours",
     downloadCatalog: "Download Catalog",
   },
   footer: {

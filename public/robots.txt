@@ -45,6 +45,18 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
 # Block aggressive scrapers
 User-agent: Bytespider
 Disallow: /
