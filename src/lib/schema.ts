@@ -55,7 +55,7 @@ export function organizationSchema() {
 export function productSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": ["Product", "MedicalDevice"],
+    "@type": "MedicalDevice",
     name: "CarryOn Portable PCR Platform",
     description:
       "Handheld, battery-powered real-time fluorescence PCR analyzer with microfluidic chip technology. PCR-accurate results in 40 minutes with no lab required.",
@@ -73,7 +73,7 @@ export function productSchema() {
       { "@type": "PropertyValue", name: "Time to Result", value: "40-60 minutes" },
       { "@type": "PropertyValue", name: "Automation", value: "Fully Automated" },
       { "@type": "PropertyValue", name: "Reagent Storage", value: "Room Temperature" },
-      { "@type": "PropertyValue", name: "Weight", value: "< 1 kg" },
+      { "@type": "PropertyValue", name: "Weight", value: "2.0 kg" },
       { "@type": "PropertyValue", name: "Power", value: "Battery Powered" },
     ],
   };

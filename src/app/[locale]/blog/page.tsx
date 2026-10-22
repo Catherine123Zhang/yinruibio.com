@@ -1,4 +1,4 @@
-import { locales, isValidLocale } from "@/lib/i18n";
+import { activeLocales, isValidLocale  } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
@@ -9,7 +9,7 @@ import Image from "next/image";
 import { blogPosts } from "@/data/blog";
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return activeLocales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({

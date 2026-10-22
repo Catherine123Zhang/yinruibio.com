@@ -66,8 +66,8 @@ function encode(text, likeLit) {
   return JSON.stringify(text);
 }
 
-const RECORD = new RegExp(String.raw`en:\s*(${S})\s*,\s*zh:\s*(${S})(\s*,\s*)ja:\s*(${S})(?!\s*,\s*${LOCALE}:)`, "g");
-const TERNARY = new RegExp(String.raw`\b(lang|locale) === "zh"\s*\?\s*(${S})\s*:\s*\1 === "ja"\s*\?\s*(${S})(\s*:\s*)(${S})`, "g");
+const RECORD = new RegExp(String.raw`en:\s*(${S})\s*,\s*zh:\s*(${S})(\s*,\s*)ja:\s*(${S})(?![^}]*\b${LOCALE}:)`, "g");
+const TERNARY = new RegExp(String.raw`\b(lang|locale) === "zh"\s*\?\s*(${S})\s*:\s*\1 === "ja"\s*\?\s*(${S})((?:\s*:\s*\1 === "[a-z]{2}"\s*\?\s*${S})*)(\s*:\s*)(${S})`, "g");
 
 async function listFiles(dir, exts) {
   const out = [];
@@ -93,7 +93,7 @@ for (const f of files) {
   const src = await fs.readFile(f, "utf8");
   let n = 0;
   for (const m of src.matchAll(RECORD)) { needed.add(decode(m[1])); n++; }
-  for (const m of src.matchAll(TERNARY)) { needed.add(decode(m[5])); n++; }
+  for (const m of src.matchAll(TERNARY)) { if (m[4].includes(`"${LOCALE}"`)) continue; needed.add(decode(m[6])); n++; }
   if (n) perFile.set(f, n);
 }
 console.log(`files with work: ${perFile.size}, unique English strings: ${needed.size}`);
@@ -130,9 +130,10 @@ if (!DRY) {
       const t = cache[decode(en)]; if (t === undefined) return m;
       return `${m}${sep}${LOCALE}: ${encode(t, ja)}`;
     });
-    src = src.replace(TERNARY, (m, v, zh, ja, sep, en) => {
+    src = src.replace(TERNARY, (m, v, zh, ja, extra, sep, en) => {
+      if (extra.includes(`"${LOCALE}"`)) return m;
       const t = cache[decode(en)]; if (t === undefined) return m;
-      return `${v} === "zh" ? ${zh} : ${v} === "ja" ? ${ja}${sep}${v} === "${LOCALE}" ? ${encode(t, en)}${sep}${en}`;
+      return `${v} === "zh" ? ${zh} : ${v} === "ja" ? ${ja}${extra}${sep}${v} === "${LOCALE}" ? ${encode(t, en)}${sep}${en}`;
     });
     await fs.writeFile(f, src);
   }

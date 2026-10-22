@@ -34,7 +34,7 @@ export default function Footer({
               </li>
               <li>
                 <Link href={`/${locale}/products/test-chips/`} className="hover:text-white transition-colors">
-                  {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : locale === "vi" ? "Chip xét nghiệm" : "Test Chips"}
+                  {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : locale === "vi" ? "Chip xét nghiệm" : locale === "pt" ? "Chips de Teste" : "Test Chips"}
                 </Link>
               </li>
               <li>
@@ -54,7 +54,7 @@ export default function Footer({
               </li>
               <li>
                 <Link href={`/${locale}/markets/`} className="hover:text-white transition-colors">
-                  {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Thị trường toàn cầu" : "Global Markets"}
+                  {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Thị trường toàn cầu" : locale === "pt" ? "Mercados globais" : "Global Markets"}
                 </Link>
               </li>
             </ul>
@@ -99,7 +99,7 @@ export default function Footer({
               />
             </div>
             <p className="mt-2 text-xs text-white/50">
-              {locale === "zh" ? "扫码添加微信" : locale === "ja" ? "WeChatで追加" : locale === "vi" ? "Quét để kết nối" : "Scan to connect"}
+              {locale === "zh" ? "扫码添加微信" : locale === "ja" ? "WeChatで追加" : locale === "vi" ? "Quét để kết nối" : locale === "pt" ? "Escaneie para conectar" : "Scan to connect"}
             </p>
           </div>
         </div>

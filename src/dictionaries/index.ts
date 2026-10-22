@@ -6,6 +6,7 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   zh: () => import("./zh").then((m) => m.default),
   ja: () => import("./ja").then((m) => m.default),
   vi: () => import("./vi").then((m) => m.default),
+  pt: () => import("./pt").then((m) => m.default),
 };
 
 export async function getDictionary(locale: Locale): Promise<Dictionary> {

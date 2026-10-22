@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { locales, localeNames } from "@/lib/i18n";
+import { activeLocales, localeNames  } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import type { Dictionary } from "@/dictionaries/en";
 
@@ -17,7 +17,7 @@ export default function Header({
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const marketsLabel = locale === "zh" ? "市场" : locale === "ja" ? "市場" : locale === "vi" ? "Thị trường" : "Markets";
+  const marketsLabel = locale === "zh" ? "市场" : locale === "ja" ? "市場" : locale === "vi" ? "Thị trường" : locale === "pt" ? "Mercados" : "Markets";
 
   const navItems = [
     { href: `/${locale}/`, label: dict.nav.home },
@@ -63,7 +63,7 @@ export default function Header({
           <div className="hidden lg:flex items-center gap-3">
             {/* Language Switcher */}
             <div className="flex items-center gap-1 border border-[var(--color-border)] rounded-md px-1">
-              {locales.map((l) => (
+              {activeLocales.map((l) => (
                 <Link
                   key={l}
                   href={`/${l}/`}
@@ -113,7 +113,7 @@ export default function Header({
               ))}
             </nav>
             <div className="mt-4 px-3 flex items-center gap-2">
-              {locales.map((l) => (
+              {activeLocales.map((l) => (
                 <Link
                   key={l}
                   href={`/${l}/`}

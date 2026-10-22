@@ -1,4 +1,4 @@
-import { locales, isValidLocale } from "@/lib/i18n";
+import { activeLocales, isValidLocale  } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
@@ -7,7 +7,7 @@ import { faqSchema, breadcrumbSchema } from "@/lib/schema";
 import Link from "next/link";
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return activeLocales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({
@@ -80,20 +80,20 @@ export default async function FAQPage({
       <section className="py-12">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-lg font-semibold text-[var(--color-primary)] mb-4">
-            {locale === "zh" ? "了解更多" : locale === "ja" ? "詳しく見る" : locale === "vi" ? "Tìm hiểu thêm" : "Learn More"}
+            {locale === "zh" ? "了解更多" : locale === "ja" ? "詳しく見る" : locale === "vi" ? "Tìm hiểu thêm" : locale === "pt" ? "Saiba mais" : "Learn More"}
           </h2>
           <div className="grid gap-3 sm:grid-cols-3">
             <Link
               href={`/${locale}/products/carryon-device/`}
               className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
             >
-              {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : locale === "vi" ? "Thiết bị CarryOn" : "CarryOn Device"}
+              {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : locale === "vi" ? "Thiết bị CarryOn" : locale === "pt" ? "Dispositivo CarryOn" : "CarryOn Device"}
             </Link>
             <Link
               href={`/${locale}/products/test-chips/`}
               className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
             >
-              {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : locale === "vi" ? "Chip xét nghiệm" : "Test Chips"}
+              {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : locale === "vi" ? "Chip xét nghiệm" : locale === "pt" ? "Chips de Teste" : "Test Chips"}
             </Link>
             <Link
               href={`/${locale}/technology/`}

@@ -1,4 +1,4 @@
-import { locales, isValidLocale } from "@/lib/i18n";
+import { activeLocales, isValidLocale  } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
@@ -9,7 +9,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 import InquiryFormCompact from "@/components/InquiryFormCompact";
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return activeLocales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({
@@ -25,12 +25,14 @@ export async function generateMetadata({
     zh: "全球市场 — CarryOn便携式PCR平台",
     ja: "グローバル市場 — CarryOnポータブルPCRプラットフォーム",
     vi: "Thị trường toàn cầu — Nền tảng PCR cầm tay CarryOn",
+    pt: "Mercados Globais — Plataforma de PCR Portátil CarryOn",
   };
   const descriptions: Record<Locale, string> = {
     en: "Explore CarryOn portable PCR diagnostics availability across 8 key global markets. Regulatory pathways, shipping logistics, and distribution partnerships for veterinary molecular diagnostics.",
     zh: "探索CarryOn便携式PCR诊断在全球8个重点市场的可用性。兽医分子诊断的监管途径、物流和分销合作。",
     ja: "8つの主要グローバル市場でのCarryOnポータブルPCR診断の展開をご覧ください。獣医分子診断の規制経路、物流、販売パートナーシップ。",
     vi: "Khám phá tính sẵn có của xét nghiệm PCR cầm tay CarryOn tại 8 thị trường toàn cầu trọng điểm. Lộ trình pháp lý, hậu cần vận chuyển và quan hệ đối tác phân phối cho chẩn đoán phân tử thú y.",
+    pt: "Explore a disponibilidade de diagnósticos de PCR portáteis CarryOn em 8 principais mercados globais. Vias regulatórias, logística de envio e parcerias de distribuição para diagnóstico molecular veterinário.",
   };
 
   return {
@@ -51,7 +53,7 @@ export default async function MarketsPage({
 
   const breadcrumbs = [
     { name: dict.nav.home, url: `/${locale}/` },
-    { name: locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Thị trường" : "Markets", url: `/${locale}/markets/` },
+    { name: locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Thị trường" : locale === "pt" ? "Mercados" : "Markets", url: `/${locale}/markets/` },
   ];
 
   const heroTitle: Record<Locale, string> = {
@@ -59,12 +61,14 @@ export default async function MarketsPage({
     zh: "全球市场",
     ja: "グローバル市場",
     vi: "Thị trường toàn cầu",
+    pt: "Mercados globais",
   };
   const heroSubtitle: Record<Locale, string> = {
     en: "CarryOn portable PCR diagnostics are available worldwide. Explore regulatory pathways, shipping logistics, and distribution opportunities in your market.",
     zh: "CarryOn便携式PCR诊断面向全球市场。探索您所在市场的监管途径、物流和分销机会。",
     ja: "CarryOnポータブルPCR診断は世界中で利用可能です。お客様の市場における規制経路、物流、販売機会をご覧ください。",
     vi: "Xét nghiệm PCR cầm tay CarryOn đã có mặt trên toàn thế giới. Khám phá lộ trình pháp lý, hậu cần vận chuyển và cơ hội phân phối tại thị trường của bạn.",
+    pt: "O diagnóstico PCR portátil CarryOn está disponível em todo o mundo. Conheça as vias regulatórias, a logística de envio e as oportunidades de distribuição no seu mercado.",
   };
 
   const flagMap: Record<string, string> = {
@@ -96,7 +100,7 @@ export default async function MarketsPage({
             </Link>
             <span>/</span>
             <span className="text-white/80">
-              {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Thị trường" : "Markets"}
+              {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Thị trường" : locale === "pt" ? "Mercados" : "Markets"}
             </span>
           </nav>
           <h1 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
@@ -132,11 +136,11 @@ export default async function MarketsPage({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  {locale === "zh" ? "港口：" : locale === "ja" ? "港：" : locale === "vi" ? "Cảng: " : "Port: "}
+                  {locale === "zh" ? "港口：" : locale === "ja" ? "港：" : locale === "vi" ? "Cảng: " : locale === "pt" ? "Porto: " : "Port: "}
                   {market.port}
                 </div>
                 <span className="mt-4 inline-flex items-center text-sm font-medium text-[var(--color-accent)]">
-                  {locale === "zh" ? "了解更多" : locale === "ja" ? "詳細を見る" : locale === "vi" ? "Tìm hiểu thêm" : "Learn More"}
+                  {locale === "zh" ? "了解更多" : locale === "ja" ? "詳細を見る" : locale === "vi" ? "Tìm hiểu thêm" : locale === "pt" ? "Saiba mais" : "Learn More"}
                   <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -154,25 +158,25 @@ export default async function MarketsPage({
             <div>
               <div className="text-2xl sm:text-3xl font-bold">8+</div>
               <div className="mt-1 text-sm text-white/70">
-                {locale === "zh" ? "目标市场" : locale === "ja" ? "ターゲット市場" : locale === "vi" ? "Thị trường mục tiêu" : "Target Markets"}
+                {locale === "zh" ? "目标市场" : locale === "ja" ? "ターゲット市場" : locale === "vi" ? "Thị trường mục tiêu" : locale === "pt" ? "Mercados-alvo" : "Target Markets"}
               </div>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl font-bold">CE + ISO</div>
               <div className="mt-1 text-sm text-white/70">
-                {locale === "zh" ? "认证" : locale === "ja" ? "認証" : locale === "vi" ? "Đã chứng nhận" : "Certified"}
+                {locale === "zh" ? "认证" : locale === "ja" ? "認証" : locale === "vi" ? "Đã chứng nhận" : locale === "pt" ? "Certificado" : "Certified"}
               </div>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl font-bold">3-35</div>
               <div className="mt-1 text-sm text-white/70">
-                {locale === "zh" ? "天运输时间" : locale === "ja" ? "日の輸送時間" : locale === "vi" ? "Ngày vận chuyển" : "Days Shipping"}
+                {locale === "zh" ? "天运输时间" : locale === "ja" ? "日の輸送時間" : locale === "vi" ? "Ngày vận chuyển" : locale === "pt" ? "Dias de envio" : "Days Shipping"}
               </div>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl font-bold">FOB</div>
               <div className="mt-1 text-sm text-white/70">
-                {locale === "zh" ? "宁波" : locale === "ja" ? "寧波" : locale === "vi" ? "Ningbo" : "Ningbo"}
+                {locale === "zh" ? "宁波" : locale === "ja" ? "寧波" : locale === "vi" ? "Ningbo" : locale === "pt" ? "Ningbo" : "Ningbo"}
               </div>
             </div>
           </div>
@@ -195,20 +199,20 @@ export default async function MarketsPage({
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
             <span className="font-medium text-[var(--color-primary)]">
-              {locale === "zh" ? "了解更多：" : locale === "ja" ? "もっと見る：" : locale === "vi" ? "Khám phá:" : "Explore:"}
+              {locale === "zh" ? "了解更多：" : locale === "ja" ? "もっと見る：" : locale === "vi" ? "Khám phá:" : locale === "pt" ? "Explorar:" : "Explore:"}
             </span>
             <div className="flex flex-wrap justify-center gap-3">
               <Link
                 href={`/${locale}/products/carryon-device/`}
                 className="inline-flex items-center rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
               >
-                {locale === "zh" ? "CarryOn 设备" : locale === "ja" ? "CarryOn デバイス" : locale === "vi" ? "Thiết bị CarryOn" : "CarryOn Device"}
+                {locale === "zh" ? "CarryOn 设备" : locale === "ja" ? "CarryOn デバイス" : locale === "vi" ? "Thiết bị CarryOn" : locale === "pt" ? "Dispositivo CarryOn" : "CarryOn Device"}
               </Link>
               <Link
                 href={`/${locale}/products/test-chips/`}
                 className="inline-flex items-center rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
               >
-                {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : locale === "vi" ? "Chip xét nghiệm" : "Test Chips"}
+                {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : locale === "vi" ? "Chip xét nghiệm" : locale === "pt" ? "Chips de Teste" : "Test Chips"}
               </Link>
               <Link
                 href={`/${locale}/technology/`}

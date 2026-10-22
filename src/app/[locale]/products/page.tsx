@@ -1,4 +1,4 @@
-import { locales, isValidLocale } from "@/lib/i18n";
+import { activeLocales, isValidLocale  } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
@@ -11,7 +11,7 @@ import FadeIn from "@/components/FadeIn";
 import CatalogButton from "@/components/CatalogButton";
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return activeLocales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({
@@ -79,7 +79,7 @@ export default async function ProductsPage({
               </div>
               <div>
                 <span className="inline-block rounded-full bg-[var(--color-accent)]/10 px-3 py-1 text-sm font-medium text-[var(--color-accent)] mb-4">
-                  {lang === "zh" ? "核心设备" : lang === "ja" ? "コアデバイス" : lang === "vi" ? "Thiết bị chính" : "Core Device"}
+                  {lang === "zh" ? "核心设备" : lang === "ja" ? "コアデバイス" : lang === "vi" ? "Thiết bị chính" : lang === "pt" ? "Dispositivo principal" : "Core Device"}
                 </span>
                 <h2 className="text-3xl font-bold text-[var(--color-primary)]">
                   {device.name[lang]}
@@ -113,7 +113,7 @@ export default async function ProductsPage({
                     href={`/${locale}/products/carryon-device/`}
                     className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-6 py-3 text-base font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
                   >
-                    {lang === "zh" ? "查看详情" : lang === "ja" ? "詳細を見る" : lang === "vi" ? "Xem chi tiết" : "View Details"}
+                    {lang === "zh" ? "查看详情" : lang === "ja" ? "詳細を見る" : lang === "vi" ? "Xem chi tiết" : lang === "pt" ? "Ver detalhes" : "View Details"}
                   </Link>
                   <Link
                     href={`/${locale}/contact/`}
@@ -132,11 +132,12 @@ export default async function ProductsPage({
       <section className="py-20 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)]">
-            {lang === "zh" ? "产品分类" : lang === "ja" ? "製品カテゴリー" : lang === "vi" ? "Danh mục sản phẩm" : "Product Categories"}
+            {lang === "zh" ? "产品分类" : lang === "ja" ? "製品カテゴリー" : lang === "vi" ? "Danh mục sản phẩm" : lang === "pt" ? "Categorias de produtos" : "Product Categories"}
           </h2>
           <p className="mt-4 text-center text-[var(--color-text-light)] max-w-2xl mx-auto">
             {lang === "zh" ? "完整的即时分子诊断解决方案——从设备到检测芯片到耗材。" : lang === "ja" ? "デバイスから検査チップ、消耗品まで——完全なポイントオブケア分子診断ソリューション。"
                 : lang === "vi" ? "Giải pháp chẩn đoán phân tử tại chỗ hoàn chỉnh — từ thiết bị đến chip xét nghiệm và vật tư tiêu hao."
+                : lang === "pt" ? "Uma solução completa de diagnóstico molecular no ponto de atendimento — do dispositivo aos chips de teste e aos consumíveis."
                 : "A complete point-of-care molecular diagnostics solution — from device to test chips to consumables."}
           </p>
 
@@ -163,7 +164,7 @@ export default async function ProductsPage({
                     {cat.description[lang]}
                   </p>
                   <span className="mt-4 inline-flex items-center text-sm font-medium text-[var(--color-accent)]">
-                    {lang === "zh" ? "查看全部" : lang === "ja" ? "すべて見る" : lang === "vi" ? "Xem tất cả" : "View All"}
+                    {lang === "zh" ? "查看全部" : lang === "ja" ? "すべて見る" : lang === "vi" ? "Xem tất cả" : lang === "pt" ? "Ver todos" : "View All"}
                     <svg className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>

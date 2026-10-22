@@ -1,4 +1,4 @@
-import { locales, isValidLocale } from "@/lib/i18n";
+import { activeLocales, isValidLocale  } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
@@ -14,7 +14,7 @@ import ProductViewTracker from "@/components/ProductViewTracker";
 const device = products.find((p) => p.id === "carryon-device")!;
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return activeLocales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({
@@ -29,13 +29,15 @@ export async function generateMetadata({
     en: "CarryOn Portable PCR Analyzer — 2 kg Handheld Veterinary Diagnostic Device",
     zh: "CarryOn 便携式PCR分析仪 — 2公斤手持兽医诊断设备",
     ja: "CarryOn ポータブルPCRアナライザー — 2kgハンドヘルド獣医診断デバイス",
-    vi: "Máy PCR cầm tay CarryOn — 2 kg, kết quả 40 phút",
+    vi: "Máy PCR cầm tay CarryOn — Thiết bị chẩn đoán thú y cầm tay 2 kg",
+    pt: "Termociclador PCR portátil CarryOn — dispositivo de diagnóstico veterinário portátil de 2 kg",
   };
   const descMap: Record<string, string> = {
     en: "Handheld real-time fluorescence PCR analyzer. 2.0 kg, 5-color detection, results in 40 minutes. Battery-powered, no lab required. Detect African swine fever (ASF), PRRSV, canine, feline diseases & meat species. CE + ISO 13485 certified.",
     zh: "手持式实时荧光PCR分析仪。2.0公斤，5色检测通道，40分钟出结果。电池供电，无需实验室。检测非洲猪瘟、蓝耳病、犬猫疾病及肉类鉴定。CE + ISO 13485认证。",
     ja: "ハンドヘルド型リアルタイム蛍光PCRアナライザー。2.0kg、5色検出、40分で結果。バッテリー駆動、ラボ不要。アフリカ豚熱・PRRS・犬猫疾患・食肉種鑑定に対応。CE + ISO 13485認証。",
     vi: "Máy PCR huỳnh quang thời gian thực (real-time PCR) cầm tay. Nặng 2,0 kg, phát hiện 5 màu, cho kết quả trong 40 phút. Dùng pin, không cần phòng xét nghiệm. Phát hiện dịch tả lợn châu Phi (ASF), PRRSV, bệnh ở chó, mèo và định danh loài thịt. Đạt chứng nhận CE + ISO 13485.",
+    pt: "Termociclador PCR em tempo real por fluorescência portátil. 2,0 kg, detecção em 5 cores, resultados em 40 minutos. Alimentado por bateria, sem necessidade de laboratório. Detecta peste suína africana (PSA), PRRSV, doenças caninas e felinas e espécies de carne. Certificações CE + ISO 13485.",
   };
   return {
     title: titleMap[lang] || titleMap.en,
@@ -93,7 +95,7 @@ export default async function CarryOnDevicePage({
     },
     {
       q: "Can the CarryOn be used on swine farms for African swine fever (ASF) and PRRS testing?",
-      a: "Yes. The CarryOn runs dedicated African Swine Fever (ASFV) and PRRSV (blue ear) test chips on whole blood, serum, or tissue homogenate, with results in under 60 minutes. Because the device weighs 2 kg, runs on battery, and the chips store at room temperature, a field technician can test directly at the farm gate or pen — no cold chain, no laboratory. Vet-pharma distributors typically pair one CarryOn per field team for surveillance, quarantine decisions, and pre-movement screening.",
+      a: "Yes. The CarryOn runs a 13-chip swine disease panel — African swine fever (ASFV), PRRSV, classical swine fever (CSFV), pseudorabies (PRV), PCV2, Glaesserella parasuis, Actinobacillus pleuropneumoniae, TGEV, rotavirus, PEDV, porcine parvovirus, foot-and-mouth disease and Japanese encephalitis — on whole blood, serum, swabs, feces or tissue, with results in under 60 minutes. Because the device weighs 2 kg, runs on battery, and the chips store at room temperature, a field technician can test directly at the farm gate or pen — no cold chain, no laboratory. Vet-pharma distributors typically pair one CarryOn per field team for surveillance, quarantine decisions, and pre-movement screening.",
     },
     {
       q: "How does the CarryOn compare with a benchtop real-time PCR machine?",
@@ -108,46 +110,46 @@ export default async function CarryOnDevicePage({
   const steps = [
     {
       num: "01",
-      title: lang === "zh" ? "加入样本" : lang === "ja" ? "サンプル投入" : lang === "vi" ? "Nạp mẫu" : "Load Sample",
-      desc: lang === "zh" ? "将拭子/血液样本加入微流控芯片" : lang === "ja" ? "スワブ/血液サンプルをチップに投入" : lang === "vi" ? "Cho mẫu tăm bông hoặc mẫu máu vào chip vi lưu" : "Add swab or blood sample to the microfluidic chip",
+      title: lang === "zh" ? "加入样本" : lang === "ja" ? "サンプル投入" : lang === "vi" ? "Nạp mẫu" : lang === "pt" ? "Carregar amostra" : "Load Sample",
+      desc: lang === "zh" ? "将拭子/血液样本加入微流控芯片" : lang === "ja" ? "スワブ/血液サンプルをチップに投入" : lang === "vi" ? "Cho mẫu tăm bông hoặc mẫu máu vào chip vi lưu" : lang === "pt" ? "Adicione amostra de swab ou de sangue ao chip microfluídico" : "Add swab or blood sample to the microfluidic chip",
     },
     {
       num: "02",
-      title: lang === "zh" ? "插入芯片" : lang === "ja" ? "チップ挿入" : lang === "vi" ? "Lắp chip" : "Insert Chip",
-      desc: lang === "zh" ? "将芯片插入CarryOn设备" : lang === "ja" ? "チップをデバイスに挿入" : lang === "vi" ? "Đặt chip vào thiết bị CarryOn" : "Place the chip into the CarryOn device",
+      title: lang === "zh" ? "插入芯片" : lang === "ja" ? "チップ挿入" : lang === "vi" ? "Lắp chip" : lang === "pt" ? "Inserir chip" : "Insert Chip",
+      desc: lang === "zh" ? "将芯片插入CarryOn设备" : lang === "ja" ? "チップをデバイスに挿入" : lang === "vi" ? "Đặt chip vào thiết bị CarryOn" : lang === "pt" ? "Coloque o chip no dispositivo CarryOn" : "Place the chip into the CarryOn device",
     },
     {
       num: "03",
-      title: lang === "zh" ? "自动检测" : lang === "ja" ? "自動検出" : lang === "vi" ? "Tự động xử lý" : "Auto Process",
-      desc: lang === "zh" ? "自动完成核酸提取、纯化和PCR扩增" : lang === "ja" ? "核酸抽出・精製・PCR増幅を自動実行" : lang === "vi" ? "Tự động tách chiết, tinh sạch và khuếch đại PCR" : "Automated extraction, purification, and PCR amplification",
+      title: lang === "zh" ? "自动检测" : lang === "ja" ? "自動検出" : lang === "vi" ? "Tự động xử lý" : lang === "pt" ? "Processamento automático" : "Auto Process",
+      desc: lang === "zh" ? "自动完成核酸提取、纯化和PCR扩增" : lang === "ja" ? "核酸抽出・精製・PCR増幅を自動実行" : lang === "vi" ? "Tự động tách chiết, tinh sạch và khuếch đại PCR" : lang === "pt" ? "Extração, purificação e amplificação por PCR automatizadas" : "Automated extraction, purification, and PCR amplification",
     },
     {
       num: "04",
-      title: lang === "zh" ? "读取结果" : lang === "ja" ? "結果表示" : lang === "vi" ? "Đọc kết quả" : "Read Result",
-      desc: lang === "zh" ? "触屏显示检测报告，支持WiFi传输" : lang === "ja" ? "タッチスクリーンで結果表示、WiFi転送対応" : lang === "vi" ? "Kết quả hiển thị trên màn hình cảm ứng, hỗ trợ truyền qua WiFi" : "Results displayed on touchscreen, WiFi transfer supported",
+      title: lang === "zh" ? "读取结果" : lang === "ja" ? "結果表示" : lang === "vi" ? "Đọc kết quả" : lang === "pt" ? "Ler resultado" : "Read Result",
+      desc: lang === "zh" ? "触屏显示检测报告，支持WiFi传输" : lang === "ja" ? "タッチスクリーンで結果表示、WiFi転送対応" : lang === "vi" ? "Kết quả hiển thị trên màn hình cảm ứng, hỗ trợ truyền qua WiFi" : lang === "pt" ? "Resultados exibidos na tela sensível ao toque, com suporte a transferência por WiFi" : "Results displayed on touchscreen, WiFi transfer supported",
     },
   ];
 
-  const t3 = (en: string, zh: string, ja: string) => (lang === "zh" ? zh : lang === "ja" ? ja : en);
+  const L = (r: { en: string } & Partial<Record<Locale, string>>) => r[lang] ?? r.en;
 
   const comparisonRows = [
-    { k: t3("Weight", "重量", "重量"), c: "2.0 kg", b: t3("10–20 kg", "10–20 公斤", "10–20 kg") },
-    { k: t3("Where it runs", "使用场所", "使用場所"), c: t3("Farm, clinic, checkpoint, vehicle", "猪场 / 诊所 / 检疫点 / 车载", "農場・クリニック・検疫所・車内"), b: t3("Laboratory bench only", "仅限实验室台面", "ラボのベンチのみ") },
-    { k: t3("Power", "电源", "電源"), c: t3("Battery, ~3.5 h", "电池，约 3.5 小时", "バッテリー、約3.5時間"), b: t3("Mains power", "市电", "商用電源") },
-    { k: t3("Nucleic acid extraction", "核酸提取", "核酸抽出"), c: t3("Built-in, automatic", "芯片内自动完成", "チップ内で自動"), b: t3("Separate extraction kit & equipment", "需另配提取仪和试剂", "別途抽出装置・試薬が必要") },
-    { k: t3("Fluorescence channels", "荧光通道", "蛍光チャンネル"), c: t3("5-color (multiplex + internal control)", "5 色（多重检测 + 内参）", "5色（マルチプレックス＋内部コントロール）"), b: t3("4–7 channels", "4–7 通道", "4–7チャンネル") },
-    { k: t3("Throughput", "通量", "スループット"), c: t3("1 chip per run, < 60 min", "每次 1 张芯片，< 60 分钟", "1ランにつき1チップ、60分未満"), b: t3("Batch of up to 96 wells, 1.5–3 h incl. extraction", "单批最多 96 孔，含提取 1.5–3 小时", "最大96ウェル／バッチ、抽出込み1.5–3時間") },
-    { k: t3("Reagent storage", "试剂保存", "試薬保存"), c: t3("Room temperature (15–30 °C)", "常温（15–30 °C）", "室温（15–30 °C）"), b: t3("Frozen / cold chain", "冷冻 / 冷链", "冷凍／コールドチェーン") },
-    { k: t3("Operator", "操作人员", "操作者"), c: t3("Any trained staff, ~30 min training", "普通员工，约 30 分钟培训", "一般スタッフ、約30分の研修"), b: t3("Laboratory technician", "实验室技术员", "ラボ技術者") },
-    { k: t3("Best for", "适合", "適する用途"), c: t3("On-site screening, outbreak response, pre-movement checks", "现场筛查、疫情应急、调运前检测", "現場スクリーニング、アウトブレイク対応、移動前検査"), b: t3("High-volume central lab testing", "中心实验室大批量检测", "中央ラボでの大量検査") },
+    { k: L({ en: "Weight", zh: "重量", ja: "重量", pt: "Peso", vi: "Trọng lượng" }), c: "2.0 kg", b: L({ en: "10–20 kg", zh: "10–20 公斤", ja: "10–20 kg", pt: "10–20 kg", vi: "10–20 kg" }) },
+    { k: L({ en: "Where it runs", zh: "使用场所", ja: "使用場所", pt: "Onde é utilizado", vi: "Nơi vận hành" }), c: L({ en: "Farm, clinic, checkpoint, vehicle", zh: "猪场 / 诊所 / 检疫点 / 车载", ja: "農場・クリニック・検疫所・車内", pt: "Fazenda, clínica veterinária, posto de controle, veículo", vi: "Trang trại, phòng khám, chốt kiểm dịch, xe" }), b: L({ en: "Laboratory bench only", zh: "仅限实验室台面", ja: "ラボのベンチのみ", pt: "Somente em bancada de laboratório", vi: "Chỉ dùng trên bàn phòng thí nghiệm" }) },
+    { k: L({ en: "Power", zh: "电源", ja: "電源", pt: "Alimentação", vi: "Công suất" }), c: L({ en: "Battery, ~3.5 h", zh: "电池，约 3.5 小时", ja: "バッテリー、約3.5時間", pt: "Bateria, ~3,5 h", vi: "Pin, ~3,5 h" }), b: L({ en: "Mains power", zh: "市电", ja: "商用電源", pt: "Alimentação pela rede elétrica", vi: "Nguồn điện lưới" }) },
+    { k: L({ en: "Nucleic acid extraction", zh: "核酸提取", ja: "核酸抽出", pt: "Extração de ácido nucleico", vi: "Tách chiết axit nucleic" }), c: L({ en: "Built-in, automatic", zh: "芯片内自动完成", ja: "チップ内で自動", pt: "Integrada, automática", vi: "Tích hợp, tự động" }), b: L({ en: "Separate extraction kit & equipment", zh: "需另配提取仪和试剂", ja: "別途抽出装置・試薬が必要", pt: "Kit e equipamento de extração separados", vi: "Bộ kit và thiết bị tách chiết riêng" }) },
+    { k: L({ en: "Fluorescence channels", zh: "荧光通道", ja: "蛍光チャンネル", pt: "Canais de fluorescência", vi: "Kênh huỳnh quang" }), c: L({ en: "5-color (multiplex + internal control)", zh: "5 色（多重检测 + 内参）", ja: "5色（マルチプレックス＋内部コントロール）", pt: "5 cores (multiplex + controle interno)", vi: "5 màu (multiplex + đối chứng nội)" }), b: L({ en: "4–7 channels", zh: "4–7 通道", ja: "4–7チャンネル", pt: "4–7 canais", vi: "4–7 kênh" }) },
+    { k: L({ en: "Throughput", zh: "通量", ja: "スループット", pt: "Capacidade de processamento", vi: "Thông lượng" }), c: L({ en: "1 chip per run, < 60 min", zh: "每次 1 张芯片，< 60 分钟", ja: "1ランにつき1チップ、60分未満", pt: "1 chip de teste por execução, < 60 min", vi: "1 chip mỗi lần chạy, < 60 phút" }), b: L({ en: "Batch of up to 96 wells, 1.5–3 h incl. extraction", zh: "单批最多 96 孔，含提取 1.5–3 小时", ja: "最大96ウェル／バッチ、抽出込み1.5–3時間", pt: "Lote de até 96 poços, 1,5–3 h incl. extração", vi: "Lô tối đa 96 giếng, 1.5–3 h bao gồm tách chiết" }) },
+    { k: L({ en: "Reagent storage", zh: "试剂保存", ja: "試薬保存", pt: "Armazenamento dos reagentes", vi: "Bảo quản thuốc thử" }), c: L({ en: "Room temperature (15–30 °C)", zh: "常温（15–30 °C）", ja: "室温（15–30 °C）", pt: "Temperatura ambiente (15–30 °C)", vi: "Nhiệt độ phòng (15–30 °C)" }), b: L({ en: "Frozen / cold chain", zh: "冷冻 / 冷链", ja: "冷凍／コールドチェーン", pt: "Congelado / cadeia de frio", vi: "Đông lạnh / chuỗi lạnh" }) },
+    { k: L({ en: "Operator", zh: "操作人员", ja: "操作者", pt: "Operador", vi: "Người vận hành" }), c: L({ en: "Any trained staff, ~30 min training", zh: "普通员工，约 30 分钟培训", ja: "一般スタッフ、約30分の研修", pt: "Qualquer profissional treinado, ~30 min de treinamento", vi: "Bất kỳ nhân viên đã qua đào tạo, đào tạo ~30 phút" }), b: L({ en: "Laboratory technician", zh: "实验室技术员", ja: "ラボ技術者", pt: "Técnico de laboratório", vi: "Kỹ thuật viên phòng xét nghiệm" }) },
+    { k: L({ en: "Best for", zh: "适合", ja: "適する用途", pt: "Ideal para", vi: "Phù hợp nhất cho" }), c: L({ en: "On-site screening, outbreak response, pre-movement checks", zh: "现场筛查、疫情应急、调运前检测", ja: "現場スクリーニング、アウトブレイク対応、移動前検査", pt: "Triagem no local, resposta a surtos, verificações pré-movimentação", vi: "Sàng lọc tại chỗ, ứng phó ổ dịch, kiểm tra trước khi di chuyển" }), b: L({ en: "High-volume central lab testing", zh: "中心实验室大批量检测", ja: "中央ラボでの大量検査", pt: "Testes de alto volume em laboratório central", vi: "Xét nghiệm khối lượng lớn tại phòng xét nghiệm trung tâm" }) },
   ];
 
   const panelGroups = [
-    { label: t3("Swine / Livestock", "猪 · 畜牧", "豚・家畜"), ids: ["pathogen-asf", "pathogen-prrsv"], note: t3("Whole blood, serum, tissue. Farm & quarantine use.", "全血 / 血清 / 组织，猪场与检疫点使用。", "全血・血清・組織。農場・検疫向け。") },
-    { label: t3("Canine", "犬", "犬"), ids: ["canine-triple", "canine-triple-resp", "canine-tick"], note: t3("Parvo, distemper, respiratory, tick-borne panels.", "细小、犬瘟、呼吸道、蜱传病 panel。", "パルボ、ジステンパー、呼吸器、ダニ媒介パネル。") },
-    { label: t3("Feline", "猫", "猫"), ids: ["feline-triple-screening", "feline-triple-resp"], note: t3("FeLV / FIV / FPV screening and respiratory panels.", "FeLV / FIV / FPV 筛查与呼吸道 panel。", "FeLV／FIV／FPVスクリーニングと呼吸器パネル。") },
-    { label: t3("Human pathogen", "人用病原体", "ヒト病原体"), ids: ["pathogen-flu-covid", "pathogen-respiratory", "pathogen-sti"], note: t3("Influenza / SARS-CoV-2, respiratory, STI panels.", "流感 / 新冠、呼吸道、STI panel。", "インフルエンザ／SARS-CoV-2、呼吸器、STIパネル。") },
-    { label: t3("Meat species ID", "肉类鉴定", "食肉種鑑定"), ids: ["meat-quad-bpcd", "meat-quad-shpcd", "meat-quad-dhpd"], note: t3("Quad-species adulteration screening.", "四物种掺假筛查。", "4種同時の混入スクリーニング。") },
+    { label: L({ en: "Swine / Livestock", zh: "猪 · 畜牧", ja: "豚・家畜", pt: "Suínos / Pecuária", vi: "Lợn / Vật nuôi" }), ids: ["pathogen-asf", "pathogen-prrsv", "swine-csfv", "swine-prv", "swine-pcv2", "swine-gps", "swine-app", "swine-tgev", "swine-porv", "swine-pedv", "swine-ppv", "swine-fmdv", "swine-jev"], note: L({ en: "13 chips: ASF, PRRS, CSF, PRV, PCV2, G. parasuis, APP, TGE, rotavirus, PED, PPV, FMD, JEV.", zh: "13 张芯片：非洲猪瘟、蓝耳、猪瘟、伪狂犬、圆环、副猪嗜血杆菌、胸膜肺炎、传染性胃肠炎、轮状、流行性腹泻、细小、口蹄疫、乙脑。", ja: "13種：ASF、PRRS、CSF、PRV、PCV2、G. parasuis、APP、TGE、ロタ、PED、PPV、FMD、JEV。", pt: "13 chips de teste: PSA, PRRS, CSF, PRV, PCV2, G. parasuis, APP, TGE, rotavírus, PED, PPV, FMD, JEV.", vi: "13 chip xét nghiệm: ASF, PRRS, CSF, PRV, PCV2, G. parasuis, APP, TGE, rotavirus, PED, PPV, FMD, JEV." }) },
+    { label: L({ en: "Canine", zh: "犬", ja: "犬", pt: "Caninos", vi: "Chó" }), ids: ["canine-triple", "canine-triple-resp", "canine-tick"], note: L({ en: "Parvo, distemper, respiratory, tick-borne panels.", zh: "细小、犬瘟、呼吸道、蜱传病 panel。", ja: "パルボ、ジステンパー、呼吸器、ダニ媒介パネル。", pt: "Painéis de parvovírus, cinomose, respiratórios e transmitidos por carrapatos.", vi: "Bộ xét nghiệm parvo, distemper, hô hấp, lây truyền qua ve." }) },
+    { label: L({ en: "Feline", zh: "猫", ja: "猫", pt: "Felinos", vi: "Mèo" }), ids: ["feline-triple-screening", "feline-triple-resp"], note: L({ en: "FeLV / FIV / FPV screening and respiratory panels.", zh: "FeLV / FIV / FPV 筛查与呼吸道 panel。", ja: "FeLV／FIV／FPVスクリーニングと呼吸器パネル。", pt: "Triagem de FeLV / FIV / FPV e painéis respiratórios.", vi: "Sàng lọc FeLV / FIV / FPV và bộ xét nghiệm hô hấp." }) },
+    { label: L({ en: "Human pathogen", zh: "人用病原体", ja: "ヒト病原体", pt: "Patógeno humano", vi: "Tác nhân gây bệnh ở người" }), ids: ["pathogen-flu-covid", "pathogen-respiratory", "pathogen-sti"], note: L({ en: "Influenza / SARS-CoV-2, respiratory, STI panels.", zh: "流感 / 新冠、呼吸道、STI panel。", ja: "インフルエンザ／SARS-CoV-2、呼吸器、STIパネル。", pt: "Painéis de influenza / SARS-CoV-2, respiratórios e IST.", vi: "Bộ xét nghiệm cúm / SARS-CoV-2, hô hấp, STI." }) },
+    { label: L({ en: "Meat species ID", zh: "肉类鉴定", ja: "食肉種鑑定", pt: "Identificação de espécies de carne", vi: "Định danh loài thịt" }), ids: ["meat-quad-bpcd", "meat-quad-shpcd", "meat-quad-dhpd"], note: L({ en: "Quad-species adulteration screening.", zh: "四物种掺假筛查。", ja: "4種同時の混入スクリーニング。", pt: "Triagem de adulteração de quatro espécies.", vi: "Sàng lọc pha trộn bốn loài." }) },
   ].map((g) => ({ ...g, chips: g.ids.map((id) => products.find((p) => p.id === id)!).filter(Boolean) }));
 
   return (
@@ -195,7 +197,7 @@ export default async function CarryOnDevicePage({
                   {dict.nav.products}
                 </Link>
                 <span>/</span>
-                <span className="text-[var(--color-primary)]">{lang === "zh" ? "检测设备" : lang === "ja" ? "検出デバイス" : lang === "vi" ? "Thiết bị phát hiện" : "Detection Device"}</span>
+                <span className="text-[var(--color-primary)]">{lang === "zh" ? "检测设备" : lang === "ja" ? "検出デバイス" : lang === "vi" ? "Thiết bị phát hiện" : lang === "pt" ? "Dispositivo de detecção" : "Detection Device"}</span>
               </nav>
 
               <h1 className="text-3xl font-bold text-[var(--color-primary)] sm:text-4xl">
@@ -228,7 +230,7 @@ export default async function CarryOnDevicePage({
               {/* Business Terms */}
               <div className="mt-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg)] p-5">
                 <h3 className="text-sm font-semibold text-[var(--color-primary)] uppercase tracking-wide mb-3">
-                  {lang === "zh" ? "商务条款" : lang === "ja" ? "取引条件" : lang === "vi" ? "Điều khoản kinh doanh" : "Business Terms"}
+                  {lang === "zh" ? "商务条款" : lang === "ja" ? "取引条件" : lang === "vi" ? "Điều khoản kinh doanh" : lang === "pt" ? "Condições comerciais" : "Business Terms"}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
                   <div className="flex justify-between">
@@ -236,24 +238,24 @@ export default async function CarryOnDevicePage({
                     <span className="font-medium text-[var(--color-primary)]">1 unit (device), 50 pcs (chips)</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "样品" : lang === "ja" ? "サンプル" : lang === "vi" ? "Mẫu" : "Sample"}</span>
-                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "可提供演示机" : lang === "ja" ? "デモ機提供可" : lang === "vi" ? "Có sẵn thiết bị demo" : "Demo unit available"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "样品" : lang === "ja" ? "サンプル" : lang === "vi" ? "Mẫu" : lang === "pt" ? "Amostra" : "Sample"}</span>
+                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "可提供演示机" : lang === "ja" ? "デモ機提供可" : lang === "vi" ? "Có sẵn thiết bị demo" : lang === "pt" ? "Unidade de demonstração disponível" : "Demo unit available"}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "交期" : lang === "ja" ? "納期" : lang === "vi" ? "Thời gian giao hàng" : "Lead Time"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "交期" : lang === "ja" ? "納期" : lang === "vi" ? "Thời gian giao hàng" : lang === "pt" ? "Prazo de entrega" : "Lead Time"}</span>
                     <span className="font-medium text-[var(--color-primary)]">7-14d (stock) / 30d (bulk)</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "付款" : lang === "ja" ? "支払い" : lang === "vi" ? "Thanh toán" : "Payment"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "付款" : lang === "ja" ? "支払い" : lang === "vi" ? "Thanh toán" : lang === "pt" ? "Pagamento" : "Payment"}</span>
                     <span className="font-medium text-[var(--color-primary)]">T/T, L/C</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "发货" : lang === "ja" ? "出荷" : lang === "vi" ? "Vận chuyển" : "Shipping"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "发货" : lang === "ja" ? "出荷" : lang === "vi" ? "Vận chuyển" : lang === "pt" ? "Envio" : "Shipping"}</span>
                     <span className="font-medium text-[var(--color-primary)]">FOB Ningbo, DDP available</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "定制" : lang === "ja" ? "カスタム" : lang === "vi" ? "Tùy chỉnh" : "Customization"}</span>
-                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "贴牌/定制芯片" : lang === "ja" ? "OEM/カスタムパネル" : lang === "vi" ? "Nhãn riêng, bộ xét nghiệm tùy chỉnh" : "Private label, custom panels"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "定制" : lang === "ja" ? "カスタム" : lang === "vi" ? "Tùy chỉnh" : lang === "pt" ? "Personalização" : "Customization"}</span>
+                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "贴牌/定制芯片" : lang === "ja" ? "OEM/カスタムパネル" : lang === "vi" ? "Nhãn riêng, bộ xét nghiệm tùy chỉnh" : lang === "pt" ? "Marca própria, painéis personalizados" : "Private label, custom panels"}</span>
                   </div>
                 </div>
               </div>
@@ -270,7 +272,7 @@ export default async function CarryOnDevicePage({
                   href={`/${locale}/contact/?product=${encodeURIComponent("CarryOn Portable PCR Analyzer")}`}
                   className="inline-flex items-center justify-center rounded-lg border border-[var(--color-border)] px-8 py-3.5 text-base font-semibold text-[var(--color-primary)] hover:bg-[var(--color-bg)] transition-colors"
                 >
-                  {lang === "zh" ? "获取报价" : lang === "ja" ? "見積もりを取得" : lang === "vi" ? "Nhận báo giá" : "Get a Quote"}
+                  {lang === "zh" ? "获取报价" : lang === "ja" ? "見積もりを取得" : lang === "vi" ? "Nhận báo giá" : lang === "pt" ? "Solicitar orçamento" : "Get a Quote"}
                 </Link>
               </div>
             </div>
@@ -282,11 +284,12 @@ export default async function CarryOnDevicePage({
       <section className="py-20 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)]">
-            {lang === "zh" ? "操作流程" : lang === "ja" ? "操作手順" : lang === "vi" ? "Cách hoạt động" : "How It Works"}
+            {lang === "zh" ? "操作流程" : lang === "ja" ? "操作手順" : lang === "vi" ? "Cách hoạt động" : lang === "pt" ? "Como funciona" : "How It Works"}
           </h2>
           <p className="mt-4 text-center text-[var(--color-text-light)]">
             {lang === "zh" ? "4步完成检测，无需专业培训" : lang === "ja" ? "4ステップで検査完了、専門トレーニング不要"
                 : lang === "vi" ? "4 bước đơn giản. Không cần đào tạo."
+                : lang === "pt" ? "4 etapas simples. Não é necessário treinamento."
                 : "4 simple steps. No training required."}
           </p>
           <div className="mt-12 grid gap-6 md:grid-cols-4">
@@ -342,7 +345,7 @@ export default async function CarryOnDevicePage({
               href={`/${locale}/contact/`}
               className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
             >
-              {lang === "zh" ? "获取详细规格书" : lang === "ja" ? "詳細仕様書を取得" : lang === "vi" ? "Tải bảng thông số kỹ thuật đầy đủ" : "Download Full Spec Sheet"}
+              {lang === "zh" ? "获取详细规格书" : lang === "ja" ? "詳細仕様書を取得" : lang === "vi" ? "Tải bảng thông số kỹ thuật đầy đủ" : lang === "pt" ? "Baixar ficha técnica completa" : "Download Full Spec Sheet"}
             </Link>
           </div>
         </div>
@@ -352,14 +355,10 @@ export default async function CarryOnDevicePage({
       <section className="py-20">
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)]">
-            {t3("CarryOn vs. Benchtop Real-Time PCR", "CarryOn 与台式荧光定量 PCR 对比", "CarryOn とベンチトップ型リアルタイムPCRの比較")}
+            {L({ en: "CarryOn vs. Benchtop Real-Time PCR", zh: "CarryOn 与台式荧光定量 PCR 对比", ja: "CarryOn とベンチトップ型リアルタイムPCRの比較", pt: "CarryOn vs. PCR em tempo real de bancada", vi: "CarryOn so với PCR huỳnh quang thời gian thực để bàn" })}
           </h2>
           <p className="mt-4 text-center text-[var(--color-text-light)] max-w-3xl mx-auto">
-            {t3(
-              "Both deliver real-time fluorescence PCR accuracy. The difference is where the test can happen: a benchtop system stays in the laboratory, the CarryOn goes to the farm, the clinic, or the checkpoint.",
-              "两者都是实时荧光定量 PCR 级别的准确度，区别在于检测能在哪里发生：台式机留在实验室，CarryOn 可以带到猪场、诊所和检疫点。",
-              "どちらもリアルタイム蛍光PCRの精度を提供します。違いは検査を行える場所です。ベンチトップ型はラボに据え置き、CarryOn は農場・クリニック・検疫所へ持ち運べます。"
-            )}
+            {L({ en: "Both deliver real-time fluorescence PCR accuracy. The difference is where the test can happen: a benchtop system stays in the laboratory, the CarryOn goes to the farm, the clinic, or the checkpoint.", zh: "两者都是实时荧光定量 PCR 级别的准确度，区别在于检测能在哪里发生：台式机留在实验室，CarryOn 可以带到猪场、诊所和检疫点。", ja: "どちらもリアルタイム蛍光PCRの精度を提供します。違いは検査を行える場所です。ベンチトップ型はラボに据え置き、CarryOn は農場・クリニック・検疫所へ持ち運べます。", pt: "Ambos oferecem a precisão da PCR em tempo real por fluorescência. A diferença está em onde o teste pode ser realizado: um sistema de bancada permanece no laboratório, enquanto o CarryOn vai para a fazenda, a clínica veterinária ou o posto de fiscalização.", vi: "Cả hai đều mang lại độ chính xác của PCR huỳnh quang thời gian thực. Khác biệt nằm ở nơi có thể thực hiện xét nghiệm: hệ thống để bàn chỉ đặt tại phòng xét nghiệm, còn CarryOn có thể đến trang trại, phòng khám thú y hoặc trạm kiểm dịch." })}
           </p>
           <div className="mt-12 overflow-x-auto rounded-xl border border-[var(--color-border)]">
             <table className="w-full text-sm">
@@ -367,7 +366,7 @@ export default async function CarryOnDevicePage({
                 <tr>
                   <th className="px-4 py-3 text-left font-semibold w-1/4"></th>
                   <th className="px-4 py-3 text-left font-semibold">CarryOn</th>
-                  <th className="px-4 py-3 text-left font-semibold">{t3("Benchtop qPCR", "台式 qPCR", "ベンチトップ qPCR")}</th>
+                  <th className="px-4 py-3 text-left font-semibold">{L({ en: "Benchtop qPCR", zh: "台式 qPCR", ja: "ベンチトップ qPCR", pt: "qPCR de bancada", vi: "qPCR để bàn" })}</th>
                 </tr>
               </thead>
               <tbody>
@@ -382,11 +381,7 @@ export default async function CarryOnDevicePage({
             </table>
           </div>
           <p className="mt-6 text-center text-sm text-[var(--color-text-light)]">
-            {t3(
-              "Many distributors stock both: benchtop units for the central laboratory, CarryOn units for field veterinary teams.",
-              "很多经销商两种都卖：台式机放中心实验室，CarryOn 配给下场的兽医团队。",
-              "多くの販売代理店は両方を扱います。ベンチトップ型は中央ラボに、CarryOn は現場の獣医チームに。"
-            )}
+            {L({ en: "Many distributors stock both: benchtop units for the central laboratory, CarryOn units for field veterinary teams.", zh: "很多经销商两种都卖：台式机放中心实验室，CarryOn 配给下场的兽医团队。", ja: "多くの販売代理店は両方を扱います。ベンチトップ型は中央ラボに、CarryOn は現場の獣医チームに。", pt: "Muitos distribuidores mantêm os dois em estoque: unidades de bancada para o laboratório central e unidades CarryOn para equipes veterinárias de campo.", vi: "Nhiều nhà phân phối dự trữ cả hai dòng: thiết bị để bàn cho phòng xét nghiệm trung tâm và thiết bị CarryOn cho đội thú y thực địa." })}
           </p>
         </div>
       </section>
@@ -395,14 +390,10 @@ export default async function CarryOnDevicePage({
       <section className="py-20 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)]">
-            {t3("Test Panels by Animal & Application", "按动物与应用分类的检测芯片", "動物・用途別の検査パネル")}
+            {L({ en: "Test Panels by Animal & Application", zh: "按动物与应用分类的检测芯片", ja: "動物・用途別の検査パネル", pt: "Painéis de teste por animal e aplicação", vi: "Bộ xét nghiệm theo loài vật & ứng dụng" })}
           </h2>
           <p className="mt-4 text-center text-[var(--color-text-light)] max-w-2xl mx-auto">
-            {t3(
-              "One CarryOn device runs every chip below. Custom panels (e.g. CSF, PCV2, PEDV for swine) are available for distribution partners.",
-              "一台 CarryOn 可运行以下全部芯片。经销合作伙伴可定制 panel（如猪瘟 CSF、圆环 PCV2、腹泻 PEDV）。",
-              "1台の CarryOn で以下すべてのチップを実行できます。販売パートナー向けにカスタムパネル（CSF、PCV2、PEDV など）も対応可能です。"
-            )}
+            {L({ en: "One CarryOn device runs every chip below — including a 13-target swine disease panel developed for farms, veterinary stations and quarantine checkpoints. Custom multiplex panels are available for distribution partners.", zh: "一台 CarryOn 可运行以下全部芯片——包括为猪场、兽医站和检疫点开发的 13 项猪病检测 panel。经销合作伙伴可定制多重检测 panel。", ja: "1台の CarryOn で以下すべてのチップを実行できます。農場・獣医ステーション・検疫所向けに開発した13項目の豚疾病パネルも含まれます。販売パートナー向けのカスタムマルチプレックスパネルも対応可能です。", pt: "Um único dispositivo CarryOn executa todos os chips abaixo — incluindo um painel de doenças suínas com 13 alvos, desenvolvido para fazendas, postos veterinários e postos de controle de quarentena. Painéis multiplex personalizados estão disponíveis para parceiros de distribuição.", vi: "Một thiết bị CarryOn có thể chạy mọi chip dưới đây — bao gồm bộ xét nghiệm bệnh ở lợn gồm 13 mục tiêu, được phát triển cho trại lợn, trạm thú y và chốt kiểm dịch. Các bộ xét nghiệm multiplex tùy chỉnh sẵn có cho đối tác phân phối." })}
           </p>
           <div className="mt-12 space-y-6">
             {panelGroups.map((g) => (
@@ -435,7 +426,7 @@ export default async function CarryOnDevicePage({
               href={`/${locale}/contact/?product=carryon-swine`}
               className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
             >
-              {t3("Request a Swine Panel Quote", "获取猪病检测方案报价", "豚用パネルの見積もりを依頼")}
+              {L({ en: "Request a Swine Panel Quote", zh: "获取猪病检测方案报价", ja: "豚用パネルの見積もりを依頼", pt: "Solicite uma cotação do painel suíno", vi: "Yêu cầu báo giá bộ xét nghiệm bệnh lợn" })}
             </Link>
           </div>
         </div>
@@ -445,11 +436,12 @@ export default async function CarryOnDevicePage({
       <section className="py-20 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)]">
-            {lang === "zh" ? "配套检测芯片" : lang === "ja" ? "対応検査チップ" : lang === "vi" ? "Chip xét nghiệm tương thích" : "Compatible Test Chips"}
+            {lang === "zh" ? "配套检测芯片" : lang === "ja" ? "対応検査チップ" : lang === "vi" ? "Chip xét nghiệm tương thích" : lang === "pt" ? "Chips de teste compatíveis" : "Compatible Test Chips"}
           </h2>
           <p className="mt-4 text-center text-[var(--color-text-light)] max-w-2xl mx-auto">
             {lang === "zh" ? "选择适合您检测需求的微流控芯片，覆盖猪病（非洲猪瘟、蓝耳）、犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬、猫、病原体、食品トレーサビリティ検査をカバーする検査チップを選択。"
                 : lang === "vi" ? "Chọn chip vi lưu phù hợp với nhu cầu xét nghiệm của bạn. Bao gồm lợn (ASF, PRRSV), chó, mèo, tác nhân gây bệnh ở người và nhận diện loài trong thịt."
+                : lang === "pt" ? "Escolha o chip microfluídico ideal para suas necessidades de teste. Cobre suínos (ASF, PRRSV), cães, gatos, patógenos humanos e identificação de espécies de carne."
                 : "Choose the right microfluidic chip for your testing needs. Covering swine (ASF, PRRSV), canine, feline, human pathogen, and meat species identification."}
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -462,14 +454,14 @@ export default async function CarryOnDevicePage({
                   <div className="flex items-center gap-2 mb-3">
                     <span className="rounded-full bg-[var(--color-accent)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--color-accent)]">
                       {chip.category === "chip-canine"
-                        ? t3("Canine", "犬类", "犬用")
+                        ? L({ en: "Canine", zh: "犬类", ja: "犬用", pt: "Caninos", vi: "Chó" })
                         : chip.category === "chip-feline"
-                          ? t3("Feline", "猫类", "猫用")
+                          ? L({ en: "Feline", zh: "猫类", ja: "猫用", pt: "Felinos", vi: "Mèo" })
                           : chip.category === "chip-meat"
-                            ? t3("Meat ID", "肉类鉴定", "食肉鑑定")
+                            ? L({ en: "Meat ID", zh: "肉类鉴定", ja: "食肉鑑定", pt: "Identificação de carne", vi: "Định danh thịt" })
                             : chip.id.includes("asf") || chip.id.includes("prrsv")
-                              ? t3("Swine", "猪", "豚")
-                              : t3("Pathogen", "病原体", "病原体")}
+                              ? L({ en: "Swine", zh: "猪", ja: "豚", pt: "Suíno", vi: "Lợn" })
+                              : L({ en: "Pathogen", zh: "病原体", ja: "病原体", pt: "Patógeno", vi: "Tác nhân gây bệnh" })}
                     </span>
                     {chip.certifications.map((c) => (
                       <span key={c} className="rounded-full bg-[var(--color-green)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--color-green)]">
@@ -499,7 +491,7 @@ export default async function CarryOnDevicePage({
               href={`/${locale}/products/test-chips/`}
               className="inline-flex items-center text-[var(--color-accent)] font-medium hover:underline"
             >
-              {lang === "zh" ? "查看全部检测芯片" : lang === "ja" ? "すべての検査チップを見る" : lang === "vi" ? "Xem tất cả chip xét nghiệm" : "View All Test Chips"}
+              {lang === "zh" ? "查看全部检测芯片" : lang === "ja" ? "すべての検査チップを見る" : lang === "vi" ? "Xem tất cả chip xét nghiệm" : lang === "pt" ? "Ver todos os chips de teste" : "View All Test Chips"}
               <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -512,7 +504,7 @@ export default async function CarryOnDevicePage({
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-2xl font-bold text-[var(--color-primary)] mb-8">
-            {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : lang === "vi" ? "Sản phẩm liên quan" : "Related Products"}
+            {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : lang === "vi" ? "Sản phẩm liên quan" : lang === "pt" ? "Produtos relacionados" : "Related Products"}
           </h2>
           <div className="grid gap-6 sm:grid-cols-3">
             <Link
@@ -520,10 +512,10 @@ export default async function CarryOnDevicePage({
               className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
             >
               <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
-                {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : lang === "vi" ? "Chip xét nghiệm" : "Test Chips"}
+                {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : lang === "vi" ? "Chip xét nghiệm" : lang === "pt" ? "Chips de Teste" : "Test Chips"}
               </h3>
               <p className="mt-2 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "微流控检测芯片，覆盖犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬猫、病原体、食品検査用マイクロ流体チップ。" : lang === "vi" ? "Chip xét nghiệm vi lưu dùng cho xét nghiệm chó, mèo, tác nhân gây bệnh và định danh loài thịt." : "Microfluidic test chips for canine, feline, pathogen, and meat ID testing."}
+                {lang === "zh" ? "微流控检测芯片，覆盖犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬猫、病原体、食品検査用マイクロ流体チップ。" : lang === "vi" ? "Chip xét nghiệm vi lưu dùng cho xét nghiệm chó, mèo, tác nhân gây bệnh và định danh loài thịt." : lang === "pt" ? "Chips de teste microfluídicos para testes de identificação de cães, gatos, patógenos e carne." : "Microfluidic test chips for canine, feline, pathogen, and meat ID testing."}
               </p>
             </Link>
             <Link
@@ -531,10 +523,10 @@ export default async function CarryOnDevicePage({
               className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
             >
               <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
-                {lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : lang === "vi" ? "Phụ kiện & vật tư tiêu hao" : "Accessories & Consumables"}
+                {lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : lang === "vi" ? "Phụ kiện & vật tư tiêu hao" : lang === "pt" ? "Acessórios e Consumíveis" : "Accessories & Consumables"}
               </h3>
               <p className="mt-2 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "采样拭子、运输管和充电底座等配套产品。" : lang === "ja" ? "採取スワブ、輸送チューブ、充電ドックなど。" : lang === "vi" ? "Tăm bông lấy mẫu, ống vận chuyển, đế sạc và nhiều hơn nữa." : "Sampling swabs, transport tubes, charging dock, and more."}
+                {lang === "zh" ? "采样拭子、运输管和充电底座等配套产品。" : lang === "ja" ? "採取スワブ、輸送チューブ、充電ドックなど。" : lang === "vi" ? "Tăm bông lấy mẫu, ống vận chuyển, đế sạc và nhiều hơn nữa." : lang === "pt" ? "Swabs de coleta, tubos de transporte, base de carregamento e muito mais." : "Sampling swabs, transport tubes, charging dock, and more."}
               </p>
             </Link>
             <Link
@@ -545,7 +537,7 @@ export default async function CarryOnDevicePage({
                 {dict.nav.technology}
               </h3>
               <p className="mt-2 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "了解微流控PCR技术和工作原理。" : lang === "ja" ? "マイクロ流体PCR技術と仕組みについて。" : lang === "vi" ? "Tìm hiểu về công nghệ PCR vi lưu và cách hoạt động." : "Learn about microfluidic PCR technology and how it works."}
+                {lang === "zh" ? "了解微流控PCR技术和工作原理。" : lang === "ja" ? "マイクロ流体PCR技術と仕組みについて。" : lang === "vi" ? "Tìm hiểu về công nghệ PCR vi lưu và cách hoạt động." : lang === "pt" ? "Saiba mais sobre a tecnologia de PCR microfluídico e como ela funciona." : "Learn about microfluidic PCR technology and how it works."}
               </p>
             </Link>
           </div>
@@ -560,7 +552,7 @@ export default async function CarryOnDevicePage({
             dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(deviceFaqs)) }}
           />
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
-            {lang === "zh" ? "常见问题" : lang === "ja" ? "よくある質問" : lang === "vi" ? "Câu hỏi thường gặp" : "Frequently Asked Questions"}
+            {lang === "zh" ? "常见问题" : lang === "ja" ? "よくある質問" : lang === "vi" ? "Câu hỏi thường gặp" : lang === "pt" ? "Perguntas frequentes" : "Frequently Asked Questions"}
           </h2>
           <div className="space-y-4">
             {deviceFaqs.map((faq, i) => (

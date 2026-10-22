@@ -11,7 +11,7 @@ const OUT = path.join(ROOT, "out");
 const SM = path.join(ROOT, "public/sitemap.xml");
 const today = new Date().toISOString().slice(0, 10);
 const localesSrc = await fs.readFile(path.join(ROOT, "src/lib/i18n.ts"), "utf8");
-const locales = [...localesSrc.match(/export const locales = \[([^\]]*)\]/)[1].matchAll(/"([a-z]+)"/g)].map((m) => m[1]);
+const locales = [...localesSrc.match(/export const activeLocales[^=]*= \[([^\]]*)\]/)[1].matchAll(/"([a-z]+)"/g)].map((m) => m[1]);
 
 async function walk(dir) {
   const res = [];

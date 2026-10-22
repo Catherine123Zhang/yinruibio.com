@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
-import { locales, isValidLocale } from "@/lib/i18n";
+import { activeLocales, isValidLocale  } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import Header from "@/components/Header";
@@ -14,7 +14,7 @@ import { organizationSchema } from "@/lib/schema";
 const GA_ID = "G-D7TJNYWJQZ";
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return activeLocales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({
@@ -28,7 +28,7 @@ export async function generateMetadata({
   const dict = await getDictionary(locale);
 
   const languages: Record<string, string> = {};
-  for (const l of locales) {
+  for (const l of activeLocales) {
     languages[l] = `https://yinruibio.com/${l}/`;
   }
 
@@ -48,7 +48,7 @@ export async function generateMetadata({
       description: dict.meta.siteDescription,
       url: `https://yinruibio.com/${locale}/`,
       siteName: dict.meta.siteName,
-      locale: locale === "zh" ? "zh_CN" : locale === "ja" ? "ja_JP" : locale === "vi" ? "en_US" : "en_US",
+      locale: locale === "zh" ? "zh_CN" : locale === "ja" ? "ja_JP" : locale === "vi" ? "en_US" : locale === "pt" ? "en_US" : "en_US",
       type: "website",
       images: [
         {

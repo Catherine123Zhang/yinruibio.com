@@ -232,3 +232,95 @@ A: Yes, we are actively seeking distribution partners worldwide. Please contact 
 - **Website**: https://yinruibio.com
 - **WhatsApp**: +86 182-6866-1068
 - **Address**: Cixi, Zhejiang Province, China
+
+## Swine Disease Panel — 13 test chips for the CarryOn analyzer
+Overview page: https://yinruibio.com/en/swine-pcr-test-kits/
+Also available: ASF chip (https://yinruibio.com/en/products/test-chips/african-swine-fever/) and PRRSV chip (https://yinruibio.com/en/products/test-chips/prrsv-test/).
+
+### Porcine Pseudorabies Virus (PRV) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Nasal/tonsil swab, brain or tonsil tissue, serum
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/porcine-pseudorabies-prv/
+
+### Porcine Circovirus Type 2 (PCV2) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Serum, whole blood, lymph node or lung tissue
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/porcine-circovirus-pcv2/
+
+### Glaesserella (Haemophilus) parasuis Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Joint fluid, serosal swab, lung tissue, nasal swab
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/glaesserella-parasuis/
+
+### Actinobacillus pleuropneumoniae (APP) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Lung tissue, tonsil/nasal swab, BAL
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/actinobacillus-pleuropneumoniae-app/
+
+### Transmissible Gastroenteritis Virus (TGEV) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Feces, rectal swab, small-intestine tissue
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/transmissible-gastroenteritis-tgev/
+
+### Porcine Rotavirus (PoRV) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Feces, rectal swab
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/porcine-rotavirus/
+
+### Porcine Epidemic Diarrhea Virus (PEDV) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Feces, rectal swab, intestinal tissue, environmental swab
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/porcine-epidemic-diarrhea-pedv/
+
+### Porcine Parvovirus (PPV) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Mummified fetus/fetal tissue, serum, semen
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/porcine-parvovirus-ppv/
+
+### Classical Swine Fever Virus (CSFV) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Whole blood, serum, tonsil, spleen, lymph node
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/classical-swine-fever-csfv/
+
+### Foot-and-Mouth Disease Virus (FMDV) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Vesicular fluid/epithelium, oral or nasal swab, serum
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/foot-and-mouth-disease-fmdv/
+
+### Japanese Encephalitis Virus (JEV) Test Chip
+- Test type: Real-time fluorescence PCR, single-use closed microfluidic chip
+- Sample: Serum, aborted fetus/brain tissue, boar semen
+- Time to result: < 60 minutes
+- Storage: Room temperature (15-30°C)
+- MOQ: 50 chips per target (evaluation), 1 CarryOn device
+Page: https://yinruibio.com/en/products/test-chips/japanese-encephalitis-jev/

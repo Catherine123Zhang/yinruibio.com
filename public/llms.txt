@@ -51,3 +51,8 @@
 - Microfluidic chip = test chip = PCR cartridge = diagnostic chip
 - Veterinary PCR = vet diagnostics = animal disease testing
 - Meat species identification = meat adulteration testing = food DNA testing
+
+## Swine Disease Panel (13 chips, all on CarryOn)
+ASF, PRRSV, CSF, pseudorabies (PRV), PCV2, Glaesserella parasuis, Actinobacillus pleuropneumoniae, TGEV, rotavirus, PEDV, porcine parvovirus, FMDV, Japanese encephalitis.
+- Overview: https://yinruibio.com/en/swine-pcr-test-kits/
+- Vietnam market: https://yinruibio.com/en/markets/vietnam/

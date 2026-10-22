@@ -1,4 +1,4 @@
-import { locales, isValidLocale } from "@/lib/i18n";
+import { activeLocales, isValidLocale  } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/dictionaries";
 import { notFound } from "next/navigation";
@@ -9,7 +9,7 @@ import InquiryFormCompact from "@/components/InquiryFormCompact";
 import CatalogButton from "@/components/CatalogButton";
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return activeLocales.map((locale) => ({ locale }));
 }
 
 const TITLE = "Point-of-Care Animal Testing: Complete Guide to In-Clinic Veterinary Diagnostics (2026)";
