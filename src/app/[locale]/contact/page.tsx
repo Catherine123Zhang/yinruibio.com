@@ -112,10 +112,10 @@ function ContactPageInner() {
     } catch (err) {
       console.error("Form submission failed:", err);
       setContactError(
-        lang === "zh" ? "提交失败，请直接发邮件至 info@chinainarray.com 或添加 WhatsApp +86 18268661068。" : lang === "ja" ? "送信に失敗しました。info@chinainarray.com までメールするか、WhatsApp +86 18268661068 を追加してください。"
-            : lang === "vi" ? "Gửi không thành công. Vui lòng gửi email đến info@chinainarray.com hoặc nhắn trực tiếp qua WhatsApp +86 18268661068."
-            : lang === "pt" ? "Falha no envio. Envie um e-mail para info@chinainarray.com ou mande uma mensagem diretamente para o WhatsApp +86 18268661068."
-            : "Submission failed. Please email info@chinainarray.com or message WhatsApp +86 18268661068 directly."
+        lang === "zh" ? "提交失败，请直接发邮件至 382590314@qq.com 或添加 WhatsApp +86 18268661068。" : lang === "ja" ? "送信に失敗しました。382590314@qq.com までメールするか、WhatsApp +86 18268661068 を追加してください。"
+            : lang === "vi" ? "Gửi không thành công. Vui lòng gửi email đến 382590314@qq.com hoặc nhắn trực tiếp qua WhatsApp +86 18268661068."
+            : lang === "pt" ? "Falha no envio. Envie um e-mail para 382590314@qq.com ou mande uma mensagem diretamente para o WhatsApp +86 18268661068."
+            : "Submission failed. Please email 382590314@qq.com or message WhatsApp +86 18268661068 directly."
       );
     } finally {
       setLoading(false);
@@ -397,10 +397,10 @@ function ContactPageInner() {
               </div>
               <h3 className="font-semibold text-[var(--color-primary)]">Email</h3>
               <p className="mt-1 text-sm text-[var(--color-text-light)]">
-                info@chinainarray.com
+                382590314@qq.com
               </p>
               <a
-                href="mailto:info@chinainarray.com"
+                href="mailto:382590314@qq.com"
                 className="mt-3 inline-flex items-center rounded-lg bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-white hover:bg-[var(--color-accent-light)] transition-colors"
               >
                 {lang === "zh" ? "发送邮件" : lang === "ja" ? "メール送信" : lang === "vi" ? "Gửi email" : lang === "pt" ? "Enviar e-mail" : "Send Email"}

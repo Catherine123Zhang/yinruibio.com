@@ -18,7 +18,7 @@ export function organizationSchema() {
       },
     ],
     telephone: "+86-574-63998292",
-    email: "info@chinainarray.com",
+    email: "382590314@qq.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Building 3, No.345 Wenwei Road, Baisha Subdistrict",

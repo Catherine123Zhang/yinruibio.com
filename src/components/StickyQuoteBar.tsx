@@ -60,7 +60,7 @@ export default function StickyQuoteBar() {
 
             {/* Email */}
             <a
-              href="mailto:info@chinainarray.com"
+              href="mailto:382590314@qq.com"
               className="inline-flex items-center gap-2 rounded-lg border border-white/30 px-4 py-2 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
