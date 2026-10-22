@@ -29,11 +29,13 @@ export async function generateMetadata({
     en: "CarryOn Portable PCR Analyzer — 2 kg Handheld Veterinary Diagnostic Device",
     zh: "CarryOn 便携式PCR分析仪 — 2公斤手持兽医诊断设备",
     ja: "CarryOn ポータブルPCRアナライザー — 2kgハンドヘルド獣医診断デバイス",
+    vi: "Máy PCR cầm tay CarryOn — 2 kg, kết quả 40 phút",
   };
   const descMap: Record<string, string> = {
     en: "Handheld real-time fluorescence PCR analyzer. 2.0 kg, 5-color detection, results in 40 minutes. Battery-powered, no lab required. Detect African swine fever (ASF), PRRSV, canine, feline diseases & meat species. CE + ISO 13485 certified.",
     zh: "手持式实时荧光PCR分析仪。2.0公斤，5色检测通道，40分钟出结果。电池供电，无需实验室。检测非洲猪瘟、蓝耳病、犬猫疾病及肉类鉴定。CE + ISO 13485认证。",
     ja: "ハンドヘルド型リアルタイム蛍光PCRアナライザー。2.0kg、5色検出、40分で結果。バッテリー駆動、ラボ不要。アフリカ豚熱・PRRS・犬猫疾患・食肉種鑑定に対応。CE + ISO 13485認証。",
+    vi: "Máy PCR huỳnh quang thời gian thực (real-time PCR) cầm tay. Nặng 2,0 kg, phát hiện 5 màu, cho kết quả trong 40 phút. Dùng pin, không cần phòng xét nghiệm. Phát hiện dịch tả lợn châu Phi (ASF), PRRSV, bệnh ở chó, mèo và định danh loài thịt. Đạt chứng nhận CE + ISO 13485.",
   };
   return {
     title: titleMap[lang] || titleMap.en,
@@ -106,23 +108,23 @@ export default async function CarryOnDevicePage({
   const steps = [
     {
       num: "01",
-      title: lang === "zh" ? "加入样本" : lang === "ja" ? "サンプル投入" : "Load Sample",
-      desc: lang === "zh" ? "将拭子/血液样本加入微流控芯片" : lang === "ja" ? "スワブ/血液サンプルをチップに投入" : "Add swab or blood sample to the microfluidic chip",
+      title: lang === "zh" ? "加入样本" : lang === "ja" ? "サンプル投入" : lang === "vi" ? "Nạp mẫu" : "Load Sample",
+      desc: lang === "zh" ? "将拭子/血液样本加入微流控芯片" : lang === "ja" ? "スワブ/血液サンプルをチップに投入" : lang === "vi" ? "Cho mẫu tăm bông hoặc mẫu máu vào chip vi lưu" : "Add swab or blood sample to the microfluidic chip",
     },
     {
       num: "02",
-      title: lang === "zh" ? "插入芯片" : lang === "ja" ? "チップ挿入" : "Insert Chip",
-      desc: lang === "zh" ? "将芯片插入CarryOn设备" : lang === "ja" ? "チップをデバイスに挿入" : "Place the chip into the CarryOn device",
+      title: lang === "zh" ? "插入芯片" : lang === "ja" ? "チップ挿入" : lang === "vi" ? "Lắp chip" : "Insert Chip",
+      desc: lang === "zh" ? "将芯片插入CarryOn设备" : lang === "ja" ? "チップをデバイスに挿入" : lang === "vi" ? "Đặt chip vào thiết bị CarryOn" : "Place the chip into the CarryOn device",
     },
     {
       num: "03",
-      title: lang === "zh" ? "自动检测" : lang === "ja" ? "自動検出" : "Auto Process",
-      desc: lang === "zh" ? "自动完成核酸提取、纯化和PCR扩增" : lang === "ja" ? "核酸抽出・精製・PCR増幅を自動実行" : "Automated extraction, purification, and PCR amplification",
+      title: lang === "zh" ? "自动检测" : lang === "ja" ? "自動検出" : lang === "vi" ? "Tự động xử lý" : "Auto Process",
+      desc: lang === "zh" ? "自动完成核酸提取、纯化和PCR扩增" : lang === "ja" ? "核酸抽出・精製・PCR増幅を自動実行" : lang === "vi" ? "Tự động tách chiết, tinh sạch và khuếch đại PCR" : "Automated extraction, purification, and PCR amplification",
     },
     {
       num: "04",
-      title: lang === "zh" ? "读取结果" : lang === "ja" ? "結果表示" : "Read Result",
-      desc: lang === "zh" ? "触屏显示检测报告，支持WiFi传输" : lang === "ja" ? "タッチスクリーンで結果表示、WiFi転送対応" : "Results displayed on touchscreen, WiFi transfer supported",
+      title: lang === "zh" ? "读取结果" : lang === "ja" ? "結果表示" : lang === "vi" ? "Đọc kết quả" : "Read Result",
+      desc: lang === "zh" ? "触屏显示检测报告，支持WiFi传输" : lang === "ja" ? "タッチスクリーンで結果表示、WiFi転送対応" : lang === "vi" ? "Kết quả hiển thị trên màn hình cảm ứng, hỗ trợ truyền qua WiFi" : "Results displayed on touchscreen, WiFi transfer supported",
     },
   ];
 
@@ -193,7 +195,7 @@ export default async function CarryOnDevicePage({
                   {dict.nav.products}
                 </Link>
                 <span>/</span>
-                <span className="text-[var(--color-primary)]">{lang === "zh" ? "检测设备" : lang === "ja" ? "検出デバイス" : "Detection Device"}</span>
+                <span className="text-[var(--color-primary)]">{lang === "zh" ? "检测设备" : lang === "ja" ? "検出デバイス" : lang === "vi" ? "Thiết bị phát hiện" : "Detection Device"}</span>
               </nav>
 
               <h1 className="text-3xl font-bold text-[var(--color-primary)] sm:text-4xl">
@@ -226,7 +228,7 @@ export default async function CarryOnDevicePage({
               {/* Business Terms */}
               <div className="mt-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg)] p-5">
                 <h3 className="text-sm font-semibold text-[var(--color-primary)] uppercase tracking-wide mb-3">
-                  {lang === "zh" ? "商务条款" : lang === "ja" ? "取引条件" : "Business Terms"}
+                  {lang === "zh" ? "商务条款" : lang === "ja" ? "取引条件" : lang === "vi" ? "Điều khoản kinh doanh" : "Business Terms"}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
                   <div className="flex justify-between">
@@ -234,24 +236,24 @@ export default async function CarryOnDevicePage({
                     <span className="font-medium text-[var(--color-primary)]">1 unit (device), 50 pcs (chips)</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "样品" : lang === "ja" ? "サンプル" : "Sample"}</span>
-                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "可提供演示机" : lang === "ja" ? "デモ機提供可" : "Demo unit available"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "样品" : lang === "ja" ? "サンプル" : lang === "vi" ? "Mẫu" : "Sample"}</span>
+                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "可提供演示机" : lang === "ja" ? "デモ機提供可" : lang === "vi" ? "Có sẵn thiết bị demo" : "Demo unit available"}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "交期" : lang === "ja" ? "納期" : "Lead Time"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "交期" : lang === "ja" ? "納期" : lang === "vi" ? "Thời gian giao hàng" : "Lead Time"}</span>
                     <span className="font-medium text-[var(--color-primary)]">7-14d (stock) / 30d (bulk)</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "付款" : lang === "ja" ? "支払い" : "Payment"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "付款" : lang === "ja" ? "支払い" : lang === "vi" ? "Thanh toán" : "Payment"}</span>
                     <span className="font-medium text-[var(--color-primary)]">T/T, L/C</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "发货" : lang === "ja" ? "出荷" : "Shipping"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "发货" : lang === "ja" ? "出荷" : lang === "vi" ? "Vận chuyển" : "Shipping"}</span>
                     <span className="font-medium text-[var(--color-primary)]">FOB Ningbo, DDP available</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "定制" : lang === "ja" ? "カスタム" : "Customization"}</span>
-                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "贴牌/定制芯片" : lang === "ja" ? "OEM/カスタムパネル" : "Private label, custom panels"}</span>
+                    <span className="text-[var(--color-text-light)]">{lang === "zh" ? "定制" : lang === "ja" ? "カスタム" : lang === "vi" ? "Tùy chỉnh" : "Customization"}</span>
+                    <span className="font-medium text-[var(--color-primary)]">{lang === "zh" ? "贴牌/定制芯片" : lang === "ja" ? "OEM/カスタムパネル" : lang === "vi" ? "Nhãn riêng, bộ xét nghiệm tùy chỉnh" : "Private label, custom panels"}</span>
                   </div>
                 </div>
               </div>
@@ -268,7 +270,7 @@ export default async function CarryOnDevicePage({
                   href={`/${locale}/contact/?product=${encodeURIComponent("CarryOn Portable PCR Analyzer")}`}
                   className="inline-flex items-center justify-center rounded-lg border border-[var(--color-border)] px-8 py-3.5 text-base font-semibold text-[var(--color-primary)] hover:bg-[var(--color-bg)] transition-colors"
                 >
-                  {lang === "zh" ? "获取报价" : lang === "ja" ? "見積もりを取得" : "Get a Quote"}
+                  {lang === "zh" ? "获取报价" : lang === "ja" ? "見積もりを取得" : lang === "vi" ? "Nhận báo giá" : "Get a Quote"}
                 </Link>
               </div>
             </div>
@@ -280,13 +282,11 @@ export default async function CarryOnDevicePage({
       <section className="py-20 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)]">
-            {lang === "zh" ? "操作流程" : lang === "ja" ? "操作手順" : "How It Works"}
+            {lang === "zh" ? "操作流程" : lang === "ja" ? "操作手順" : lang === "vi" ? "Cách hoạt động" : "How It Works"}
           </h2>
           <p className="mt-4 text-center text-[var(--color-text-light)]">
-            {lang === "zh"
-              ? "4步完成检测，无需专业培训"
-              : lang === "ja"
-                ? "4ステップで検査完了、専門トレーニング不要"
+            {lang === "zh" ? "4步完成检测，无需专业培训" : lang === "ja" ? "4ステップで検査完了、専門トレーニング不要"
+                : lang === "vi" ? "4 bước đơn giản. Không cần đào tạo."
                 : "4 simple steps. No training required."}
           </p>
           <div className="mt-12 grid gap-6 md:grid-cols-4">
@@ -342,7 +342,7 @@ export default async function CarryOnDevicePage({
               href={`/${locale}/contact/`}
               className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
             >
-              {lang === "zh" ? "获取详细规格书" : lang === "ja" ? "詳細仕様書を取得" : "Download Full Spec Sheet"}
+              {lang === "zh" ? "获取详细规格书" : lang === "ja" ? "詳細仕様書を取得" : lang === "vi" ? "Tải bảng thông số kỹ thuật đầy đủ" : "Download Full Spec Sheet"}
             </Link>
           </div>
         </div>
@@ -445,13 +445,11 @@ export default async function CarryOnDevicePage({
       <section className="py-20 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)]">
-            {lang === "zh" ? "配套检测芯片" : lang === "ja" ? "対応検査チップ" : "Compatible Test Chips"}
+            {lang === "zh" ? "配套检测芯片" : lang === "ja" ? "対応検査チップ" : lang === "vi" ? "Chip xét nghiệm tương thích" : "Compatible Test Chips"}
           </h2>
           <p className="mt-4 text-center text-[var(--color-text-light)] max-w-2xl mx-auto">
-            {lang === "zh"
-              ? "选择适合您检测需求的微流控芯片，覆盖猪病（非洲猪瘟、蓝耳）、犬猫、病原体和食材溯源检测。"
-              : lang === "ja"
-                ? "犬、猫、病原体、食品トレーサビリティ検査をカバーする検査チップを選択。"
+            {lang === "zh" ? "选择适合您检测需求的微流控芯片，覆盖猪病（非洲猪瘟、蓝耳）、犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬、猫、病原体、食品トレーサビリティ検査をカバーする検査チップを選択。"
+                : lang === "vi" ? "Chọn chip vi lưu phù hợp với nhu cầu xét nghiệm của bạn. Bao gồm lợn (ASF, PRRSV), chó, mèo, tác nhân gây bệnh ở người và nhận diện loài trong thịt."
                 : "Choose the right microfluidic chip for your testing needs. Covering swine (ASF, PRRSV), canine, feline, human pathogen, and meat species identification."}
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -501,7 +499,7 @@ export default async function CarryOnDevicePage({
               href={`/${locale}/products/test-chips/`}
               className="inline-flex items-center text-[var(--color-accent)] font-medium hover:underline"
             >
-              {lang === "zh" ? "查看全部检测芯片" : lang === "ja" ? "すべての検査チップを見る" : "View All Test Chips"}
+              {lang === "zh" ? "查看全部检测芯片" : lang === "ja" ? "すべての検査チップを見る" : lang === "vi" ? "Xem tất cả chip xét nghiệm" : "View All Test Chips"}
               <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -514,7 +512,7 @@ export default async function CarryOnDevicePage({
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-2xl font-bold text-[var(--color-primary)] mb-8">
-            {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : "Related Products"}
+            {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : lang === "vi" ? "Sản phẩm liên quan" : "Related Products"}
           </h2>
           <div className="grid gap-6 sm:grid-cols-3">
             <Link
@@ -522,10 +520,10 @@ export default async function CarryOnDevicePage({
               className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
             >
               <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
-                {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : "Test Chips"}
+                {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : lang === "vi" ? "Chip xét nghiệm" : "Test Chips"}
               </h3>
               <p className="mt-2 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "微流控检测芯片，覆盖犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬猫、病原体、食品検査用マイクロ流体チップ。" : "Microfluidic test chips for canine, feline, pathogen, and meat ID testing."}
+                {lang === "zh" ? "微流控检测芯片，覆盖犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬猫、病原体、食品検査用マイクロ流体チップ。" : lang === "vi" ? "Chip xét nghiệm vi lưu dùng cho xét nghiệm chó, mèo, tác nhân gây bệnh và định danh loài thịt." : "Microfluidic test chips for canine, feline, pathogen, and meat ID testing."}
               </p>
             </Link>
             <Link
@@ -533,10 +531,10 @@ export default async function CarryOnDevicePage({
               className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
             >
               <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
-                {lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : "Accessories & Consumables"}
+                {lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : lang === "vi" ? "Phụ kiện & vật tư tiêu hao" : "Accessories & Consumables"}
               </h3>
               <p className="mt-2 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "采样拭子、运输管和充电底座等配套产品。" : lang === "ja" ? "採取スワブ、輸送チューブ、充電ドックなど。" : "Sampling swabs, transport tubes, charging dock, and more."}
+                {lang === "zh" ? "采样拭子、运输管和充电底座等配套产品。" : lang === "ja" ? "採取スワブ、輸送チューブ、充電ドックなど。" : lang === "vi" ? "Tăm bông lấy mẫu, ống vận chuyển, đế sạc và nhiều hơn nữa." : "Sampling swabs, transport tubes, charging dock, and more."}
               </p>
             </Link>
             <Link
@@ -547,7 +545,7 @@ export default async function CarryOnDevicePage({
                 {dict.nav.technology}
               </h3>
               <p className="mt-2 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "了解微流控PCR技术和工作原理。" : lang === "ja" ? "マイクロ流体PCR技術と仕組みについて。" : "Learn about microfluidic PCR technology and how it works."}
+                {lang === "zh" ? "了解微流控PCR技术和工作原理。" : lang === "ja" ? "マイクロ流体PCR技術と仕組みについて。" : lang === "vi" ? "Tìm hiểu về công nghệ PCR vi lưu và cách hoạt động." : "Learn about microfluidic PCR technology and how it works."}
               </p>
             </Link>
           </div>
@@ -562,7 +560,7 @@ export default async function CarryOnDevicePage({
             dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(deviceFaqs)) }}
           />
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
-            {lang === "zh" ? "常见问题" : lang === "ja" ? "よくある質問" : "Frequently Asked Questions"}
+            {lang === "zh" ? "常见问题" : lang === "ja" ? "よくある質問" : lang === "vi" ? "Câu hỏi thường gặp" : "Frequently Asked Questions"}
           </h2>
           <div className="space-y-4">
             {deviceFaqs.map((faq, i) => (

@@ -164,44 +164,120 @@ const content = {
     ipTitle: "知的財産",
     ipDesc: "自主研究開発と外部ライセンスを通じて、外観、機器設備、検査応用、ソフトウェア著作権にわたる完全なIP体系を構築しています。",
   },
+  vi: {
+    "companyIntro": "Ningbo Yinrui Biomedical Instruments Co., Ltd được thành lập vào tháng 6 năm 2018. Là nhà sản xuất thiết bị có độ chính xác cao, đội ngũ kỹ thuật nòng cốt của công ty gồm các chuyên gia và học giả đến từ Viện Hàn lâm Khoa học Trung Quốc, chuyên tâm vào nghiên cứu phát triển và sản xuất các công nghệ và thiết bị phát hiện phân tử tiên tiến trong lĩnh vực khoa học sự sống và y học chính xác.",
+    "companyProducts": "Công ty chuyên về PCR kỹ thuật số và các hệ thống phân tích qPCR axit nucleic khép kín hoàn toàn tự động, cùng với các thuốc thử và vật tư tiêu hao liên quan. Chúng tôi tập trung cung cấp các giải pháp phát hiện axit nucleic hiệu quả cho các lĩnh vực nghiên cứu khoa học chuyên nghiệp và ứng dụng.",
+    "companyTeam": "Hiện nay công ty có 69 nhân viên, trong đó có 6 tiến sĩ và 12 thạc sĩ trong đội ngũ nhân sự kỹ thuật và quản lý R&D.",
+    "founderSection": "Nhà sáng lập",
+    "founderName": "TS. Yu Jun — Chủ tịch",
+    "founderTitle": "Tiến sĩ Y sinh · Giáo sư, Đại học Viện Hàn lâm Khoa học Trung Quốc",
+    "founderSpecialty": "Chuyên môn: Khoa học Hệ gen, Tin học, Sản xuất Thiết bị Khoa học",
+    "founderBio": [
+      "Trường Y NYU, Tiến sĩ Y sinh (1984–1990)",
+      "Đồng sáng lập BGI (Viện Genomics Bắc Kinh) (1999–2008)",
+      "Nhà nghiên cứu Xuất sắc & Phó Viện trưởng Sáng lập, Viện Genomics Bắc Kinh, CAS (2003–2013)",
+      "Chủ tịch, Ningbo Yinrui Biomedical Instruments Co., Ltd (2018–nay)",
+      "Giám đốc, Viện Nghiên cứu Đổi mới Khoa học Sự sống Cixi (2021–nay)"
+    ],
+    "founderAwards": [
+      "Chương trình Trăm Nhân tài CAS (2002)",
+      "Scientific American — Nhà lãnh đạo Khoa học Toàn cầu của Năm, lần đầu tiên (2002)",
+      "Giải thưởng Thành tựu Khoa học & Công nghệ Xuất sắc Qiushi (2002)",
+      "Giải thưởng Thành tựu Khoa học & Công nghệ Xuất sắc CAS (2003)",
+      "Giải thưởng TWAS về Khoa học Nông nghiệp (2012)",
+      "Nhà khoa học trưởng, Chương trình 973 Quốc gia (2006–2016)"
+    ],
+    "statsTitle": "Tổng quan về công ty",
+    "certsTitle": "Chứng nhận & Trình độ chuyên môn",
+    "certsDesc": "Sản phẩm và quy trình sản xuất của chúng tôi đáp ứng các tiêu chuẩn quốc tế, đảm bảo chất lượng và tuân thủ cho các thị trường toàn cầu.",
+    "certLabels": [
+      "CE — Thiết bị PCR",
+      "CE — Bộ kit thuốc thử xét nghiệm",
+      "Doanh nghiệp nhỏ và vừa chuyên ngành & đổi mới sáng tạo"
+    ],
+    "facilityTitle": "Cơ sở R&D & sản xuất",
+    "facilityDesc": "Cơ sở của chúng tôi tại Viện Nghiên cứu Công nghệ Ứng dụng Công nghiệp Từ Khê có gần 3,000m² không gian phòng thí nghiệm, xưởng GMP và trang thiết bị sản xuất toàn diện.",
+    "teamTitle": "Đội ngũ quản lý",
+    "milestoneTitle": "Cột mốc phát triển của công ty",
+    "milestones": [
+      {
+        "year": "2018.06",
+        "text": "Yinrui Biomedical được thành lập tại Từ Khê, Chiết Giang"
+      },
+      {
+        "year": "2018.12",
+        "text": "Dự án PCR kỹ thuật số được chọn vào chương trình y sinh 'S&T Innovation 2025' của Ninh Ba"
+      },
+      {
+        "year": "2019.07",
+        "text": "Đảm nhận Chương trình R&D trọng điểm quốc gia 'S&T Winter Olympics' — dự án qPCR cầm tay"
+      },
+      {
+        "year": "2020.01",
+        "text": "Nghiên cứu công nghệ khẩn cấp phục vụ kiểm soát biên giới COVID-19; được chọn vào chương trình 'S&T Boosting Economy 2020' của MOST"
+      },
+      {
+        "year": "2021.05",
+        "text": "Đồng sáng lập Viện Nghiên cứu Đổi mới Khoa học Sự sống Từ Khê với chính quyền Từ Khê"
+      },
+      {
+        "year": "2022.04",
+        "text": "Được chứng nhận ISO13485; thiết bị và thuốc thử CarryOn đạt chứng nhận CE của EU"
+      },
+      {
+        "year": "2023.03",
+        "text": "Hợp tác chiến lược với Zhejiang Orient Gene Biotech"
+      },
+      {
+        "year": "2024.12",
+        "text": "Được công nhận là Doanh nghiệp Công nghệ cao Quốc gia"
+      },
+      {
+        "year": "2025.06",
+        "text": "Được công nhận là Doanh nghiệp vừa và nhỏ 'Chuyên biệt & Đổi mới sáng tạo' của Ninh Ba"
+      }
+    ],
+    "ipTitle": "Sở hữu trí tuệ",
+    "ipDesc": "Công ty đã xây dựng danh mục sở hữu trí tuệ toàn diện thông qua hoạt động R&D độc lập và cấp phép bên ngoài, bao gồm thiết kế, thiết bị, ứng dụng xét nghiệm và quyền tác giả phần mềm."
+  },
 };
 
 const teamMembers = [
   {
     image: "/images/about/team/founder-0.png",
-    name: { en: "Dr. Yu Jun", zh: "于军", ja: "于軍" },
-    role: { en: "Chairman & Founder", zh: "董事长 / 创始人", ja: "会長・創業者" },
-    bg: { en: "NYU Biomedical PhD · BGI Co-founder", zh: "NYU 生物医学博士 · 华大基因联合创始人", ja: "NYU生物医学博士 · BGI共同創設者" },
+    name: { en: "Dr. Yu Jun", zh: "于军", ja: "于軍", vi: "Tiến sĩ Yu Jun" },
+    role: { en: "Chairman & Founder", zh: "董事长 / 创始人", ja: "会長・創業者", vi: "Chủ tịch & Nhà sáng lập" },
+    bg: { en: "NYU Biomedical PhD · BGI Co-founder", zh: "NYU 生物医学博士 · 华大基因联合创始人", ja: "NYU生物医学博士 · BGI共同創設者", vi: "Tiến sĩ Y sinh Đại học NYU · Đồng sáng lập BGI" },
   },
   {
     image: "/images/about/team/team-1.png",
-    name: { en: "Zhang Lei", zh: "张雷", ja: "張雷" },
-    role: { en: "CEO", zh: "CEO", ja: "CEO" },
-    bg: { en: "MMD from Denmark · Secretary-General of Nordic Chinese Association", zh: "丹麦MMD学位 · 北欧华人联合会秘书长", ja: "デンマークMMD · 北欧華人連合会事務局長" },
+    name: { en: "Zhang Lei", zh: "张雷", ja: "張雷", vi: "Zhang Lei" },
+    role: { en: "CEO", zh: "CEO", ja: "CEO", vi: "CEO" },
+    bg: { en: "MMD from Denmark · Secretary-General of Nordic Chinese Association", zh: "丹麦MMD学位 · 北欧华人联合会秘书长", ja: "デンマークMMD · 北欧華人連合会事務局長", vi: "MMD từ Đan Mạch · Tổng Thư ký Hiệp hội Người Trung Quốc Bắc Âu" },
   },
   {
     image: "/images/about/team/team-2.png",
-    name: { en: "Sui Shuo", zh: "隋硕", ja: "隋碩" },
-    role: { en: "VP — R&D", zh: "副总裁", ja: "副社長" },
-    bg: { en: "PhD, Beijing Institute of Genomics, CAS · Postdoc, Institute of Semiconductors, CAS", zh: "中科院北京基因组所博士 · 中科院半导体所博士后", ja: "中国科学院北京ゲノム研究所博士" },
+    name: { en: "Sui Shuo", zh: "隋硕", ja: "隋碩", vi: "Sui Shuo" },
+    role: { en: "VP — R&D", zh: "副总裁", ja: "副社長", vi: "Phó Chủ tịch — R&D" },
+    bg: { en: "PhD, Beijing Institute of Genomics, CAS · Postdoc, Institute of Semiconductors, CAS", zh: "中科院北京基因组所博士 · 中科院半导体所博士后", ja: "中国科学院北京ゲノム研究所博士", vi: "Tiến sĩ, Viện Nghiên cứu Hệ gen Bắc Kinh, CAS · Nghiên cứu sau tiến sĩ, Viện Bán dẫn, CAS" },
   },
   {
     image: "/images/about/team/team-3.png",
-    name: { en: "Liu Yibo", zh: "刘一博", ja: "劉一博" },
-    role: { en: "Production Director", zh: "生产总监", ja: "生産ディレクター" },
-    bg: { en: "MSc Cell Biology, China Medical University", zh: "中国医科大学细胞生物学硕士", ja: "中国医科大学細胞生物学修士" },
+    name: { en: "Liu Yibo", zh: "刘一博", ja: "劉一博", vi: "Liu Yibo" },
+    role: { en: "Production Director", zh: "生产总监", ja: "生産ディレクター", vi: "Giám đốc Sản xuất" },
+    bg: { en: "MSc Cell Biology, China Medical University", zh: "中国医科大学细胞生物学硕士", ja: "中国医科大学細胞生物学修士", vi: "Thạc sĩ Sinh học Tế bào, Đại học Y Trung Quốc" },
   },
   {
     image: "/images/about/team/team-4.png",
-    name: { en: "Zhu Dawei", zh: "朱大维", ja: "朱大維" },
-    role: { en: "VP — Operations", zh: "副总裁", ja: "副社長" },
-    bg: { en: "Former VP, Shandong Greenlight Cable Group · Dell & GDB veteran", zh: "山东绿灯行电缆集团原副总裁", ja: "山東緑灯行ケーブルグループ元副社長" },
+    name: { en: "Zhu Dawei", zh: "朱大维", ja: "朱大維", vi: "Zhu Dawei" },
+    role: { en: "VP — Operations", zh: "副总裁", ja: "副社長", vi: "Phó Chủ tịch — Vận hành" },
+    bg: { en: "Former VP, Shandong Greenlight Cable Group · Dell & GDB veteran", zh: "山东绿灯行电缆集团原副总裁", ja: "山東緑灯行ケーブルグループ元副社長", vi: "Cựu Phó Chủ tịch, Shandong Greenlight Cable Group · Cựu nhân viên kỳ cựu của Dell & GDB" },
   },
   {
     image: "/images/about/team/team-5.png",
-    name: { en: "Guo Haiyan", zh: "郭海燕", ja: "郭海燕" },
-    role: { en: "R&D Director — Reagents", zh: "试剂研发总监", ja: "試薬研究開発ディレクター" },
-    bg: { en: "PhD, Beijing Institute of Genomics, CAS · Former Assoc. Professor", zh: "中科院北京基因组研究所博士 · 原沈阳药科大学副教授", ja: "中国科学院北京ゲノム研究所博士" },
+    name: { en: "Guo Haiyan", zh: "郭海燕", ja: "郭海燕", vi: "Guo Haiyan" },
+    role: { en: "R&D Director — Reagents", zh: "试剂研发总监", ja: "試薬研究開発ディレクター", vi: "Giám đốc Nghiên cứu và Phát triển — Thuốc thử" },
+    bg: { en: "PhD, Beijing Institute of Genomics, CAS · Former Assoc. Professor", zh: "中科院北京基因组研究所博士 · 原沈阳药科大学副教授", ja: "中国科学院北京ゲノム研究所博士", vi: "Tiến sĩ, Viện Nghiên cứu Hệ gen Bắc Kinh, CAS · Nguyên Phó Giáo sư" },
   },
 ];
 
@@ -222,14 +298,14 @@ export default async function AboutPage({
   ];
 
   const stats = [
-    { value: "69", label: { en: "Employees", zh: "员工", ja: "従業員" } },
-    { value: "6", label: { en: "PhDs", zh: "博士", ja: "博士" } },
-    { value: "12", label: { en: "Masters", zh: "硕士", ja: "修士" } },
-    { value: "62", label: { en: "Patents", zh: "授权专利", ja: "特許" } },
-    { value: "12", label: { en: "Design Patents", zh: "外观专利", ja: "意匠特許" } },
-    { value: "6", label: { en: "Software Copyrights", zh: "软件著作权", ja: "ソフトウェア著作権" } },
-    { value: "3,000m²", label: { en: "Lab + GMP Workshop", zh: "实验室 + GMP 车间", ja: "ラボ + GMP工場" } },
-    { value: "2018", label: { en: "Founded", zh: "成立", ja: "設立" } },
+    { value: "69", label: { en: "Employees", zh: "员工", ja: "従業員", vi: "Nhân viên" } },
+    { value: "6", label: { en: "PhDs", zh: "博士", ja: "博士", vi: "Tiến sĩ" } },
+    { value: "12", label: { en: "Masters", zh: "硕士", ja: "修士", vi: "Thạc sĩ" } },
+    { value: "62", label: { en: "Patents", zh: "授权专利", ja: "特許", vi: "Bằng sáng chế" } },
+    { value: "12", label: { en: "Design Patents", zh: "外观专利", ja: "意匠特許", vi: "Bằng sáng chế kiểu dáng" } },
+    { value: "6", label: { en: "Software Copyrights", zh: "软件著作权", ja: "ソフトウェア著作権", vi: "Quyền tác giả phần mềm" } },
+    { value: "3,000m²", label: { en: "Lab + GMP Workshop", zh: "实验室 + GMP 车间", ja: "ラボ + GMP工場", vi: "Phòng thí nghiệm + Xưởng GMP" } },
+    { value: "2018", label: { en: "Founded", zh: "成立", ja: "設立", vi: "Thành lập" } },
   ];
 
   return (
@@ -318,7 +394,7 @@ export default async function AboutPage({
             <FadeIn delay={100}>
               <div>
                 <h4 className="text-sm font-semibold text-[var(--color-primary)] uppercase tracking-wider mb-3">
-                  {lang === "zh" ? "履历" : lang === "ja" ? "経歴" : "Career"}
+                  {lang === "zh" ? "履历" : lang === "ja" ? "経歴" : lang === "vi" ? "Sự nghiệp" : "Career"}
                 </h4>
                 <ul className="space-y-2">
                   {t.founderBio.map((item) => (
@@ -330,7 +406,7 @@ export default async function AboutPage({
                 </ul>
 
                 <h4 className="text-sm font-semibold text-[var(--color-primary)] uppercase tracking-wider mt-8 mb-3">
-                  {lang === "zh" ? "荣誉与奖项" : lang === "ja" ? "受賞歴" : "Honors & Awards"}
+                  {lang === "zh" ? "荣誉与奖项" : lang === "ja" ? "受賞歴" : lang === "vi" ? "Danh hiệu & Giải thưởng" : "Honors & Awards"}
                 </h4>
                 <ul className="space-y-2">
                   {t.founderAwards.map((item) => (
@@ -385,15 +461,15 @@ export default async function AboutPage({
               <div className="mt-6 grid grid-cols-3 gap-4">
                 <div className="rounded-xl border border-[var(--color-border)] p-4 text-center">
                   <div className="text-2xl font-bold text-[var(--color-primary)]">62</div>
-                  <div className="text-xs text-[var(--color-text-light)]">{lang === "zh" ? "授权专利" : lang === "ja" ? "特許" : "Patents"}</div>
+                  <div className="text-xs text-[var(--color-text-light)]">{lang === "zh" ? "授权专利" : lang === "ja" ? "特許" : lang === "vi" ? "Bằng sáng chế" : "Patents"}</div>
                 </div>
                 <div className="rounded-xl border border-[var(--color-border)] p-4 text-center">
                   <div className="text-2xl font-bold text-[var(--color-primary)]">12</div>
-                  <div className="text-xs text-[var(--color-text-light)]">{lang === "zh" ? "外观专利" : lang === "ja" ? "意匠" : "Design Patents"}</div>
+                  <div className="text-xs text-[var(--color-text-light)]">{lang === "zh" ? "外观专利" : lang === "ja" ? "意匠" : lang === "vi" ? "Bằng sáng chế kiểu dáng" : "Design Patents"}</div>
                 </div>
                 <div className="rounded-xl border border-[var(--color-border)] p-4 text-center">
                   <div className="text-2xl font-bold text-[var(--color-primary)]">6</div>
-                  <div className="text-xs text-[var(--color-text-light)]">{lang === "zh" ? "软件著作权" : lang === "ja" ? "著作権" : "Software ©"}</div>
+                  <div className="text-xs text-[var(--color-text-light)]">{lang === "zh" ? "软件著作权" : lang === "ja" ? "著作権" : lang === "vi" ? "Phần mềm ©" : "Software ©"}</div>
                 </div>
               </div>
             </FadeIn>
@@ -527,7 +603,7 @@ export default async function AboutPage({
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(aboutFaqs)) }}
               />
               <h2 className="text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
-                {lang === "zh" ? "常见问题" : lang === "ja" ? "よくある質問" : "Frequently Asked Questions"}
+                {lang === "zh" ? "常见问题" : lang === "ja" ? "よくある質問" : lang === "vi" ? "Câu hỏi thường gặp" : "Frequently Asked Questions"}
               </h2>
               <div className="space-y-4">
                 {aboutFaqs.map((faq, i) => (
@@ -553,20 +629,20 @@ export default async function AboutPage({
       <section className="py-12">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-lg font-semibold text-[var(--color-primary)] mb-4">
-            {lang === "zh" ? "了解更多" : lang === "ja" ? "詳しく見る" : "Explore More"}
+            {lang === "zh" ? "了解更多" : lang === "ja" ? "詳しく見る" : lang === "vi" ? "Khám phá thêm" : "Explore More"}
           </h2>
           <div className="grid gap-3 sm:grid-cols-4">
             <Link
               href={`/${locale}/products/carryon-device/`}
               className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
             >
-              {lang === "zh" ? "CarryOn 检测设备" : lang === "ja" ? "CarryOn デバイス" : "CarryOn Device"}
+              {lang === "zh" ? "CarryOn 检测设备" : lang === "ja" ? "CarryOn デバイス" : lang === "vi" ? "Thiết bị CarryOn" : "CarryOn Device"}
             </Link>
             <Link
               href={`/${locale}/products/test-chips/`}
               className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
             >
-              {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : "Test Chips"}
+              {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : lang === "vi" ? "Chip xét nghiệm" : "Test Chips"}
             </Link>
             <Link
               href={`/${locale}/technology/`}
@@ -600,7 +676,7 @@ export default async function AboutPage({
               href={`/${locale}/products/`}
               className="inline-flex items-center justify-center rounded-lg border border-white/30 px-8 py-3.5 text-base font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              {lang === "zh" ? "查看产品" : lang === "ja" ? "製品を見る" : "View Products"}
+              {lang === "zh" ? "查看产品" : lang === "ja" ? "製品を見る" : lang === "vi" ? "Xem sản phẩm" : "View Products"}
             </Link>
           </div>
         </div>

@@ -125,7 +125,7 @@ export default async function MarketDetailPage({
 
   const breadcrumbs = [
     { name: dict.nav.home, url: `/${locale}/` },
-    { name: locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : "Markets", url: `/${locale}/markets/` },
+    { name: locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Thị trường" : "Markets", url: `/${locale}/markets/` },
     { name: market.name[loc], url: `/${locale}/markets/${slug}/` },
   ];
 
@@ -170,6 +170,15 @@ export default async function MarketDetailPage({
       faq: "よくある質問",
       otherMarkets: "他の市場を探す",
     },
+    vi: {
+      overview: "Tổng quan thị trường",
+      regulatory: "Lộ trình đăng ký & quy định",
+      shipping: "Vận chuyển & logistics",
+      applications: "Ứng dụng chính",
+      distribution: "Phân phối & hợp tác",
+      faq: "Câu hỏi thường gặp",
+      otherMarkets: "Khám phá các thị trường khác",
+    },
   };
 
   const labels = sectionLabels[loc];
@@ -206,7 +215,7 @@ export default async function MarketDetailPage({
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-white/60 mb-6">
             <Link href={`/${locale}/markets/`} className="hover:text-white">
-              {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : "Markets"}
+              {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Thị trường" : "Markets"}
             </Link>
             <span>/</span>
             <span className="text-white/80">{market.name[loc]}</span>
@@ -219,7 +228,7 @@ export default async function MarketDetailPage({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              {locale === "zh" ? "港口：" : locale === "ja" ? "港：" : "Port: "}
+              {locale === "zh" ? "港口：" : locale === "ja" ? "港：" : locale === "vi" ? "Cảng: " : "Port: "}
               {market.port}
             </div>
           </div>
@@ -298,7 +307,7 @@ export default async function MarketDetailPage({
           {/* Internal Product Links */}
           <section className="mb-16 rounded-xl border border-[var(--color-accent)]/30 bg-[var(--color-accent)]/5 p-6 md:p-8">
             <h3 className="text-lg font-bold text-[var(--color-primary)] mb-4">
-              {locale === "zh" ? "相关产品" : locale === "ja" ? "関連製品" : "Related Products"}
+              {locale === "zh" ? "相关产品" : locale === "ja" ? "関連製品" : locale === "vi" ? "Sản phẩm liên quan" : "Related Products"}
             </h3>
             <div className="grid gap-3 sm:grid-cols-2">
               <Link
@@ -310,10 +319,10 @@ export default async function MarketDetailPage({
                 </div>
                 <div>
                   <div className="font-semibold text-[var(--color-primary)] text-sm">
-                    {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : "CarryOn Device"}
+                    {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : locale === "vi" ? "Thiết bị CarryOn" : "CarryOn Device"}
                   </div>
                   <div className="text-xs text-[var(--color-text-light)]">
-                    {locale === "zh" ? "2.0kg 便携式PCR分析仪" : locale === "ja" ? "2.0kg ポータブルPCRアナライザー" : "2.0kg Portable PCR Analyzer"}
+                    {locale === "zh" ? "2.0kg 便携式PCR分析仪" : locale === "ja" ? "2.0kg ポータブルPCRアナライザー" : locale === "vi" ? "Máy PCR cầm tay 2.0kg" : "2.0kg Portable PCR Analyzer"}
                   </div>
                 </div>
               </Link>
@@ -326,10 +335,10 @@ export default async function MarketDetailPage({
                 </div>
                 <div>
                   <div className="font-semibold text-[var(--color-primary)] text-sm">
-                    {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : "Test Chips"}
+                    {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : locale === "vi" ? "Chip xét nghiệm" : "Test Chips"}
                   </div>
                   <div className="text-xs text-[var(--color-text-light)]">
-                    {locale === "zh" ? "犬、猫、病原体、肉源鉴定" : locale === "ja" ? "犬、猫、病原体、肉種鑑定" : "Canine, Feline, Pathogen, Meat ID"}
+                    {locale === "zh" ? "犬、猫、病原体、肉源鉴定" : locale === "ja" ? "犬、猫、病原体、肉種鑑定" : locale === "vi" ? "Chó, Mèo, Mầm bệnh, Định danh thịt" : "Canine, Feline, Pathogen, Meat ID"}
                   </div>
                 </div>
               </Link>
@@ -345,7 +354,7 @@ export default async function MarketDetailPage({
                     {dict.nav.technology}
                   </div>
                   <div className="text-xs text-[var(--color-text-light)]">
-                    {locale === "zh" ? "微流控PCR技术" : locale === "ja" ? "マイクロ流体PCR技術" : "Microfluidic PCR Technology"}
+                    {locale === "zh" ? "微流控PCR技术" : locale === "ja" ? "マイクロ流体PCR技術" : locale === "vi" ? "Công nghệ PCR vi lưu" : "Microfluidic PCR Technology"}
                   </div>
                 </div>
               </Link>
@@ -361,7 +370,7 @@ export default async function MarketDetailPage({
                     {dict.nav.blog}
                   </div>
                   <div className="text-xs text-[var(--color-text-light)]">
-                    {locale === "zh" ? "技术文章与指南" : locale === "ja" ? "技術記事とガイド" : "Technical Articles & Guides"}
+                    {locale === "zh" ? "技术文章与指南" : locale === "ja" ? "技術記事とガイド" : locale === "vi" ? "Bài viết kỹ thuật & Hướng dẫn" : "Technical Articles & Guides"}
                   </div>
                 </div>
               </Link>
@@ -450,7 +459,7 @@ export default async function MarketDetailPage({
               href={`/${locale}/products/carryon-device/`}
               className="inline-flex items-center justify-center rounded-lg border border-white/30 px-8 py-3.5 text-base font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              {locale === "zh" ? "查看CarryOn设备" : locale === "ja" ? "CarryOnデバイスを見る" : "View CarryOn Device"}
+              {locale === "zh" ? "查看CarryOn设备" : locale === "ja" ? "CarryOnデバイスを見る" : locale === "vi" ? "Xem thiết bị CarryOn" : "View CarryOn Device"}
             </Link>
           </div>
         </div>

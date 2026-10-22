@@ -56,18 +56,18 @@ export default async function ChipDetailPage({
   const breadcrumbs = [
     { name: dict.nav.home, url: `/${locale}/` },
     { name: dict.nav.products, url: `/${locale}/products/` },
-    { name: lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : "Test Chips", url: `/${locale}/products/test-chips/` },
+    { name: lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : lang === "vi" ? "Chip xét nghiệm" : "Test Chips", url: `/${locale}/products/test-chips/` },
     { name: product.name[lang], url: `/${locale}/products/test-chips/${slug}/` },
   ];
 
   const categoryLabel =
     product.category === "chip-canine"
-      ? (lang === "zh" ? "犬类检测" : lang === "ja" ? "犬用検査" : "Canine")
+      ? (lang === "zh" ? "犬类检测" : lang === "ja" ? "犬用検査" : lang === "vi" ? "Chó" : "Canine")
       : product.category === "chip-feline"
-        ? (lang === "zh" ? "猫类检测" : lang === "ja" ? "猫用検査" : "Feline")
+        ? (lang === "zh" ? "猫类检测" : lang === "ja" ? "猫用検査" : lang === "vi" ? "Mèo" : "Feline")
         : product.category === "chip-pathogen"
-          ? (lang === "zh" ? "病原体检测" : lang === "ja" ? "病原体検査" : "Pathogen")
-          : (lang === "zh" ? "食材溯源" : lang === "ja" ? "食品トレーサビリティ" : "Meat ID");
+          ? (lang === "zh" ? "病原体检测" : lang === "ja" ? "病原体検査" : lang === "vi" ? "Tác nhân gây bệnh" : "Pathogen")
+          : (lang === "zh" ? "食材溯源" : lang === "ja" ? "食品トレーサビリティ" : lang === "vi" ? "Định danh thịt" : "Meat ID");
 
   // Get related products
   const relatedProducts = product.relatedProducts
@@ -162,7 +162,7 @@ export default async function ChipDetailPage({
                 </Link>
                 <span>/</span>
                 <Link href={`/${locale}/products/test-chips/`} className="hover:text-[var(--color-accent)]">
-                  {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : "Test Chips"}
+                  {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : lang === "vi" ? "Chip xét nghiệm" : "Test Chips"}
                 </Link>
                 <span>/</span>
                 <span className="text-[var(--color-primary)]">{categoryLabel}</span>
@@ -199,7 +199,7 @@ export default async function ChipDetailPage({
               {product.detectedTargets && (
                 <div className="mt-6">
                   <h3 className="text-sm font-semibold text-[var(--color-primary)] uppercase tracking-wider">
-                    {lang === "zh" ? "检测靶标" : lang === "ja" ? "検出ターゲット" : "Detection Targets"}
+                    {lang === "zh" ? "检测靶标" : lang === "ja" ? "検出ターゲット" : lang === "vi" ? "Mục tiêu phát hiện" : "Detection Targets"}
                   </h3>
                   <ul className="mt-3 space-y-2">
                     {product.detectedTargets.map((target) => (
@@ -220,7 +220,7 @@ export default async function ChipDetailPage({
                   href={`/${locale}/contact/?product=${encodeURIComponent(product.name.en)}`}
                   className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
                 >
-                  {lang === "zh" ? "获取报价" : lang === "ja" ? "見積もりを取得" : "Get a Quote"}
+                  {lang === "zh" ? "获取报价" : lang === "ja" ? "見積もりを取得" : lang === "vi" ? "Nhận báo giá" : "Get a Quote"}
                 </Link>
                 <Link
                   href={`/${locale}/contact/?product=${encodeURIComponent(product.name.en)}`}
@@ -265,7 +265,7 @@ export default async function ChipDetailPage({
         <section className="py-16">
           <div className="mx-auto max-w-7xl px-6">
             <h2 className="text-2xl font-bold text-[var(--color-primary)]">
-              {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : "Related Products"}
+              {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : lang === "vi" ? "Sản phẩm liên quan" : "Related Products"}
             </h2>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {relatedProducts.map((rp, i) => {

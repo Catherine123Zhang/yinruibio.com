@@ -158,7 +158,7 @@ export default async function TechnologyPage({
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(techFaqs)) }}
               />
               <h2 className="text-3xl font-bold text-center text-[var(--color-primary)] mb-8">
-                {locale === "zh" ? "常见问题" : locale === "ja" ? "よくある質問" : "Frequently Asked Questions"}
+                {locale === "zh" ? "常见问题" : locale === "ja" ? "よくある質問" : locale === "vi" ? "Câu hỏi thường gặp" : "Frequently Asked Questions"}
               </h2>
               <div className="space-y-4">
                 {techFaqs.map((faq, i) => (
@@ -184,20 +184,20 @@ export default async function TechnologyPage({
       <section className="py-12">
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="text-lg font-semibold text-[var(--color-primary)] mb-4">
-            {locale === "zh" ? "相关页面" : locale === "ja" ? "関連ページ" : "See Also"}
+            {locale === "zh" ? "相关页面" : locale === "ja" ? "関連ページ" : locale === "vi" ? "Xem thêm" : "See Also"}
           </h2>
           <div className="grid gap-3 sm:grid-cols-3">
             <Link
               href={`/${locale}/products/carryon-device/`}
               className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
             >
-              {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : "CarryOn Device"}
+              {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : locale === "vi" ? "Thiết bị CarryOn" : "CarryOn Device"}
             </Link>
             <Link
               href={`/${locale}/products/test-chips/`}
               className="rounded-lg border border-[var(--color-border)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
             >
-              {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : "Test Chips"}
+              {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : locale === "vi" ? "Chip xét nghiệm" : "Test Chips"}
             </Link>
             <Link
               href={`/${locale}/applications/`}

@@ -17,7 +17,7 @@ export default function Header({
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const marketsLabel = locale === "zh" ? "市场" : locale === "ja" ? "市場" : "Markets";
+  const marketsLabel = locale === "zh" ? "市场" : locale === "ja" ? "市場" : locale === "vi" ? "Thị trường" : "Markets";
 
   const navItems = [
     { href: `/${locale}/`, label: dict.nav.home },

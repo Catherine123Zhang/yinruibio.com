@@ -129,26 +129,26 @@ export default async function HomePage({
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
             <span className="font-medium text-[var(--color-primary)]">
-              {locale === "zh" ? "探索产品：" : locale === "ja" ? "製品を見る：" : "Explore Products:"}
+              {locale === "zh" ? "探索产品：" : locale === "ja" ? "製品を見る：" : locale === "vi" ? "Khám phá sản phẩm:" : "Explore Products:"}
             </span>
             <div className="flex flex-wrap justify-center gap-3">
               <Link
                 href={`/${locale}/products/carryon-device/`}
                 className="inline-flex items-center rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
               >
-                {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : "CarryOn Device"}
+                {locale === "zh" ? "CarryOn 检测设备" : locale === "ja" ? "CarryOn デバイス" : locale === "vi" ? "Thiết bị CarryOn" : "CarryOn Device"}
               </Link>
               <Link
                 href={`/${locale}/products/test-chips/`}
                 className="inline-flex items-center rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
               >
-                {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : "Test Chips"}
+                {locale === "zh" ? "检测芯片" : locale === "ja" ? "検査チップ" : locale === "vi" ? "Chip xét nghiệm" : "Test Chips"}
               </Link>
               <Link
                 href={`/${locale}/products/accessories/`}
                 className="inline-flex items-center rounded-full border border-[var(--color-border)] px-4 py-2 text-sm font-medium text-[var(--color-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
               >
-                {locale === "zh" ? "配件与耗材" : locale === "ja" ? "アクセサリー" : "Accessories"}
+                {locale === "zh" ? "配件与耗材" : locale === "ja" ? "アクセサリー" : locale === "vi" ? "Phụ kiện" : "Accessories"}
               </Link>
             </div>
           </div>
@@ -184,7 +184,7 @@ export default async function HomePage({
                     {item.description}
                   </p>
                   <span className="mt-4 inline-flex items-center text-sm font-medium text-[var(--color-accent)]">
-                    {locale === "zh" ? "查看检测芯片" : locale === "ja" ? "検査チップを見る" : "View Test Chips"}
+                    {locale === "zh" ? "查看检测芯片" : locale === "ja" ? "検査チップを見る" : locale === "vi" ? "Xem chip xét nghiệm" : "View Test Chips"}
                     <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -213,25 +213,23 @@ export default async function HomePage({
       <section className="py-20 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)] sm:text-4xl">
-            {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : "Serving Veterinary Markets Worldwide"}
+            {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Phục vụ thị trường thú y toàn cầu" : "Serving Veterinary Markets Worldwide"}
           </h2>
           <p className="mt-4 text-center text-[var(--color-text-light)] max-w-2xl mx-auto">
-            {locale === "zh"
-              ? "CarryOn便携式PCR诊断面向全球8个重点市场，CE认证，ISO 13485，宁波直发。"
-              : locale === "ja"
-                ? "CarryOnポータブルPCR診断は世界8つの主要市場に展開。CE認証、ISO 13485、寧波から直送。"
+            {locale === "zh" ? "CarryOn便携式PCR诊断面向全球8个重点市场，CE认证，ISO 13485，宁波直发。" : locale === "ja" ? "CarryOnポータブルPCR診断は世界8つの主要市場に展開。CE認証、ISO 13485、寧波から直送。"
+                : locale === "vi" ? "Chẩn đoán PCR cầm tay CarryOn tại 8 thị trường trọng điểm. Đạt chứng nhận CE, ISO 13485, vận chuyển từ Ningbo."
                 : "CarryOn portable PCR diagnostics across 8 key markets. CE certified, ISO 13485, shipped from Ningbo."}
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             {[
-              { slug: "united-states", name: locale === "zh" ? "美国" : locale === "ja" ? "アメリカ" : "USA", flag: "\u{1F1FA}\u{1F1F8}" },
-              { slug: "brazil", name: locale === "zh" ? "巴西" : locale === "ja" ? "ブラジル" : "Brazil", flag: "\u{1F1E7}\u{1F1F7}" },
-              { slug: "india", name: locale === "zh" ? "印度" : locale === "ja" ? "インド" : "India", flag: "\u{1F1EE}\u{1F1F3}" },
-              { slug: "germany", name: locale === "zh" ? "德国" : locale === "ja" ? "ドイツ" : "Germany", flag: "\u{1F1E9}\u{1F1EA}" },
-              { slug: "japan", name: locale === "zh" ? "日本" : locale === "ja" ? "日本" : "Japan", flag: "\u{1F1EF}\u{1F1F5}" },
-              { slug: "australia", name: locale === "zh" ? "澳大利亚" : locale === "ja" ? "オーストラリア" : "Australia", flag: "\u{1F1E6}\u{1F1FA}" },
-              { slug: "united-kingdom", name: locale === "zh" ? "英国" : locale === "ja" ? "イギリス" : "UK", flag: "\u{1F1EC}\u{1F1E7}" },
-              { slug: "thailand", name: locale === "zh" ? "东南亚" : locale === "ja" ? "東南アジア" : "SE Asia", flag: "\u{1F1F9}\u{1F1ED}" },
+              { slug: "united-states", name: locale === "zh" ? "美国" : locale === "ja" ? "アメリカ" : locale === "vi" ? "Hoa Kỳ" : "USA", flag: "\u{1F1FA}\u{1F1F8}" },
+              { slug: "brazil", name: locale === "zh" ? "巴西" : locale === "ja" ? "ブラジル" : locale === "vi" ? "Brazil" : "Brazil", flag: "\u{1F1E7}\u{1F1F7}" },
+              { slug: "india", name: locale === "zh" ? "印度" : locale === "ja" ? "インド" : locale === "vi" ? "Ấn Độ" : "India", flag: "\u{1F1EE}\u{1F1F3}" },
+              { slug: "germany", name: locale === "zh" ? "德国" : locale === "ja" ? "ドイツ" : locale === "vi" ? "Đức" : "Germany", flag: "\u{1F1E9}\u{1F1EA}" },
+              { slug: "japan", name: locale === "zh" ? "日本" : locale === "ja" ? "日本" : locale === "vi" ? "Nhật Bản" : "Japan", flag: "\u{1F1EF}\u{1F1F5}" },
+              { slug: "australia", name: locale === "zh" ? "澳大利亚" : locale === "ja" ? "オーストラリア" : locale === "vi" ? "Úc" : "Australia", flag: "\u{1F1E6}\u{1F1FA}" },
+              { slug: "united-kingdom", name: locale === "zh" ? "英国" : locale === "ja" ? "イギリス" : locale === "vi" ? "Anh" : "UK", flag: "\u{1F1EC}\u{1F1E7}" },
+              { slug: "thailand", name: locale === "zh" ? "东南亚" : locale === "ja" ? "東南アジア" : locale === "vi" ? "Đông Nam Á" : "SE Asia", flag: "\u{1F1F9}\u{1F1ED}" },
             ].map((m) => (
               <Link
                 key={m.slug}
@@ -248,7 +246,7 @@ export default async function HomePage({
               href={`/${locale}/markets/`}
               className="inline-flex items-center text-sm font-semibold text-[var(--color-accent)] hover:underline"
             >
-              {locale === "zh" ? "查看所有市场" : locale === "ja" ? "全市場を見る" : "View All Markets"}
+              {locale === "zh" ? "查看所有市场" : locale === "ja" ? "全市場を見る" : locale === "vi" ? "Xem tất cả thị trường" : "View All Markets"}
               <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

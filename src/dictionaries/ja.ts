@@ -2,6 +2,7 @@ import type { Dictionary } from "./en";
 
 const ja: Dictionary = {
   meta: {
+    brand: "Yinrui Bio",
     siteName: "胤瑞バイオ — ポータブルPCRプラットフォーム",
     siteDescription:
       "手のひらサイズのラボ。PCRレベルの精度で40分で結果。いつでも、どこでも、誰でも。獣医診断・病原体検出・食肉種鑑定。",

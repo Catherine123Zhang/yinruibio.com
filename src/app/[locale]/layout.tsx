@@ -35,7 +35,7 @@ export async function generateMetadata({
   return {
     title: {
       default: dict.meta.siteName,
-      template: `%s | ${dict.meta.siteName}`,
+      template: `%s | ${dict.meta.brand}`,
     },
     description: dict.meta.siteDescription,
     metadataBase: new URL("https://yinruibio.com"),
@@ -48,7 +48,7 @@ export async function generateMetadata({
       description: dict.meta.siteDescription,
       url: `https://yinruibio.com/${locale}/`,
       siteName: dict.meta.siteName,
-      locale: locale === "zh" ? "zh_CN" : locale === "ja" ? "ja_JP" : "en_US",
+      locale: locale === "zh" ? "zh_CN" : locale === "ja" ? "ja_JP" : locale === "vi" ? "en_US" : "en_US",
       type: "website",
       images: [
         {

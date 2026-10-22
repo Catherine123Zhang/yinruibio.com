@@ -2,6 +2,7 @@ import type { Dictionary } from "./en";
 
 const zh: Dictionary = {
   meta: {
+    brand: "银瑞生物 Yinrui Bio",
     siteName: "胤瑞生物 — 便携式PCR检测平台",
     siteDescription:
       "掌心实验室，PCR级精准检测。40分钟出结果，随时随地，无需培训。宠物诊断、病原体检测、肉源溯源鉴定。",

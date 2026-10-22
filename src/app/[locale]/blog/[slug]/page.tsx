@@ -412,17 +412,17 @@ export default async function BlogPostPage({
           <div className="mt-12 rounded-xl border-2 border-[var(--color-accent)]/40 bg-gradient-to-r from-[var(--color-accent)]/5 to-transparent p-6 flex flex-col sm:flex-row items-center gap-4">
             <div className="flex-1">
               <p className="font-bold text-[var(--color-primary)] text-lg">
-                {locale === "zh" ? "需要选型帮助？" : locale === "ja" ? "製品選びにお困りですか？" : "Need Help Choosing the Right PCR Solution?"}
+                {locale === "zh" ? "需要选型帮助？" : locale === "ja" ? "製品選びにお困りですか？" : locale === "vi" ? "Cần hỗ trợ chọn giải pháp PCR phù hợp?" : "Need Help Choosing the Right PCR Solution?"}
               </p>
               <p className="text-sm text-[var(--color-text-light)] mt-1">
-                {locale === "zh" ? "我们的专家团队可提供免费咨询和演示机试用。" : locale === "ja" ? "専門チームが無料相談とデモ機をご提供します。" : "Our team provides free consultations and demo units for qualified buyers. MOQ: 1 device, 50 chips. Lead time: 7-14 days."}
+                {locale === "zh" ? "我们的专家团队可提供免费咨询和演示机试用。" : locale === "ja" ? "専門チームが無料相談とデモ機をご提供します。" : locale === "vi" ? "Đội ngũ chúng tôi cung cấp tư vấn miễn phí và thiết bị demo cho khách hàng đủ điều kiện. MOQ: 1 thiết bị, 50 chip xét nghiệm. Thời gian giao hàng: 7-14 ngày." : "Our team provides free consultations and demo units for qualified buyers. MOQ: 1 device, 50 chips. Lead time: 7-14 days."}
               </p>
             </div>
             <Link
               href={`/${locale}/contact/?source=blog-mid-cta&product=CarryOn`}
               className="shrink-0 rounded-lg bg-[var(--color-accent)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
             >
-              {locale === "zh" ? "免费咨询" : locale === "ja" ? "無料相談" : "Get Free Consultation"}
+              {locale === "zh" ? "免费咨询" : locale === "ja" ? "無料相談" : locale === "vi" ? "Nhận tư vấn miễn phí" : "Get Free Consultation"}
             </Link>
           </div>
 

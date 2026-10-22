@@ -20,12 +20,10 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isValidLocale(locale)) return {};
   return {
-    title: locale === "zh" ? "配件与耗材" : locale === "ja" ? "アクセサリー・消耗品" : "Accessories & Consumables",
+    title: locale === "zh" ? "配件与耗材" : locale === "ja" ? "アクセサリー・消耗品" : locale === "vi" ? "Phụ kiện & vật tư tiêu hao" : "Accessories & Consumables",
     description:
-      locale === "zh"
-        ? "CarryOn 平台配套耗材：采样拭子、运输管等。"
-        : locale === "ja"
-          ? "CarryOnプラットフォーム用消耗品：採取スワブ、輸送チューブなど。"
+      locale === "zh" ? "CarryOn 平台配套耗材：采样拭子、运输管等。" : locale === "ja" ? "CarryOnプラットフォーム用消耗品：採取スワブ、輸送チューブなど。"
+          : locale === "vi" ? "Vật tư tiêu hao cho nền tảng CarryOn: tăm bông lấy mẫu, ống vận chuyển và hơn thế nữa."
           : "Consumables for the CarryOn platform: sampling swabs, transport tubes, and more.",
     alternates: { canonical: `/${locale}/products/accessories/` },
   };
@@ -44,28 +42,28 @@ export default async function AccessoriesPage({
   const breadcrumbs = [
     { name: dict.nav.home, url: `/${locale}/` },
     { name: dict.nav.products, url: `/${locale}/products/` },
-    { name: lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : "Accessories", url: `/${locale}/products/accessories/` },
+    { name: lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : lang === "vi" ? "Phụ kiện" : "Accessories", url: `/${locale}/products/accessories/` },
   ];
 
   const accessories = [
     {
-      name: lang === "zh" ? "采样拭子套装" : lang === "ja" ? "採取スワブキット" : "Sampling Swab Kit",
-      desc: lang === "zh" ? "无菌包装采样拭子，适用于口鼻拭子和直肠拭子采样。" : lang === "ja" ? "無菌包装の採取スワブ。口鼻スワブおよび直腸スワブ採取に対応。" : "Sterile-packaged sampling swabs for oronasal and rectal sample collection.",
+      name: lang === "zh" ? "采样拭子套装" : lang === "ja" ? "採取スワブキット" : lang === "vi" ? "Bộ tăm bông lấy mẫu" : "Sampling Swab Kit",
+      desc: lang === "zh" ? "无菌包装采样拭子，适用于口鼻拭子和直肠拭子采样。" : lang === "ja" ? "無菌包装の採取スワブ。口鼻スワブおよび直腸スワブ採取に対応。" : lang === "vi" ? "Tăm bông lấy mẫu đóng gói vô trùng để thu thập mẫu mũi-miệng và trực tràng." : "Sterile-packaged sampling swabs for oronasal and rectal sample collection.",
       icon: "🧬",
     },
     {
-      name: lang === "zh" ? "样本保存管" : lang === "ja" ? "サンプル保存チューブ" : "Sample Transport Tube",
-      desc: lang === "zh" ? "含保存液的样本运输管，常温保存样本稳定性。" : lang === "ja" ? "保存液入りサンプル輸送チューブ。室温でサンプルの安定性を維持。" : "Transport tubes with preservative fluid for room temperature sample stability.",
+      name: lang === "zh" ? "样本保存管" : lang === "ja" ? "サンプル保存チューブ" : lang === "vi" ? "Ống vận chuyển mẫu" : "Sample Transport Tube",
+      desc: lang === "zh" ? "含保存液的样本运输管，常温保存样本稳定性。" : lang === "ja" ? "保存液入りサンプル輸送チューブ。室温でサンプルの安定性を維持。" : lang === "vi" ? "Ống vận chuyển có dung dịch bảo quản giúp mẫu ổn định ở nhiệt độ phòng." : "Transport tubes with preservative fluid for room temperature sample stability.",
       icon: "🧪",
     },
     {
-      name: lang === "zh" ? "充电底座" : lang === "ja" ? "充電ドック" : "Charging Dock",
-      desc: lang === "zh" ? "CarryOn 设备专用充电底座，支持快速充电。" : lang === "ja" ? "CarryOnデバイス専用充電ドック。急速充電対応。" : "Dedicated charging dock for the CarryOn device with fast-charge support.",
+      name: lang === "zh" ? "充电底座" : lang === "ja" ? "充電ドック" : lang === "vi" ? "Đế sạc" : "Charging Dock",
+      desc: lang === "zh" ? "CarryOn 设备专用充电底座，支持快速充电。" : lang === "ja" ? "CarryOnデバイス専用充電ドック。急速充電対応。" : lang === "vi" ? "Đế sạc chuyên dụng cho thiết bị CarryOn, hỗ trợ sạc nhanh." : "Dedicated charging dock for the CarryOn device with fast-charge support.",
       icon: "🔌",
     },
     {
-      name: lang === "zh" ? "便携收纳箱" : lang === "ja" ? "ポータブルケース" : "Portable Carrying Case",
-      desc: lang === "zh" ? "防水防震收纳箱，可容纳设备、芯片和配件。" : lang === "ja" ? "防水耐衝撃ケース。デバイス、チップ、アクセサリーを収納。" : "Waterproof, shockproof case for device, chips, and accessories.",
+      name: lang === "zh" ? "便携收纳箱" : lang === "ja" ? "ポータブルケース" : lang === "vi" ? "Hộp đựng cầm tay" : "Portable Carrying Case",
+      desc: lang === "zh" ? "防水防震收纳箱，可容纳设备、芯片和配件。" : lang === "ja" ? "防水耐衝撃ケース。デバイス、チップ、アクセサリーを収納。" : lang === "vi" ? "Hộp chống nước, chống sốc dành cho thiết bị, chip xét nghiệm và phụ kiện." : "Waterproof, shockproof case for device, chips, and accessories.",
       icon: "💼",
     },
   ];
@@ -86,16 +84,14 @@ export default async function AccessoriesPage({
               {dict.nav.products}
             </Link>
             <span>/</span>
-            <span className="text-white">{lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : "Accessories"}</span>
+            <span className="text-white">{lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : lang === "vi" ? "Phụ kiện" : "Accessories"}</span>
           </nav>
           <h1 className="text-4xl font-bold sm:text-5xl">
-            {lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー・消耗品" : "Accessories & Consumables"}
+            {lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー・消耗品" : lang === "vi" ? "Phụ kiện & vật tư tiêu hao" : "Accessories & Consumables"}
           </h1>
           <p className="mt-4 text-lg text-white/80 max-w-2xl">
-            {lang === "zh"
-              ? "为您的 CarryOn 检测平台配备完整的耗材和配件。"
-              : lang === "ja"
-                ? "CarryOn検査プラットフォーム用の完全な消耗品とアクセサリー。"
+            {lang === "zh" ? "为您的 CarryOn 检测平台配备完整的耗材和配件。" : lang === "ja" ? "CarryOn検査プラットフォーム用の完全な消耗品とアクセサリー。"
+                : lang === "vi" ? "Hoàn thiện nền tảng xét nghiệm CarryOn của bạn với các loại vật tư tiêu hao và phụ kiện của chúng tôi."
                 : "Complete your CarryOn testing platform with our range of consumables and accessories."}
           </p>
         </div>
@@ -119,7 +115,7 @@ export default async function AccessoriesPage({
                     href={`/${locale}/contact/`}
                     className="mt-4 inline-flex items-center text-sm font-medium text-[var(--color-accent)] hover:underline"
                   >
-                    {lang === "zh" ? "询价" : lang === "ja" ? "見積もり" : "Request Pricing"}
+                    {lang === "zh" ? "询价" : lang === "ja" ? "見積もり" : lang === "vi" ? "Yêu cầu báo giá" : "Request Pricing"}
                     <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -135,7 +131,7 @@ export default async function AccessoriesPage({
       <section className="py-12 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-2xl font-bold text-[var(--color-primary)] mb-6">
-            {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : "See Also"}
+            {lang === "zh" ? "相关产品" : lang === "ja" ? "関連製品" : lang === "vi" ? "Xem thêm" : "See Also"}
           </h2>
           <div className="grid gap-6 sm:grid-cols-2">
             <Link
@@ -143,10 +139,10 @@ export default async function AccessoriesPage({
               className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
             >
               <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
-                {lang === "zh" ? "CarryOn 检测设备" : lang === "ja" ? "CarryOn 検出デバイス" : "CarryOn Detection Device"}
+                {lang === "zh" ? "CarryOn 检测设备" : lang === "ja" ? "CarryOn 検出デバイス" : lang === "vi" ? "Thiết bị phát hiện CarryOn" : "CarryOn Detection Device"}
               </h3>
               <p className="mt-2 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "手持式PCR分析仪，配件的核心设备。" : lang === "ja" ? "ハンドヘルドPCRアナライザー、アクセサリーのコアデバイス。" : "Handheld PCR analyzer — the core device for these accessories."}
+                {lang === "zh" ? "手持式PCR分析仪，配件的核心设备。" : lang === "ja" ? "ハンドヘルドPCRアナライザー、アクセサリーのコアデバイス。" : lang === "vi" ? "Máy PCR cầm tay — thiết bị chính cho các phụ kiện này." : "Handheld PCR analyzer — the core device for these accessories."}
               </p>
             </Link>
             <Link
@@ -154,10 +150,10 @@ export default async function AccessoriesPage({
               className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
             >
               <h3 className="text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors">
-                {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : "Test Chips"}
+                {lang === "zh" ? "检测芯片" : lang === "ja" ? "検査チップ" : lang === "vi" ? "Chip xét nghiệm" : "Test Chips"}
               </h3>
               <p className="mt-2 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "微流控检测芯片，覆盖犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬猫、病原体、食品検査用マイクロ流体チップ。" : "Microfluidic test chips for canine, feline, pathogen, and meat ID testing."}
+                {lang === "zh" ? "微流控检测芯片，覆盖犬猫、病原体和食材溯源检测。" : lang === "ja" ? "犬猫、病原体、食品検査用マイクロ流体チップ。" : lang === "vi" ? "Chip xét nghiệm vi lưu dùng cho xét nghiệm chó, mèo, tác nhân gây bệnh và định danh loài thịt." : "Microfluidic test chips for canine, feline, pathogen, and meat ID testing."}
               </p>
             </Link>
           </div>
@@ -168,7 +164,7 @@ export default async function AccessoriesPage({
       <section className="py-16">
         <div className="mx-auto max-w-lg px-6">
           <InquiryFormCompact
-            productName={lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : "Accessories & Consumables"}
+            productName={lang === "zh" ? "配件与耗材" : lang === "ja" ? "アクセサリー" : lang === "vi" ? "Phụ kiện & vật tư tiêu hao" : "Accessories & Consumables"}
             sourcePage="accessories"
             locale={locale}
           />

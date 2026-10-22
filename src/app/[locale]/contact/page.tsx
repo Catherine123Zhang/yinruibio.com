@@ -9,8 +9,9 @@ import { trackEvent, getUtmParams } from "@/lib/analytics";
 import en from "@/dictionaries/en";
 import zh from "@/dictionaries/zh";
 import ja from "@/dictionaries/ja";
+import vi from "@/dictionaries/vi";
 
-const dicts = { en, zh, ja } as const;
+const dicts = { en, zh, ja, vi } as const;
 
 export default function ContactPage() {
   return (
@@ -55,10 +56,8 @@ function ContactPageInner() {
     // Validate: at least one contact method
     if (!email && !phone && !whatsapp && !wechat) {
       setContactError(
-        lang === "zh"
-          ? "请至少填写邮箱、电话或 WhatsApp 中的一项。"
-          : lang === "ja"
-            ? "メール、電話、WhatsApp のいずれかを入力してください。"
+        lang === "zh" ? "请至少填写邮箱、电话或 WhatsApp 中的一项。" : lang === "ja" ? "メール、電話、WhatsApp のいずれかを入力してください。"
+            : lang === "vi" ? "Vui lòng cung cấp ít nhất một thông tin: Email, Điện thoại hoặc WhatsApp."
             : "Please provide at least one: Email, Phone, or WhatsApp."
       );
       return;
@@ -67,10 +66,8 @@ function ContactPageInner() {
     // Validate: message required
     if (!message) {
       setContactError(
-        lang === "zh"
-          ? "请填写您的信息或需求。"
-          : lang === "ja"
-            ? "メッセージを入力してください。"
+        lang === "zh" ? "请填写您的信息或需求。" : lang === "ja" ? "メッセージを入力してください。"
+            : lang === "vi" ? "Vui lòng nhập tin nhắn của bạn."
             : "Please enter your message."
       );
       return;
@@ -112,10 +109,8 @@ function ContactPageInner() {
     } catch (err) {
       console.error("Form submission failed:", err);
       setContactError(
-        lang === "zh"
-          ? "提交失败，请直接发邮件至 info@yinruibio.com 或添加 WhatsApp +86 18268661068。"
-          : lang === "ja"
-            ? "送信に失敗しました。info@yinruibio.com までメールするか、WhatsApp +86 18268661068 を追加してください。"
+        lang === "zh" ? "提交失败，请直接发邮件至 info@yinruibio.com 或添加 WhatsApp +86 18268661068。" : lang === "ja" ? "送信に失敗しました。info@yinruibio.com までメールするか、WhatsApp +86 18268661068 を追加してください。"
+            : lang === "vi" ? "Gửi không thành công. Vui lòng gửi email đến info@yinruibio.com hoặc nhắn trực tiếp qua WhatsApp +86 18268661068."
             : "Submission failed. Please email info@yinruibio.com or message WhatsApp +86 18268661068 directly."
       );
     } finally {
@@ -154,7 +149,7 @@ function ContactPageInner() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-[var(--color-primary)]">
-                      {lang === "zh" ? "咨询产品：" : lang === "ja" ? "お問い合わせ製品：" : "Inquiring about:"}
+                      {lang === "zh" ? "咨询产品：" : lang === "ja" ? "お問い合わせ製品：" : lang === "vi" ? "Đang hỏi về:" : "Inquiring about:"}
                     </p>
                     <p className="text-sm text-[var(--color-accent)] font-semibold">{productContext}</p>
                   </div>
@@ -165,10 +160,8 @@ function ContactPageInner() {
               {/* Contact Methods - at least one required */}
               <div className="rounded-xl border border-[var(--color-accent)]/20 bg-[var(--color-accent)]/5 p-6 space-y-4">
                 <p className="text-sm font-medium text-[var(--color-primary)]">
-                  {lang === "zh"
-                    ? "联系方式（以下至少填一项）*"
-                    : lang === "ja"
-                      ? "連絡先（以下のいずれかを入力）*"
+                  {lang === "zh" ? "联系方式（以下至少填一项）*" : lang === "ja" ? "連絡先（以下のいずれかを入力）*"
+                      : lang === "vi" ? "Thông tin liên hệ (cần ít nhất một) *"
                       : "Contact Info (at least one required) *"}
                 </p>
 
@@ -188,7 +181,7 @@ function ContactPageInner() {
                 {/* Phone */}
                 <div>
                   <label className="block text-sm text-[var(--color-text-light)] mb-1">
-                    {lang === "zh" ? "电话" : lang === "ja" ? "電話番号" : "Phone"}
+                    {lang === "zh" ? "电话" : lang === "ja" ? "電話番号" : lang === "vi" ? "Điện thoại" : "Phone"}
                   </label>
                   <input
                     type="tel"
@@ -214,7 +207,7 @@ function ContactPageInner() {
                 {/* WeChat */}
                 <div>
                   <label className="block text-sm text-[var(--color-text-light)] mb-1">
-                    {lang === "zh" ? "微信号" : lang === "ja" ? "WeChat ID" : "WeChat ID"}
+                    {lang === "zh" ? "微信号" : lang === "ja" ? "WeChat ID" : lang === "vi" ? "ID WeChat" : "WeChat ID"}
                   </label>
                   <input
                     type="text"
@@ -294,10 +287,8 @@ function ContactPageInner() {
               {/* Message (required) */}
               <div>
                 <label className="block text-sm font-medium text-[var(--color-primary)] mb-1">
-                  {lang === "zh"
-                    ? "您的需求 *"
-                    : lang === "ja"
-                      ? "お問い合わせ内容 *"
+                  {lang === "zh" ? "您的需求 *" : lang === "ja" ? "お問い合わせ内容 *"
+                      : lang === "vi" ? "Tin nhắn của bạn *"
                       : "Your Message *"}
                 </label>
                 <textarea
@@ -305,18 +296,14 @@ function ContactPageInner() {
                   rows={4}
                   defaultValue={
                     productContext
-                      ? (lang === "zh"
-                          ? `我对 ${productContext} 感兴趣，请提供更多信息。`
-                          : lang === "ja"
-                            ? `${productContext} に興味があります。詳細を教えてください。`
+                      ? (lang === "zh" ? `我对 ${productContext} 感兴趣，请提供更多信息。` : lang === "ja" ? `${productContext} に興味があります。詳細を教えてください。`
+                            : lang === "vi" ? `Tôi quan tâm đến \${productContext}. Vui lòng cung cấp thêm thông tin.`
                             : `I'm interested in ${productContext}. Please provide more information.`)
                       : ""
                   }
                   placeholder={
-                    lang === "zh"
-                      ? "请描述您的需求、感兴趣的产品或合作意向..."
-                      : lang === "ja"
-                        ? "ご要望、ご興味のある製品、または提携のご意向をご記入ください..."
+                    lang === "zh" ? "请描述您的需求、感兴趣的产品或合作意向..." : lang === "ja" ? "ご要望、ご興味のある製品、または提携のご意向をご記入ください..."
+                        : lang === "vi" ? "Mô tả nhu cầu, sản phẩm quan tâm hoặc ý định hợp tác..."
                         : "Describe your needs, products of interest, or partnership intent..."
                   }
                   className={inputClass}
@@ -337,10 +324,8 @@ function ContactPageInner() {
               </button>
 
               <p className="text-xs text-center text-[var(--color-text-light)]">
-                {lang === "zh"
-                  ? "提交后我们会在 24 小时内回复您。"
-                  : lang === "ja"
-                    ? "送信後、24時間以内にご返信いたします。"
+                {lang === "zh" ? "提交后我们会在 24 小时内回复您。" : lang === "ja" ? "送信後、24時間以内にご返信いたします。"
+                    : lang === "vi" ? "Chúng tôi sẽ phản hồi bạn trong vòng 24 giờ."
                     : "We'll get back to you within 24 hours."}
               </p>
             </form>
@@ -352,7 +337,7 @@ function ContactPageInner() {
       <section className="py-16 bg-[var(--color-bg)]">
         <div className="mx-auto max-w-4xl px-6">
           <h2 className="text-2xl font-bold text-center text-[var(--color-primary)] mb-8">
-            {lang === "zh" ? "其他联系方式" : lang === "ja" ? "その他の連絡方法" : "Other Ways to Reach Us"}
+            {lang === "zh" ? "其他联系方式" : lang === "ja" ? "その他の連絡方法" : lang === "vi" ? "Các cách khác để liên hệ với chúng tôi" : "Other Ways to Reach Us"}
           </h2>
           <div className="grid gap-8 sm:grid-cols-3">
             {/* WeChat */}
@@ -369,7 +354,7 @@ function ContactPageInner() {
               </div>
               <h3 className="font-semibold text-[var(--color-primary)]">WeChat</h3>
               <p className="mt-1 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "扫码添加微信咨询" : lang === "ja" ? "WeChatでお問い合わせ" : "Scan to connect on WeChat"}
+                {lang === "zh" ? "扫码添加微信咨询" : lang === "ja" ? "WeChatでお問い合わせ" : lang === "vi" ? "Quét mã để kết nối trên WeChat" : "Scan to connect on WeChat"}
               </p>
             </div>
 
@@ -382,7 +367,7 @@ function ContactPageInner() {
               </div>
               <h3 className="font-semibold text-[var(--color-primary)]">WhatsApp</h3>
               <p className="mt-1 text-sm text-[var(--color-text-light)]">
-                {lang === "zh" ? "点击直接对话" : lang === "ja" ? "クリックしてチャット" : "Click to chat directly"}
+                {lang === "zh" ? "点击直接对话" : lang === "ja" ? "クリックしてチャット" : lang === "vi" ? "Nhấp để trò chuyện trực tiếp" : "Click to chat directly"}
               </p>
               <a
                 href="https://wa.me/8618268661068"
@@ -390,7 +375,7 @@ function ContactPageInner() {
                 rel="noopener noreferrer"
                 className="mt-3 inline-flex items-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-medium text-white hover:bg-[#20bd5a] transition-colors"
               >
-                {lang === "zh" ? "发送消息" : lang === "ja" ? "メッセージ送信" : "Send Message"}
+                {lang === "zh" ? "发送消息" : lang === "ja" ? "メッセージ送信" : lang === "vi" ? "Gửi tin nhắn" : "Send Message"}
               </a>
             </div>
 
@@ -409,7 +394,7 @@ function ContactPageInner() {
                 href="mailto:info@yinruibio.com"
                 className="mt-3 inline-flex items-center rounded-lg bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-white hover:bg-[var(--color-accent-light)] transition-colors"
               >
-                {lang === "zh" ? "发送邮件" : lang === "ja" ? "メール送信" : "Send Email"}
+                {lang === "zh" ? "发送邮件" : lang === "ja" ? "メール送信" : lang === "vi" ? "Gửi email" : "Send Email"}
               </a>
             </div>
           </div>
