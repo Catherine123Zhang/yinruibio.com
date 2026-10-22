@@ -86,7 +86,7 @@ const ja: Dictionary = {
     ],
   },
   stats: {
-    patents: "62件の特許",
+    patents: "25件の発明特許",
     certifications: "CE & ISO13485",
     resultTime: "40分で結果",
     labSpace: "3,000m² ラボ＆GMP",

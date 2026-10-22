@@ -1,4 +1,4 @@
-# Ningbo Yinrui Biomedical Instruments Co., Ltd
+# Ningbo Inarray Biomedical Systems Co., Ltd
 
 > Manufacturer of the CarryOn portable PCR analyzer — palm-sized, battery-powered molecular diagnostics for veterinary clinics, pathogen detection, and food safety testing.
 
@@ -37,12 +37,12 @@
 - Sensitivity: 50 copies/test, CV <= 3% reproducibility
 
 ## About
-- Company: Ningbo Yinrui Biomedical Instruments Co., Ltd (Yinrui Bio)
+- Company: Ningbo Inarray Biomedical Systems Co., Ltd (Yinrui Bio)
 - Founded: June 2018 in Cixi, Zhejiang, China
 - Founder: Dr. Yu Jun — NYU Biomedical PhD, BGI (Beijing Genomics Institute) co-founder
 - Employees: 69 (including 6 PhDs, 12 Masters)
 - Facility: ~3,000m2 laboratory + GMP workshops
-- IP: 62 patents, 12 design patents, 6 software copyrights
+- IP: 25 invention patents, 12 design patents, 6 software copyrights
 - Certifications: CE (device + reagents), ISO13485, National High-Tech Enterprise
 - Contact: WhatsApp +86 182-6866-1068
 

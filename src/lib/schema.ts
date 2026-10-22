@@ -2,7 +2,7 @@ export function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Ningbo Yinrui Biomedical Instruments Co., Ltd",
+    name: "Ningbo Inarray Biomedical Systems Co., Ltd",
     alternateName: ["Yinrui Bio", "胤瑞生物"],
     url: "https://yinruibio.com",
     logo: "https://yinruibio.com/images/logo.png",
@@ -17,9 +17,13 @@ export function organizationSchema() {
         description: "Co-founder of BGI (Beijing Genomics Institute), NYU Biomedical PhD",
       },
     ],
+    telephone: "+86-574-63998292",
+    email: "info@chinainarray.com",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Building 3, No.345 Wenwei Road, Baisha Subdistrict",
       addressLocality: "Cixi",
+      postalCode: "315300",
       addressRegion: "Zhejiang",
       addressCountry: "CN",
     },
@@ -65,7 +69,7 @@ export function productSchema() {
     },
     manufacturer: {
       "@type": "Organization",
-      name: "Ningbo Yinrui Biomedical Instruments Co., Ltd",
+      name: "Ningbo Inarray Biomedical Systems Co., Ltd",
     },
     category: "Veterinary Diagnostic Equipment",
     additionalProperty: [

@@ -33,7 +33,7 @@ But not all portable PCR systems are created equal. In this comprehensive compar
 
 ### 1. CarryOn Portable PCR Analyzer (Yinrui Bio)
 
-The **CarryOn** by [Ningbo Yinrui Biomedical Instruments](/en/about/) represents a breakthrough in handheld molecular diagnostics. Weighing just 2.0 kg with a battery life of approximately 3.5 hours, it is the most portable true PCR analyzer on the market.
+The **CarryOn** by [Ningbo Inarray Biomedical Systems](/en/about/) represents a breakthrough in handheld molecular diagnostics. Weighing just 2.0 kg with a battery life of approximately 3.5 hours, it is the most portable true PCR analyzer on the market.
 
 **Key Specifications:**
 - **Technology:** Real-time fluorescence PCR with 5-color detection channels
@@ -979,7 +979,7 @@ Combined with our multi-pathogen panels (CDV-CPV-CCoV triple, feline FeLV-FIV-FP
 
 Choosing between PCR and ELISA is one of the most consequential decisions a veterinary diagnostic laboratory or clinical practice makes. Both technologies have served animal health for decades, but they answer fundamentally different biological questions — and confusing the two leads to misdiagnosis, delayed treatment, and unnecessary cost.
 
-At [Ningbo Yinrui Biomedical Instruments](/en/about/), we develop portable PCR platforms for point-of-care veterinary use. We work daily with diagnostic laboratories, large animal farms, and companion animal clinics across Asia, Europe, and emerging markets. This guide reflects what we've learned about when each technology excels — and where each falls short.
+At [Ningbo Inarray Biomedical Systems](/en/about/), we develop portable PCR platforms for point-of-care veterinary use. We work daily with diagnostic laboratories, large animal farms, and companion animal clinics across Asia, Europe, and emerging markets. This guide reflects what we've learned about when each technology excels — and where each falls short.
 
 ---
 
@@ -1291,7 +1291,7 @@ The fundamental choice in veterinary diagnostics is not which test is "better" �
 
 Rapid test kits deliver results in 5 to 20 minutes at the point of care, enabling same-visit treatment decisions. Traditional laboratory testing takes 24 to 72 hours but offers broader test menus, higher throughput, and specialized methods like culture and sensitivity or histopathology that no rapid kit can replicate.
 
-Portable PCR analyzers — including the CarryOn platform developed by [Ningbo Yinrui Biomedical Instruments](/en/about/) — represent a third category that has fundamentally changed this equation: molecular-level accuracy delivered at the point of care in under 60 minutes, without laboratory infrastructure.
+Portable PCR analyzers — including the CarryOn platform developed by [Ningbo Inarray Biomedical Systems](/en/about/) — represent a third category that has fundamentally changed this equation: molecular-level accuracy delivered at the point of care in under 60 minutes, without laboratory infrastructure.
 
 Understanding when each approach is appropriate is one of the most consequential diagnostic decisions a veterinary professional makes daily.
 
@@ -2936,7 +2936,7 @@ Even at just 4 tests per week, the payback period is under 12 months. And this c
 If you are sourcing from China (where most portable PCR systems are manufactured), here is what to verify:
 
 1. **Certifications**: CE marking is mandatory for European markets. ISO 13485 ensures quality management. FDA 510(k) for the US market
-2. **Patent portfolio**: A manufacturer with 50+ patents is invested in genuine R&D, not just repackaging. Yinrui Bio holds **62 patents**
+2. **Patent portfolio**: A manufacturer with 50+ patents is invested in genuine R&D, not just repackaging. Yinrui Bio holds **25 invention patents**
 3. **Clinical validation data**: Ask for published sensitivity/specificity studies, not just marketing claims
 4. **Factory audit**: ISO 13485 certified facility, GMP-compliant production. Yinrui operates a **3,000 m2 lab and GMP workshop**
 5. **After-sales support**: Warranty terms, technical support availability, training materials
@@ -3019,7 +3019,7 @@ The portable PCR market in China has matured significantly since 2020. There are
 These companies hold **50+ patents**, have their own microfluidic chip foundries, and maintain ISO 13485 + CE certification. They invest 15-25% of revenue in R&D and employ PhDs and Masters-level scientists.
 
 **Examples include:**
-- **Yinrui Bio (Ningbo)**: 62 patents, [BGI co-founder leadership](/en/about/), 3,000 m2 GMP facility, 69 employees including 6 PhDs
+- **Yinrui Bio (Ningbo)**: 25 invention patents, [BGI co-founder leadership](/en/about/), 3,000 m2 GMP facility, 69 employees including 6 PhDs
 - Coyote Bioscience (Beijing)
 - Sansure Biotech (Changsha)
 - Ustar Biotechnologies (Hangzhou)
@@ -3051,7 +3051,7 @@ These are not manufacturers. They purchase components, assemble devices, and res
 
 A manufacturer's patent count is one of the most reliable indicators of genuine R&D investment:
 
-- **60+ patents**: World-class innovation (e.g., Yinrui Bio with 62 patents)
+- **60+ patents**: World-class innovation (e.g., Yinrui Bio with 25 invention patents)
 - **20-60 patents**: Strong R&D capability
 - **5-20 patents**: Moderate, likely focused on specific applications
 - **Under 5 patents**: Likely an assembler, not an innovator

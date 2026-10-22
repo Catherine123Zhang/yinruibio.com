@@ -30,7 +30,7 @@ export async function generateMetadata({
 // Localized content
 const content = {
   en: {
-    companyIntro: "Ningbo Yinrui Biomedical Instruments Co., Ltd was founded in June 2018. As a high-precision instrument manufacturer, the company's core technical team is composed of experts and scholars from the Chinese Academy of Sciences, dedicated to the R&D and manufacturing of advanced molecular detection technologies and equipment in life sciences and precision medicine.",
+    companyIntro: "Ningbo Inarray Biomedical Systems Co., Ltd was founded in June 2018. As a high-precision instrument manufacturer, the company's core technical team is composed of experts and scholars from the Chinese Academy of Sciences, dedicated to the R&D and manufacturing of advanced molecular detection technologies and equipment in life sciences and precision medicine.",
     companyProducts: "The company specializes in digital PCR and fully automated closed nucleic acid qPCR analysis systems, along with related reagents and consumables. We focus on providing efficient nucleic acid detection solutions for professional scientific research and application fields.",
     companyTeam: "The company currently has 69 employees, including 6 PhDs and 12 Masters among its technical and R&D management personnel.",
     founderSection: "Founder",
@@ -41,7 +41,7 @@ const content = {
       "NYU School of Medicine, Biomedical PhD (1984–1990)",
       "Co-founder of BGI (Beijing Genomics Institute) (1999–2008)",
       "Distinguished Researcher & Founding Vice Director, Beijing Institute of Genomics, CAS (2003–2013)",
-      "Chairman, Ningbo Yinrui Biomedical Instruments Co., Ltd (2018–present)",
+      "Chairman, Ningbo Inarray Biomedical Systems Co., Ltd (2018–present)",
       "Director, Cixi Life Science Innovation Research Institute (2021–present)",
     ],
     founderAwards: [
@@ -72,7 +72,7 @@ const content = {
       { year: "2025.06", text: "Recognized as Ningbo 'Specialized & Innovative' SME" },
     ],
     ipTitle: "Intellectual Property",
-    ipDesc: "The company has built a comprehensive IP portfolio through independent R&D and external licensing, covering design, equipment, testing applications, and software copyrights.",
+    ipDesc: "25 invention patents, 3 utility-model patents and 1 design patent granted, plus software copyrights, covering the analyzer, the microfluidic chip and test applications. ISO 13485 quality system; CarryOn series analyzers and multiple test kits hold EU CE certification. National High-Tech Enterprise (2024); Ningbo Specialized & Innovative SME (2025); undertook the National Key R&D Program \"S&T Winter Olympics\" handheld qPCR project and the MOST \"Technology-Driven Economic Growth 2020\" special project.",
   },
   zh: {
     companyIntro: "宁波胤瑞生物医学仪器有限责任公司创建于2018年6月，是一家高精密仪器制造公司，公司由来自中科院的专家学者组成核心技术团队，致力于生命科学与精准医学领域先进分子检测技术与装备的研发制造。",
@@ -117,7 +117,7 @@ const content = {
       { year: "2025.06", text: "获得宁波市「专精特新」企业认定" },
     ],
     ipTitle: "知识产权体系",
-    ipDesc: "公司基于产品，通过自主研发和对外合作授权，从外观、仪器设备、检测应用及软件著作权等建立完整知识产权池。",
+    ipDesc: "已获授权发明专利 25 项、实用新型 3 项、外观专利 1 项及多项软件著作权，覆盖仪器、微流控芯片与检测应用。通过 ISO 13485 质量体系认证，CarryOn 系列仪器及多款试剂盒获欧盟 CE 认证；国家高新技术企业（2024）、宁波市专精特新企业（2025）；承担国家重点研发计划\"科技冬奥\"手持 qPCR 项目，入选科技部\"科技助力经济 2020\"重点专项。",
   },
   ja: {
     companyIntro: "宁波胤瑞生物医学仪器有限責任公司は2018年6月に設立された高精度機器メーカーです。中国科学院の専門家・学者で構成されるコア技術チームが、ライフサイエンスと精密医学分野における先進的な分子検出技術と装置の研究開発・製造に取り組んでいます。",
@@ -162,10 +162,10 @@ const content = {
       { year: "2025.06", text: "寧波市「専精特新」企業認定を取得" },
     ],
     ipTitle: "知的財産",
-    ipDesc: "自主研究開発と外部ライセンスを通じて、外観、機器設備、検査応用、ソフトウェア著作権にわたる完全なIP体系を構築しています。",
+    ipDesc: "発明特許25件、実用新案3件、意匠1件およびソフトウェア著作権を取得し、分析装置・マイクロ流体チップ・検査アプリケーションをカバー。ISO 13485 認証、CarryOn シリーズ分析装置と複数の検査キットが EU CE 認証を取得。国家ハイテク企業（2024）、寧波市「専精特新」企業（2025）、国家重点研究開発計画「科技冬奥」ハンドヘルド qPCR プロジェクトおよび科学技術部「科技助力経済2020」重点専項を担当。",
   },
   vi: {
-    "companyIntro": "Ningbo Yinrui Biomedical Instruments Co., Ltd được thành lập vào tháng 6 năm 2018. Là nhà sản xuất thiết bị có độ chính xác cao, đội ngũ kỹ thuật nòng cốt của công ty gồm các chuyên gia và học giả đến từ Viện Hàn lâm Khoa học Trung Quốc, chuyên tâm vào nghiên cứu phát triển và sản xuất các công nghệ và thiết bị phát hiện phân tử tiên tiến trong lĩnh vực khoa học sự sống và y học chính xác.",
+    "companyIntro": "Ningbo Inarray Biomedical Systems Co., Ltd được thành lập vào tháng 6 năm 2018. Là nhà sản xuất thiết bị có độ chính xác cao, đội ngũ kỹ thuật nòng cốt của công ty gồm các chuyên gia và học giả đến từ Viện Hàn lâm Khoa học Trung Quốc, chuyên tâm vào nghiên cứu phát triển và sản xuất các công nghệ và thiết bị phát hiện phân tử tiên tiến trong lĩnh vực khoa học sự sống và y học chính xác.",
     "companyProducts": "Công ty chuyên về PCR kỹ thuật số và các hệ thống phân tích qPCR axit nucleic khép kín hoàn toàn tự động, cùng với các thuốc thử và vật tư tiêu hao liên quan. Chúng tôi tập trung cung cấp các giải pháp phát hiện axit nucleic hiệu quả cho các lĩnh vực nghiên cứu khoa học chuyên nghiệp và ứng dụng.",
     "companyTeam": "Hiện nay công ty có 69 nhân viên, trong đó có 6 tiến sĩ và 12 thạc sĩ trong đội ngũ nhân sự kỹ thuật và quản lý R&D.",
     "founderSection": "Nhà sáng lập",
@@ -176,7 +176,7 @@ const content = {
       "Trường Y NYU, Tiến sĩ Y sinh (1984–1990)",
       "Đồng sáng lập BGI (Viện Genomics Bắc Kinh) (1999–2008)",
       "Nhà nghiên cứu Xuất sắc & Phó Viện trưởng Sáng lập, Viện Genomics Bắc Kinh, CAS (2003–2013)",
-      "Chủ tịch, Ningbo Yinrui Biomedical Instruments Co., Ltd (2018–nay)",
+      "Chủ tịch, Ningbo Inarray Biomedical Systems Co., Ltd (2018–nay)",
       "Giám đốc, Viện Nghiên cứu Đổi mới Khoa học Sự sống Cixi (2021–nay)"
     ],
     "founderAwards": [
@@ -238,10 +238,10 @@ const content = {
       }
     ],
     "ipTitle": "Sở hữu trí tuệ",
-    "ipDesc": "Công ty đã xây dựng danh mục sở hữu trí tuệ toàn diện thông qua hoạt động R&D độc lập và cấp phép bên ngoài, bao gồm thiết kế, thiết bị, ứng dụng xét nghiệm và quyền tác giả phần mềm."
+    "ipDesc": "Đã được cấp 25 bằng sáng chế, 3 giải pháp hữu ích, 1 kiểu dáng công nghiệp cùng nhiều bản quyền phần mềm, bao phủ máy phân tích, chip vi lưu và các ứng dụng xét nghiệm. Hệ thống chất lượng ISO 13485; máy phân tích dòng CarryOn và nhiều bộ kit đạt chứng nhận CE của EU. Doanh nghiệp công nghệ cao quốc gia (2024); doanh nghiệp \"chuyên, tinh, đặc, mới\" Ninh Ba (2025); thực hiện dự án qPCR cầm tay thuộc Chương trình R&D trọng điểm quốc gia \"S&T Winter Olympics\" và chuyên đề \"Công nghệ thúc đẩy kinh tế 2020\" của Bộ KH&CN."
   },
   pt: {
-    "companyIntro": "A Ningbo Yinrui Biomedical Instruments Co., Ltd foi fundada em junho de 2018. Como fabricante de instrumentos de alta precisão, a equipe técnica central da empresa é composta por especialistas e acadêmicos da Academia Chinesa de Ciências, dedicada à P&D e à fabricação de tecnologias e equipamentos avançados de detecção molecular nas áreas de ciências da vida e medicina de precisão.",
+    "companyIntro": "A Ningbo Inarray Biomedical Systems Co., Ltd foi fundada em junho de 2018. Como fabricante de instrumentos de alta precisão, a equipe técnica central da empresa é composta por especialistas e acadêmicos da Academia Chinesa de Ciências, dedicada à P&D e à fabricação de tecnologias e equipamentos avançados de detecção molecular nas áreas de ciências da vida e medicina de precisão.",
     "companyProducts": "A empresa é especializada em PCR digital e em sistemas fechados e totalmente automatizados de análise de qPCR de ácidos nucleicos, além de reagentes e consumíveis relacionados. Nosso foco é oferecer soluções eficientes de detecção de ácidos nucleicos para áreas profissionais de pesquisa científica e aplicação.",
     "companyTeam": "A empresa conta atualmente com 69 colaboradores, incluindo 6 doutores e 12 mestres em sua equipe técnica e de gestão de P&D.",
     "founderSection": "Fundador",
@@ -252,7 +252,7 @@ const content = {
       "NYU School of Medicine, Doutorado em Biomedicina (1984–1990)",
       "Cofundador do BGI (Beijing Genomics Institute) (1999–2008)",
       "Pesquisador de Destaque e Vice-Diretor Fundador do Instituto de Genômica de Pequim, CAS (2003–2013)",
-      "Presidente, Ningbo Yinrui Biomedical Instruments Co., Ltd (2018–atual)",
+      "Presidente, Ningbo Inarray Biomedical Systems Co., Ltd (2018–atual)",
       "Diretor do Instituto de Pesquisa e Inovação em Ciências da Vida de Cixi (2021–atual)"
     ],
     "founderAwards": [
@@ -314,7 +314,7 @@ const content = {
       }
     ],
     "ipTitle": "Propriedade Intelectual",
-    "ipDesc": "A empresa construiu um portfólio abrangente de PI por meio de P&D independente e licenciamento externo, abrangendo design, equipamentos, aplicações de teste e direitos autorais de software."
+    "ipDesc": "25 patentes de invenção, 3 modelos de utilidade e 1 desenho industrial concedidos, além de direitos autorais de software, cobrindo o analisador, o chip microfluídico e as aplicações de teste. Sistema de qualidade ISO 13485; os analisadores da série CarryOn e diversos kits possuem certificação CE da UE. Empresa Nacional de Alta Tecnologia (2024); PME Especializada e Inovadora de Ningbo (2025); responsável pelo projeto de qPCR portátil do Programa Nacional de P&D \"S&T Winter Olympics\" e pelo projeto especial \"Technology-Driven Economic Growth 2020\" do MOST."
   },
 };
 
@@ -655,12 +655,12 @@ export default async function AboutPage({
       {(() => {
         const aboutFaqs = [
           {
-            q: "Who is Ningbo Yinrui Biomedical Instruments Co., Ltd?",
-            a: "Ningbo Yinrui Biomedical Instruments Co., Ltd (Yinrui Bio) is a high-precision instrument manufacturer founded in June 2018 in Cixi, Zhejiang, China. The company specializes in portable molecular diagnostics, producing the CarryOn Portable PCR Analyzer and microfluidic test chips. The core technical team comprises experts from the Chinese Academy of Sciences, led by founder Dr. Yu Jun, co-founder of BGI (Beijing Genomics Institute).",
+            q: "Who is Ningbo Inarray Biomedical Systems Co., Ltd?",
+            a: "Ningbo Inarray Biomedical Systems Co., Ltd (Yinrui Bio) is a high-precision instrument manufacturer founded in June 2018 in Cixi, Zhejiang, China. The company specializes in portable molecular diagnostics, producing the CarryOn Portable PCR Analyzer and microfluidic test chips. The core technical team comprises experts from the Chinese Academy of Sciences, led by founder Dr. Yu Jun, co-founder of BGI (Beijing Genomics Institute).",
           },
           {
             q: "What certifications does Yinrui Bio hold?",
-            a: "Yinrui Bio holds CE certification for both the CarryOn PCR device and test reagent kits, and maintains ISO 13485 quality management system certification for the manufacturing facility. The company is also recognized as a National High-Tech Enterprise and a Ningbo 'Specialized & Innovative' SME, with a comprehensive IP portfolio of 62 patents, 12 design patents, and 6 software copyrights.",
+            a: "Yinrui Bio holds CE certification for both the CarryOn PCR device and test reagent kits, and maintains ISO 13485 quality management system certification for the manufacturing facility. The company is also recognized as a National High-Tech Enterprise and a Ningbo 'Specialized & Innovative' SME, with a comprehensive IP portfolio of 25 invention patents, 12 design patents, and 6 software copyrights.",
           },
           {
             q: "Does Yinrui Bio offer distribution partnerships?",

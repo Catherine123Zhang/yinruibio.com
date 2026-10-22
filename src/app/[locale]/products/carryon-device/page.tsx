@@ -342,7 +342,7 @@ export default async function CarryOnDevicePage({
           {/* Mid-page CTA */}
           <div className="mt-12 text-center">
             <Link
-              href={`/${locale}/contact/`}
+              href="/downloads/inarray-product-brochure-2026.pdf" target="_blank" rel="noopener"
               className="inline-flex items-center justify-center rounded-lg bg-[var(--color-accent)] px-8 py-3.5 text-base font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
             >
               {lang === "zh" ? "获取详细规格书" : lang === "ja" ? "詳細仕様書を取得" : lang === "vi" ? "Tải bảng thông số kỹ thuật đầy đủ" : lang === "pt" ? "Baixar ficha técnica completa" : "Download Full Spec Sheet"}

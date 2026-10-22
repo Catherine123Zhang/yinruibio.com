@@ -3,7 +3,7 @@ const en = {
     brand: "Yinrui Bio",
     siteName: "Portable Veterinary PCR Analyzer | Yinrui Bio — 40-Min Point-of-Care Diagnostics",
     siteDescription:
-      "Handheld PCR analyzer for veterinary clinics — detect Parvo, Distemper, FIV/FeLV, tick-borne diseases in 40 minutes. 2 kg, battery-powered, no lab needed. CE certified, 62 patents. OEM/ODM & distributor partnerships.",
+      "Handheld PCR analyzer for veterinary clinics — detect Parvo, Distemper, FIV/FeLV, tick-borne diseases in 40 minutes. 2 kg, battery-powered, no lab needed. CE certified, 25 invention patents. OEM/ODM & distributor partnerships.",
   },
   nav: {
     home: "Home",
@@ -98,7 +98,7 @@ const en = {
     downloadCatalog: "Download Catalog",
   },
   footer: {
-    company: "Ningbo Yinrui Biomedical Instruments Co., Ltd",
+    company: "Ningbo Inarray Biomedical Systems Co., Ltd",
     tagline: "Palm-sized Lab — Anywhere, Anyone, Anytime",
     products: "Products",
     support: "Support",

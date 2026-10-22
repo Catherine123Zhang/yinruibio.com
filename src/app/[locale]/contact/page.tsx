@@ -112,10 +112,10 @@ function ContactPageInner() {
     } catch (err) {
       console.error("Form submission failed:", err);
       setContactError(
-        lang === "zh" ? "提交失败，请直接发邮件至 info@yinruibio.com 或添加 WhatsApp +86 18268661068。" : lang === "ja" ? "送信に失敗しました。info@yinruibio.com までメールするか、WhatsApp +86 18268661068 を追加してください。"
-            : lang === "vi" ? "Gửi không thành công. Vui lòng gửi email đến info@yinruibio.com hoặc nhắn trực tiếp qua WhatsApp +86 18268661068."
-            : lang === "pt" ? "Falha no envio. Envie um e-mail para info@yinruibio.com ou mande uma mensagem diretamente para o WhatsApp +86 18268661068."
-            : "Submission failed. Please email info@yinruibio.com or message WhatsApp +86 18268661068 directly."
+        lang === "zh" ? "提交失败，请直接发邮件至 info@chinainarray.com 或添加 WhatsApp +86 18268661068。" : lang === "ja" ? "送信に失敗しました。info@chinainarray.com までメールするか、WhatsApp +86 18268661068 を追加してください。"
+            : lang === "vi" ? "Gửi không thành công. Vui lòng gửi email đến info@chinainarray.com hoặc nhắn trực tiếp qua WhatsApp +86 18268661068."
+            : lang === "pt" ? "Falha no envio. Envie um e-mail para info@chinainarray.com ou mande uma mensagem diretamente para o WhatsApp +86 18268661068."
+            : "Submission failed. Please email info@chinainarray.com or message WhatsApp +86 18268661068 directly."
       );
     } finally {
       setLoading(false);
@@ -397,14 +397,30 @@ function ContactPageInner() {
               </div>
               <h3 className="font-semibold text-[var(--color-primary)]">Email</h3>
               <p className="mt-1 text-sm text-[var(--color-text-light)]">
-                info@yinruibio.com
+                info@chinainarray.com
               </p>
               <a
-                href="mailto:info@yinruibio.com"
+                href="mailto:info@chinainarray.com"
                 className="mt-3 inline-flex items-center rounded-lg bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-white hover:bg-[var(--color-accent-light)] transition-colors"
               >
                 {lang === "zh" ? "发送邮件" : lang === "ja" ? "メール送信" : lang === "vi" ? "Gửi email" : lang === "pt" ? "Enviar e-mail" : "Send Email"}
               </a>
+            </div>
+            {/* Address & Phone */}
+            <div className="rounded-xl border border-[var(--color-border)] bg-white p-6 sm:col-span-2">
+              <h3 className="font-semibold text-[var(--color-primary)]">
+                {lang === "zh" ? "工厂地址" : lang === "ja" ? "所在地" : lang === "vi" ? "Địa chỉ nhà máy" : lang === "pt" ? "Endereço da fábrica" : "Factory Address"}
+              </h3>
+              <p className="mt-1 text-sm text-[var(--color-text-light)]">
+                {lang === "zh" ? "宁波胤瑞生物医学仪器有限责任公司 · 浙江省慈溪市白沙路街道文蔚路345号3号楼，邮编 315300" : "Ningbo Inarray Biomedical Systems Co., Ltd · Building 3, No.345 Wenwei Road, Baisha Subdistrict, Cixi, Zhejiang 315300, China"}
+              </p>
+              <p className="mt-2 text-sm text-[var(--color-text-light)]">
+                {lang === "zh" ? "电话" : lang === "ja" ? "電話" : lang === "vi" ? "Điện thoại" : lang === "pt" ? "Telefone" : "Tel"}: <a href="tel:+8657463998292" className="text-[var(--color-accent)] hover:underline">+86 574 6399 8292</a>
+                {" · "}
+                <a href="/downloads/inarray-product-brochure-2026.pdf" target="_blank" rel="noopener" className="text-[var(--color-accent)] hover:underline">
+                  {lang === "zh" ? "下载产品手册 (PDF)" : lang === "ja" ? "製品カタログ (PDF)" : lang === "vi" ? "Tải catalogue sản phẩm (PDF)" : lang === "pt" ? "Baixar catálogo (PDF)" : "Download product brochure (PDF)"}
+                </a>
+              </p>
             </div>
           </div>
         </div>

@@ -316,7 +316,7 @@ export default async function BlogPostPage({
     },
     publisher: {
       "@type": "Organization",
-      name: "Ningbo Yinrui Biomedical Instruments Co., Ltd",
+      name: "Ningbo Inarray Biomedical Systems Co., Ltd",
       logo: {
         "@type": "ImageObject",
         url: "https://yinruibio.com/images/logo.png",

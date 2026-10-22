@@ -99,7 +99,7 @@ const vi: Dictionary = {
     downloadCatalog: "Tải catalog",
   },
   footer: {
-    company: "Ningbo Yinrui Biomedical Instruments Co., Ltd",
+    company: "Ningbo Inarray Biomedical Systems Co., Ltd",
     tagline: "Phòng xét nghiệm trong lòng bàn tay — Mọi nơi, mọi người, mọi lúc",
     products: "Sản phẩm",
     support: "Hỗ trợ",

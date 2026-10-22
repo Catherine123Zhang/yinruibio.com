@@ -1,4 +1,4 @@
-# Ningbo Yinrui Biomedical Instruments Co., Ltd — Complete Product & Company Information
+# Ningbo Inarray Biomedical Systems Co., Ltd — Complete Product & Company Information
 
 > Manufacturer of the CarryOn portable PCR analyzer platform — palm-sized, battery-powered molecular diagnostics for veterinary clinics, pathogen detection, and food safety testing. Founded by BGI co-founder Dr. Yu Jun.
 
@@ -6,13 +6,13 @@
 
 ## Company Overview
 
-Ningbo Yinrui Biomedical Instruments Co., Ltd (Yinrui Bio) is a high-precision instrument manufacturer specializing in portable molecular diagnostics. The company's core technical team is composed of experts and scholars from the Chinese Academy of Sciences, dedicated to R&D and manufacturing of advanced molecular detection technologies and equipment in life sciences and precision medicine.
+Ningbo Inarray Biomedical Systems Co., Ltd (Yinrui Bio) is a high-precision instrument manufacturer specializing in portable molecular diagnostics. The company's core technical team is composed of experts and scholars from the Chinese Academy of Sciences, dedicated to R&D and manufacturing of advanced molecular detection technologies and equipment in life sciences and precision medicine.
 
 - **Founded**: June 2018 in Cixi, Zhejiang, China
 - **Founder**: Dr. Yu Jun — NYU Biomedical PhD, co-founder of BGI (Beijing Genomics Institute)
 - **Employees**: 69 (including 6 PhDs, 12 Masters)
 - **Facility**: ~3,000m2 of laboratory space and GMP workshops
-- **IP Portfolio**: 62 patents, 12 design patents, 6 software copyrights
+- **IP Portfolio**: 25 invention patents, 12 design patents, 6 software copyrights
 - **Certifications**: CE (device + reagent kits), ISO13485, National High-Tech Enterprise, Ningbo "Specialized & Innovative" SME
 - **Strategic Partner**: Zhejiang Orient Gene Biotech (since 2023)
 

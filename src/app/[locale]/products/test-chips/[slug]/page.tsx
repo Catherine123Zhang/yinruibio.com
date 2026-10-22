@@ -85,7 +85,7 @@ export default async function ChipDetailPage({
     brand: { "@type": "Brand", name: "CarryOn" },
     manufacturer: {
       "@type": "Organization",
-      name: "Ningbo Yinrui Biomedical Instruments Co., Ltd",
+      name: "Ningbo Inarray Biomedical Systems Co., Ltd",
     },
     category: "Veterinary Diagnostic Reagent",
     additionalProperty: product.fullSpecs.map((spec) => ({

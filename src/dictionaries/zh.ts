@@ -2,7 +2,7 @@ import type { Dictionary } from "./en";
 
 const zh: Dictionary = {
   meta: {
-    brand: "银瑞生物 Yinrui Bio",
+    brand: "胤瑞生物 Yinrui Bio",
     siteName: "胤瑞生物 — 便携式PCR检测平台",
     siteDescription:
       "掌心实验室，PCR级精准检测。40分钟出结果，随时随地，无需培训。宠物诊断、病原体检测、肉源溯源鉴定。",
@@ -86,7 +86,7 @@ const zh: Dictionary = {
     ],
   },
   stats: {
-    patents: "62项专利",
+    patents: "25项发明专利",
     certifications: "CE & ISO13485",
     resultTime: "40分钟出结果",
     labSpace: "3,000平方米实验室",
@@ -206,7 +206,7 @@ const zh: Dictionary = {
     company: {
       employees: "69名员工",
       phds: "6名博士、12名硕士",
-      patents: "62项专利",
+      patents: "25项发明专利",
       designPatents: "12项外观设计专利",
       softwareCopyrights: "6项软件著作权",
       labSpace: "3,000平方米实验室+GMP车间",

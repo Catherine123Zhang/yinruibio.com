@@ -99,7 +99,7 @@ const pt: Dictionary = {
     downloadCatalog: "Baixar Catálogo",
   },
   footer: {
-    company: "Ningbo Yinrui Biomedical Instruments Co., Ltd",
+    company: "Ningbo Inarray Biomedical Systems Co., Ltd",
     tagline: "Laboratório do tamanho da palma da mão — Em qualquer lugar, para qualquer pessoa, a qualquer momento",
     products: "Produtos",
     support: "Suporte",
