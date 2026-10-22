@@ -324,3 +324,17 @@ Page: https://yinruibio.com/en/products/test-chips/foot-and-mouth-disease-fmdv/
 - Storage: Room temperature (15-30°C)
 - MOQ: 50 chips per target (evaluation), 1 CarryOn device
 Page: https://yinruibio.com/en/products/test-chips/japanese-encephalitis-jev/
+
+## Instruments
+
+### CarryOn P4000Q — Four-Module qPCR Analyzer
+Four independent reaction modules, each with its own temperature-control block and 5-color fluorescence optics (405/485/520/638/670 nm); runs up to 4 CarryOn chips at once, each started and programmed independently. Built-in ultrasonic mixing + magnetic-bead extraction; < 60 min per chip; no PCR laboratory needed. CE.
+Page: https://yinruibio.com/en/products/carryon-p4000q/
+
+### ArrayOn P1000D — Fully Automated Digital PCR Analyzer
+Chip-based digital PCR; up to 40,000 micro-reaction units per chip; 6-color fluorescence; real-time monitoring of every micro-reaction well; one manual step; multi-target results within one hour. Applications: absolute quantification, rare variants, copy number, pathogen load, research laboratories.
+Page: https://yinruibio.com/en/products/arrayon-p1000d/
+
+### SARS-CoV-2 Test Chip (ORF1ab + E + N)
+Three-target RT-PCR on one sealed chip, ~40 min, LOD 100 copies (swab load); developed for the General Administration of Customs programme, accepted 2020. CE.
+Page: https://yinruibio.com/en/products/test-chips/sars-cov-2-test-chip/

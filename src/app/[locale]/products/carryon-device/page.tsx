@@ -26,8 +26,8 @@ export async function generateMetadata({
   if (!isValidLocale(locale)) return {};
   const lang = locale as Locale;
   const titleMap: Record<string, string> = {
-    en: "CarryOn Portable PCR Analyzer — 2 kg Handheld Veterinary Diagnostic Device",
-    zh: "CarryOn 便携式PCR分析仪 — 2公斤手持兽医诊断设备",
+    en: "CarryOn P1000Q Portable PCR Analyzer — 2 kg Handheld qPCR Device",
+    zh: "CarryOn P1000Q 便携式PCR分析仪 — 2公斤手持兽医诊断设备",
     ja: "CarryOn ポータブルPCRアナライザー — 2kgハンドヘルド獣医診断デバイス",
     vi: "Máy PCR cầm tay CarryOn — Thiết bị chẩn đoán thú y cầm tay 2 kg",
     pt: "Termociclador PCR portátil CarryOn — dispositivo de diagnóstico veterinário portátil de 2 kg",

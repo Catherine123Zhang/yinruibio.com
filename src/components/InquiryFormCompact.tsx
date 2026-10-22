@@ -100,19 +100,38 @@ export default function InquiryFormCompact({
       ...(utm || {}),
     };
 
-    // TODO: Replace with actual API endpoint
-    console.log("Inquiry submission:", data);
-
-    // GA4 event
-    trackEvent("generate_lead", {
-      method: "inquiry_form",
-      product_name: productName,
-      source_page: sourcePage,
-    });
-
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitted(true);
-    setLoading(false);
+    try {
+      const res = await fetch("https://form-handler.autopartsalive-images.workers.dev/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          tenant: "yinrui",
+          name: (formData.get("name") as string) || "",
+          email,
+          company: (formData.get("company") as string) || "",
+          country: data.country || "",
+          product: productName,
+          quantity: data.quantity || "",
+          message: data.message || "",
+          locale,
+          source_page: typeof window !== "undefined" ? window.location.href : sourcePage,
+          ...(utm || {}),
+        }),
+      });
+      const result = (await res.json().catch(() => ({}))) as { success?: boolean; error?: string };
+      if (!res.ok || !result.success) throw new Error(result.error || `HTTP ${res.status}`);
+      trackEvent("generate_lead", {
+        method: "inquiry_form",
+        product_name: productName,
+        source_page: sourcePage,
+      });
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Inquiry submission failed:", err);
+      setError(lang === "zh" ? "提交失败，请直接发邮件至 zhangyuanbo123@gmail.com 或联系 WhatsApp。" : lang === "ja" ? "送信に失敗しました。zhangyuanbo123@gmail.com までメールするか WhatsApp でご連絡ください。" : "Submission failed. Please email zhangyuanbo123@gmail.com or message us on WhatsApp.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   const waUrl = buildWhatsAppUrl(
@@ -206,7 +225,8 @@ export default function InquiryFormCompact({
         >
           {loading ? "..." : labels.submit}
         </button>
-      </form>
+      {error && <p className="text-sm text-red-600">{error}</p>}
+            </form>
 
       {/* WhatsApp alternative */}
       <div className="mt-4 text-center">

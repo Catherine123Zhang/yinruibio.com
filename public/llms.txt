@@ -56,3 +56,9 @@
 ASF, PRRSV, CSF, pseudorabies (PRV), PCV2, Glaesserella parasuis, Actinobacillus pleuropneumoniae, TGEV, rotavirus, PEDV, porcine parvovirus, FMDV, Japanese encephalitis.
 - Overview: https://yinruibio.com/en/swine-pcr-test-kits/
 - Vietnam market: https://yinruibio.com/en/markets/vietnam/
+
+## Instruments
+- CarryOn P1000Q portable qPCR analyzer (2 kg, 5-color, battery, < 60 min): https://yinruibio.com/en/products/carryon-device/
+- CarryOn P4000Q four-module qPCR analyzer (4 independent modules, 5-color each): https://yinruibio.com/en/products/carryon-p4000q/
+- ArrayOn P1000D fully automated digital PCR analyzer (6-color, up to 40,000 reaction units, < 1 h): https://yinruibio.com/en/products/arrayon-p1000d/
+- Product brochure (PDF): https://yinruibio.com/downloads/inarray-product-brochure-2026.pdf

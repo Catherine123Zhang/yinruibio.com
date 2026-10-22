@@ -11,6 +11,7 @@ interface CatalogButtonProps {
 export default function CatalogButton({ label, className }: CatalogButtonProps) {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -29,14 +30,19 @@ export default function CatalogButton({ label, className }: CatalogButtonProps) 
     };
 
     // TODO: Replace with actual API endpoint
-    console.log("Catalog request:", data);
-
-    trackEvent("generate_lead", {
-      method: "catalog_download",
-    });
-
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitted(true);
+    try {
+      const res = await fetch("https://form-handler.autopartsalive-images.workers.dev/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ tenant: "yinrui", ...data, product: "Product catalog request", message: `Catalog request from ${typeof window !== "undefined" ? window.location.href : "site"}`, source_page: typeof window !== "undefined" ? window.location.href : "" }),
+      });
+      const result = (await res.json().catch(() => ({}))) as { success?: boolean };
+      if (!res.ok || !result.success) throw new Error(`HTTP ${res.status}`);
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Catalog request failed:", err);
+      setError("Submission failed — please email zhangyuanbo123@gmail.com and we will send the catalog.");
+    }
     setLoading(false);
   }
 
@@ -142,7 +148,8 @@ export default function CatalogButton({ label, className }: CatalogButtonProps) 
                   >
                     {loading ? "..." : "Send Me the Catalog"}
                   </button>
-                </form>
+                {error && <p className="text-sm text-red-600">{error}</p>}
+                  </form>
               </>
             )}
           </div>

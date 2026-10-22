@@ -14,6 +14,7 @@ export interface Product {
   keySpecs: { label: Record<Locale, string>; value: string }[];
   fullSpecs: { label: Record<Locale, string>; value: string }[];
   detectedTargets?: Record<Locale, string>[];
+  highlights?: Record<Locale, string>[];
   certifications: string[];
   relatedProducts: string[];
 }
@@ -44,6 +45,20 @@ export const productCategories: ProductCategoryInfo[] = [
       pt: "Termociclador portátil de PCR em tempo real por fluorescência, alimentado por bateria e com tecnologia de chip microfluídico.",
     },
     image: "/images/products/carryon-device.png",
+    icon: "device",
+  },
+  {
+    slug: "carryon-p4000q",
+    name: { en: "CarryOn P4000Q Four-Module Analyzer", zh: "CarryOn P4000Q 四模块分析仪", ja: "CarryOn P4000Q 4モジュール分析装置", pt: "Analisador CarryOn P4000Q de Quatro Módulos", vi: "Máy phân tích bốn mô-đun CarryOn P4000Q" },
+    description: { en: "Four independent qPCR modules with 5-color detection each — run four different chips at the same time.", zh: "四个独立 qPCR 反应模块，每个模块 5 色检测，可同时运行四张不同项目的芯片。", ja: "独立した4つのqPCRモジュール（各5色検出）で、異なる4枚のチップを同時に実行。", pt: "Quatro módulos qPCR independentes, cada um com detecção em 5 cores — execute quatro chips diferentes ao mesmo tempo.", vi: "Bốn mô-đun qPCR độc lập, mỗi mô-đun phát hiện 5 màu — chạy bốn chip xét nghiệm khác nhau cùng lúc." },
+    image: "/images/products/carryon-p4000q.png",
+    icon: "device",
+  },
+  {
+    slug: "arrayon-p1000d",
+    name: { en: "ArrayOn P1000D Digital PCR Analyzer", zh: "ArrayOn P1000D 全自动数字PCR分析仪", ja: "ArrayOn P1000D デジタルPCR分析装置", pt: "Analisador de PCR Digital ArrayOn P1000D", vi: "Máy phân tích PCR kỹ thuật số ArrayOn P1000D" },
+    description: { en: "Fully automated chip-based digital PCR: 6-color detection, up to 40,000 reaction units, results within one hour.", zh: "全自动芯片式数字 PCR：6 色荧光检测，最多 40,000 个反应单元，一小时内出结果。", ja: "全自動チップ型デジタルPCR：6色検出、最大40,000反応ユニット、1時間以内に結果。", pt: "PCR digital em chip totalmente automatizado: detecção em 6 cores, até 40.000 unidades de reação e resultados em até uma hora.", vi: "PCR kỹ thuật số trên chip hoàn toàn tự động: phát hiện 6 màu, tối đa 40.000 đơn vị phản ứng, cho kết quả trong vòng một giờ." },
+    image: "/images/products/arrayon-p1000d.png",
     icon: "device",
   },
   {
@@ -94,9 +109,9 @@ export const products: Product[] = [
     category: "device",
     categorySlug: "carryon-device",
     name: {
-      en: "CarryOn Portable PCR Analyzer",
-      zh: "CarryOn 便携式PCR分析仪",
-      ja: "CarryOn ポータブルPCRアナライザー",
+      en: "CarryOn P1000Q Portable PCR Analyzer",
+      zh: "CarryOn P1000Q 便携式PCR分析仪",
+      ja: "CarryOn P1000Q ポータブルPCRアナライザー",
       vi: "Máy PCR cầm tay CarryOn",
       pt: "Termociclador Portátil de PCR CarryOn",
     },
@@ -114,7 +129,7 @@ export const products: Product[] = [
       vi: "CarryOn là máy khuếch đại axit nucleic tự động hoàn toàn, hệ thống kín. Máy tự động thực hiện tách chiết, tinh sạch axit nucleic từ mẫu và khuếch đại PCR huỳnh quang thời gian thực (real-time PCR). Kết hợp với chip vi lưu chuyên dụng, máy phát hiện mục tiêu axit nucleic trong mẫu bệnh phẩm và cung cấp báo cáo xét nghiệm tức thì qua hệ thống màn hình cảm ứng tích hợp.",
       pt: "O CarryOn é um analisador de amplificação de ácido nucleico totalmente automatizado e de sistema fechado. Ele realiza automaticamente a extração e a purificação do ácido nucleico da amostra e a amplificação por PCR em tempo real por fluorescência. Em conjunto com chips microfluídicos dedicados, detecta alvos de ácido nucleico em amostras e fornece relatórios de teste instantâneos por meio de seu sistema integrado com tela sensível ao toque.",
     },
-    images: ["/images/products/carryon-device.png"],
+    images: ["/images/products/carryon-device.png", "/images/products/carryon-p1000q.png"],
     keySpecs: [
       { label: { en: "Time to Result", zh: "出结果时间", ja: "結果時間", vi: "Thời gian có kết quả", pt: "Tempo até o Resultado" }, value: "< 60 min" },
       { label: { en: "Weight", zh: "重量", ja: "重量", vi: "Trọng lượng", pt: "Peso" }, value: "2.0 kg" },
@@ -122,6 +137,7 @@ export const products: Product[] = [
       { label: { en: "Power", zh: "电源", ja: "電源", vi: "Công suất", pt: "Alimentação" }, value: "3.5h battery" },
     ],
     fullSpecs: [
+      { label: { en: "Model", zh: "型号", ja: "型番", vi: "Model", pt: "Modelo" }, value: "CarryOn P1000Q" },
       { label: { en: "Product Name", zh: "产品名称", ja: "製品名", vi: "Tên sản phẩm", pt: "Nome do Produto" }, value: "Fully Automated Closed Nucleic Acid Amplification System" },
       { label: { en: "Dimensions", zh: "产品尺寸", ja: "寸法", vi: "Kích thước", pt: "Dimensões" }, value: "297 x 159 x 126 mm" },
       { label: { en: "Weight", zh: "产品重量", ja: "重量", vi: "Trọng lượng", pt: "Peso" }, value: "2.0 kg" },
@@ -143,6 +159,75 @@ export const products: Product[] = [
   },
 
   // === CANINE CHIPS ===
+  {
+    id: "carryon-p4000q",
+    slug: "carryon-p4000q",
+    category: "device",
+    categorySlug: "carryon-p4000q",
+    name: { en: "CarryOn P4000Q Four-Module qPCR Analyzer", zh: "CarryOn P4000Q 四模块全自动核酸检测分析仪", ja: "CarryOn P4000Q 4モジュール全自動核酸検査分析装置", pt: "Analisador qPCR CarryOn P4000Q de Quatro Módulos", vi: "Máy phân tích qPCR bốn mô-đun CarryOn P4000Q" },
+    tagline: { en: "Four independent reaction modules, each with 5-color detection — run four different tests at once.", zh: "四个独立反应模块，每个模块 5 色检测——四个不同项目同时跑。", ja: "独立した4つの反応モジュール、各5色検出 — 異なる4検査を同時実行。", pt: "Quatro módulos de reação independentes, cada um com detecção em 5 cores — execute quatro testes diferentes ao mesmo tempo.", vi: "Bốn mô-đun phản ứng độc lập, mỗi mô-đun phát hiện 5 màu — chạy bốn xét nghiệm khác nhau cùng lúc." },
+    description: { en: "The CarryOn P4000Q packs four independent detection modules into one benchtop unit. Each module has its own high-performance temperature-control block and 5-color fluorescence excitation and detection system, so each unit can run a different test chip on its own schedule. The supporting chips are the same sealed CarryOn microfluidic chips with fully preloaded reagents: one loading step, and nucleic acid extraction, purification and qPCR complete automatically within the hour. Designed for veterinary stations, clinics and quarantine points that need batch testing without building a PCR laboratory.", zh: "CarryOn P4000Q 在一台机器内集成四个独立检测模块。每个模块都有独立的高性能温控模块和 5 色荧光激发检测系统，可各自运行不同的检测芯片、独立控制。配套芯片与 CarryOn 一致：全封闭微流控芯片、试剂全部预置，一步加样后在一小时内自动完成核酸提取纯化和 qPCR。面向需要批量检测但不想建 PCR 实验室的兽医站、诊所和检疫点。", ja: "CarryOn P4000Q は、独立した4つの検出モジュールを1台のベンチトップ装置に搭載。各モジュールは独自の高性能温度制御ブロックと5色蛍光励起・検出システムを備え、それぞれ異なる検査チップを独立したスケジュールで実行できます。対応チップは CarryOn と同じ試薬プリロード済み密閉マイクロ流体チップで、1回の投入操作で核酸抽出・精製・qPCR が1時間以内に自動完了。PCR ラボを持たずにバッチ検査が必要な獣医ステーション・クリニック・検疫所向けです。", pt: "O CarryOn P4000Q reúne quatro módulos de detecção independentes em uma única unidade de bancada. Cada módulo possui seu próprio bloco de controle de temperatura de alto desempenho e sistema de excitação e detecção de fluorescência em 5 cores, de modo que cada módulo pode executar um chip de teste diferente conforme sua própria programação. Os chips utilizados são os mesmos chips microfluídicos CarryOn selados, com reagentes totalmente pré-carregados: basta uma etapa de carregamento, e a extração e purificação do ácido nucleico e a qPCR são concluídas automaticamente dentro de uma hora. Projetado para postos veterinários, clínicas e pontos de quarentena que precisam de testes em lote sem montar um laboratório de PCR.", vi: "Máy CarryOn P4000Q tích hợp bốn mô-đun phát hiện độc lập trong một thiết bị để bàn. Mỗi mô-đun có khối kiểm soát nhiệt độ hiệu suất cao riêng và hệ thống kích thích, phát hiện huỳnh quang 5 màu, nên mỗi thiết bị có thể chạy một chip xét nghiệm khác nhau theo lịch riêng. Các chip đi kèm là cùng loại chip vi lưu CarryOn kín với thuốc thử nạp sẵn hoàn toàn: chỉ một bước nạp mẫu, và quá trình tách chiết axit nucleic, tinh sạch và qPCR hoàn tất tự động trong vòng một giờ. Được thiết kế cho trạm thú y, phòng khám và điểm kiểm dịch cần xét nghiệm hàng loạt mà không phải xây dựng phòng thí nghiệm PCR." },
+    images: ["/images/products/carryon-p4000q.png"],
+    keySpecs: [
+      { label: { en: "Modules", zh: "反应模块", ja: "モジュール", pt: "Módulos", vi: "Mô-đun" }, value: "4" },
+      { label: { en: "Channels", zh: "荧光通道", ja: "チャンネル", pt: "Canais", vi: "Kênh" }, value: "5-color x 4" },
+      { label: { en: "Time", zh: "检测时间", ja: "時間", pt: "Tempo", vi: "Thời gian" }, value: "< 60 min" },
+      { label: { en: "Parallel", zh: "并行", ja: "同時実行", pt: "Paralelismo", vi: "Song song" }, value: "4 chips" },
+    ],
+    fullSpecs: [
+      { label: { en: "Model", zh: "型号", ja: "型番", pt: "Modelo", vi: "Kiểu máy" }, value: "CarryOn P4000Q" },
+      { label: { en: "Detection Modules", zh: "检测模块", ja: "検出モジュール", pt: "Módulos de Detecção", vi: "Mô-đun phát hiện" }, value: "Four independent reaction modules, each with its own temperature-control block and 5-color fluorescence optics (405/485/520/638/670 nm)" },
+      { label: { en: "Throughput", zh: "通量", ja: "スループット", pt: "Capacidade de processamento", vi: "Thông lượng" }, value: "Up to 4 chips simultaneously, each module started, programmed and stopped independently" },
+      { label: { en: "Consumables", zh: "试剂耗材", ja: "消耗品", pt: "Consumíveis", vi: "Vật tư tiêu hao" }, value: "Sealed single-use CarryOn microfluidic chip with fully preloaded reagents (same chips as CarryOn P1000Q)" },
+      { label: { en: "Nucleic Acid Extraction", zh: "核酸提取", ja: "核酸抽出", pt: "Extração de Ácido Nucleico", vi: "Tách chiết axit nucleic" }, value: "Built-in: ultrasonic mixing + magnetic-bead nucleic acid extraction and purification" },
+      { label: { en: "Time to Result", zh: "检测时间", ja: "検出時間", pt: "Tempo até o Resultado", vi: "Thời gian có kết quả" }, value: "< 60 minutes per chip, extraction included" },
+      { label: { en: "Operating Environment", zh: "使用环境", ja: "使用環境", pt: "Ambiente de Operação", vi: "Môi trường vận hành" }, value: "Ordinary indoor room; no PCR laboratory or trained PCR technician required" },
+      { label: { en: "Application", zh: "应用领域", ja: "用途", pt: "Aplicação", vi: "Ứng dụng" }, value: "Veterinary stations, clinics, quarantine checkpoints and distributor demo labs with batch demand" },
+    ],
+    highlights: [
+      { en: "Four independent modules: each test starts, runs and stops on its own — no waiting for a batch to fill.", zh: "四个独立模块：每个检测独立开始、运行、结束，不用凑满一批再开机。", ja: "独立4モジュール：各検査を個別に開始・実行・終了、バッチが揃うのを待つ必要なし。", pt: "Quatro módulos independentes: cada teste é iniciado, executado e finalizado de forma independente — sem esperar que um lote seja completado.", vi: "Bốn mô-đun độc lập: mỗi xét nghiệm tự bắt đầu, chạy và dừng riêng — không phải chờ đủ lô." },
+      { en: "Same CarryOn chips: field teams and the central station share one consumable inventory.", zh: "与 CarryOn 芯片通用：现场团队和中心站共用一套耗材库存。", ja: "CarryOn と同じチップ：現場チームと中央拠点で消耗品在庫を共有。", pt: "Os mesmos chips CarryOn: equipes de campo e a estação central compartilham um único estoque de consumíveis.", vi: "Cùng loại chip CarryOn: đội hiện trường và trạm trung tâm dùng chung một kho vật tư tiêu hao." },
+      { en: "No PCR laboratory: runs in an ordinary room with no trained PCR technician.", zh: "无需 PCR 实验室：普通室内环境即可运行，不需要专业 PCR 人员。", ja: "PCR ラボ不要：一般的な室内で動作し、専門の PCR 技術者も不要。", pt: "Sem laboratório de PCR: funciona em uma sala comum, sem a necessidade de um técnico de PCR treinado.", vi: "Không cần phòng thí nghiệm PCR: vận hành trong phòng thông thường mà không cần kỹ thuật viên PCR đã qua đào tạo." },
+      { en: "Fully enclosed chips eliminate aerosol contamination between the four parallel runs.", zh: "全封闭芯片，四个并行检测之间没有气溶胶污染风险。", ja: "完全密閉チップにより、4つの並行検査間のエアロゾル汚染を排除。", pt: "Chips totalmente fechados eliminam a contaminação por aerossóis entre as quatro execuções paralelas.", vi: "Chip kín hoàn toàn loại bỏ nhiễm aerosol giữa bốn lần chạy song song." },
+    ],
+    certifications: ["CE"],
+    relatedProducts: ["carryon-device", "arrayon-p1000d"],
+  },
+  {
+    id: "arrayon-p1000d",
+    slug: "arrayon-p1000d",
+    category: "device",
+    categorySlug: "arrayon-p1000d",
+    name: { en: "ArrayOn P1000D Fully Automated Digital PCR Analyzer", zh: "ArrayOn P1000D 全自动数字PCR分析仪", ja: "ArrayOn P1000D 全自動デジタルPCR分析装置", pt: "Analisador de PCR Digital Totalmente Automatizado ArrayOn P1000D", vi: "Máy phân tích PCR kỹ thuật số hoàn toàn tự động ArrayOn P1000D" },
+    tagline: { en: "Chip-based digital PCR with 6-color detection and up to 40,000 reaction units — results within one hour.", zh: "芯片式数字 PCR，6 色检测、最多 40,000 个反应单元，一小时内出结果。", ja: "チップ型デジタルPCR、6色検出・最大40,000反応ユニット、1時間以内に結果。", pt: "PCR digital em chip com detecção em 6 cores e até 40.000 unidades de reação — resultados em até uma hora.", vi: "PCR kỹ thuật số trên chip với phát hiện 6 màu và tối đa 40.000 đơn vị phản ứng — cho kết quả trong vòng một giờ." },
+    description: { en: "The ArrayOn P1000D is Inarray's in-house developed, fully automated digital PCR analyzer. Its integrated chip design completes the whole digital PCR reaction in a single manual step: the sealed chip partitions the sample into up to 40,000 micro-reaction units, and a high-efficiency thermal module with 6-color fluorescence optics finishes multi-target reactions in under an hour. Uniquely, every micro-reaction well is monitored in real time, so each single-molecule amplification is verified individually — giving researchers both absolute quantification and an expandable real-time dataset.", zh: "ArrayOn P1000D 是胤瑞自主研发的全自动数字 PCR 分析仪。一体化芯片设计让数字 PCR 反应只需一步人工操作：密封芯片把样本分配到最多 40,000 个微反应单元，高效温控模块和 6 通道荧光系统在一小时内完成多靶标反应。独特之处在于每个微反应池都可实时荧光监测，保证每个反应单元单分子扩增的准确有效，既给出绝对定量，也为科研提供可扩展的实时数据。", ja: "ArrayOn P1000D は Inarray が自社開発した全自動デジタルPCR分析装置です。一体型チップ設計により、デジタルPCR反応全体を1回の手動操作で完了。密閉チップが検体を最大40,000のマイクロ反応ユニットに分割し、高効率温度制御モジュールと6色蛍光光学系が1時間以内に多標的反応を完了します。各マイクロ反応ウェルをリアルタイム監視できる独自の特長により、単分子増幅を個別に検証し、絶対定量と拡張性のあるリアルタイムデータの両方を提供します。", pt: "O ArrayOn P1000D é um analisador de PCR digital totalmente automatizado, desenvolvido internamente pela Inarray. Seu design de chip integrado conclui toda a reação de PCR digital em uma única etapa manual: o chip selado particiona a amostra em até 40.000 unidades de micro-reação, e um módulo térmico de alta eficiência com óptica de fluorescência em 6 cores finaliza reações de múltiplos alvos em menos de uma hora. De forma exclusiva, cada poço de micro-reação é monitorado em tempo real, de modo que cada amplificação de molécula única é verificada individualmente — oferecendo aos pesquisadores tanto quantificação absoluta quanto um conjunto de dados em tempo real expansível.", vi: "ArrayOn P1000D là máy phân tích PCR kỹ thuật số hoàn toàn tự động do Inarray tự phát triển. Thiết kế chip tích hợp hoàn tất toàn bộ phản ứng PCR kỹ thuật số chỉ với một bước thủ công: chip kín phân chia mẫu thành tối đa 40.000 đơn vị vi phản ứng, và mô-đun nhiệt hiệu suất cao với quang học huỳnh quang 6 màu hoàn tất phản ứng đa mục tiêu trong chưa đầy một giờ. Điểm độc đáo là mọi giếng vi phản ứng đều được theo dõi theo thời gian thực, nên từng phản ứng khuếch đại đơn phân tử được xác minh riêng lẻ — mang lại cho nhà nghiên cứu cả định lượng tuyệt đối và bộ dữ liệu thời gian thực có thể mở rộng." },
+    images: ["/images/products/arrayon-p1000d.png"],
+    keySpecs: [
+      { label: { en: "Channels", zh: "荧光通道", ja: "チャンネル", pt: "Canais", vi: "Kênh" }, value: "6-color" },
+      { label: { en: "Reaction units", zh: "反应单元", ja: "反応ユニット", pt: "Unidades de reação", vi: "Đơn vị phản ứng" }, value: "40,000" },
+      { label: { en: "Time", zh: "检测时间", ja: "時間", pt: "Tempo", vi: "Thời gian" }, value: "< 1 h" },
+      { label: { en: "Operation", zh: "操作", ja: "操作", pt: "Operação", vi: "Vận hành" }, value: "1 step" },
+    ],
+    fullSpecs: [
+      { label: { en: "Model", zh: "型号", ja: "型番", pt: "Modelo", vi: "Kiểu máy" }, value: "ArrayOn P1000D" },
+      { label: { en: "Product Type", zh: "产品类型", ja: "製品タイプ", pt: "Tipo de produto", vi: "Loại sản phẩm" }, value: "Fully automated chip-based digital PCR analyzer" },
+      { label: { en: "Partitioning", zh: "反应单元", ja: "分割数", pt: "Particionamento", vi: "Phân vùng" }, value: "Up to 40,000 micro-reaction units per chip" },
+      { label: { en: "Detection Channels", zh: "检测通道", ja: "検出チャンネル", pt: "Canais de Detecção", vi: "Kênh phát hiện" }, value: "6-color fluorescence (highest channel count currently on the market)" },
+      { label: { en: "Real-Time Monitoring", zh: "实时监测", ja: "リアルタイム監視", pt: "Monitoramento em tempo real", vi: "Giám sát thời gian thực" }, value: "Real-time fluorescence monitoring of every individual micro-reaction well" },
+      { label: { en: "Workflow", zh: "操作流程", ja: "ワークフロー", pt: "Fluxo de trabalho", vi: "Quy trình" }, value: "Sealed chip, no sample transfer; one manual step (load chip, run)" },
+      { label: { en: "Time to Result", zh: "检测时间", ja: "検出時間", pt: "Tempo até o Resultado", vi: "Thời gian có kết quả" }, value: "Multi-target digital PCR completed within one hour" },
+      { label: { en: "Application", zh: "应用领域", ja: "用途", pt: "Aplicação", vi: "Ứng dụng" }, value: "Absolute quantification, rare-variant and copy-number analysis, pathogen load, research and reference laboratories" },
+    ],
+    highlights: [
+      { en: "One-step operation: all reactions happen inside one instrument after a single manual step.", zh: "一体化设计：所有反应在同一台仪器内完成，仅需一步人工操作。", ja: "一体型設計：1回の手動操作ですべての反応を1台の装置内で完了。", pt: "Operação em uma etapa: todas as reações ocorrem dentro de um único instrumento após uma única etapa manual.", vi: "Vận hành một bước: mọi phản ứng diễn ra bên trong một thiết bị sau một thao tác thủ công duy nhất." },
+      { en: "Closed-tube reaction and detection: sealed chip, no sample transfer, fewer handling errors.", zh: "全闭管反应及检测：全密封芯片，无需样品转移，减少人为误差。", ja: "閉管反応・検出：密閉チップで検体移送不要、人的ミスを削減。", pt: "Reação e detecção em tubo fechado: chip selado, sem transferência de amostra, menos erros de manuseio.", vi: "Phản ứng và phát hiện trong ống kín: chip được niêm phong, không chuyển mẫu, ít lỗi thao tác hơn." },
+      { en: "Fast: multi-target digital PCR completed in under one hour.", zh: "高效：最快一小时内完成多靶标数字 PCR 反应。", ja: "高速：多標的デジタルPCRを1時間以内に完了。", pt: "Rápido: PCR digital com múltiplos alvos concluído em menos de uma hora.", vi: "Nhanh: PCR kỹ thuật số đa mục tiêu hoàn thành trong dưới một giờ." },
+      { en: "High precision: up to 40,000 reaction units with per-well real-time amplification readout.", zh: "高精度、高灵敏度：最多 40,000 个反应单元，每个单元可单独实时扩增检测。", ja: "高精度・高感度：最大40,000反応ユニット、ウェルごとのリアルタイム増幅読み取り。", pt: "Alta precisão: até 40.000 unidades de reação com leitura de amplificação em tempo real por poço.", vi: "Độ chính xác cao: lên đến 40.000 đơn vị phản ứng với khả năng đọc khuếch đại thời gian thực theo từng giếng." },
+      { en: "6-color channels: the highest detection channel count on the market, maximum multiplexing headroom.", zh: "6 色荧光通道：目前市面上最高的通道数，扩展空间最大。", ja: "6色蛍光チャンネル：市場最多のチャンネル数でマルチプレックスの拡張余地が最大。", pt: "Canais de 6 cores: a maior contagem de canais de detecção do mercado, máxima margem para multiplexação.", vi: "6 kênh màu: số kênh phát hiện cao nhất trên thị trường, dư địa đa hợp tối đa." },
+    ],
+    certifications: [],
+    relatedProducts: ["carryon-device", "carryon-p4000q"],
+  },
   {
     id: "canine-triple",
     slug: "canine-triple-screening",
@@ -397,6 +482,36 @@ export const products: Product[] = [
   },
 
   // === PATHOGEN DETECTION — HUMAN CLINICAL ===
+  {
+    id: "pathogen-sars-cov-2",
+    slug: "sars-cov-2-test-chip",
+    category: "chip-pathogen",
+    categorySlug: "test-chips",
+    name: { en: "SARS-CoV-2 Test Chip (ORF1ab + E + N)", zh: "新型冠状病毒（SARS-CoV-2）核酸检测芯片", ja: "SARS-CoV-2 検査チップ（ORF1ab＋E＋N）", pt: "Chip de teste para SARS-CoV-2 (ORF1ab + E + N)", vi: "Chip xét nghiệm SARS-CoV-2 (ORF1ab + E + N)" },
+    tagline: { en: "Three-target COVID-19 nucleic acid test on one sealed chip, about 40 minutes.", zh: "一张封闭芯片完成三位点新冠核酸检测，约 40 分钟。", ja: "1枚の密閉チップで3標的の新型コロナ核酸検査、約40分。", pt: "Teste de ácido nucleico para COVID-19 com três alvos em um único chip selado, cerca de 40 minutos.", vi: "Xét nghiệm axit nucleic COVID-19 ba mục tiêu trên một chip kín, khoảng 40 phút." },
+    description: { en: "Developed for the General Administration of Customs rapid-screening programme and accepted in 2020 together with the CarryOn P1000Q, this chip completes the entire SARS-CoV-2 nucleic acid test on a single fully enclosed microfluidic chip: swab in, three-target (ORF1ab + E + N) result out in about 40 minutes with a detection limit of 100 copies. Suitable for customs, inspection and quarantine, food-safety and medical institutions that need on-site rapid testing without a biosafety laboratory.", zh: "该芯片为海关总署现场快速筛查项目开发，2020 年与 CarryOn P1000Q 一同通过验收。仅需一张全封闭微流控芯片即可完成新冠核酸检测全部实验过程：拭子进、三位点（ORF1ab + E + N）结果出，约 40 分钟，检出限 100 拷贝。适用于海关、检验检疫、食品安全及医疗机构等需要现场快速检测、又没有生物安全实验室的场景。", ja: "税関総署の迅速スクリーニング事業向けに開発され、2020年に CarryOn P1000Q とともに検収に合格。完全密閉の1枚のマイクロ流体チップで SARS-CoV-2 核酸検査の全工程を完了し、スワブ投入から3標的（ORF1ab＋E＋N）の結果まで約40分、検出限界100コピー。バイオセーフティラボを持たずに現場迅速検査が必要な税関・検疫・食品安全・医療機関向けです。", pt: "Desenvolvido para o programa de triagem rápida da Administração Geral das Alfândegas e aceito em 2020 junto com o CarryOn P1000Q, este chip realiza todo o teste de ácido nucleico para SARS-CoV-2 em um único chip microfluídico totalmente fechado: swab entra, resultado para três alvos (ORF1ab + E + N) sai em cerca de 40 minutos, com limite de detecção de 100 cópias. Adequado para alfândegas, órgãos de inspeção e quarentena, instituições de segurança alimentar e instituições médicas que necessitam de testes rápidos no local sem um laboratório de biossegurança.", vi: "Được phát triển cho chương trình sàng lọc nhanh của Tổng cục Hải quan và được nghiệm thu vào năm 2020 cùng với CarryOn P1000Q, chip này hoàn thành toàn bộ xét nghiệm axit nucleic SARS-CoV-2 trên một chip vi lưu hoàn toàn kín: đưa tăm bông vào, nhận kết quả ba mục tiêu (ORF1ab + E + N) trong khoảng 40 phút với giới hạn phát hiện 100 bản sao. Phù hợp với hải quan, kiểm tra và kiểm dịch, các tổ chức an toàn thực phẩm và cơ sở y tế cần xét nghiệm nhanh tại chỗ mà không cần phòng thí nghiệm an toàn sinh học." },
+    images: ["/images/products/chip-in-hand.png"],
+    keySpecs: [
+      { label: { en: "Targets", zh: "检测靶标", ja: "ターゲット", pt: "Alvos", vi: "Tác nhân mục tiêu" }, value: "ORF1ab + E + N" },
+      { label: { en: "Sample", zh: "样本类型", ja: "サンプル", pt: "Amostra", vi: "Mẫu" }, value: "Swab" },
+      { label: { en: "Time", zh: "检测时间", ja: "時間", pt: "Tempo", vi: "Thời gian" }, value: "~40 min" },
+      { label: { en: "LOD", zh: "检出限", ja: "検出限界", pt: "LOD", vi: "LOD" }, value: "100 copies" },
+    ],
+    fullSpecs: [
+      { label: { en: "Test Type", zh: "检测类型", ja: "検査タイプ", pt: "Tipo de teste", vi: "Loại xét nghiệm" }, value: "Real-time fluorescence RT-PCR, single sealed microfluidic chip" },
+      { label: { en: "Targets", zh: "检测靶标", ja: "ターゲット", pt: "Alvos", vi: "Tác nhân mục tiêu" }, value: "SARS-CoV-2 ORF1ab, E and N genes (three targets)" },
+      { label: { en: "Sample Type", zh: "样本类型", ja: "サンプルタイプ", pt: "Tipo de amostra", vi: "Loại mẫu" }, value: "Nasopharyngeal / oropharyngeal swab, swab preservation fluid" },
+      { label: { en: "Time to Result", zh: "检测时间", ja: "検出時間", pt: "Tempo até o Resultado", vi: "Thời gian có kết quả" }, value: "About 40 minutes, sample to result" },
+      { label: { en: "Limit of Detection", zh: "检出限", ja: "検出限界", pt: "Limite de detecção", vi: "Giới hạn phát hiện" }, value: "100 copies (swab load)" },
+      { label: { en: "Storage", zh: "存储条件", ja: "保存条件", pt: "Armazenamento", vi: "Bảo quản" }, value: "Room temperature (15-30°C)" },
+      { label: { en: "Application", zh: "应用领域", ja: "用途", pt: "Aplicação", vi: "Ứng dụng" }, value: "Customs and border inspection, quarantine, food-safety and medical institutions requiring on-site rapid testing" },
+    ],
+    detectedTargets: [
+      { en: "SARS-CoV-2 (ORF1ab, E, N genes)", zh: "新型冠状病毒 SARS-CoV-2（ORF1ab、E、N 基因）", ja: "SARS-CoV-2（ORF1ab、E、N 遺伝子）", pt: "SARS-CoV-2 (genes ORF1ab, E, N)", vi: "SARS-CoV-2 (gen ORF1ab, E, N)" },
+    ],
+    certifications: ["CE"],
+    relatedProducts: ["carryon-device", "pathogen-flu-covid", "pathogen-respiratory"],
+  },
   {
     id: "pathogen-flu-covid",
     slug: "influenza-covid-triple",

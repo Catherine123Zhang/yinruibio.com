@@ -65,7 +65,10 @@ const content = {
       { year: "2018.12", text: "Digital PCR project selected for Ningbo 'S&T Innovation 2025' biomedical program" },
       { year: "2019.07", text: "Undertook National Key R&D Program 'S&T Winter Olympics' — handheld qPCR project" },
       { year: "2020.01", text: "COVID-19 border control emergency technology research; selected for MOST 'S&T Boosting Economy 2020'" },
+      { year: "2019.09", text: "Digital PCR project selected for Ningbo \"3315 Plan\" entrepreneurial team" },
+      { year: "2020.09", text: "CarryOn P1000Q handheld qPCR system and SARS-CoV-2 chip passed General Administration of Customs project acceptance" },
       { year: "2021.05", text: "Co-founded Cixi Life Science Innovation Research Institute with Cixi government" },
+      { year: "2021.07", text: "Named \"Biomedical Star\" among Ningbo's most investment-worthy enterprises" },
       { year: "2022.04", text: "ISO13485 certified; CarryOn device & reagents received EU CE certification" },
       { year: "2023.03", text: "Strategic partnership with Zhejiang Orient Gene Biotech" },
       { year: "2024.12", text: "Recognized as National High-Tech Enterprise" },
@@ -110,7 +113,10 @@ const content = {
       { year: "2018.12", text: "数字PCR项目入选宁波「科技创新2025」首批生物医药重大专项" },
       { year: "2019.07", text: "承担国家重点研发计划「科技冬奥」— 手持qPCR项目研发任务" },
       { year: "2020.01", text: "承担「新型冠状病毒口岸防控应急技术研究」，入选科技部「科技助力经济2020」重点专项" },
+      { year: "2019.09", text: "数字PCR项目入选宁波市「3315计划」创业团队" },
+      { year: "2020.09", text: "CarryOn P1000Q 手持QPCR分析系统及新冠检测试剂盒通过海关总署项目验收" },
       { year: "2021.05", text: "于军团队与慈溪市政府共同创办「慈溪生命科学创新研究院」" },
+      { year: "2021.07", text: "获评「宁波最具投资价值企业·生物医药之星」" },
       { year: "2022.04", text: "生产场地通过ISO13485认证；CarryOn仪器、新冠和TB检测试剂盒获欧盟CE认证" },
       { year: "2023.03", text: "与浙江东方基因生物制品股份有限公司签订战略合作协议" },
       { year: "2024.12", text: "获得高新技术企业认定" },
@@ -155,7 +161,10 @@ const content = {
       { year: "2018.12", text: "デジタルPCRプロジェクトが寧波「科技創新2025」に選定" },
       { year: "2019.07", text: "国家重点研究開発計画「科技冬季五輪」ハンドヘルドqPCR研究任務を担当" },
       { year: "2020.01", text: "新型コロナウイルス国境管理緊急技術研究を担当" },
+      { year: "2019.09", text: "デジタルPCRプロジェクトが寧波市「3315計画」起業チームに選定" },
+      { year: "2020.09", text: "CarryOn P1000Q ハンドヘルドqPCRシステムと SARS-CoV-2 チップが税関総署の事業検収に合格" },
       { year: "2021.05", text: "慈渓市政府と共同で慈渓ライフサイエンスイノベーション研究院を設立" },
+      { year: "2021.07", text: "寧波市最有望投資企業「バイオ医薬の星」を受賞" },
       { year: "2022.04", text: "ISO13485認証取得；CarryOn機器・試薬キットがEU CE認証取得" },
       { year: "2023.03", text: "浙江東方遺伝子生物製品と戦略的提携契約を締結" },
       { year: "2024.12", text: "国家ハイテク企業認定を取得" },
@@ -217,8 +226,20 @@ const content = {
         "text": "Nghiên cứu công nghệ khẩn cấp phục vụ kiểm soát biên giới COVID-19; được chọn vào chương trình 'S&T Boosting Economy 2020' của MOST"
       },
       {
+        "year": "2019.09",
+        "text": "Dự án PCR kỹ thuật số được chọn vào nhóm khởi nghiệp \"Kế hoạch 3315\" của Ninh Ba"
+      },
+      {
+        "year": "2020.09",
+        "text": "Hệ thống qPCR cầm tay CarryOn P1000Q và chip SARS-CoV-2 vượt qua nghiệm thu dự án của Tổng cục Hải quan Trung Quốc"
+      },
+      {
         "year": "2021.05",
         "text": "Đồng sáng lập Viện Nghiên cứu Đổi mới Khoa học Sự sống Từ Khê với chính quyền Từ Khê"
+      },
+      {
+        "year": "2021.07",
+        "text": "Được vinh danh \"Ngôi sao Y sinh\" trong các doanh nghiệp đáng đầu tư nhất Ninh Ba"
       },
       {
         "year": "2022.04",
@@ -293,8 +314,20 @@ const content = {
         "text": "Pesquisa de tecnologia emergencial para controle de fronteiras da COVID-19; selecionada para o 'S&T Boosting Economy 2020' do MOST"
       },
       {
+        "year": "2019.09",
+        "text": "Projeto de PCR digital selecionado para a equipe empreendedora do \"Plano 3315\" de Ningbo"
+      },
+      {
+        "year": "2020.09",
+        "text": "Sistema qPCR portátil CarryOn P1000Q e chip SARS-CoV-2 aprovados na aceitação de projeto da Administração Geral de Alfândegas"
+      },
+      {
         "year": "2021.05",
         "text": "Co-fundou o Cixi Life Science Innovation Research Institute com o governo de Cixi"
+      },
+      {
+        "year": "2021.07",
+        "text": "Eleita \"Estrela Biomédica\" entre as empresas de Ningbo com maior valor de investimento"
       },
       {
         "year": "2022.04",
