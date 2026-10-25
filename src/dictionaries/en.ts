@@ -3,7 +3,7 @@ const en = {
     brand: "Yinrui Bio",
     siteName: "Portable Veterinary PCR Analyzer | Yinrui Bio — 40-Min Point-of-Care Diagnostics",
     siteDescription:
-      "Handheld PCR analyzer for veterinary clinics — detect Parvo, Distemper, FIV/FeLV, tick-borne diseases in 40 minutes. 2 kg, battery-powered, no lab needed. CE certified, 25 invention patents. OEM/ODM & distributor partnerships.",
+      "Handheld PCR analyzer for veterinary clinics — detect Parvo, Distemper, FIV/FeLV, tick-borne diseases in 40 minutes. 2 kg, battery-powered, no lab needed. 25 invention patents. OEM/ODM & distributor partnerships.",
   },
   nav: {
     home: "Home",
@@ -86,7 +86,7 @@ const en = {
   },
   stats: {
     patents: "62 Patents",
-    certifications: "CE & ISO13485",
+    certifications: "ISO13485",
     resultTime: "40 min Results",
     labSpace: "3,000m² Lab & GMP",
   },
@@ -211,7 +211,7 @@ const en = {
       softwareCopyrights: "6 Software Copyrights",
       labSpace: "3,000m² Lab + GMP Workshop",
       location: "Cixi, Zhejiang, China",
-      certifications: "ISO13485, CE Certified, National High-Tech Enterprise",
+      certifications: "ISO13485, National High-Tech Enterprise",
     },
   },
   faq: {
@@ -235,7 +235,7 @@ const en = {
       },
       {
         q: "Is CarryOn CE certified?",
-        a: "Yes. Both the CarryOn device and test chips hold CE certification. The company also maintains ISO13485 quality management system certification.",
+        a: "No. The CarryOn device and test chips do not hold CE certification. The company maintains ISO13485 quality management system certification.",
       },
       {
         q: "Can I become a distributor?",

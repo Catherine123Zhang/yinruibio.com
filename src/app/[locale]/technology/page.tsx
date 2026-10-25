@@ -135,7 +135,7 @@ export default async function TechnologyPage({
           },
           {
             q: "Has the CarryOn PCR technology been clinically validated?",
-            a: "Yes. The CarryOn platform and its test chips have undergone clinical validation studies demonstrating sensitivity and specificity comparable to laboratory-grade PCR systems. The technology was originally developed through National Key R&D Programs including the 'S&T Winter Olympics' handheld qPCR project, and the system holds CE certification for both the device and reagent kits.",
+            a: "Yes. The CarryOn platform and its test chips have undergone clinical validation studies demonstrating sensitivity and specificity comparable to laboratory-grade PCR systems. The technology was originally developed through National Key R&D Programs including the 'S&T Winter Olympics' handheld qPCR project.",
           },
           {
             q: "How does microfluidic PCR compare to traditional lab PCR?",

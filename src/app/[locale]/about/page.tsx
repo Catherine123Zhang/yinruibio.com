@@ -54,8 +54,8 @@ const content = {
     ],
     statsTitle: "Company at a Glance",
     certsTitle: "Certifications & Qualifications",
-    certsDesc: "Our products and manufacturing processes meet international standards, ensuring quality and compliance for global markets.",
-    certLabels: ["CE — PCR Device", "CE — Test Reagent Kits", "Specialized & Innovative SME"],
+    certsDesc: "Our manufacturing facility holds ISO 13485 quality management system certification.",
+    certLabels: ["Specialized & Innovative SME"],
     facilityTitle: "R&D & Manufacturing Facility",
     facilityDesc: "Our facility at Cixi Industrial Application Technology Research Institute features nearly 3,000m² of laboratory space, GMP workshops, and comprehensive production equipment.",
     teamTitle: "Management Team",
@@ -69,13 +69,13 @@ const content = {
       { year: "2020.09", text: "CarryOn P1000Q handheld qPCR system and SARS-CoV-2 chip passed General Administration of Customs project acceptance" },
       { year: "2021.05", text: "Co-founded Cixi Life Science Innovation Research Institute with Cixi government" },
       { year: "2021.07", text: "Named \"Biomedical Star\" among Ningbo's most investment-worthy enterprises" },
-      { year: "2022.04", text: "ISO13485 certified; CarryOn device & reagents received EU CE certification" },
+      { year: "2022.04", text: "ISO13485 certification obtained" },
       { year: "2023.03", text: "Strategic partnership with Zhejiang Orient Gene Biotech" },
       { year: "2024.12", text: "Recognized as National High-Tech Enterprise" },
       { year: "2025.06", text: "Recognized as Ningbo 'Specialized & Innovative' SME" },
     ],
     ipTitle: "Intellectual Property",
-    ipDesc: "25 invention patents, 3 utility-model patents and 1 design patent granted, plus software copyrights, covering the analyzer, the microfluidic chip and test applications. ISO 13485 quality system; CarryOn series analyzers and multiple test kits hold EU CE certification. National High-Tech Enterprise (2024); Ningbo Specialized & Innovative SME (2025); undertook the National Key R&D Program \"S&T Winter Olympics\" handheld qPCR project and the MOST \"Technology-Driven Economic Growth 2020\" special project.",
+    ipDesc: "25 invention patents, 3 utility-model patents and 1 design patent granted, plus software copyrights, covering the analyzer, the microfluidic chip and test applications. ISO 13485 quality system. National High-Tech Enterprise (2024); Ningbo Specialized & Innovative SME (2025); undertook the National Key R&D Program \"S&T Winter Olympics\" handheld qPCR project and the MOST \"Technology-Driven Economic Growth 2020\" special project.",
   },
   zh: {
     companyIntro: "宁波胤瑞生物医学仪器有限责任公司创建于2018年6月，是一家高精密仪器制造公司，公司由来自中科院的专家学者组成核心技术团队，致力于生命科学与精准医学领域先进分子检测技术与装备的研发制造。",
@@ -102,8 +102,8 @@ const content = {
     ],
     statsTitle: "公司概览",
     certsTitle: "资质认证",
-    certsDesc: "产品和生产流程符合国际标准，确保全球市场的质量与合规性。",
-    certLabels: ["CE 认证 — PCR 设备", "CE 认证 — 检测试剂盒", "专精特新中小企业"],
+    certsDesc: "生产场地通过 ISO 13485 质量管理体系认证。",
+    certLabels: ["专精特新中小企业"],
     facilityTitle: "研发与生产基地",
     facilityDesc: "胤瑞在慈溪产业应用技术研究院拥有近3000平米的产品实验室、GMP车间和完善的生产设备。",
     teamTitle: "管理团队",
@@ -117,13 +117,13 @@ const content = {
       { year: "2020.09", text: "CarryOn P1000Q 手持QPCR分析系统及新冠检测试剂盒通过海关总署项目验收" },
       { year: "2021.05", text: "于军团队与慈溪市政府共同创办「慈溪生命科学创新研究院」" },
       { year: "2021.07", text: "获评「宁波最具投资价值企业·生物医药之星」" },
-      { year: "2022.04", text: "生产场地通过ISO13485认证；CarryOn仪器、新冠和TB检测试剂盒获欧盟CE认证" },
+      { year: "2022.04", text: "生产场地通过ISO13485认证" },
       { year: "2023.03", text: "与浙江东方基因生物制品股份有限公司签订战略合作协议" },
       { year: "2024.12", text: "获得高新技术企业认定" },
       { year: "2025.06", text: "获得宁波市「专精特新」企业认定" },
     ],
     ipTitle: "知识产权体系",
-    ipDesc: "已获授权发明专利 25 项、实用新型 3 项、外观专利 1 项及多项软件著作权，覆盖仪器、微流控芯片与检测应用。通过 ISO 13485 质量体系认证，CarryOn 系列仪器及多款试剂盒获欧盟 CE 认证；国家高新技术企业（2024）、宁波市专精特新企业（2025）；承担国家重点研发计划\"科技冬奥\"手持 qPCR 项目，入选科技部\"科技助力经济 2020\"重点专项。",
+    ipDesc: "已获授权发明专利 25 项、实用新型 3 项、外观专利 1 项及多项软件著作权，覆盖仪器、微流控芯片与检测应用。通过 ISO 13485 质量体系认证；国家高新技术企业（2024）、宁波市专精特新企业（2025）；承担国家重点研发计划\"科技冬奥\"手持 qPCR 项目，入选科技部\"科技助力经济 2020\"重点专项。",
   },
   ja: {
     companyIntro: "宁波胤瑞生物医学仪器有限責任公司は2018年6月に設立された高精度機器メーカーです。中国科学院の専門家・学者で構成されるコア技術チームが、ライフサイエンスと精密医学分野における先進的な分子検出技術と装置の研究開発・製造に取り組んでいます。",
@@ -150,8 +150,8 @@ const content = {
     ],
     statsTitle: "会社概要",
     certsTitle: "認証・資格",
-    certsDesc: "製品と製造プロセスは国際基準に適合し、グローバル市場の品質とコンプライアンスを保証します。",
-    certLabels: ["CE認証 — PCRデバイス", "CE認証 — 検査試薬キット", "専精特新中小企業"],
+    certsDesc: "製造施設は ISO 13485 品質管理システム認証を取得しています。",
+    certLabels: ["専精特新中小企業"],
     facilityTitle: "研究開発・製造拠点",
     facilityDesc: "慈渓産業応用技術研究院に約3,000m²の製品実験室、GMP工場、充実した生産設備を保有しています。",
     teamTitle: "経営チーム",
@@ -165,13 +165,13 @@ const content = {
       { year: "2020.09", text: "CarryOn P1000Q ハンドヘルドqPCRシステムと SARS-CoV-2 チップが税関総署の事業検収に合格" },
       { year: "2021.05", text: "慈渓市政府と共同で慈渓ライフサイエンスイノベーション研究院を設立" },
       { year: "2021.07", text: "寧波市最有望投資企業「バイオ医薬の星」を受賞" },
-      { year: "2022.04", text: "ISO13485認証取得；CarryOn機器・試薬キットがEU CE認証取得" },
+      { year: "2022.04", text: "ISO13485認証取得" },
       { year: "2023.03", text: "浙江東方遺伝子生物製品と戦略的提携契約を締結" },
       { year: "2024.12", text: "国家ハイテク企業認定を取得" },
       { year: "2025.06", text: "寧波市「専精特新」企業認定を取得" },
     ],
     ipTitle: "知的財産",
-    ipDesc: "発明特許25件、実用新案3件、意匠1件およびソフトウェア著作権を取得し、分析装置・マイクロ流体チップ・検査アプリケーションをカバー。ISO 13485 認証、CarryOn シリーズ分析装置と複数の検査キットが EU CE 認証を取得。国家ハイテク企業（2024）、寧波市「専精特新」企業（2025）、国家重点研究開発計画「科技冬奥」ハンドヘルド qPCR プロジェクトおよび科学技術部「科技助力経済2020」重点専項を担当。",
+    ipDesc: "発明特許25件、実用新案3件、意匠1件およびソフトウェア著作権を取得し、分析装置・マイクロ流体チップ・検査アプリケーションをカバー。ISO 13485 認証を取得。国家ハイテク企業（2024）、寧波市「専精特新」企業（2025）、国家重点研究開発計画「科技冬奥」ハンドヘルド qPCR プロジェクトおよび科学技術部「科技助力経済2020」重点専項を担当。",
   },
   vi: {
     "companyIntro": "Ningbo Inarray Biomedical Systems Co., Ltd được thành lập vào tháng 6 năm 2018. Là nhà sản xuất thiết bị có độ chính xác cao, đội ngũ kỹ thuật nòng cốt của công ty gồm các chuyên gia và học giả đến từ Viện Hàn lâm Khoa học Trung Quốc, chuyên tâm vào nghiên cứu phát triển và sản xuất các công nghệ và thiết bị phát hiện phân tử tiên tiến trong lĩnh vực khoa học sự sống và y học chính xác.",
@@ -198,10 +198,8 @@ const content = {
     ],
     "statsTitle": "Tổng quan về công ty",
     "certsTitle": "Chứng nhận & Trình độ chuyên môn",
-    "certsDesc": "Sản phẩm và quy trình sản xuất của chúng tôi đáp ứng các tiêu chuẩn quốc tế, đảm bảo chất lượng và tuân thủ cho các thị trường toàn cầu.",
+    "certsDesc": "Cơ sở sản xuất duy trì chứng nhận hệ thống quản lý chất lượng ISO 13485.",
     "certLabels": [
-      "CE — Thiết bị PCR",
-      "CE — Bộ kit thuốc thử xét nghiệm",
       "Doanh nghiệp nhỏ và vừa chuyên ngành & đổi mới sáng tạo"
     ],
     "facilityTitle": "Cơ sở R&D & sản xuất",
@@ -243,7 +241,7 @@ const content = {
       },
       {
         "year": "2022.04",
-        "text": "Được chứng nhận ISO13485; thiết bị và thuốc thử CarryOn đạt chứng nhận CE của EU"
+        "text": "Đạt chứng nhận ISO13485"
       },
       {
         "year": "2023.03",
@@ -259,7 +257,7 @@ const content = {
       }
     ],
     "ipTitle": "Sở hữu trí tuệ",
-    "ipDesc": "Đã được cấp 25 bằng sáng chế, 3 giải pháp hữu ích, 1 kiểu dáng công nghiệp cùng nhiều bản quyền phần mềm, bao phủ máy phân tích, chip vi lưu và các ứng dụng xét nghiệm. Hệ thống chất lượng ISO 13485; máy phân tích dòng CarryOn và nhiều bộ kit đạt chứng nhận CE của EU. Doanh nghiệp công nghệ cao quốc gia (2024); doanh nghiệp \"chuyên, tinh, đặc, mới\" Ninh Ba (2025); thực hiện dự án qPCR cầm tay thuộc Chương trình R&D trọng điểm quốc gia \"S&T Winter Olympics\" và chuyên đề \"Công nghệ thúc đẩy kinh tế 2020\" của Bộ KH&CN."
+    "ipDesc": "Đã được cấp 25 bằng sáng chế, 3 giải pháp hữu ích, 1 kiểu dáng công nghiệp cùng nhiều bản quyền phần mềm, bao phủ máy phân tích, chip vi lưu và các ứng dụng xét nghiệm. Hệ thống chất lượng ISO 13485. Doanh nghiệp công nghệ cao quốc gia (2024); doanh nghiệp \"chuyên, tinh, đặc, mới\" Ninh Ba (2025); thực hiện dự án qPCR cầm tay thuộc Chương trình R&D trọng điểm quốc gia \"S&T Winter Olympics\" và chuyên đề \"Công nghệ thúc đẩy kinh tế 2020\" của Bộ KH&CN."
   },
   pt: {
     "companyIntro": "A Ningbo Inarray Biomedical Systems Co., Ltd foi fundada em junho de 2018. Como fabricante de instrumentos de alta precisão, a equipe técnica central da empresa é composta por especialistas e acadêmicos da Academia Chinesa de Ciências, dedicada à P&D e à fabricação de tecnologias e equipamentos avançados de detecção molecular nas áreas de ciências da vida e medicina de precisão.",
@@ -286,10 +284,8 @@ const content = {
     ],
     "statsTitle": "Visão geral da empresa",
     "certsTitle": "Certificações e Qualificações",
-    "certsDesc": "Nossos produtos e processos de fabricação atendem aos padrões internacionais, garantindo qualidade e conformidade para os mercados globais.",
+    "certsDesc": "A unidade de fabricação mantém a certificação do sistema de gestão da qualidade ISO 13485.",
     "certLabels": [
-      "CE — Dispositivo PCR",
-      "CE — Kits de Reagentes para Teste",
       "PME Especializada e Inovadora"
     ],
     "facilityTitle": "Unidade de P&D e Fabricação",
@@ -331,7 +327,7 @@ const content = {
       },
       {
         "year": "2022.04",
-        "text": "Certificação ISO13485; dispositivo e reagentes CarryOn receberam certificação CE da UE"
+        "text": "Certificação ISO13485"
       },
       {
         "year": "2023.03",
@@ -347,7 +343,7 @@ const content = {
       }
     ],
     "ipTitle": "Propriedade Intelectual",
-    "ipDesc": "25 patentes de invenção, 3 modelos de utilidade e 1 desenho industrial concedidos, além de direitos autorais de software, cobrindo o analisador, o chip microfluídico e as aplicações de teste. Sistema de qualidade ISO 13485; os analisadores da série CarryOn e diversos kits possuem certificação CE da UE. Empresa Nacional de Alta Tecnologia (2024); PME Especializada e Inovadora de Ningbo (2025); responsável pelo projeto de qPCR portátil do Programa Nacional de P&D \"S&T Winter Olympics\" e pelo projeto especial \"Technology-Driven Economic Growth 2020\" do MOST."
+    "ipDesc": "25 patentes de invenção, 3 modelos de utilidade e 1 desenho industrial concedidos, além de direitos autorais de software, cobrindo o analisador, o chip microfluídico e as aplicações de teste. Sistema de qualidade ISO 13485. Empresa Nacional de Alta Tecnologia (2024); PME Especializada e Inovadora de Ningbo (2025); responsável pelo projeto de qPCR portátil do Programa Nacional de P&D \"S&T Winter Olympics\" e pelo projeto especial \"Technology-Driven Economic Growth 2020\" do MOST."
   },
 };
 
@@ -536,11 +532,9 @@ export default async function AboutPage({
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold text-center text-[var(--color-primary)]">{t.certsTitle}</h2>
           <p className="mt-4 text-center text-[var(--color-text-light)] max-w-2xl mx-auto">{t.certsDesc}</p>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 mx-auto max-w-md">
             {[
-              { src: "/images/about/certs/cert-1.jpg", label: t.certLabels[0] },
-              { src: "/images/about/certs/cert-2.jpg", label: t.certLabels[1] },
-              { src: "/images/about/certs/cert-3.png", label: t.certLabels[2] },
+              { src: "/images/about/certs/cert-3.png", label: t.certLabels[0] },
             ].map((cert, i) => (
               <FadeIn key={cert.label} delay={i * 100}>
                 <div className="rounded-xl bg-white p-4 shadow-sm border border-[var(--color-border)] text-center">
@@ -693,7 +687,7 @@ export default async function AboutPage({
           },
           {
             q: "What certifications does Yinrui Bio hold?",
-            a: "Yinrui Bio holds CE certification for both the CarryOn PCR device and test reagent kits, and maintains ISO 13485 quality management system certification for the manufacturing facility. The company is also recognized as a National High-Tech Enterprise and a Ningbo 'Specialized & Innovative' SME, with a comprehensive IP portfolio of 25 invention patents, 12 design patents, and 6 software copyrights.",
+            a: "Yinrui Bio does not hold CE certification for the CarryOn PCR device or test reagent kits. The manufacturing facility maintains ISO 13485 quality management system certification. The company is also recognized as a National High-Tech Enterprise and a Ningbo 'Specialized & Innovative' SME, with a comprehensive IP portfolio of 25 invention patents, 12 design patents, and 6 software copyrights.",
           },
           {
             q: "Does Yinrui Bio offer distribution partnerships?",

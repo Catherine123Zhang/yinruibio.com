@@ -87,7 +87,7 @@ const zh: Dictionary = {
   },
   stats: {
     patents: "25项发明专利",
-    certifications: "CE & ISO13485",
+    certifications: "ISO13485",
     resultTime: "40分钟出结果",
     labSpace: "3,000平方米实验室",
   },
@@ -211,7 +211,7 @@ const zh: Dictionary = {
       softwareCopyrights: "6项软件著作权",
       labSpace: "3,000平方米实验室+GMP车间",
       location: "浙江省慈溪市",
-      certifications: "ISO13485、CE认证、国家高新技术企业、专精特新企业",
+      certifications: "ISO13485、国家高新技术企业、专精特新企业",
     },
   },
   faq: {
@@ -235,7 +235,7 @@ const zh: Dictionary = {
       },
       {
         q: "CarryOn有CE认证吗？",
-        a: "有。CarryOn设备和检测芯片均持有CE认证。公司同时维护ISO13485质量管理体系认证。",
+        a: "没有。CarryOn设备和检测芯片均未取得CE认证。公司拥有ISO13485质量管理体系认证。",
       },
       {
         q: "可以成为经销商吗？",

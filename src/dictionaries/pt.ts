@@ -4,7 +4,7 @@ const pt: Dictionary = {
     brand: "Yinrui Bio",
     siteName: "Termociclador PCR Veterinário Portátil | Yinrui Bio — Diagnóstico no Ponto de Atendimento em 40 Min",
     siteDescription:
-      "Termociclador PCR de mão para clínicas veterinárias — detecta parvovirose, cinomose, FIV/FeLV e doenças transmitidas por carrapatos em 40 minutos. 2 kg, alimentado por bateria, sem necessidade de laboratório. Certificado CE, 62 patentes. Parcerias OEM/ODM e com distribuidores.",
+      "Termociclador PCR de mão para clínicas veterinárias — detecta parvovirose, cinomose, FIV/FeLV e doenças transmitidas por carrapatos em 40 minutos. 2 kg, alimentado por bateria, sem necessidade de laboratório. 62 patentes. Parcerias OEM/ODM e com distribuidores.",
   },
   nav: {
     home: "Início",
@@ -87,7 +87,7 @@ const pt: Dictionary = {
   },
   stats: {
     patents: "62 patentes",
-    certifications: "CE & ISO13485",
+    certifications: "ISO13485",
     resultTime: "Resultados em 40 min",
     labSpace: "Laboratório de 3.000 m² e GMP",
   },
@@ -212,7 +212,7 @@ const pt: Dictionary = {
       softwareCopyrights: "6 registros de software",
       labSpace: "Laboratório de 3,000m² + unidade GMP",
       location: "Cixi, Zhejiang, China",
-      certifications: "ISO13485, certificação CE, Empresa Nacional de Alta Tecnologia",
+      certifications: "ISO13485, Empresa Nacional de Alta Tecnologia",
     },
   },
   faq: {
@@ -236,7 +236,7 @@ const pt: Dictionary = {
       },
       {
         q: "O CarryOn possui certificação CE?",
-        a: "Sim. Tanto o dispositivo CarryOn quanto os chips de teste possuem certificação CE. A empresa também mantém a certificação do sistema de gestão da qualidade ISO13485.",
+        a: "Não. O dispositivo CarryOn e os chips de teste não possuem certificação CE. A empresa mantém a certificação do sistema de gestão da qualidade ISO13485.",
       },
       {
         q: "Posso me tornar um distribuidor?",

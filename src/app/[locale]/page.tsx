@@ -216,10 +216,10 @@ export default async function HomePage({
             {locale === "zh" ? "全球市场" : locale === "ja" ? "グローバル市場" : locale === "vi" ? "Phục vụ thị trường thú y toàn cầu" : locale === "pt" ? "Atendemos mercados veterinários no mundo todo" : "Serving Veterinary Markets Worldwide"}
           </h2>
           <p className="mt-4 text-center text-[var(--color-text-light)] max-w-2xl mx-auto">
-            {locale === "zh" ? "CarryOn便携式PCR诊断面向全球8个重点市场，CE认证，ISO 13485，宁波直发。" : locale === "ja" ? "CarryOnポータブルPCR診断は世界8つの主要市場に展開。CE認証、ISO 13485、寧波から直送。"
-                : locale === "vi" ? "Chẩn đoán PCR cầm tay CarryOn tại 8 thị trường trọng điểm. Đạt chứng nhận CE, ISO 13485, vận chuyển từ Ningbo."
-                : locale === "pt" ? "Diagnósticos PCR portáteis CarryOn em 8 mercados principais. Certificado CE, ISO 13485, enviado de Ningbo."
-                : "CarryOn portable PCR diagnostics across 8 key markets. CE certified, ISO 13485, shipped from Ningbo."}
+            {locale === "zh" ? "CarryOn便携式PCR诊断面向全球8个重点市场，ISO 13485质量体系，宁波直发。" : locale === "ja" ? "CarryOnポータブルPCR診断は世界8つの主要市場に展開。ISO 13485品質管理システム、寧波から直送。"
+                : locale === "vi" ? "Chẩn đoán PCR cầm tay CarryOn tại 8 thị trường trọng điểm. hệ thống chất lượng ISO 13485, vận chuyển từ Ningbo."
+                : locale === "pt" ? "Diagnósticos PCR portáteis CarryOn em 8 mercados principais. sistema de qualidade ISO 13485, enviado de Ningbo."
+                : "CarryOn portable PCR diagnostics across 8 key markets. ISO 13485 quality system, shipped from Ningbo."}
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             {[

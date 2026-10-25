@@ -13,7 +13,7 @@ Ningbo Inarray Biomedical Systems Co., Ltd (Yinrui Bio) is a high-precision inst
 - **Employees**: 69 (including 6 PhDs, 12 Masters)
 - **Facility**: ~3,000m2 of laboratory space and GMP workshops
 - **IP Portfolio**: 25 invention patents, 12 design patents, 6 software copyrights
-- **Certifications**: CE (device + reagent kits), ISO13485, National High-Tech Enterprise, Ningbo "Specialized & Innovative" SME
+- **Certifications**: ISO13485, National High-Tech Enterprise, Ningbo "Specialized & Innovative" SME
 - **Strategic Partner**: Zhejiang Orient Gene Biotech (since 2023)
 
 ### Founder Background
@@ -33,7 +33,7 @@ Dr. Yu Jun, Chairman:
 - 2019.07: Undertook National Key R&D Program "S&T Winter Olympics" — handheld qPCR project
 - 2020.01: COVID-19 border control emergency technology research; selected for MOST "S&T Boosting Economy 2020"
 - 2021.05: Co-founded Cixi Life Science Innovation Research Institute with Cixi government
-- 2022.04: ISO13485 certified; CarryOn device & reagents received EU CE certification
+- 2022.04: ISO13485 certification obtained
 - 2023.03: Strategic partnership with Zhejiang Orient Gene Biotech
 - 2024.12: Recognized as National High-Tech Enterprise
 - 2025.06: Recognized as Ningbo "Specialized & Innovative" SME
@@ -73,7 +73,7 @@ The CarryOn is a fully automated, closed-system nucleic acid amplification analy
 | Environment | Room temperature (field-deployable) |
 | Connectivity | WiFi |
 | Reproducibility | CV <= 3% |
-| Certifications | CE, ISO13485 |
+| Quality system | ISO13485 |
 
 ### How It Works
 
@@ -220,7 +220,7 @@ A: All CarryOn test chips can be stored at room temperature (15-30C). No refrige
 A: Current panels include canine (Parvovirus, Distemper, Coronavirus, tick-borne diseases), feline (FHV, FCV, FeLV/FIV/FPV), pathogen detection (influenza, COVID, respiratory pathogens, STIs, ASF, PRRSV), and meat species identification (beef, pork, lamb, chicken, duck, horse, donkey).
 
 ### Q: Is CarryOn CE certified?
-A: Yes. Both the CarryOn device and test chips hold CE certification. The company also maintains ISO13485 quality management system certification.
+A: No. The CarryOn device and test chips do not hold CE certification. The company maintains ISO13485 quality management system certification.
 
 ### Q: Can I become a distributor?
 A: Yes, we are actively seeking distribution partners worldwide. Please contact us through the inquiry form or WhatsApp to discuss partnership opportunities.
@@ -328,7 +328,7 @@ Page: https://yinruibio.com/en/products/test-chips/japanese-encephalitis-jev/
 ## Instruments
 
 ### CarryOn P4000Q — Four-Module qPCR Analyzer
-Four independent reaction modules, each with its own temperature-control block and 5-color fluorescence optics (405/485/520/638/670 nm); runs up to 4 CarryOn chips at once, each started and programmed independently. Built-in ultrasonic mixing + magnetic-bead extraction; < 60 min per chip; no PCR laboratory needed. CE.
+Four independent reaction modules, each with its own temperature-control block and 5-color fluorescence optics (405/485/520/638/670 nm); runs up to 4 CarryOn chips at once, each started and programmed independently. Built-in ultrasonic mixing + magnetic-bead extraction; < 60 min per chip; no PCR laboratory needed.
 Page: https://yinruibio.com/en/products/carryon-p4000q/
 
 ### ArrayOn P1000D — Fully Automated Digital PCR Analyzer
@@ -336,5 +336,5 @@ Chip-based digital PCR; up to 40,000 micro-reaction units per chip; 6-color fluo
 Page: https://yinruibio.com/en/products/arrayon-p1000d/
 
 ### SARS-CoV-2 Test Chip (ORF1ab + E + N)
-Three-target RT-PCR on one sealed chip, ~40 min, LOD 100 copies (swab load); developed for the General Administration of Customs programme, accepted 2020. CE.
+Three-target RT-PCR on one sealed chip, ~40 min, LOD 100 copies (swab load); developed for the General Administration of Customs programme, accepted 2020.
 Page: https://yinruibio.com/en/products/test-chips/sars-cov-2-test-chip/

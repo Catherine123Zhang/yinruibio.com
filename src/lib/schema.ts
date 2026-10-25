@@ -33,7 +33,6 @@ export function organizationSchema() {
     },
     hasCredential: [
       { "@type": "EducationalOccupationalCredential", credentialCategory: "ISO13485" },
-      { "@type": "EducationalOccupationalCredential", credentialCategory: "CE Certification" },
     ],
     sameAs: [],
     knowsAbout: [

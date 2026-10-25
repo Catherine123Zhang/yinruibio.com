@@ -44,7 +44,7 @@ The **CarryOn** by [Ningbo Inarray Biomedical Systems](/en/about/) represents a 
 - **Reagent Storage:** Room temperature (no cold chain)
 - **Sensitivity:** 50 copies per test (CV ≤ 3% reproducibility)
 - **Connectivity:** WiFi-enabled result transfer
-- **Certifications:** CE marked, ISO 13485 facility
+- **Quality system:** ISO 13485 facility; verify product regulatory status
 
 The CarryOn platform uses proprietary [microfluidic chip technology](/en/technology/) with pre-loaded reagents. The entire workflow — nucleic acid extraction, purification, and real-time PCR amplification — happens automatically inside the sealed chip. This closed-system design eliminates cross-contamination risk and removes the need for any laboratory training.
 
@@ -161,7 +161,7 @@ The Vcheck V200 is not a PCR system. It performs quantitative immunoassay testin
 | **Quantitative Results** | Qualitative (pos/neg) | Qualitative/semi-quant | Qualitative/AI-scored | Quantitative (Ct values) | Quantitative |
 | **Veterinary PCR Panels** | Canine, feline, pathogen | N/A (immunoassay) | N/A (immunoassay) | Canine, feline | N/A (immunoassay) |
 | **Field Deployable** | Yes | No | No | No | Limited |
-| **CE Certified** | Yes | Yes | Yes | Check distributor | Yes |
+| **CE status** | Verify by model | Verify by model | Verify by model | Check distributor | Verify by model |
 | **Approx. Device Cost** | $$ | $$$ | $$$ | $$ | $$ |
 | **Cost Per Test** | $$ | $$ | $$ | $$ | $$ |
 
@@ -240,7 +240,7 @@ Consider the manufacturer's service network in your region. Availability of repl
 
 ### Regulatory Status
 
-Verify that the platform holds appropriate certifications for your market. CE marking, FDA clearance, and local regulatory approvals vary by region. The CarryOn holds [CE certification](/en/about/) for both the device and test reagent kits.
+Verify that the platform holds appropriate certifications for your market. CE marking, FDA clearance, and local regulatory approvals vary by region. The CarryOn device and test reagent kits do not currently hold CE certification.
 
 ---
 
@@ -794,7 +794,7 @@ Beyond direct testing revenue, in-house PCR testing generates additional value:
 
 ### Regulatory Compliance:
 - Ensure your facility's veterinary license covers in-house diagnostics
-- Maintain [CE certification documentation](/en/about/) for the device and test chips
+- Confirm the regulatory documents required for the destination market before sale
 - Follow local regulations for biohazard waste disposal
 - Keep Safety Data Sheets (SDS) accessible for any chemical components
 
@@ -1438,7 +1438,7 @@ The [CarryOn portable PCR analyzer](/en/products/carryon-device/) was engineered
 - **No laboratory space:** At 2.0 kg with battery operation (3.5-hour runtime), it operates on any exam room counter, in a shelter intake area, or on a farm
 - **No specialist training:** Fully automated closed-system operation — sample in, result out — with a 30-minute training requirement
 - **Multiplex detection:** A single chip detects 3 to 5 targets simultaneously (e.g., CDV + CPV + CCoV from one swab)
-- **CE certified:** The platform and all reagent chips meet European regulatory standards, with an ISO 13485 manufacturing facility
+- **Quality system:** The manufacturing facility is ISO 13485 certified; confirm product registration requirements for each destination market
 
 The [microfluidic chip technology](/en/technology/) integrates nucleic acid extraction, purification, and real-time PCR amplification in a single sealed consumable. There is no pipetting, no extraction column handling, and no contamination risk from open-tube operations.
 
@@ -2984,7 +2984,7 @@ The [CarryOn Portable PCR Analyzer](/en/products/carryon-device/) checks all six
       },
       {
         q: "What certifications should I look for when purchasing a portable PCR system?",
-        a: "At minimum, look for CE marking (required for European markets) and ISO 13485 certification of the manufacturing facility (ensures quality management system compliance). For US markets, FDA 510(k) clearance is ideal. The CarryOn holds CE certification and is manufactured in an ISO 13485 certified facility.",
+        a: "At minimum, look for CE marking (required for European markets) and ISO 13485 certification of the manufacturing facility (ensures quality management system compliance). For US markets, FDA 510(k) clearance is ideal. The CarryOn does not hold CE certification. Its manufacturing facility is ISO 13485 certified.",
       },
       {
         q: "Is the CarryOn available for OEM/private label?",
@@ -3016,7 +3016,7 @@ The portable PCR market in China has matured significantly since 2020. There are
 
 ### Tier 1: R&D-Driven Manufacturers (5-10 companies)
 
-These companies hold **50+ patents**, have their own microfluidic chip foundries, and maintain ISO 13485 + CE certification. They invest 15-25% of revenue in R&D and employ PhDs and Masters-level scientists.
+Some manufacturers hold **50+ patents**, have their own microfluidic chip foundries, and maintain ISO 13485 certification. They invest 15-25% of revenue in R&D and employ PhDs and Masters-level scientists.
 
 **Examples include:**
 - **Yinrui Bio (Ningbo)**: 25 invention patents, [BGI co-founder leadership](/en/about/), 3,000 m2 GMP facility, 69 employees including 6 PhDs
@@ -3045,7 +3045,7 @@ These are not manufacturers. They purchase components, assemble devices, and res
 | **NMPA Registration** | China's medical device regulatory approval | Search NMPA database (nmpa.gov.cn) |
 | **National High-Tech Enterprise** | Government recognition of R&D capability | Public records (requires passing government audit) |
 
-**Red flag**: If a manufacturer cannot produce original ISO 13485 and CE certificates, walk away. These are baseline requirements for any serious medical device manufacturer.
+**Due diligence**: Ask for current ISO 13485 documentation and product-specific regulatory evidence required in your destination market. Verify every document against the exact model and intended use.
 
 ### Step 2: Evaluate the Patent Portfolio
 
@@ -3144,7 +3144,7 @@ Yinrui Bio's facility includes a **3,000 m2 laboratory and GMP workshop** with i
 | Brazil | ANVISA | Registration | 6-12 months |
 | India | CDSCO | Import license + registration | 3-6 months |
 
-**Important**: CE certification is sufficient for many markets including Southeast Asia, Middle East, Africa, and Latin America. FDA clearance is only required for US market sales.
+**Important**: Market access requirements vary by product, intended use, and destination country. Confirm the applicable registrations and supporting documents before sale.
 
 ---
 
@@ -3174,7 +3174,7 @@ Yinrui Bio's facility includes a **3,000 m2 laboratory and GMP workshop** with i
       },
       {
         q: "Do Chinese portable PCR manufacturers offer CE certification?",
-        a: "Top-tier manufacturers like Yinrui Bio hold CE certification for both the device and test chips, meeting EU Medical Device Regulation requirements. Always request the original CE certificate and Declaration of Conformity, and verify the Notified Body information independently.",
+        a: "Some manufacturers offer CE-marked products; verify the specific device and test chips before purchase. Yinrui Bio does not currently hold CE certification for CarryOn or its test chips.",
       },
       {
         q: "What is the minimum order quantity (MOQ) for portable PCR systems from China?",

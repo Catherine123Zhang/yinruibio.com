@@ -121,7 +121,6 @@ export default async function TestChipsPage({
               { label: lang === "zh" ? "检测时间" : lang === "ja" ? "検出時間" : lang === "vi" ? "Thời gian có kết quả" : lang === "pt" ? "Tempo até o Resultado" : "Time to Result", value: "< 60 min" },
               { label: lang === "zh" ? "存储条件" : lang === "ja" ? "保存条件" : lang === "vi" ? "Bảo quản" : lang === "pt" ? "Armazenamento" : "Storage", value: lang === "zh" ? "室温" : lang === "ja" ? "室温" : lang === "vi" ? "Nhiệt độ phòng" : lang === "pt" ? "Temp. Ambiente" : "Room Temp" },
               { label: lang === "zh" ? "芯片类型" : lang === "ja" ? "タイプ" : lang === "vi" ? "Loại" : lang === "pt" ? "Tipo" : "Type", value: lang === "zh" ? "一次性封闭" : lang === "ja" ? "使い捨て" : lang === "vi" ? "Dùng một lần" : lang === "pt" ? "Uso único" : "Single-use" },
-              { label: lang === "zh" ? "认证" : lang === "ja" ? "認証" : lang === "vi" ? "Đã chứng nhận" : lang === "pt" ? "Certificado" : "Certified", value: "CE" },
             ].map((item) => (
               <div key={item.value}>
                 <div className="text-lg font-bold text-[var(--color-primary)]">{item.value}</div>

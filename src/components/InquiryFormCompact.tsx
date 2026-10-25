@@ -253,9 +253,6 @@ export default function InquiryFormCompact({
           {labels.reply24}
         </span>
         <span className="rounded-full bg-[var(--color-green)]/10 px-2.5 py-0.5 text-xs font-semibold text-[var(--color-green)]">
-          CE
-        </span>
-        <span className="rounded-full bg-[var(--color-green)]/10 px-2.5 py-0.5 text-xs font-semibold text-[var(--color-green)]">
           ISO13485
         </span>
       </div>

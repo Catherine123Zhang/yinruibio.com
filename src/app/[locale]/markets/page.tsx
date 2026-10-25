@@ -162,7 +162,7 @@ export default async function MarketsPage({
               </div>
             </div>
             <div>
-              <div className="text-2xl sm:text-3xl font-bold">CE + ISO</div>
+              <div className="text-2xl sm:text-3xl font-bold">ISO 13485</div>
               <div className="mt-1 text-sm text-white/70">
                 {locale === "zh" ? "认证" : locale === "ja" ? "認証" : locale === "vi" ? "Đã chứng nhận" : locale === "pt" ? "Certificado" : "Certified"}
               </div>

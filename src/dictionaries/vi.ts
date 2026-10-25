@@ -4,7 +4,7 @@ const vi: Dictionary = {
     brand: "Yinrui Bio",
     siteName: "Máy PCR cầm tay thú y & trại lợn — 40 phút | Yinrui Bio",
     siteDescription:
-      "Máy PCR cầm tay 2 kg cho phòng khám thú y và trại lợn — xét nghiệm dịch tả lợn châu Phi (ASF), bệnh tai xanh (PRRS), Parvo, FIV/FeLV trong 40 phút. Không cần phòng xét nghiệm, chip bảo quản ở nhiệt độ phòng. Đạt CE, ISO 13485. Tìm nhà phân phối tại Việt Nam.",
+      "Máy PCR cầm tay 2 kg cho phòng khám thú y và trại lợn — xét nghiệm dịch tả lợn châu Phi (ASF), bệnh tai xanh (PRRS), Parvo, FIV/FeLV trong 40 phút. Không cần phòng xét nghiệm, chip bảo quản ở nhiệt độ phòng. Đạt ISO 13485. Tìm nhà phân phối tại Việt Nam.",
   },
   nav: {
     home: "Trang chủ",
@@ -87,7 +87,7 @@ const vi: Dictionary = {
   },
   stats: {
     patents: "62 bằng sáng chế",
-    certifications: "CE & ISO13485",
+    certifications: "ISO13485",
     resultTime: "Kết quả trong 40 min",
     labSpace: "Phòng xét nghiệm & GMP 3,000m²",
   },
@@ -212,7 +212,7 @@ const vi: Dictionary = {
       softwareCopyrights: "6 quyền tác giả phần mềm",
       labSpace: "Phòng thí nghiệm 3.000m² + Xưởng GMP",
       location: "Cixi, Chiết Giang, Trung Quốc",
-      certifications: "Chứng nhận ISO13485, CE, Doanh nghiệp Công nghệ cao Quốc gia",
+      certifications: "Chứng nhận ISO13485, Doanh nghiệp Công nghệ cao Quốc gia",
     },
   },
   faq: {
@@ -236,7 +236,7 @@ const vi: Dictionary = {
       },
       {
         q: "CarryOn có được chứng nhận CE không?",
-        a: "Có. Cả thiết bị CarryOn và chip xét nghiệm đều có chứng nhận CE. Công ty cũng duy trì chứng nhận hệ thống quản lý chất lượng ISO13485.",
+        a: "Không. Thiết bị CarryOn và chip xét nghiệm chưa có chứng nhận CE. Công ty duy trì chứng nhận hệ thống quản lý chất lượng ISO13485.",
       },
       {
         q: "Tôi có thể trở thành nhà phân phối không?",

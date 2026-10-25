@@ -33,11 +33,11 @@ export async function generateMetadata({
     pt: "Termociclador PCR portátil CarryOn — dispositivo de diagnóstico veterinário portátil de 2 kg",
   };
   const descMap: Record<string, string> = {
-    en: "Handheld real-time fluorescence PCR analyzer. 2.0 kg, 5-color detection, results in 40 minutes. Battery-powered, no lab required. Detect African swine fever (ASF), PRRSV, canine, feline diseases & meat species. CE + ISO 13485 certified.",
-    zh: "手持式实时荧光PCR分析仪。2.0公斤，5色检测通道，40分钟出结果。电池供电，无需实验室。检测非洲猪瘟、蓝耳病、犬猫疾病及肉类鉴定。CE + ISO 13485认证。",
-    ja: "ハンドヘルド型リアルタイム蛍光PCRアナライザー。2.0kg、5色検出、40分で結果。バッテリー駆動、ラボ不要。アフリカ豚熱・PRRS・犬猫疾患・食肉種鑑定に対応。CE + ISO 13485認証。",
-    vi: "Máy PCR huỳnh quang thời gian thực (real-time PCR) cầm tay. Nặng 2,0 kg, phát hiện 5 màu, cho kết quả trong 40 phút. Dùng pin, không cần phòng xét nghiệm. Phát hiện dịch tả lợn châu Phi (ASF), PRRSV, bệnh ở chó, mèo và định danh loài thịt. Đạt chứng nhận CE + ISO 13485.",
-    pt: "Termociclador PCR em tempo real por fluorescência portátil. 2,0 kg, detecção em 5 cores, resultados em 40 minutos. Alimentado por bateria, sem necessidade de laboratório. Detecta peste suína africana (PSA), PRRSV, doenças caninas e felinas e espécies de carne. Certificações CE + ISO 13485.",
+    en: "Handheld real-time fluorescence PCR analyzer. 2.0 kg, 5-color detection, results in 40 minutes. Battery-powered, no lab required. Detect African swine fever (ASF), PRRSV, canine, feline diseases & meat species. Manufactured under an ISO 13485 quality management system.",
+    zh: "手持式实时荧光PCR分析仪。2.0公斤，5色检测通道，40分钟出结果。电池供电，无需实验室。检测非洲猪瘟、蓝耳病、犬猫疾病及肉类鉴定。生产遵循 ISO 13485 质量管理体系。",
+    ja: "ハンドヘルド型リアルタイム蛍光PCRアナライザー。2.0kg、5色検出、40分で結果。バッテリー駆動、ラボ不要。アフリカ豚熱・PRRS・犬猫疾患・食肉種鑑定に対応。ISO 13485品質管理システムの下で製造。",
+    vi: "Máy PCR huỳnh quang thời gian thực (real-time PCR) cầm tay. Nặng 2,0 kg, phát hiện 5 màu, cho kết quả trong 40 phút. Dùng pin, không cần phòng xét nghiệm. Phát hiện dịch tả lợn châu Phi (ASF), PRRSV, bệnh ở chó, mèo và định danh loài thịt. Sản xuất theo hệ thống quản lý chất lượng ISO 13485.",
+    pt: "Termociclador PCR em tempo real por fluorescência portátil. 2,0 kg, detecção em 5 cores, resultados em 40 minutos. Alimentado por bateria, sem necessidade de laboratório. Detecta peste suína africana (PSA), PRRSV, doenças caninas e felinas e espécies de carne. Fabricado sob um sistema de gestão da qualidade ISO 13485.",
   };
   return {
     title: titleMap[lang] || titleMap.en,
@@ -87,7 +87,7 @@ export default async function CarryOnDevicePage({
     },
     {
       q: "What certifications does the CarryOn device hold?",
-      a: "The CarryOn Portable PCR Analyzer holds CE certification for medical devices, and the manufacturing facility is ISO 13485 certified. The company has also been recognized as a National High-Tech Enterprise and a Ningbo 'Specialized & Innovative' SME.",
+      a: "The CarryOn device does not currently hold CE certification. The manufacturing facility is ISO 13485 certified. The company has also been recognized as a National High-Tech Enterprise and a Ningbo 'Specialized & Innovative' SME.",
     },
     {
       q: "What is the warranty on the CarryOn PCR analyzer?",

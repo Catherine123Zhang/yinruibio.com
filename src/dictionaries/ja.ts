@@ -87,7 +87,7 @@ const ja: Dictionary = {
   },
   stats: {
     patents: "25件の発明特許",
-    certifications: "CE & ISO13485",
+    certifications: "ISO13485",
     resultTime: "40分で結果",
     labSpace: "3,000m² ラボ＆GMP",
   },
@@ -211,7 +211,7 @@ const ja: Dictionary = {
       softwareCopyrights: "ソフトウェア著作権6件",
       labSpace: "3,000m² ラボ＋GMP工場",
       location: "中国浙江省慈溪市",
-      certifications: "ISO13485、CE認証、国家ハイテク企業、専精特新企業",
+      certifications: "ISO13485、国家ハイテク企業、専精特新企業",
     },
   },
   faq: {
@@ -235,7 +235,7 @@ const ja: Dictionary = {
       },
       {
         q: "CE認証を取得していますか？",
-        a: "はい。CarryOnデバイスと検査チップの両方がCE認証を取得しています。ISO13485品質管理システム認証も維持しています。",
+        a: "いいえ。CarryOnデバイスと検査チップはCE認証を取得していません。ISO13485品質管理システム認証は維持しています。",
       },
       {
         q: "販売代理店になれますか？",

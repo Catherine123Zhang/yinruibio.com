@@ -154,7 +154,7 @@ export const products: Product[] = [
       { label: { en: "Connectivity", zh: "传输方式", ja: "通信", vi: "Kết nối", pt: "Conectividade" }, value: "WiFi" },
       { label: { en: "Reproducibility", zh: "样本检测重复度", ja: "再現性", vi: "Độ tái lập", pt: "Reprodutibilidade" }, value: "CV ≤ 3%" },
     ],
-    certifications: ["CE", "ISO13485"],
+    certifications: [],
     relatedProducts: ["canine-triple", "feline-triple-resp"],
   },
 
@@ -190,7 +190,7 @@ export const products: Product[] = [
       { en: "No PCR laboratory: runs in an ordinary room with no trained PCR technician.", zh: "无需 PCR 实验室：普通室内环境即可运行，不需要专业 PCR 人员。", ja: "PCR ラボ不要：一般的な室内で動作し、専門の PCR 技術者も不要。", pt: "Sem laboratório de PCR: funciona em uma sala comum, sem a necessidade de um técnico de PCR treinado.", vi: "Không cần phòng thí nghiệm PCR: vận hành trong phòng thông thường mà không cần kỹ thuật viên PCR đã qua đào tạo." },
       { en: "Fully enclosed chips eliminate aerosol contamination between the four parallel runs.", zh: "全封闭芯片，四个并行检测之间没有气溶胶污染风险。", ja: "完全密閉チップにより、4つの並行検査間のエアロゾル汚染を排除。", pt: "Chips totalmente fechados eliminam a contaminação por aerossóis entre as quatro execuções paralelas.", vi: "Chip kín hoàn toàn loại bỏ nhiễm aerosol giữa bốn lần chạy song song." },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "arrayon-p1000d"],
   },
   {
@@ -275,7 +275,7 @@ export const products: Product[] = [
       { en: "Canine Parvovirus (CPV)", zh: "犬细小病毒 (CPV)", ja: "犬パルボウイルス (CPV)", vi: "Parvovirus ở chó (CPV)", pt: "Parvovírus Canino (CPV)" },
       { en: "Canine Coronavirus (CCoV)", zh: "犬冠状病毒 (CCoV)", ja: "犬コロナウイルス (CCoV)", vi: "Coronavirus ở chó (CCoV)", pt: "Coronavírus Canino (CCoV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "canine-triple-resp", "canine-tick"],
   },
   {
@@ -325,7 +325,7 @@ export const products: Product[] = [
       { en: "Canine Adenovirus (CAV)", zh: "犬腺病毒 (CAV)", ja: "犬アデノウイルス (CAV)", vi: "Adenovirus ở chó (CAV)", pt: "Adenovírus Canino (CAV)" },
       { en: "Canine Influenza Virus (CIV)", zh: "犬流感病毒 (CIV)", ja: "犬インフルエンザウイルス (CIV)", vi: "Virus cúm ở chó (CIV)", pt: "Vírus da Influenza Canina (CIV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "canine-triple"],
   },
   {
@@ -375,7 +375,7 @@ export const products: Product[] = [
       { en: "Ehrlichia canis", zh: "犬艾利希体", ja: "犬エールリヒア", vi: "Ehrlichia canis", pt: "Ehrlichia canis" },
       { en: "Leptospira spp.", zh: "钩端螺旋体", ja: "レプトスピラ", vi: "Leptospira spp.", pt: "Leptospira spp." },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "canine-triple"],
   },
 
@@ -427,7 +427,7 @@ export const products: Product[] = [
       { en: "Feline Calicivirus (FCV)", zh: "猫杯状病毒 (FCV)", ja: "猫カリシウイルス (FCV)", vi: "Calicivirus ở mèo (FCV)", pt: "Calicivírus Felino (FCV)" },
       { en: "Mycoplasma felis", zh: "猫支原体", ja: "猫マイコプラズマ", vi: "Mycoplasma felis", pt: "Mycoplasma felis" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "feline-triple-screening"],
   },
   {
@@ -477,7 +477,7 @@ export const products: Product[] = [
       { en: "Feline Immunodeficiency Virus (FIV)", zh: "猫免疫缺陷病毒 (FIV)", ja: "猫免疫不全ウイルス (FIV)", vi: "Virus gây suy giảm miễn dịch ở mèo (FIV)", pt: "Vírus da Imunodeficiência Felina (FIV)" },
       { en: "Feline Panleukopenia Virus (FPV)", zh: "猫瘟病毒 (FPV)", ja: "猫パルボウイルス (FPV)", vi: "Virus gây bệnh giảm bạch cầu ở mèo (FPV)", pt: "Vírus da Panleucopenia Felina (FPV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "feline-triple-resp"],
   },
 
@@ -509,7 +509,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "SARS-CoV-2 (ORF1ab, E, N genes)", zh: "新型冠状病毒 SARS-CoV-2（ORF1ab、E、N 基因）", ja: "SARS-CoV-2（ORF1ab、E、N 遺伝子）", pt: "SARS-CoV-2 (genes ORF1ab, E, N)", vi: "SARS-CoV-2 (gen ORF1ab, E, N)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-flu-covid", "pathogen-respiratory"],
   },
   {
@@ -558,7 +558,7 @@ export const products: Product[] = [
       { en: "Influenza B Virus", zh: "乙型流感病毒", ja: "B型インフルエンザウイルス", vi: "Virus Cúm B", pt: "Vírus Influenza B" },
       { en: "SARS-CoV-2", zh: "新型冠状病毒 (SARS-CoV-2)", ja: "SARS-CoV-2", vi: "SARS-CoV-2", pt: "SARS-CoV-2" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-respiratory"],
   },
   {
@@ -607,7 +607,7 @@ export const products: Product[] = [
       { en: "Respiratory Syncytial Virus (RSV)", zh: "呼吸道合胞病毒 (RSV)", ja: "RSウイルス", vi: "Virus hợp bào hô hấp (RSV)", pt: "Vírus Sincicial Respiratório (RSV)" },
       { en: "Adenovirus", zh: "腺病毒", ja: "アデノウイルス", vi: "Adenovirus", pt: "Adenovírus" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-flu-covid"],
   },
   {
@@ -656,7 +656,7 @@ export const products: Product[] = [
       { en: "Ureaplasma urealyticum (UU)", zh: "解脲脲原体 (UU)", ja: "ウレアプラズマ・ウレアリティクム (UU)", vi: "Ureaplasma urealyticum (UU)", pt: "Ureaplasma urealyticum (UU)" },
       { en: "Neisseria gonorrhoeae (NG)", zh: "淋球菌 (NG)", ja: "淋菌 (NG)", vi: "Neisseria gonorrhoeae (NG)", pt: "Neisseria gonorrhoeae (NG)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device"],
   },
 
@@ -705,7 +705,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "African Swine Fever Virus (ASFV)", zh: "非洲猪瘟病毒 (ASFV)", ja: "アフリカ豚熱ウイルス (ASFV)", vi: "Virus dịch tả lợn châu Phi (ASFV)", pt: "Vírus da Peste Suína Africana (ASFV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-prrsv"],
   },
   {
@@ -751,7 +751,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "PRRSV (Blue Ear Disease Virus)", zh: "猪蓝耳病毒 (PRRSV)", ja: "PRRSV（ブルーイヤー病ウイルス）", vi: "PRRSV (virus gây bệnh tai xanh)", pt: "PRRSV (vírus da doença da orelha azul)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf"],
   },
 
@@ -801,7 +801,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Pseudorabies virus (Aujeszky's disease virus, PRV)", zh: "伪狂犬病毒 (PRV)", ja: "オーエスキー病ウイルス (PRV)", pt: "Vírus da pseudorraiva (vírus da doença de Aujeszky, PRV)", vi: "Virus giả dại (virus gây bệnh Aujeszky, PRV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -849,7 +849,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Porcine circovirus type 2 (PCV2)", zh: "猪圆环病毒 2 型 (PCV2)", ja: "豚サーコウイルス2型 (PCV2)", pt: "Circovírus suíno tipo 2 (PCV2)", vi: "Virus circovirus lợn type 2 (PCV2)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -897,7 +897,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Glaesserella parasuis (formerly Haemophilus parasuis)", zh: "副猪嗜血杆菌 (Glaesserella parasuis)", ja: "グレセレラ・パラスイス (G. parasuis)", pt: "Glaesserella parasuis (anteriormente Haemophilus parasuis)", vi: "Glaesserella parasuis (trước đây là Haemophilus parasuis)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -945,7 +945,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Actinobacillus pleuropneumoniae (APP)", zh: "猪传染性胸膜肺炎放线杆菌 (APP)", ja: "アクチノバシラス・プルロニューモニエ (APP)", pt: "Actinobacillus pleuropneumoniae (APP)", vi: "Actinobacillus pleuropneumoniae (APP)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -993,7 +993,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Transmissible gastroenteritis virus (TGEV, porcine coronavirus)", zh: "猪传染性胃肠炎病毒 (TGEV)", ja: "豚伝染性胃腸炎ウイルス (TGEV)", pt: "Vírus da gastroenterite transmissível (TGEV, coronavírus suíno)", vi: "Virus viêm dạ dày ruột truyền nhiễm (TGEV, coronavirus ở lợn)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -1041,7 +1041,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Porcine rotavirus (group A, PoRV)", zh: "猪轮状病毒 (PoRV)", ja: "豚ロタウイルス (PoRV)", pt: "Rotavírus suíno (grupo A, PoRV)", vi: "Rotavirus lợn (nhóm A, PoRV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -1089,7 +1089,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Porcine epidemic diarrhea virus (PEDV)", zh: "猪流行性腹泻病毒 (PEDV)", ja: "豚流行性下痢ウイルス (PEDV)", pt: "Vírus da diarreia epidêmica suína (PEDV)", vi: "Virus tiêu chảy cấp ở lợn (PEDV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -1137,7 +1137,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Porcine parvovirus (PPV)", zh: "猪细小病毒 (PPV)", ja: "豚パルボウイルス (PPV)", pt: "Parvovírus suíno (PPV)", vi: "Parvovirus lợn (PPV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -1185,7 +1185,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Classical swine fever virus (CSFV, hog cholera)", zh: "猪瘟病毒 (CSFV)", ja: "豚コレラウイルス (CSFV)", pt: "Vírus da peste suína clássica (CSFV, cólera suína)", vi: "Virus dịch tả lợn cổ điển (CSFV, dịch tả lợn)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -1233,7 +1233,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Foot-and-mouth disease virus (FMDV)", zh: "口蹄疫病毒 (FMDV)", ja: "口蹄疫ウイルス (FMDV)", pt: "Vírus da febre aftosa (FMDV)", vi: "Virus lở mồm long móng (FMDV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
   {
@@ -1281,7 +1281,7 @@ export const products: Product[] = [
     detectedTargets: [
       { en: "Japanese encephalitis virus (JEV)", zh: "流行性乙型脑炎病毒 (JEV)", ja: "日本脳炎ウイルス (JEV)", pt: "Vírus da encefalite japonesa (JEV)", vi: "Virus viêm não Nhật Bản (JEV)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "pathogen-asf", "pathogen-prrsv"],
   },
 
@@ -1333,7 +1333,7 @@ export const products: Product[] = [
       { en: "Chicken (Gallus gallus)", zh: "鸡 / 鸡肉", ja: "鶏肉（ニワトリ）", vi: "Gà (Gallus gallus)", pt: "Frango (Gallus gallus)" },
       { en: "Duck (Anas)", zh: "鸭 / 鸭肉", ja: "鴨肉（アヒル）", vi: "Vịt (Anas)", pt: "Pato (Anas)" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "meat-quad-shpcd"],
   },
   {
@@ -1382,7 +1382,7 @@ export const products: Product[] = [
       { en: "Chicken", zh: "鸡 / 鸡肉", ja: "鶏肉", vi: "Gà", pt: "Frango" },
       { en: "Duck", zh: "鸭 / 鸭肉", ja: "鴨肉", vi: "Vịt", pt: "Pato" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "meat-quad-bpcd"],
   },
   {
@@ -1431,7 +1431,7 @@ export const products: Product[] = [
       { en: "Swine / Pork", zh: "猪 / 猪肉", ja: "豚肉", vi: "Lợn / Thịt lợn", pt: "Suíno / Carne suína" },
       { en: "Duck", zh: "鸭 / 鸭肉", ja: "鴨肉", vi: "Vịt", pt: "Pato" },
     ],
-    certifications: ["CE"],
+    certifications: [],
     relatedProducts: ["carryon-device", "meat-quad-bpcd"],
   },
 ];

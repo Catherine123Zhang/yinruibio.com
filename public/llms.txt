@@ -5,7 +5,7 @@
 ## Products
 
 ### CarryOn Portable PCR Analyzer
-- [CarryOn Detection Device](/en/products/carryon-device/): Handheld, battery-powered real-time fluorescence PCR analyzer. 2.0kg, 5-color fluorescence, <60 min results, 3.5h battery life. CE and ISO13485 certified.
+- [CarryOn Detection Device](/en/products/carryon-device/): Handheld, battery-powered real-time fluorescence PCR analyzer. 2.0kg, 5-color fluorescence, <60 min results, 3.5h battery life. ISO13485-certified manufacturing.
 
 ### Test Chips — Canine Diagnostics
 - [Canine CDV-CPV-CCoV Triple Test](/en/products/test-chips/canine-triple-screening): Routine screening for distemper, parvovirus, and coronavirus
@@ -43,7 +43,7 @@
 - Employees: 69 (including 6 PhDs, 12 Masters)
 - Facility: ~3,000m2 laboratory + GMP workshops
 - IP: 25 invention patents, 12 design patents, 6 software copyrights
-- Certifications: CE (device + reagents), ISO13485, National High-Tech Enterprise
+- Certifications: ISO13485, National High-Tech Enterprise
 - Contact: WhatsApp +86 182-6866-1068
 
 ## Terminology
