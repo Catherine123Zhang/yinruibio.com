@@ -112,6 +112,7 @@ export default async function LocaleLayout({
         <UtmCapture />
         <StickyQuoteBar />
       </body>
+      <Script src="https://form-handler.autopartsalive-images.workers.dev/lead-tracker.js" strategy="afterInteractive" />
     </html>
   );
 }
