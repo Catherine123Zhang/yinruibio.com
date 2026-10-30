@@ -365,6 +365,9 @@ function ContactPageInner() {
               <p className="mt-1 text-sm text-[var(--color-text-light)]">
                 {lang === "zh" ? "扫码添加微信咨询" : lang === "ja" ? "WeChatでお問い合わせ" : lang === "vi" ? "Quét mã để kết nối trên WeChat" : lang === "pt" ? "Escaneie para se conectar no WeChat" : "Scan to connect on WeChat"}
               </p>
+              <p className="mt-1 text-sm font-medium text-[var(--color-primary)]">
+                {lang === "zh" ? "微信号：" : "WeChat ID: "}18268661068
+              </p>
             </div>
 
             {/* WhatsApp */}
@@ -378,6 +381,7 @@ function ContactPageInner() {
               <p className="mt-1 text-sm text-[var(--color-text-light)]">
                 {lang === "zh" ? "点击直接对话" : lang === "ja" ? "クリックしてチャット" : lang === "vi" ? "Nhấp để trò chuyện trực tiếp" : lang === "pt" ? "Clique para conversar diretamente" : "Click to chat directly"}
               </p>
+              <p className="mt-1 text-sm font-medium text-[var(--color-primary)]">+86 182 6866 1068</p>
               <a
                 href="https://wa.me/8618268661068"
                 target="_blank"

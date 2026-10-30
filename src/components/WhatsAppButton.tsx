@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
 
   return (
     <a
-      href="#"
+      href="https://wa.me/8618268661068"
       onClick={(e) => {
         e.preventDefault();
         handleClick();

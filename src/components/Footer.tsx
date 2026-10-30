@@ -101,6 +101,15 @@ export default function Footer({
             <p className="mt-2 text-xs text-white/50">
               {locale === "zh" ? "扫码添加微信" : locale === "ja" ? "WeChatで追加" : locale === "vi" ? "Quét để kết nối" : locale === "pt" ? "Escaneie para conectar" : "Scan to connect"}
             </p>
+            <p className="mt-1 text-xs text-white/70">
+              {locale === "zh" ? "微信号：" : "WeChat ID: "}18268661068
+            </p>
+            <p className="mt-1 text-xs text-white/70">
+              WhatsApp:{" "}
+              <a href="https://wa.me/8618268661068" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                +86 182 6866 1068
+              </a>
+            </p>
           </div>
         </div>
 
