@@ -1,3 +1,4 @@
+import path from "node:path";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -7,7 +8,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   turbopack: {
-    root: "/Users/vivian/AI项目/yinruibio.com",
+    root: path.join(__dirname),
   },
 };
 
