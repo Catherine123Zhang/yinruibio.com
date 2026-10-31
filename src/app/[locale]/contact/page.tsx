@@ -1,7 +1,7 @@
 "use client";
 
-import { Suspense, useState, useEffect } from "react";
-import { useParams, useSearchParams } from "next/navigation";
+import { useState, useEffect } from "react";
+import { useParams } from "next/navigation";
 import { isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { trackEvent, getUtmParams } from "@/lib/analytics";
@@ -16,40 +16,25 @@ import pt from "@/dictionaries/pt";
 const dicts = { en, zh, ja, vi, pt } as const;
 
 export default function ContactPage() {
-  return (
-    <Suspense>
-      <ContactPageInner />
-    </Suspense>
-  );
-}
-
-function ContactPageInner() {
   const params = useParams();
-  const searchParams = useSearchParams();
   const locale = (params.locale as string) || "en";
   const lang = (isValidLocale(locale) ? locale : "en") as Locale;
   const dict = dicts[lang];
 
   const [submitted, setSubmitted] = useState(false);
-
-  // This page renders client-side, so the browser's own #rfq-form scroll finds nothing.
-  useEffect(() => {
-    if (window.location.hash === "#rfq-form") {
-      document.getElementById("rfq-form")?.scrollIntoView();
-    }
-  }, []);
   const [loading, setLoading] = useState(false);
   const [contactError, setContactError] = useState("");
 
   // Read product context from URL
-  const productParam = searchParams.get("product") || "";
+  // (read after mount: useSearchParams would make the static export ship an empty page)
   const [productContext, setProductContext] = useState("");
 
   useEffect(() => {
+    const productParam = new URLSearchParams(window.location.search).get("product");
     if (productParam) {
       setProductContext(productParam);
     }
-  }, [productParam]);
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
