@@ -106,7 +106,7 @@ export default function Footer({
             </p>
             <p className="mt-1 text-xs text-white/70">
               WhatsApp:{" "}
-              <a href="https://wa.me/8618268661068" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href="https://wa.me/8618268661068" target="_blank" rel="noopener noreferrer" data-wa-placement="footer" className="hover:text-white transition-colors">
                 +86 182 6866 1068
               </a>
             </p>

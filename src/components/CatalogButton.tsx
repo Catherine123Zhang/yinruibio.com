@@ -38,6 +38,11 @@ export default function CatalogButton({ label, className }: CatalogButtonProps) 
       });
       const result = (await res.json().catch(() => ({}))) as { success?: boolean };
       if (!res.ok || !result.success) throw new Error(`HTTP ${res.status}`);
+      trackEvent("generate_lead", {
+        method: "catalog_request",
+        source_page: window.location.pathname,
+        full_url: window.location.href,
+      });
       setSubmitted(true);
     } catch (err) {
       console.error("Catalog request failed:", err);

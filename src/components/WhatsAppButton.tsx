@@ -1,27 +1,16 @@
 "use client";
 
-import { trackEvent, buildWhatsAppUrl } from "@/lib/analytics";
+import { buildWhatsAppUrl } from "@/lib/analytics";
 
 const DEFAULT_MESSAGE = "Hi, I'm interested in the CarryOn portable PCR platform. Could you provide more information?";
 
 export default function WhatsAppButton() {
-  function handleClick() {
-    trackEvent("click_whatsapp", { source: "floating_button" });
-  }
-
-  // Build URL dynamically on click so UTM data is captured
-  function getUrl() {
-    return buildWhatsAppUrl(DEFAULT_MESSAGE);
-  }
-
   return (
     <a
-      href="https://wa.me/8618268661068"
-      onClick={(e) => {
-        e.preventDefault();
-        handleClick();
-        window.open(getUrl(), "_blank", "noopener,noreferrer");
-      }}
+      href={buildWhatsAppUrl(DEFAULT_MESSAGE)}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-wa-placement="floating_button"
       className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20BD5A] transition-colors"
       aria-label="Chat on WhatsApp — Reply in 2 Hours"
       title="WhatsApp — Reply in 2 Hours"

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { trackEvent, getUtmParams, buildWhatsAppUrl } from "@/lib/analytics";
+import WhatsAppFollowUp from "@/components/WhatsAppFollowUp";
 
 interface InquiryFormCompactProps {
   productName: string;
@@ -123,7 +124,8 @@ export default function InquiryFormCompact({
       trackEvent("generate_lead", {
         method: "inquiry_form",
         product_name: productName,
-        source_page: sourcePage,
+        source_page: window.location.pathname,
+        full_url: window.location.href,
       });
       setSubmitted(true);
     } catch (err) {
@@ -146,6 +148,7 @@ export default function InquiryFormCompact({
       <div className="rounded-2xl border border-[var(--color-border)] bg-white p-8 shadow-sm text-center">
         <div className="text-4xl mb-3 text-[var(--color-green)]">&#10003;</div>
         <p className="text-lg font-semibold text-[var(--color-green)]">{labels.success}</p>
+        <WhatsAppFollowUp locale={locale} />
       </div>
     );
   }
@@ -234,7 +237,8 @@ export default function InquiryFormCompact({
           href={waUrl}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => trackEvent("click_whatsapp", { source: "inquiry_form", product: productName })}
+          data-wa-placement="inquiry_form"
+          data-wa-product={productName}
           className="inline-flex items-center gap-2 text-sm font-medium text-[#25D366] hover:underline"
         >
           <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">

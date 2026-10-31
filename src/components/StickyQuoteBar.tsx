@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { trackEvent, buildWhatsAppUrl } from "@/lib/analytics";
+import { buildWhatsAppUrl } from "@/lib/analytics";
 
 const DISMISSED_KEY = "_yinrui_quotebar_dismissed";
 
@@ -49,7 +49,7 @@ export default function StickyQuoteBar() {
               href={waUrl}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackEvent("click_whatsapp", { source: "sticky_bar" })}
+              data-wa-placement="sticky_bar"
               className="inline-flex items-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-sm font-semibold text-white hover:bg-[#20BD5A] transition-colors"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
@@ -60,7 +60,7 @@ export default function StickyQuoteBar() {
 
             {/* Email */}
             <a
-              href="mailto:zhangyuanbo123@gmail.com"
+              href="/en/contact/#rfq-form"
               className="inline-flex items-center gap-2 rounded-lg border border-white/30 px-4 py-2 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

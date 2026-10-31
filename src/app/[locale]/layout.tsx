@@ -7,6 +7,7 @@ import { getDictionary } from "@/dictionaries";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import WhatsAppTracker from "@/components/WhatsAppTracker";
 import UtmCapture from "@/components/UtmCapture";
 import StickyQuoteBar from "@/components/StickyQuoteBar";
 import { organizationSchema } from "@/lib/schema";
@@ -109,6 +110,7 @@ export default async function LocaleLayout({
         {children}
         <Footer locale={locale as Locale} dict={dict} />
         <WhatsAppButton />
+        <WhatsAppTracker />
         <UtmCapture />
         <StickyQuoteBar />
       </body>

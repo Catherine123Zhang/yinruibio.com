@@ -86,16 +86,12 @@ export function trackEvent(
 }
 
 /**
- * Build a WhatsApp URL with UTM + page context appended to the message.
+ * Build a WhatsApp URL with a prefilled message. WhatsAppTracker appends the
+ * source page at click time, so this output stays identical on server and client.
  */
 export function buildWhatsAppUrl(
   message: string,
   phone: string = "8618268661068"
 ): string {
-  const utm = getUtmSummary();
-  const page = typeof window !== "undefined" ? window.location.href : "";
-  let fullMessage = message;
-  if (page) fullMessage += `\n\nPage: ${page}`;
-  if (utm) fullMessage += `\nUTM: ${utm}`;
-  return `https://wa.me/${phone}?text=${encodeURIComponent(fullMessage)}`;
+  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }

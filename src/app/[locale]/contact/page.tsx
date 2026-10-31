@@ -5,6 +5,7 @@ import { useParams, useSearchParams } from "next/navigation";
 import { isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { trackEvent, getUtmParams } from "@/lib/analytics";
+import WhatsAppFollowUp from "@/components/WhatsAppFollowUp";
 
 import en from "@/dictionaries/en";
 import zh from "@/dictionaries/zh";
@@ -30,6 +31,13 @@ function ContactPageInner() {
   const dict = dicts[lang];
 
   const [submitted, setSubmitted] = useState(false);
+
+  // This page renders client-side, so the browser's own #rfq-form scroll finds nothing.
+  useEffect(() => {
+    if (window.location.hash === "#rfq-form") {
+      document.getElementById("rfq-form")?.scrollIntoView();
+    }
+  }, []);
   const [loading, setLoading] = useState(false);
   const [contactError, setContactError] = useState("");
 
@@ -107,6 +115,8 @@ function ContactPageInner() {
       trackEvent("generate_lead", {
         method: "contact_form",
         product_context: productContext || "none",
+        source_page: window.location.pathname,
+        full_url: window.location.href,
       });
       setSubmitted(true);
     } catch (err) {
@@ -142,9 +152,10 @@ function ContactPageInner() {
               <p className="text-xl font-semibold text-[var(--color-green)]">
                 {dict.contact.form.success}
               </p>
+              <WhatsAppFollowUp locale={lang} />
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form id="rfq-form" onSubmit={handleSubmit} className="scroll-mt-24 space-y-6">
               {/* Product Context Banner */}
               {productContext && (
                 <div className="rounded-xl border border-[var(--color-accent)]/30 bg-[var(--color-accent)]/5 p-4 flex items-center gap-3">
@@ -386,6 +397,7 @@ function ContactPageInner() {
                 href="https://wa.me/8618268661068"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-wa-placement="contact_page"
                 className="mt-3 inline-flex items-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-medium text-white hover:bg-[#20bd5a] transition-colors"
               >
                 {lang === "zh" ? "发送消息" : lang === "ja" ? "メッセージ送信" : lang === "vi" ? "Gửi tin nhắn" : lang === "pt" ? "Enviar mensagem" : "Send Message"}
@@ -404,7 +416,7 @@ function ContactPageInner() {
                 zhangyuanbo123@gmail.com
               </p>
               <a
-                href="mailto:zhangyuanbo123@gmail.com"
+                href="#rfq-form"
                 className="mt-3 inline-flex items-center rounded-lg bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-white hover:bg-[var(--color-accent-light)] transition-colors"
               >
                 {lang === "zh" ? "发送邮件" : lang === "ja" ? "メール送信" : lang === "vi" ? "Gửi email" : lang === "pt" ? "Enviar e-mail" : "Send Email"}
