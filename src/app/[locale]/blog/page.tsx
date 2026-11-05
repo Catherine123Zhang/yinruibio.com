@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { breadcrumbSchema } from "@/lib/schema";
 import Link from "next/link";
 import Image from "next/image";
-import { blogPosts } from "@/data/blog";
+import { blogPosts, localizePost } from "@/data/blog";
 
 export async function generateStaticParams() {
   return activeLocales.map((locale) => ({ locale }));
@@ -77,12 +77,12 @@ export default async function BlogListingPage({
                 <div className="relative h-48 bg-[var(--color-bg)] overflow-hidden">
                   <Image
                     src={post.coverImage}
-                    alt={post.title}
+                    alt={localizePost(post, locale).title}
                     fill
                     className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                   />
                   <span className="absolute top-3 left-3 rounded-full bg-[var(--color-accent)]/90 px-3 py-1 text-xs font-semibold text-white">
-                    {post.category}
+                    {localizePost(post, locale).category}
                   </span>
                 </div>
 
@@ -97,13 +97,13 @@ export default async function BlogListingPage({
                       })}
                     </time>
                     <span>|</span>
-                    <span>{post.readTime}</span>
+                    <span>{localizePost(post, locale).readTime}</span>
                   </div>
                   <h2 className="text-lg font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors line-clamp-3">
-                    {post.title}
+                    {localizePost(post, locale).title}
                   </h2>
                   <p className="mt-3 text-sm text-[var(--color-text-light)] line-clamp-3">
-                    {post.excerpt}
+                    {localizePost(post, locale).excerpt}
                   </p>
                   <span className="mt-4 inline-flex items-center text-sm font-medium text-[var(--color-accent)]">
                     Read Article

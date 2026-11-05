@@ -1,6 +1,20 @@
+import type { Locale } from "@/lib/i18n";
+
+export interface BlogTranslation {
+  title: string;
+  seoTitle?: string;
+  excerpt: string;
+  category: string;
+  readTime: string;
+  content: string;
+  faqs: { q: string; a: string }[];
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
+  /** Shorter <title> for search results (layout appends "| Yinrui Bio"). Falls back to title. */
+  seoTitle?: string;
   excerpt: string;
   date: string;
   readTime: string;
@@ -8,9 +22,300 @@ export interface BlogPost {
   coverImage: string;
   content: string;
   faqs: { q: string; a: string }[];
+  /** Product slugs this article supports; product pages link back to it. */
+  relatedProducts?: string[];
+  /** Hand-written localized versions. Locales without one fall back to the English fields. */
+  translations?: Partial<Record<Locale, BlogTranslation>>;
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "african-swine-fever-symptoms-lesions-pcr-testing",
+    title: "African Swine Fever in Pigs: Symptoms, Lesions and On-Farm PCR Testing",
+    seoTitle: "African Swine Fever: Symptoms, Lesions & PCR Test",
+    excerpt: "How to recognise African swine fever (ASF) in pigs: clinical forms, post-mortem lesions and the diseases it is confused with, based on the WOAH technical disease card, plus how PCR confirms ASFV and how an on-farm PCR test fits a farm's response plan.",
+    date: "2026-11-05",
+    readTime: "10 min read",
+    category: "Disease Guide",
+    coverImage: "/images/products/chip-in-hand.png",
+    relatedProducts: ["african-swine-fever", "classical-swine-fever-csfv", "prrsv-test"],
+    content: `Last updated: 5 November 2026 · Clinical facts in this article come from the WOAH (World Organisation for Animal Health) technical disease card for African swine fever and the WOAH African swine fever disease page. Product data comes from Yinrui Bio's published specifications.
+
+## Quick Answer
+
+**African swine fever (ASF) cannot be confirmed by symptoms or post-mortem lesions alone.** WOAH lists high fever (40.5–42°C), reddening of the skin on the ears, abdomen and legs, loss of appetite, vomiting, bloody diarrhoea, abortion and death within 6–13 days as typical of the acute form, with mortality close to 100% in domestic pigs. But classical swine fever (CSF) looks identical in the field, so WOAH states that laboratory confirmation is essential. PCR, which detects the ASF virus genome in blood or tissue, is the standard tool for that confirmation. ASF does not infect people.
+
+### Key takeaways
+
+- **Incubation:** usually 4–19 days in nature; 3–4 days in the acute form (WOAH). The WOAH Code uses 15 days for regulatory purposes.
+- **Mortality:** close to 100% for acute ASF in domestic pigs; roughly 30–70% for the subacute form (WOAH).
+- **Look-alikes:** classical swine fever, PRRS, erysipelas, salmonellosis, Aujeszky's disease and pasteurellosis (WOAH differential list).
+- **Virus survival:** ASFV can stay infectious for 3–6 months in uncooked pork products (WOAH), which is why swill feeding is a major transmission route.
+
+---
+
+## What Is African Swine Fever?
+
+ASF is a viral disease of domestic pigs and wild boar caused by African swine fever virus (ASFV), a large DNA virus and the only member of the family Asfarviridae. WOAH lists four transmission routes: direct contact between infected and healthy pigs; eating food waste, feed or garbage containing infected pork; contaminated fomites such as vehicles, clothing, footwear and equipment; and the bite of soft ticks of the genus Ornithodoros where they occur.
+
+There is no treatment. Control relies on early detection, culling and safe disposal of infected herds, cleaning and disinfection, and movement controls. WOAH has also issued a statement warning about the risks of sub-standard ASF vaccines.
+
+---
+
+## Symptoms of ASF by Clinical Form
+
+WOAH describes four clinical forms. Which one you see depends mostly on the virulence of the strain.
+
+| Form | Typical signs (WOAH) | Course | Mortality |
+|------|----------------------|--------|-----------|
+| **Peracute** | Sudden death with few signs | Sudden | Not separately stated by WOAH |
+| **Acute** | Fever 40.5–42°C; reddened skin on ear tips, tail, legs, chest and belly; loss of appetite, listlessness, cyanosis, incoordination; vomiting, diarrhoea (sometimes bloody), eye discharge; abortion | Death within 6–13 days, or up to 20 days | Close to 100% |
+| **Subacute** | Milder fever, reduced appetite, depression; abortion | Illness lasts 5–30 days; death within 15–45 days | About 30–70% |
+| **Chronic** | Weight loss, irregular fever, respiratory signs, skin necrosis and ulcers, arthritis, swollen joints | Develops over 2–15 months | Low; some survivors become carriers |
+
+Do not wait for mass deaths. ASF can spread slowly within a farm and mortality can be low at first, so a single pig with high fever, red or bluish skin, or an unexplained death is already a reason to suspect ASF, stop pig movements, report to the veterinary authority and have samples taken.
+
+---
+
+## Post-Mortem Lesions of ASF
+
+WOAH lists the following lesions for the acute form and notes that not all of them appear in every case:
+
+- Pronounced haemorrhages in the gastrohepatic and renal lymph nodes
+- Pinpoint (petechial) haemorrhages in the kidney cortex, and also in the medulla and pelvis
+- Enlarged, congested spleen (congestive splenomegaly)
+- Swollen areas of cyanosis on hairless skin; bruise-like haemorrhages on the legs and abdomen
+- Excess fluid in the chest, around the heart and/or in the abdomen
+- Petechiae on the larynx, bladder and the surfaces of internal organs
+- Oedema in the mesentery of the colon and around and in the wall of the gall bladder
+
+In the chronic form, lungs may show focal caseous necrosis and mineralisation, and lymph nodes are enlarged. Opening carcasses on the farm spreads virus-laden blood, so necropsy and sampling should follow your veterinary authority's biosecurity procedure.
+
+---
+
+## Why Symptoms Are Not Enough: The CSF Problem
+
+WOAH is explicit: **it is not possible to tell ASF from classical swine fever by clinical signs or post-mortem examination.** PRRS, erysipelas, salmonellosis, Aujeszky's disease (pseudorabies) and pasteurellosis also enter the differential list. The control measures for each are different, so a laboratory result is needed to confirm the cause. Containment and reporting should not wait for it.
+
+If you run an on-farm panel, testing the same blood sample for [ASFV](/en/products/test-chips/african-swine-fever/), [classical swine fever (CSFV)](/en/products/test-chips/classical-swine-fever-csfv/) and [PRRSV](/en/products/test-chips/prrsv-test/) helps the differential diagnosis of the three most important look-alikes in one round. All 13 swine chips are listed on the [swine PCR test kits page](/en/swine-pcr-test-kits/).
+
+---
+
+## How ASF Is Diagnosed in the Laboratory
+
+The WOAH disease card lists these laboratory methods:
+
+| Method | What it detects | Role according to WOAH |
+|--------|-----------------|------------------------|
+| **PCR** | Viral genome (DNA) | Detects the virus; particularly useful when samples are degraded and unsuitable for virus isolation or antigen detection |
+| **Haemadsorption (HAD) test** | Live virus in leucocyte culture | A positive result is definitive; negative HAD samples should also be tested by PCR |
+| **Fluorescent antibody test (FAT)** | Viral antigen in tissue | Positive FAT plus signs and lesions gives a presumptive diagnosis |
+| **ELISA, IFA, immunoblotting** | Antibodies | Serological tests; serum collected 8–21 days after infection in recovering (convalescent) animals |
+
+Antibodies take time to appear, and pigs with acute ASF often die before they develop them, so serology is mainly a surveillance tool. For a sick or freshly dead pig, PCR is the practical test. Our [PCR vs ELISA comparison](/en/blog/pcr-vs-elisa-veterinary-diagnostics-comparison/) explains the difference in more detail.
+
+### Which samples to collect
+
+WOAH recommends blood collected in EDTA during the early fever stage, and spleen, lymph nodes, tonsil, lung, kidney and bone marrow kept at 4°C. Our [veterinary sample collection guide](/en/blog/veterinary-sample-collection-handling-guide/) covers labelling and transport.
+
+---
+
+## On-Farm PCR Testing for ASF
+
+Laboratory PCR is accurate, but samples must be packed, transported and queued, which can take hours or days in rural areas. A portable real-time PCR analyzer lets the farm vet or the field team of an integrator or distributor get a PCR result in under one hour while the farm is already in containment. It does not replace reporting: stop pig movements and notify the veterinary authority as soon as ASF is suspected, without waiting for any test result.
+
+| Item | Yinrui Bio ASF test chip on CarryOn |
+|------|-------------------------------------|
+| Target | African swine fever virus (ASFV) |
+| Method | Real-time fluorescence PCR in a sealed, single-use microfluidic chip |
+| Sample | Whole blood, tissue homogenate |
+| Time to result | Under 60 minutes |
+| Chip storage | Room temperature (15–30°C), no cold chain |
+| Analyzer | [CarryOn P1000Q](/en/products/carryon-device/): 2.0 kg, ~3.5 h battery, 5-colour fluorescence, sensitivity 50 copies/test |
+| Evaluation order | 1 CarryOn device + 50 chips per target |
+
+**Workflow:** collect whole blood, or prepare a tissue homogenate as described in the chip's instructions for use → add the sample to the chip → insert the chip into the CarryOn → extraction, amplification and detection run automatically → read the result and Ct value on the touchscreen.
+
+**Important:** an on-farm PCR result is a screening and decision tool for the farm. Official confirmation of an ASF outbreak is made by the laboratory designated by your national veterinary authority. Movements should already be stopped on suspicion; a positive field result means: keep the pen isolated and make sure the authority has the result.
+
+In herds vaccinated with a live attenuated ASF vaccine, the vaccine virus itself contains ASFV DNA. Our product pages do not claim that the ASF chip can distinguish vaccine strains from field strains, so interpret results in vaccinated herds with your veterinarian and the reference laboratory.
+
+For distributors in Vietnam and Southeast Asia, see the [Vietnam market page](/en/markets/vietnam/) or [contact us](/en/contact/) for a technical dossier and evaluation units.
+
+---
+
+## Sources
+
+- WOAH, African swine fever technical disease card (incubation, clinical forms, lesions, differential diagnosis, samples, laboratory methods).
+- WOAH, African swine fever disease page (transmission routes, human health, control).
+- WOAH Bulletin, on slow within-herd spread and initially low mortality delaying ASF recognition.
+- Yinrui Bio published specifications for the CarryOn P1000Q and the ASF test chip.`,
+    faqs: [
+      {
+        q: "Can African swine fever infect humans?",
+        a: "No. WOAH states that African swine fever cannot be transmitted to humans through contact with pigs or by eating pork products. It is a serious threat to pigs and the pig industry, not a public health threat. People can, however, carry the virus on clothing, footwear, vehicles and pork products to other farms.",
+      },
+      {
+        q: "What are the first signs of African swine fever on a farm?",
+        a: "In the acute form, WOAH lists high fever of 40.5–42°C, loss of appetite, listlessness, reddening of the skin on the ears, tail, legs, chest and belly, and in some cases vomiting, bloody diarrhoea and abortion. Death usually follows within 6–13 days. With very virulent strains pigs may die suddenly with few signs.",
+      },
+      {
+        q: "Can ASF be told apart from classical swine fever by symptoms?",
+        a: "No. WOAH states that ASF and classical swine fever cannot be differentiated by clinical signs or post-mortem examination, and laboratory testing is essential. Testing the same blood sample with both an ASFV and a CSFV PCR test supports the differential diagnosis; official confirmation comes from the designated laboratory.",
+      },
+      {
+        q: "What sample is used for an ASF PCR test?",
+        a: "WOAH recommends EDTA blood collected during the fever stage, and spleen, lymph nodes, tonsil, lung, kidney and bone marrow from dead pigs. The Yinrui Bio ASF test chip accepts whole blood and tissue homogenate.",
+      },
+      {
+        q: "How long does an on-farm ASF PCR test take?",
+        a: "On the CarryOn portable PCR analyzer, the ASF test chip gives a result in under 60 minutes, with extraction, amplification and detection automated inside the sealed chip. Official outbreak confirmation is still made by the laboratory designated by the national veterinary authority.",
+      },
+    ],
+    translations: {
+      vi: {
+        title: "Dịch tả lợn châu Phi: triệu chứng, bệnh tích và cách xét nghiệm PCR ngay tại trại",
+        seoTitle: "Dịch tả lợn châu Phi: triệu chứng, bệnh tích, PCR",
+        excerpt: "Cách nhận biết dịch tả lợn châu Phi (dịch tả heo châu Phi, ASF): dấu hiệu theo từng thể bệnh, bệnh tích khi mổ khám và các bệnh dễ nhầm lẫn theo tài liệu kỹ thuật của WOAH, cùng cách xét nghiệm PCR khẳng định virus ASFV và cách dùng PCR ngay tại trại.",
+        category: "Hướng dẫn về bệnh",
+        readTime: "10 phút đọc",
+        content: `Cập nhật lần cuối: 05/11/2026 · Thông tin lâm sàng trong bài lấy từ thẻ kỹ thuật bệnh dịch tả lợn châu Phi và trang thông tin bệnh của WOAH (Tổ chức Thú y Thế giới). Thông số sản phẩm lấy từ thông số kỹ thuật đã công bố của Yinrui Bio.
+
+## Trả lời nhanh
+
+**Không thể khẳng định dịch tả lợn châu Phi (ASF) chỉ bằng triệu chứng hay bệnh tích.** Theo WOAH, thể cấp tính có các biểu hiện điển hình: sốt cao 40,5–42°C, da đỏ ở tai, bụng và chân, bỏ ăn, nôn, tiêu chảy có thể lẫn máu, sảy thai và chết trong 6–13 ngày, tỷ lệ chết ở lợn nhà gần 100%. Tuy nhiên, bệnh dịch tả lợn cổ điển (CSF) có biểu hiện giống hệt, nên WOAH khẳng định bắt buộc phải xét nghiệm trong phòng thí nghiệm. PCR, phương pháp phát hiện bộ gen virus ASF trong máu hoặc mô, là công cụ tiêu chuẩn để khẳng định bệnh. Dịch tả lợn châu Phi không lây sang người.
+
+### Những điểm chính
+
+- **Thời gian ủ bệnh:** thường 4–19 ngày trong tự nhiên; thể cấp tính 3–4 ngày (WOAH). Bộ luật của WOAH dùng mốc 15 ngày cho mục đích quản lý.
+- **Tỷ lệ chết:** gần 100% với thể cấp tính ở lợn nhà; khoảng 30–70% với thể á cấp tính (WOAH).
+- **Bệnh dễ nhầm:** dịch tả lợn cổ điển, bệnh tai xanh (PRRS), đóng dấu lợn, phó thương hàn (salmonellosis), bệnh Aujeszky và tụ huyết trùng (danh sách chẩn đoán phân biệt của WOAH).
+- **Sức sống của virus:** ASFV có thể giữ khả năng gây bệnh 3–6 tháng trong sản phẩm thịt lợn chưa nấu chín (WOAH), vì vậy cho lợn ăn thức ăn thừa là một đường lây quan trọng.
+
+---
+
+## Dịch tả lợn châu Phi là gì?
+
+Dịch tả lợn châu Phi (miền Nam thường gọi là dịch tả heo châu Phi) là bệnh do virus ASFV gây ra ở lợn nhà và lợn rừng. ASFV là virus DNA lớn, thành viên duy nhất của họ Asfarviridae. WOAH nêu bốn đường lây: tiếp xúc trực tiếp giữa lợn bệnh và lợn khỏe; lợn ăn thức ăn thừa, thức ăn chăn nuôi hoặc rác có thịt lợn nhiễm virus; tiếp xúc với vật dụng nhiễm virus như xe vận chuyển, quần áo, giày ủng, dụng cụ; và vết cắn của ve mềm giống Ornithodoros ở nơi có loài ve này.
+
+Bệnh không có thuốc điều trị. Kiểm soát dựa vào phát hiện sớm, tiêu hủy và xử lý an toàn đàn bệnh, vệ sinh tiêu độc và kiểm soát vận chuyển. Tại Việt Nam, Bộ NN&PTNT đã ban hành Công văn 4870/BNN-TY (tháng 7/2023) về việc sử dụng vắc xin phòng bệnh dịch tả lợn châu Phi; WOAH cũng có tuyên bố cảnh báo rủi ro từ vắc xin ASF kém chất lượng. Hãy làm theo hướng dẫn của cơ quan thú y địa phương.
+
+---
+
+## Dấu hiệu và triệu chứng dịch tả lợn châu Phi theo từng thể bệnh
+
+WOAH mô tả bốn thể bệnh. Thể bệnh bạn gặp chủ yếu phụ thuộc vào độc lực của chủng virus.
+
+| Thể bệnh | Biểu hiện điển hình (WOAH) | Diễn biến | Tỷ lệ chết |
+|----------|----------------------------|-----------|------------|
+| **Quá cấp tính** | Chết đột ngột, ít biểu hiện | Đột ngột | WOAH không nêu riêng |
+| **Cấp tính** | Sốt 40,5–42°C; da đỏ ở chóp tai, đuôi, chân, ngực và bụng; bỏ ăn, lờ đờ, tím tái, đi loạng choạng; nôn, tiêu chảy (có khi lẫn máu), chảy dịch mắt; sảy thai ở nái mang thai | Chết trong 6–13 ngày, có thể đến 20 ngày | Gần 100% |
+| **Á cấp tính** | Sốt nhẹ hơn, giảm ăn, ủ rũ; sảy thai | Bệnh kéo dài 5–30 ngày; chết trong 15–45 ngày | Khoảng 30–70% |
+| **Mãn tính** | Sụt cân, sốt từng đợt, triệu chứng hô hấp, hoại tử và loét da, viêm khớp, sưng khớp | Phát triển trong 2–15 tháng | Thấp; một số con sống sót trở thành vật mang virus |
+
+Đừng chờ đến khi lợn chết hàng loạt. Dịch tả lợn châu Phi có thể lây chậm trong trại và tỷ lệ chết lúc đầu có thể thấp, vì vậy chỉ cần một con lợn sốt cao, da đỏ hoặc tím tái, hay chết không rõ nguyên nhân là đã đủ lý do để nghi ngờ bệnh, dừng xuất nhập lợn, báo cơ quan thú y và lấy mẫu xét nghiệm.
+
+---
+
+## Bệnh tích dịch tả lợn châu Phi khi mổ khám
+
+WOAH liệt kê các bệnh tích sau ở thể cấp tính, đồng thời lưu ý không phải ca nào cũng có đủ:
+
+- Xuất huyết nặng ở hạch lympho vùng dạ dày–gan và hạch thận
+- Xuất huyết điểm ở vỏ thận, cả ở tủy thận và bể thận
+- Lách sưng to, sung huyết (lách to sung huyết)
+- Vùng da không có lông bị phù và tím tái; xuất huyết mảng trên da chân và bụng
+- Tích dịch ở xoang ngực, xoang bao tim và/hoặc xoang bụng
+- Xuất huyết điểm ở thanh quản, bàng quang và bề mặt các cơ quan nội tạng
+- Phù ở màng treo ruột kết, quanh túi mật và thành túi mật
+
+Ở thể mãn tính, phổi có thể có ổ hoại tử bã đậu và vôi hóa, hạch lympho sưng to. Mổ khám xác lợn ngay tại trại có thể làm phát tán máu chứa virus, vì vậy việc mổ khám và lấy mẫu cần làm theo quy trình an toàn sinh học của cơ quan thú y.
+
+---
+
+## Vì sao không thể chẩn đoán chỉ dựa vào triệu chứng
+
+WOAH viết rõ: **không thể phân biệt dịch tả lợn châu Phi với dịch tả lợn cổ điển bằng triệu chứng lâm sàng hay mổ khám.** Bệnh tai xanh (PRRS), đóng dấu lợn, phó thương hàn, bệnh Aujeszky (giả dại) và tụ huyết trùng cũng nằm trong danh sách chẩn đoán phân biệt. Biện pháp xử lý mỗi bệnh khác nhau, nên cần kết quả xét nghiệm để xác định nguyên nhân. Tuy vậy, việc ngăn chặn và báo dịch không nên chờ kết quả này.
+
+Nếu xét nghiệm tại trại, chạy cùng một mẫu máu với chip [ASFV](/en/products/test-chips/african-swine-fever/), chip [dịch tả lợn cổ điển (CSFV)](/en/products/test-chips/classical-swine-fever-csfv/) và chip [bệnh tai xanh PRRSV](/en/products/test-chips/prrsv-test/) hỗ trợ chẩn đoán phân biệt ba bệnh dễ nhầm quan trọng nhất trong một lần. Danh sách đủ 13 chip cho lợn có tại trang [bộ kit xét nghiệm PCR cho lợn](/en/swine-pcr-test-kits/).
+
+---
+
+## Xét nghiệm dịch tả lợn châu Phi trong phòng thí nghiệm
+
+Thẻ kỹ thuật bệnh của WOAH liệt kê các phương pháp sau:
+
+| Phương pháp | Phát hiện gì | Vai trò theo WOAH |
+|-------------|--------------|-------------------|
+| **PCR** | Bộ gen virus (DNA) | Phát hiện virus; đặc biệt hữu ích khi mẫu đã phân hủy, không còn phù hợp để phân lập virus hay phát hiện kháng nguyên |
+| **Phản ứng hấp phụ hồng cầu (HAD)** | Virus sống trong nuôi cấy bạch cầu | Kết quả dương tính là khẳng định; mẫu HAD âm tính cần xét nghiệm thêm bằng PCR |
+| **Miễn dịch huỳnh quang (FAT)** | Kháng nguyên virus trong mô | FAT dương tính kèm triệu chứng và bệnh tích cho chẩn đoán sơ bộ |
+| **ELISA, IFA, immunoblotting** | Kháng thể | Xét nghiệm huyết thanh học; huyết thanh lấy 8–21 ngày sau nhiễm ở lợn đang hồi phục |
+
+Kháng thể cần thời gian để xuất hiện, và lợn mắc thể cấp tính thường chết trước khi kịp tạo kháng thể, nên huyết thanh học chủ yếu dùng cho giám sát. Với lợn đang ốm hoặc mới chết, PCR là xét nghiệm thực tế nhất. Xem thêm bài [so sánh PCR và ELISA](/en/blog/pcr-vs-elisa-veterinary-diagnostics-comparison/).
+
+### Lấy mẫu gì để xét nghiệm
+
+WOAH khuyến cáo lấy máu chống đông EDTA trong giai đoạn đầu khi lợn đang sốt, và lách, hạch lympho, amidan, phổi, thận, tủy xương bảo quản ở 4°C. Hướng dẫn ghi nhãn và vận chuyển mẫu có trong bài [hướng dẫn lấy và xử lý mẫu thú y](/en/blog/veterinary-sample-collection-handling-guide/).
+
+---
+
+## Xét nghiệm PCR dịch tả lợn châu Phi ngay tại trại
+
+PCR trong phòng thí nghiệm cho kết quả chính xác, nhưng mẫu phải đóng gói, vận chuyển và chờ xếp lượt, ở vùng xa có thể mất vài giờ đến vài ngày. Máy PCR huỳnh quang thời gian thực cầm tay giúp bác sĩ thú y của trại, đội thú y thực địa của doanh nghiệp chăn nuôi hoặc nhà phân phối có kết quả PCR trong chưa đầy một giờ, trong khi trại đã áp dụng biện pháp ngăn chặn. Xét nghiệm không thay thế việc báo dịch: ngay khi nghi ngờ dịch tả lợn châu Phi, hãy dừng xuất nhập lợn và báo cơ quan thú y, không chờ kết quả xét nghiệm.
+
+| Hạng mục | Chip xét nghiệm ASF của Yinrui Bio trên máy CarryOn |
+|----------|-----------------------------------------------------|
+| Mục tiêu | Virus dịch tả lợn châu Phi (ASFV) |
+| Phương pháp | PCR huỳnh quang thời gian thực (real-time PCR) trong chip vi lưu kín, dùng một lần |
+| Loại mẫu | Máu toàn phần, dịch đồng nhất mô |
+| Thời gian có kết quả | Dưới 60 phút |
+| Bảo quản chip | Nhiệt độ phòng (15–30°C), không cần chuỗi lạnh |
+| Thiết bị | [Máy PCR cầm tay CarryOn P1000Q](/en/products/carryon-device/): 2,0 kg, pin khoảng 3,5 giờ, huỳnh quang 5 màu, độ nhạy 50 bản sao/xét nghiệm |
+| Đơn hàng đánh giá | 1 thiết bị CarryOn + 50 chip cho mỗi mục tiêu |
+
+**Quy trình:** lấy máu toàn phần, hoặc chuẩn bị dịch đồng nhất mô theo hướng dẫn sử dụng của chip → nạp mẫu vào chip → cắm chip vào máy CarryOn → máy tự động tách chiết, khuếch đại và phát hiện → đọc kết quả và giá trị Ct trên màn hình cảm ứng.
+
+**Lưu ý quan trọng:** kết quả PCR tại trại là công cụ sàng lọc và hỗ trợ ra quyết định cho trại. Việc khẳng định ổ dịch chính thức do phòng thí nghiệm được cơ quan thú y chỉ định thực hiện. Việc dừng xuất nhập lợn phải làm ngay từ khi nghi ngờ; khi có kết quả dương tính tại hiện trường: tiếp tục cách ly ô chuồng và thông báo kết quả cho cơ quan thú y địa phương.
+
+Ở đàn đã tiêm vắc xin nhược độc phòng dịch tả lợn châu Phi, bản thân virus vắc xin cũng chứa DNA của ASFV. Trang sản phẩm của chúng tôi không công bố chip ASF có thể phân biệt chủng vắc xin với chủng thực địa, vì vậy hãy cùng bác sĩ thú y và phòng thí nghiệm tham chiếu đánh giá kết quả ở đàn đã tiêm phòng.
+
+Nhà phân phối tại Việt Nam và Đông Nam Á có thể xem [trang thị trường Việt Nam](/en/markets/vietnam/) hoặc [liên hệ với chúng tôi](/en/contact/) để nhận hồ sơ kỹ thuật và thiết bị đánh giá.
+
+---
+
+## Nguồn tham khảo
+
+- WOAH, thẻ kỹ thuật bệnh dịch tả lợn châu Phi (African swine fever technical disease card): thời gian ủ bệnh, các thể bệnh, bệnh tích, chẩn đoán phân biệt, lấy mẫu, phương pháp xét nghiệm.
+- WOAH, trang thông tin bệnh dịch tả lợn châu Phi: đường lây, sức khỏe con người, biện pháp kiểm soát.
+- WOAH Bulletin: dịch lây chậm trong đàn và tỷ lệ chết ban đầu thấp có thể làm chậm phát hiện.
+- Bộ NN&PTNT, Công văn 4870/BNN-TY ngày 24/7/2023 về sử dụng vắc xin phòng bệnh dịch tả lợn châu Phi.
+- Thông số kỹ thuật đã công bố của Yinrui Bio cho máy CarryOn P1000Q và chip xét nghiệm ASF.`,
+        faqs: [
+          {
+            q: "Dịch tả lợn châu Phi có lây sang người không?",
+            a: "Không. WOAH khẳng định dịch tả lợn châu Phi không lây sang người qua tiếp xúc với lợn hay ăn thịt lợn. Đây là mối đe dọa nghiêm trọng với đàn lợn và ngành chăn nuôi, không phải với sức khỏe con người. Tuy nhiên, con người có thể mang virus qua quần áo, giày ủng, xe cộ và sản phẩm thịt lợn đến các trại khác.",
+          },
+          {
+            q: "Dấu hiệu đầu tiên của bệnh dịch tả lợn châu Phi là gì?",
+            a: "Ở thể cấp tính, WOAH nêu các biểu hiện: sốt cao 40,5–42°C, bỏ ăn, lờ đờ, da đỏ ở tai, đuôi, chân, ngực và bụng, có thể nôn, tiêu chảy lẫn máu và sảy thai. Lợn thường chết trong 6–13 ngày. Với chủng độc lực rất cao, lợn có thể chết đột ngột mà ít biểu hiện.",
+          },
+          {
+            q: "Có phân biệt được dịch tả lợn châu Phi với dịch tả lợn cổ điển bằng triệu chứng không?",
+            a: "Không. WOAH khẳng định không thể phân biệt hai bệnh này bằng triệu chứng lâm sàng hay mổ khám, bắt buộc phải xét nghiệm. Chạy cùng một mẫu máu với xét nghiệm PCR ASFV và CSFV hỗ trợ chẩn đoán phân biệt; khẳng định chính thức do phòng thí nghiệm được chỉ định thực hiện.",
+          },
+          {
+            q: "Xét nghiệm PCR dịch tả lợn châu Phi dùng mẫu gì?",
+            a: "WOAH khuyến cáo lấy máu chống đông EDTA khi lợn đang sốt, và lách, hạch lympho, amidan, phổi, thận, tủy xương từ lợn chết. Chip xét nghiệm ASF của Yinrui Bio dùng máu toàn phần và dịch đồng nhất mô.",
+          },
+          {
+            q: "Xét nghiệm PCR dịch tả lợn châu Phi tại trại mất bao lâu?",
+            a: "Trên máy PCR cầm tay CarryOn, chip xét nghiệm ASF cho kết quả trong chưa đầy 60 phút; tách chiết, khuếch đại và phát hiện đều tự động trong chip kín. Việc khẳng định ổ dịch chính thức vẫn do phòng thí nghiệm được cơ quan thú y chỉ định thực hiện.",
+          },
+        ],
+      },
+    },
+  },
   {
     slug: "top-5-portable-pcr-analyzers-veterinary-clinics-2026",
     title: "Top 5 Portable PCR Analyzers for Veterinary Clinics 2026: Complete Comparison",
@@ -3415,4 +3720,24 @@ export function getBlogPost(slug: string): BlogPost | undefined {
 
 export function getAllBlogSlugs(): string[] {
   return blogPosts.map((p) => p.slug);
+}
+
+/** Returns the post's text fields in the requested locale (falls back to English). */
+export function localizePost(post: BlogPost, locale: string): BlogTranslation & { localized: boolean } {
+  const t = post.translations?.[locale as Locale];
+  if (t) return { ...t, seoTitle: t.seoTitle ?? t.title, localized: true };
+  return {
+    title: post.title,
+    seoTitle: post.seoTitle ?? post.title,
+    excerpt: post.excerpt,
+    category: post.category,
+    readTime: post.readTime,
+    content: post.content,
+    faqs: post.faqs,
+    localized: false,
+  };
+}
+
+export function getPostsForProduct(productSlug: string): BlogPost[] {
+  return blogPosts.filter((p) => p.relatedProducts?.includes(productSlug));
 }

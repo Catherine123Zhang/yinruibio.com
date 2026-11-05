@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import Link from "next/link";
 import Image from "next/image";
-import { blogPosts, getBlogPost, getAllBlogSlugs } from "@/data/blog";
+import { blogPosts, getBlogPost, getAllBlogSlugs, localizePost } from "@/data/blog";
 import InquiryFormCompact from "@/components/InquiryFormCompact";
 import CatalogButton from "@/components/CatalogButton";
 
@@ -30,13 +30,14 @@ export async function generateMetadata({
   if (!isValidLocale(locale)) return {};
   const post = getBlogPost(slug);
   if (!post) return {};
+  const t = localizePost(post, locale);
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: t.seoTitle,
+    description: t.excerpt,
     alternates: { canonical: `/${locale}/blog/${slug}/` },
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: t.title,
+      description: t.excerpt,
       type: "article",
       publishedTime: post.date,
       url: `https://yinruibio.com/${locale}/blog/${slug}/`,
@@ -45,7 +46,7 @@ export async function generateMetadata({
           url: `https://yinruibio.com${post.coverImage}`,
           width: 1200,
           height: 630,
-          alt: post.title,
+          alt: t.title,
         },
       ],
     },
@@ -294,19 +295,22 @@ export default async function BlogPostPage({
   const post = getBlogPost(slug);
   if (!post) notFound();
   const dict = await getDictionary(locale as Locale);
+  const t = localizePost(post, locale);
+  const vi = t.localized && locale === "vi";
 
   const breadcrumbs = [
     { name: dict.nav.home, url: `/${locale}/` },
     { name: dict.nav.blog, url: `/${locale}/blog/` },
-    { name: post.title, url: `/${locale}/blog/${slug}/` },
+    { name: t.title, url: `/${locale}/blog/${slug}/` },
   ];
 
   // Article structured data
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: post.title,
-    description: post.excerpt,
+    headline: t.title,
+    description: t.excerpt,
+    inLanguage: t.localized ? locale : "en",
     datePublished: post.date,
     dateModified: post.date,
     author: {
@@ -344,7 +348,7 @@ export default async function BlogPostPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema(post.faqs)),
+          __html: JSON.stringify(faqSchema(t.faqs)),
         }}
       />
 
@@ -357,27 +361,27 @@ export default async function BlogPostPage({
               Blog
             </Link>
             <span>/</span>
-            <span className="text-white/80">{post.category}</span>
+            <span className="text-white/80">{t.category}</span>
           </nav>
 
           <h1 className="text-3xl font-bold sm:text-4xl lg:text-5xl leading-tight">
-            {post.title}
+            {t.title}
           </h1>
-          <p className="mt-4 text-lg text-white/80">{post.excerpt}</p>
+          <p className="mt-4 text-lg text-white/80">{t.excerpt}</p>
 
           <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-white/60">
             <time dateTime={post.date}>
-              {new Date(post.date).toLocaleDateString("en-US", {
+              {new Date(post.date).toLocaleDateString(vi ? "vi-VN" : "en-US", {
                 year: "numeric",
                 month: "long",
                 day: "numeric",
               })}
             </time>
             <span>|</span>
-            <span>{post.readTime}</span>
+            <span>{t.readTime}</span>
             <span>|</span>
             <span className="rounded-full bg-white/10 px-3 py-0.5 text-xs font-medium border border-white/20">
-              {post.category}
+              {t.category}
             </span>
           </div>
         </div>
@@ -390,22 +394,23 @@ export default async function BlogPostPage({
           <div className="mb-8 rounded-xl border border-[var(--color-accent)]/30 bg-[var(--color-accent)]/5 p-6 flex flex-col sm:flex-row items-center gap-4">
             <div className="flex-1">
               <p className="font-semibold text-[var(--color-primary)]">
-                Want the full product specifications?
+                {vi ? "Cần thông số kỹ thuật đầy đủ?" : "Want the full product specifications?"}
               </p>
               <p className="text-sm text-[var(--color-text-light)] mt-1">
-                Download our complete catalog with detailed specs, test panels,
-                and pricing guidelines.
+                {vi
+                  ? "Tải catalogue đầy đủ với thông số chi tiết và danh mục chip xét nghiệm."
+                  : "Download our complete catalog with detailed specs, test panels, and pricing guidelines."}
               </p>
             </div>
             <CatalogButton
-              label="Download Catalog"
+              label={vi ? "Tải catalogue" : "Download Catalog"}
               className="shrink-0 rounded-lg bg-[var(--color-accent)] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[var(--color-accent-light)] transition-colors"
             />
           </div>
 
           {/* Rendered markdown content */}
           <div className="prose-custom">
-            {renderMarkdown(post.content, locale)}
+            {renderMarkdown(t.content, locale)}
           </div>
 
           {/* Mid-Article CTA */}
@@ -429,10 +434,10 @@ export default async function BlogPostPage({
           {/* FAQ Section */}
           <section className="mt-16">
             <h2 className="text-2xl font-bold text-[var(--color-primary)] mb-6">
-              Frequently Asked Questions
+              {vi ? "Câu hỏi thường gặp" : "Frequently Asked Questions"}
             </h2>
             <div className="space-y-4">
-              {post.faqs.map((faq, i) => (
+              {t.faqs.map((faq, i) => (
                 <div
                   key={i}
                   className="rounded-xl border border-[var(--color-border)] bg-white p-6 shadow-sm"
@@ -452,7 +457,7 @@ export default async function BlogPostPage({
           {relatedPosts.length > 0 && (
             <section className="mt-16">
               <h2 className="text-2xl font-bold text-[var(--color-primary)] mb-6">
-                Related Articles
+                {vi ? "Bài viết liên quan" : "Related Articles"}
               </h2>
               <div className="grid gap-6 sm:grid-cols-2">
                 {relatedPosts.map((related) => (
@@ -462,13 +467,13 @@ export default async function BlogPostPage({
                     className="group block rounded-xl bg-white p-6 shadow-sm border border-[var(--color-border)] hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all"
                   >
                     <span className="text-xs font-medium text-[var(--color-accent)]">
-                      {related.category}
+                      {localizePost(related, locale).category}
                     </span>
                     <h3 className="mt-2 text-base font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-accent)] transition-colors line-clamp-2">
-                      {related.title}
+                      {localizePost(related, locale).title}
                     </h3>
                     <p className="mt-2 text-sm text-[var(--color-text-light)] line-clamp-2">
-                      {related.excerpt}
+                      {localizePost(related, locale).excerpt}
                     </p>
                   </Link>
                 ))}
