@@ -5,13 +5,14 @@
 // Usage: node scripts/add-locale.mjs --locale vi --lang "Vietnamese" [--dry]
 import fs from "node:fs/promises";
 import path from "node:path";
+import { execSync } from "node:child_process";
 
 const args = Object.fromEntries(process.argv.slice(2).map((a, i, arr) => a.startsWith("--") ? [a.slice(2), arr[i + 1]?.startsWith("--") || arr[i + 1] === undefined ? true : arr[i + 1]] : []).filter(Boolean));
 const LOCALE = args.locale; const LANG = args.lang; const DRY = !!args.dry;
 if (!LOCALE || !LANG) { console.error("need --locale and --lang"); process.exit(1); }
 import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const API_KEY = "sk-57bb69545fef4dbf9a3ce9f94690e118";
+const API_KEY = process.env.DEEPSEEK_API_KEY || execSync("security find-generic-password -s deepseek-api -a vivian -w").toString().trim();
 const MODEL = "deepseek-flash";
 const CACHE_FILE = path.join(ROOT, "scripts/i18n-cache", `${LOCALE}.json`);
 
