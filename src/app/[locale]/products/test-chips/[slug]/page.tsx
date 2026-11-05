@@ -10,6 +10,7 @@ import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import InquiryFormCompact from "@/components/InquiryFormCompact";
 import ProductViewTracker from "@/components/ProductViewTracker";
+import { getPostsForProduct, localizePost } from "@/data/blog";
 
 const chipProducts = getChipProducts();
 
@@ -210,6 +211,24 @@ export default async function ChipDetailPage({
                           ✓
                         </span>
                         {target[lang]}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Related guides (blog posts that list this product in relatedProducts) */}
+              {getPostsForProduct(product.slug).length > 0 && (
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold text-[var(--color-primary)] uppercase tracking-wider">
+                    {lang === "zh" ? "相关指南" : lang === "ja" ? "関連ガイド" : lang === "vi" ? "Bài hướng dẫn liên quan" : lang === "pt" ? "Guias relacionados" : "Related Guides"}
+                  </h3>
+                  <ul className="mt-3 space-y-2">
+                    {getPostsForProduct(product.slug).map((gp) => (
+                      <li key={gp.slug}>
+                        <Link href={`/${locale}/blog/${gp.slug}/`} className="text-[var(--color-accent)] hover:underline font-medium">
+                          {localizePost(gp, locale).title}
+                        </Link>
                       </li>
                     ))}
                   </ul>
