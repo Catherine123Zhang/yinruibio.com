@@ -30,6 +30,270 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "prrs-blue-ear-disease-pigs-symptoms-differential-pcr-testing",
+    title: "PRRS \"Blue Ear\" Disease in Pigs: Symptoms, Differential Diagnosis and PCR Testing",
+    seoTitle: "PRRS Blue Ear in Pigs: Symptoms, Diagnosis & PCR",
+    excerpt: "How to recognise PRRS (blue ear disease) in sows, piglets and growers, how it differs from African and classical swine fever, and why a PCR test on the right pig, at the right time, is what confirms it. Based on WOAH guidance and Yinrui Bio product specifications.",
+    date: "2026-11-12",
+    readTime: "9 min read",
+    category: "Disease Guide",
+    coverImage: "/images/products/microfluidic-chips.jpg",
+    relatedProducts: ["prrsv-test", "african-swine-fever", "classical-swine-fever-csfv"],
+    content: `Last updated: 12 November 2026 · Clinical and diagnostic facts in this article come from the WOAH (World Organisation for Animal Health) PRRS disease page and Chapter 3.9.6 of the WOAH Terrestrial Manual, plus the WOAH pages for African and classical swine fever. Product data comes from Yinrui Bio's published specifications. This article is not treatment advice: work with your veterinarian.
+
+## Quick Answer
+
+**PRRS (porcine reproductive and respiratory syndrome, "blue ear disease") cannot be confirmed by the blue ears.** WOAH describes two pictures: reproductive failure in sows (late abortions, mummified and stillborn foetuses, weak piglets that die soon after birth) and respiratory disease in young pigs (laboured breathing, fever, loss of appetite, reddish skin and blue ears). Blue ears are only a transient sign, and the same signs overlap with African swine fever (ASF) and classical swine fever (CSF). Confirmation needs a laboratory test; for a sick pig, PCR (RT-PCR) that detects PRRS virus RNA in serum or tissue is the most direct one. PRRS does not infect people.
+
+### Key takeaways
+
+- **Cause:** PRRS virus (PRRSV), an RNA virus. Two species, PRRSV-1 and PRRSV-2, now circulate worldwide (WOAH).
+- **Highly pathogenic strain:** since 2006 in China, causing 40–42°C fever in all age groups, sow abortions and high mortality in suckling piglets, weaners and growers (WOAH).
+- **Sample the young pigs:** viraemia can last weeks in young pigs but only days in adults (WOAH Manual), so serum from feverish piglets or weaners is more likely to be PCR-positive than serum from a sow that aborted last week.
+- **Antibodies come late:** detectable 7–14 days after infection, peaking at 30–50 days, and confused by maternal antibodies and vaccination (WOAH Manual).
+
+---
+
+## Symptoms of PRRS by Age Group
+
+| Group | Typical signs (WOAH) |
+|-------|----------------------|
+| **Sows** | Infertility, late-term abortion, mummified foetuses, stillbirths, weak piglets that often die soon after birth; drop in milk yield |
+| **Suckling piglets and weaners** | Laboured breathing ("thumping"), fever, loss of appetite, listlessness, reddish skin, transient blue ears; mortality can be high, often with secondary infections |
+| **Growers and finishers** | Usually milder respiratory signs, often complicated by secondary bacterial infections |
+| **Boars, unbred gilts** | Transient fever and loss of appetite; virus can be shed in semen |
+
+Severity varies a lot. WOAH notes that strains differ greatly in virulence, and some herds become infected with almost no clinical signs. With the highly pathogenic strain, pigs of every age can run a high fever and die quickly, which makes PRRS look much more like swine fever.
+
+---
+
+## PRRS vs African Swine Fever vs Classical Swine Fever
+
+All three can cause fever, red or purple skin, abortion and deaths. The table shows where they differ, but **none of these differences is enough to make a diagnosis on its own.**
+
+| Feature | PRRS (blue ear) | African swine fever (ASF) | Classical swine fever (CSF) |
+|---|---|---|---|
+| Virus | PRRSV (RNA) | ASFV (DNA) | CSFV (RNA) |
+| Main picture | Reproductive failure in sows + respiratory disease in young pigs | High fever, red or bluish skin, haemorrhages, sudden deaths across ages | Fever, huddling, conjunctivitis, constipation then diarrhoea, unsteady gait; purple ears and belly after several days |
+| Mortality (WOAH) | High in young pigs; with the HP strain also in weaners and growers | Close to 100% in the acute form | From high to mild or unapparent, depending on strain |
+| Low-virulence form | Infected herds with few signs | Subacute and chronic forms | Poor reproduction, piglets with congenital tremor |
+| Vaccine | Modified live and killed vaccines available | Restricted, check national rules | Vaccines available |
+| Infects people? | No evidence (WOAH) | No | No |
+
+WOAH states that severe CSF looks very similar to ASF, and PRRS is on WOAH's differential list for ASF. Because the control measures are completely different, from vaccination and secondary-infection control for PRRS to movement standstill and culling for ASF, the cause has to be confirmed by testing. If ASF is possible, stop pig movements and inform the veterinary authority immediately, without waiting for any test result. Our [ASF symptoms and PCR guide](/en/blog/african-swine-fever-symptoms-lesions-pcr-testing/) covers ASF in detail.
+
+---
+
+## How PRRS Is Diagnosed
+
+According to the WOAH Terrestrial Manual:
+
+| Method | What it detects | Notes from WOAH |
+|--------|-----------------|-----------------|
+| **RT-PCR / real-time RT-PCR** | Viral RNA | One of the most commonly used tests; high sensitivity and specificity, shows current infection; works on serum, tissues, oral fluids and semen |
+| **Virus isolation** | Live virus | Technically demanding, needs porcine alveolar macrophages |
+| **ELISA, IPMA, IFA** | Antibodies | Good on a herd basis; single samples are confused by maternal antibodies and vaccination; paired samples show seroconversion |
+
+Two WOAH cautions matter in the field. First, finding the virus must be linked with clinical signs before calling PRRS the cause, because many pigs carry PRRSV without disease. Second, the virus is genetically very diverse and no single RT-PCR detects every strain, so a negative PCR in a pig with typical signs should be followed up with your laboratory. Our [PCR vs ELISA comparison](/en/blog/pcr-vs-elisa-veterinary-diagnostics-comparison/) explains when each test makes sense.
+
+### Which pig and which sample
+
+- **Best:** serum or whole blood from piglets or weaners that have a fever right now, plus lung, tonsil or lymph node from freshly dead pigs.
+- **Less useful:** blood from a sow days after she aborted. Viraemia in adults lasts only days.
+- **Herd monitoring:** WOAH also accepts pen oral fluids and processing fluids (from castration and tail docking) for RT-PCR.
+
+See our [veterinary sample collection guide](/en/blog/veterinary-sample-collection-handling-guide/) for labelling and transport.
+
+---
+
+## On-Farm PCR for PRRS
+
+| Item | Yinrui Bio PRRSV test chip on CarryOn |
+|------|----------------------------------------|
+| Target | Porcine reproductive and respiratory syndrome virus (PRRSV) |
+| Method | Real-time fluorescence PCR in a sealed, single-use microfluidic chip |
+| Sample | Whole blood, serum |
+| Time to result | Under 60 minutes, extraction included |
+| Chip storage | Room temperature (15–30°C), no cold chain |
+| Analyzer | [CarryOn P1000Q](/en/products/carryon-device/): 2.0 kg, ~3.5 h battery, 5-colour fluorescence |
+| Parallel testing | [CarryOn P4000Q](/en/products/carryon-p4000q/): four modules, four different chips at the same time |
+
+**Why it helps with the differential:** the same blood sample can run on the [PRRSV chip](/en/products/test-chips/prrsv-test/), the [ASFV chip](/en/products/test-chips/african-swine-fever/) and the [CSFV chip](/en/products/test-chips/classical-swine-fever-csfv/). On a P4000Q the three run side by side, so the farm vet has all three answers within the hour instead of waiting for samples to reach a laboratory. All 13 swine chips are listed on the [swine PCR test kits page](/en/swine-pcr-test-kits/).
+
+**Interpreting results:** many herds are vaccinated with modified live PRRS vaccines. Our product page does not claim that the PRRSV chip separates vaccine virus from field virus, and it does not list which PRRSV strains it covers, so interpret a positive in a recently vaccinated herd, and a negative in a pig with typical signs, with your veterinarian and reference laboratory. Official confirmation is made by the laboratory designated by your veterinary authority.
+
+Distributors and integrators can [contact us](/en/contact/) for the technical dossier and an evaluation set (1 device + 50 chips).
+
+---
+
+## Control: What WOAH Recommends
+
+There is no drug that kills PRRS virus. Control is about keeping it out and stabilising the herd: check the health status of replacement gilts and boars, isolate incoming pigs and retest them on arrival and again 45–60 days later before they join the herd, and use the modified live or killed vaccines that WOAH describes as effective, following your veterinarian's programme. Secondary infections are treated case by case by a veterinarian.
+
+---
+
+## Sources
+
+- WOAH, Porcine reproductive and respiratory syndrome disease page (signs by age group, transmission, human health, control, vaccines).
+- WOAH Terrestrial Manual, Chapter 3.9.6 PRRS (HP-PRRSV 2006, viraemia duration, samples, RT-PCR strengths and limits, antibody timing).
+- WOAH disease pages for African swine fever and classical swine fever.
+- Yinrui Bio published specifications for the CarryOn P1000Q, CarryOn P4000Q and the PRRSV, ASFV and CSFV test chips.`,
+    faqs: [
+      {
+        q: "Does PRRS (blue ear disease) infect humans?",
+        a: "No. WOAH states there is no evidence of human infection with PRRS virus. It is a disease of pigs.",
+      },
+      {
+        q: "Are blue ears enough to diagnose PRRS?",
+        a: "No. WOAH describes blue ears as a transient sign, and purple or red skin also appears in African and classical swine fever. Confirmation needs a laboratory test such as RT-PCR, linked with the clinical signs in the herd.",
+      },
+      {
+        q: "Which pigs should be sampled for a PRRS PCR test?",
+        a: "Pigs with a fever now, ideally piglets or weaners, because WOAH notes viraemia lasts weeks in young pigs but only days in adults. Serum or whole blood is the usual sample; lung, tonsil and lymph nodes from freshly dead pigs also work in the laboratory.",
+      },
+      {
+        q: "Can a vaccinated pig test PRRS-positive by PCR?",
+        a: "It can. Modified live vaccines contain live attenuated PRRS virus. Our PRRSV chip is not claimed to separate vaccine and field virus, so results in recently vaccinated herds should be interpreted with your veterinarian and reference laboratory.",
+      },
+      {
+        q: "How long does an on-farm PRRS PCR test take?",
+        a: "On the CarryOn analyzer, the PRRSV test chip gives a result in under 60 minutes, with extraction and real-time PCR automated inside the sealed chip. Chips are stored at room temperature (15–30°C).",
+      },
+    ],
+    translations: {
+      vi: {
+        title: "Bệnh tai xanh ở lợn (PRRS): triệu chứng, cách phân biệt với dịch tả và xét nghiệm PCR",
+        seoTitle: "Bệnh tai xanh ở lợn: triệu chứng, phân biệt, PCR",
+        excerpt: "Cách nhận biết bệnh tai xanh (PRRS) ở lợn nái, lợn con và lợn thịt, phân biệt với dịch tả lợn châu Phi và dịch tả lợn cổ điển, và vì sao phải xét nghiệm PCR đúng con, đúng lúc mới khẳng định được bệnh. Theo tài liệu của WOAH và thông số sản phẩm của Yinrui Bio.",
+        category: "Hướng dẫn về bệnh",
+        readTime: "9 phút đọc",
+        content: `Cập nhật lần cuối: 12/11/2026 · Thông tin lâm sàng và chẩn đoán trong bài lấy từ trang thông tin bệnh PRRS của WOAH (Tổ chức Thú y Thế giới), Chương 3.9.6 Sổ tay chẩn đoán động vật trên cạn của WOAH và trang thông tin bệnh dịch tả lợn châu Phi, dịch tả lợn cổ điển của WOAH. Thông số sản phẩm lấy từ thông số kỹ thuật đã công bố của Yinrui Bio. Bài viết không phải hướng dẫn điều trị: hãy trao đổi với bác sĩ thú y của trại.
+
+## Trả lời nhanh
+
+**Không thể khẳng định bệnh tai xanh chỉ vì thấy lợn tím tai.** Bệnh tai xanh, tên đầy đủ là hội chứng rối loạn sinh sản và hô hấp ở lợn (PRRS), theo WOAH có hai biểu hiện chính: rối loạn sinh sản ở lợn nái (sảy thai giai đoạn cuối, thai khô, thai chết lưu, lợn con sinh ra yếu và chết sớm) và bệnh hô hấp ở lợn con (thở khó, sốt, bỏ ăn, da ửng đỏ, tai tím xanh). Tai xanh chỉ là dấu hiệu thoáng qua, và nhiều triệu chứng trùng với dịch tả lợn châu Phi (ASF) và dịch tả lợn cổ điển (CSF). Muốn khẳng định phải xét nghiệm; với lợn đang ốm, PCR (RT-PCR) phát hiện ARN virus tai xanh trong huyết thanh hoặc mô là xét nghiệm trực tiếp nhất. Bệnh tai xanh không lây sang người.
+
+### Những điểm chính
+
+- **Nguyên nhân:** virus PRRS (PRRSV), một virus ARN. Hai loài PRRSV-1 và PRRSV-2 hiện lưu hành khắp thế giới (WOAH).
+- **Chủng độc lực cao:** xuất hiện ở Trung Quốc năm 2006, gây sốt 40–42°C ở mọi lứa tuổi, sảy thai ở nái và tỷ lệ chết cao ở lợn con theo mẹ, lợn cai sữa và lợn choai (WOAH).
+- **Lấy mẫu lợn con, không chỉ lợn nái:** virus trong máu có thể kéo dài vài tuần ở lợn con nhưng chỉ vài ngày ở lợn trưởng thành (Sổ tay WOAH). Huyết thanh của lợn con, lợn cai sữa đang sốt dễ cho PCR dương tính hơn huyết thanh của con nái đã sảy thai từ tuần trước.
+- **Kháng thể xuất hiện muộn:** phát hiện được sau 7–14 ngày nhiễm, đạt đỉnh sau 30–50 ngày, và dễ bị nhiễu bởi kháng thể mẹ truyền và vắc xin (Sổ tay WOAH).
+
+---
+
+## Triệu chứng bệnh tai xanh theo từng lứa tuổi
+
+| Đối tượng | Biểu hiện điển hình (WOAH) |
+|-----------|----------------------------|
+| **Lợn nái** | Phối không đậu, sảy thai giai đoạn cuối, thai khô, thai chết lưu, lợn con sinh ra yếu và thường chết sớm; giảm sữa hoặc mất sữa |
+| **Lợn con theo mẹ, lợn cai sữa** | Thở khó, thở bụng, sốt, bỏ ăn, lờ đờ, da ửng đỏ, tai tím xanh thoáng qua; tỷ lệ chết có thể cao, thường kèm nhiễm khuẩn kế phát |
+| **Lợn choai, lợn thịt** | Thường chỉ có triệu chứng hô hấp nhẹ, hay bị bội nhiễm vi khuẩn |
+| **Lợn đực giống, hậu bị chưa phối** | Sốt thoáng qua, bỏ ăn; virus có thể thải qua tinh dịch |
+
+Mức độ bệnh rất khác nhau. WOAH lưu ý các chủng virus khác nhau nhiều về độc lực, có đàn nhiễm virus mà gần như không biểu hiện gì. Với chủng độc lực cao, lợn ở mọi lứa tuổi có thể sốt cao và chết nhanh, lúc đó bệnh tai xanh trông rất giống dịch tả.
+
+Lợn ở miền Nam thường gọi là heo; bệnh tai xanh ở heo và bệnh tai xanh ở lợn là một bệnh.
+
+---
+
+## Phân biệt bệnh tai xanh với dịch tả lợn châu Phi và dịch tả lợn cổ điển
+
+Cả ba bệnh đều có thể gây sốt, da đỏ hoặc tím, sảy thai và chết. Bảng dưới đây cho thấy điểm khác nhau, nhưng **không điểm nào đủ để kết luận bệnh nếu chỉ nhìn bằng mắt.**
+
+| Tiêu chí | Bệnh tai xanh (PRRS) | Dịch tả lợn châu Phi (ASF) | Dịch tả lợn cổ điển (CSF) |
+|---|---|---|---|
+| Virus | PRRSV (ARN) | ASFV (ADN) | CSFV (ARN) |
+| Biểu hiện chính | Rối loạn sinh sản ở nái + bệnh hô hấp ở lợn con | Sốt cao, da đỏ hoặc tím tái, xuất huyết, chết đột ngột ở mọi lứa tuổi | Sốt, nằm chồng đống, viêm kết mạc, táo bón rồi tiêu chảy, đi loạng choạng; tai và bụng tím sau vài ngày |
+| Tỷ lệ chết (WOAH) | Cao ở lợn con; với chủng độc lực cao cả lợn cai sữa và lợn choai | Gần 100% ở thể cấp tính | Từ cao đến nhẹ hoặc không biểu hiện, tùy chủng |
+| Thể nhẹ | Đàn nhiễm nhưng ít triệu chứng | Thể á cấp tính và mãn tính | Sinh sản kém, lợn con sinh ra bị run bẩm sinh |
+| Vắc xin | Có vắc xin nhược độc và vắc xin vô hoạt | Theo quy định của Nhà nước | Có vắc xin |
+| Lây sang người? | Không có bằng chứng (WOAH) | Không | Không |
+
+WOAH cho biết dịch tả lợn cổ điển thể nặng rất giống dịch tả lợn châu Phi, và bệnh tai xanh nằm trong danh sách chẩn đoán phân biệt của dịch tả lợn châu Phi. Cách xử lý ba bệnh hoàn toàn khác nhau, từ tiêm phòng và kiểm soát bội nhiễm với tai xanh, đến dừng xuất nhập và tiêu hủy với dịch tả lợn châu Phi, nên phải xét nghiệm để biết đúng bệnh. Nếu có khả năng là dịch tả lợn châu Phi, hãy dừng xuất nhập lợn và báo ngay cho cơ quan thú y, không chờ kết quả xét nghiệm. Xem thêm bài [dịch tả lợn châu Phi: triệu chứng, bệnh tích và xét nghiệm PCR](/en/blog/african-swine-fever-symptoms-lesions-pcr-testing/).
+
+---
+
+## Chẩn đoán bệnh tai xanh như thế nào
+
+Theo Sổ tay chẩn đoán của WOAH:
+
+| Phương pháp | Phát hiện gì | Lưu ý theo WOAH |
+|-------------|--------------|-----------------|
+| **RT-PCR / real-time RT-PCR** | ARN virus | Một trong những xét nghiệm dùng nhiều nhất; độ nhạy và độ đặc hiệu cao, cho biết đang nhiễm; dùng được cho huyết thanh, mô, dịch miệng và tinh dịch |
+| **Phân lập virus** | Virus sống | Kỹ thuật khó, cần tế bào đại thực bào phế nang lợn |
+| **ELISA, IPMA, IFA** | Kháng thể | Tốt khi đánh giá cả đàn; mẫu đơn lẻ dễ nhiễu do kháng thể mẹ truyền và vắc xin; cần mẫu kép để thấy chuyển đổi huyết thanh |
+
+Có hai lưu ý quan trọng của WOAH khi áp dụng ngoài trại. Thứ nhất, phát hiện virus phải đi kèm triệu chứng lâm sàng mới kết luận tai xanh là nguyên nhân, vì nhiều con mang virus mà không phát bệnh. Thứ hai, virus tai xanh biến đổi di truyền rất mạnh và chưa có một quy trình RT-PCR nào phát hiện được mọi chủng, nên lợn có triệu chứng điển hình mà PCR âm tính thì cần trao đổi thêm với phòng thí nghiệm. Bài [so sánh PCR và ELISA](/en/blog/pcr-vs-elisa-veterinary-diagnostics-comparison/) giải thích khi nào nên dùng xét nghiệm nào.
+
+### Lấy mẫu con nào, mẫu gì
+
+- **Tốt nhất:** huyết thanh hoặc máu toàn phần của lợn con, lợn cai sữa đang sốt; phổi, amidan hoặc hạch lympho của lợn mới chết.
+- **Kém giá trị hơn:** máu của nái đã sảy thai vài ngày. Ở lợn trưởng thành virus chỉ tồn tại trong máu vài ngày.
+- **Giám sát đàn:** WOAH cũng công nhận dịch miệng lấy theo ô chuồng và dịch thu khi thiến, cắt đuôi lợn con để chạy RT-PCR.
+
+Cách ghi nhãn và vận chuyển mẫu có trong bài [hướng dẫn lấy và xử lý mẫu thú y](/en/blog/veterinary-sample-collection-handling-guide/).
+
+---
+
+## Xét nghiệm PCR bệnh tai xanh ngay tại trại
+
+| Hạng mục | Chip xét nghiệm PRRSV của Yinrui Bio trên máy CarryOn |
+|----------|--------------------------------------------------------|
+| Mục tiêu | Virus gây hội chứng rối loạn sinh sản và hô hấp ở lợn (PRRSV) |
+| Phương pháp | PCR huỳnh quang thời gian thực (real-time PCR) trong chip vi lưu kín, dùng một lần |
+| Loại mẫu | Máu toàn phần, huyết thanh |
+| Thời gian có kết quả | Dưới 60 phút, đã gồm tách chiết |
+| Bảo quản chip | Nhiệt độ phòng (15–30°C), không cần chuỗi lạnh |
+| Thiết bị | [Máy PCR cầm tay CarryOn P1000Q](/en/products/carryon-device/): 2,0 kg, pin khoảng 3,5 giờ, huỳnh quang 5 màu |
+| Chạy song song | [CarryOn P4000Q](/en/products/carryon-p4000q/): bốn mô-đun, chạy bốn chip khác nhau cùng lúc |
+
+**Vì sao hữu ích khi cần phân biệt bệnh:** cùng một mẫu máu có thể chạy trên [chip xét nghiệm bệnh tai xanh PRRSV](/en/products/test-chips/prrsv-test/), [chip ASFV](/en/products/test-chips/african-swine-fever/) và [chip dịch tả lợn cổ điển CSFV](/en/products/test-chips/classical-swine-fever-csfv/). Trên máy P4000Q, ba chip chạy song song, bác sĩ thú y của trại có cả ba kết quả trong vòng một giờ thay vì chờ gửi mẫu về phòng thí nghiệm. Danh sách đủ 13 chip cho lợn có tại trang [bộ kit xét nghiệm PCR cho lợn](/en/swine-pcr-test-kits/).
+
+**Đọc kết quả thế nào:** nhiều đàn ở Việt Nam đã tiêm vắc xin tai xanh nhược độc. Trang sản phẩm của chúng tôi không công bố chip PRRSV phân biệt được virus vắc xin với virus thực địa, cũng không liệt kê chip phát hiện những chủng nào, vì vậy kết quả dương tính ở đàn vừa tiêm phòng, hoặc âm tính ở con có triệu chứng điển hình, cần được đánh giá cùng bác sĩ thú y và phòng thí nghiệm tham chiếu. Việc khẳng định chính thức do phòng thí nghiệm được cơ quan thú y chỉ định thực hiện.
+
+Nhà phân phối và doanh nghiệp chăn nuôi có thể [liên hệ với chúng tôi](/en/contact/) để nhận hồ sơ kỹ thuật và bộ đánh giá (1 thiết bị + 50 chip), hoặc xem [trang thị trường Việt Nam](/en/markets/vietnam/).
+
+---
+
+## Phòng bệnh: WOAH khuyến cáo gì
+
+Không có thuốc tiêu diệt virus tai xanh. Kiểm soát bệnh dựa vào ngăn virus vào trại và ổn định đàn: kiểm tra tình trạng sức khỏe của lợn hậu bị và đực giống trước khi nhập, nuôi cách ly lợn mới nhập và xét nghiệm lại khi đến và sau 45–60 ngày trước khi nhập đàn, và tiêm vắc xin nhược độc hoặc vô hoạt (WOAH đánh giá là có hiệu quả) theo chương trình của bác sĩ thú y. Bệnh bội nhiễm do bác sĩ thú y quyết định điều trị theo từng ca. Khi đàn có dấu hiệu bất thường, hãy báo cho cán bộ thú y địa phương.
+
+---
+
+## Nguồn tham khảo
+
+- WOAH, trang thông tin bệnh PRRS (triệu chứng theo lứa tuổi, đường lây, sức khỏe con người, phòng bệnh, vắc xin).
+- WOAH, Sổ tay chẩn đoán động vật trên cạn, Chương 3.9.6 PRRS (chủng độc lực cao 2006, thời gian virus huyết, loại mẫu, ưu và hạn chế của RT-PCR, thời điểm xuất hiện kháng thể).
+- WOAH, trang thông tin bệnh dịch tả lợn châu Phi và dịch tả lợn cổ điển.
+- Thông số kỹ thuật đã công bố của Yinrui Bio cho máy CarryOn P1000Q, CarryOn P4000Q và các chip xét nghiệm PRRSV, ASFV, CSFV.`,
+        faqs: [
+          {
+            q: "Bệnh tai xanh có lây sang người không?",
+            a: "Không. WOAH cho biết chưa có bằng chứng virus tai xanh (PRRSV) lây nhiễm sang người. Đây là bệnh của lợn.",
+          },
+          {
+            q: "Thấy lợn tím tai có phải chắc chắn là bệnh tai xanh không?",
+            a: "Không. WOAH mô tả tai xanh chỉ là dấu hiệu thoáng qua, và da tím, đỏ cũng gặp ở dịch tả lợn châu Phi và dịch tả lợn cổ điển. Muốn khẳng định phải xét nghiệm, ví dụ RT-PCR, kết hợp với triệu chứng của đàn.",
+          },
+          {
+            q: "Nên lấy mẫu con nào để xét nghiệm PCR bệnh tai xanh?",
+            a: "Lấy con đang sốt, tốt nhất là lợn con hoặc lợn cai sữa, vì theo WOAH virus tồn tại trong máu vài tuần ở lợn con nhưng chỉ vài ngày ở lợn trưởng thành. Mẫu thường dùng là huyết thanh hoặc máu toàn phần; phổi, amidan, hạch lympho của lợn mới chết cũng dùng được trong phòng thí nghiệm.",
+          },
+          {
+            q: "Lợn đã tiêm vắc xin tai xanh có thể cho PCR dương tính không?",
+            a: "Có thể. Vắc xin nhược độc chứa virus tai xanh sống đã làm yếu. Chip PRRSV của chúng tôi không công bố khả năng phân biệt virus vắc xin với virus thực địa, nên kết quả ở đàn vừa tiêm phòng cần được đánh giá cùng bác sĩ thú y và phòng thí nghiệm tham chiếu.",
+          },
+          {
+            q: "Xét nghiệm PCR bệnh tai xanh tại trại mất bao lâu?",
+            a: "Trên máy CarryOn, chip xét nghiệm PRRSV cho kết quả trong chưa đầy 60 phút; tách chiết và real-time PCR đều tự động trong chip kín. Chip bảo quản ở nhiệt độ phòng (15–30°C).",
+          },
+        ],
+      },
+    },
+  },
+  {
     slug: "african-swine-fever-symptoms-lesions-pcr-testing",
     title: "African Swine Fever in Pigs: Symptoms, Lesions and On-Farm PCR Testing",
     seoTitle: "African Swine Fever: Symptoms, Lesions & PCR Test",
