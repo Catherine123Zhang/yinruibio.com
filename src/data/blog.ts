@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-11-12",
     readTime: "9 min read",
     category: "Disease Guide",
-    coverImage: "/images/products/microfluidic-chips.jpg",
+    coverImage: "/images/products/carryon-p4000q.png",
     relatedProducts: ["prrsv-test", "african-swine-fever", "classical-swine-fever-csfv"],
     content: `Last updated: 12 November 2026 · Clinical and diagnostic facts in this article come from the WOAH (World Organisation for Animal Health) PRRS disease page and Chapter 3.9.6 of the WOAH Terrestrial Manual, plus the WOAH pages for African and classical swine fever. Product data comes from Yinrui Bio's published specifications. This article is not treatment advice: work with your veterinarian.
 
