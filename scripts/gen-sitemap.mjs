@@ -23,7 +23,7 @@ async function walk(dir) {
   return res;
 }
 const pages = (await walk(OUT)).map((p) => path.relative(OUT, path.dirname(p)).split(path.sep).join("/"))
-  .filter((rel) => rel && locales.includes(rel.split("/")[0]) && !/\/(404|thanks)$/.test(rel) && !rel.includes("landing"));
+  .filter((rel) => rel && locales.includes(rel.split("/")[0]) && !/\/(404|thanks|privacy)$/.test(rel) && !rel.includes("landing"));
 // group by path-without-locale
 const groups = new Map();
 for (const rel of pages) { const [loc, ...rest] = rel.split("/"); const key = rest.join("/"); if (!groups.has(key)) groups.set(key, new Set()); groups.get(key).add(loc); }
