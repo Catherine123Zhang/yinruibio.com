@@ -57,11 +57,10 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-# Block aggressive scrapers
 User-agent: Bytespider
-Disallow: /
+Allow: /
 
 User-agent: ImagesiftBot
-Disallow: /
+Allow: /
 
 Sitemap: https://yinruibio.com/sitemap.xml
